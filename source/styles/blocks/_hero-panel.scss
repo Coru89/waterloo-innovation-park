@@ -1,0 +1,107 @@
+@import '../reference/reference';
+
+$block: 'hero-panel';
+
+.#{$block} {
+	background-color: $white;
+	overflow: hidden;
+	padding: 2rem 0;
+	position: relative;
+
+	@include media-min(lg) {
+		padding: 10rem 0;
+	}
+
+	&__container {
+		box-sizing: border-box;
+	}
+
+	&__content {
+		box-sizing: border-box;
+		padding-bottom: 2rem;
+
+		@include media-min(lg) {
+			padding: 0 6rem 0 0;
+			width: 50%;
+		}
+	}
+
+	&__picture-container {
+		height: 20rem;
+		margin-bottom: -4rem;
+		margin-left: -1.5rem;
+		margin-right: -1.5rem;
+		position: relative;
+
+		@include media-min(lg) {
+			bottom: 0;
+			height: auto;
+			left: 50vw;
+			margin-bottom: 0;
+			margin-left: 0;
+			margin-right: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&__picture {
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	&__image {
+		display: block;
+		font-family: 'object-fit:cover';
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+		user-select: none;
+		width: 100%;
+	}
+
+	&__subject {
+		font-size: 0.875rem;
+		font-weight: $font-weight-semibold;
+		text-transform: uppercase;
+	}
+
+	&--dark {
+		background-color: $grey-dark;
+		color: $white;
+
+		.#{$block} {
+			&__container {
+				@include media-max(lg) {
+					display: flex;
+					flex-flow: column-reverse;
+				}
+			}
+
+			&__content {
+				@include media-min(lg) {
+					left: 50%;
+					padding: 0 0 0 6rem;
+					position: relative;
+					width: 50%;
+				}
+			}
+
+			&__picture-container {
+				@include media-min(lg) {
+					left: 0;
+					right: calc(50vw - (100vw - 100%)); //scrollbar fix
+				}
+			}
+
+			&__title {
+				color: $white;
+			}
+		}
+	}
+}

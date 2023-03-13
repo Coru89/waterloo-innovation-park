@@ -1,0 +1,75 @@
+dateModified: 1678706343
+email:
+  fromEmail: corey.james.keller@gmail.com
+  fromName: 'Waterloo Innovation Park'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    0afdac73-846a-4985-a071-851fed756ca9: 'Button Text' # Button Text
+    0b9c054a-9bbd-4547-b554-70bfd7142228: 'Waterloo Innovation Park' # Waterloo Innovation Park
+    0d01ac2a-6f7f-4925-8c97-10d917e18c84: Title # Title
+    0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
+    1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
+    4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
+    5bb2582c-1b3b-4a0a-b234-64558f60c9a9: Image # Image
+    5e672526-c38e-4fdc-b248-363c3c83ef20: Subject # Subject
+    6dc1ef68-7606-4254-8f3e-ab00a4a0b146: 'Button Link' # Button Link
+    8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
+    09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
+    9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
+    9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
+    36e3ae0f-08a5-4193-af58-4ed32c350d94: Image # Image
+    42a3ddcd-d834-49a3-a79e-21c3f11a6ab6: 'Image panel' # Image panel
+    78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
+    79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
+    95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
+    114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
+    220d125c-af88-4a55-9b6c-ddae8a634855: 'Content Panel' # Content Panel
+    402b359e-759c-4938-b279-b9a22b2c6d6a: 'Waterloo Innovation Park' # Waterloo Innovation Park
+    687cd2f1-06f5-4174-ab03-40daaa93ad90: 'Panel Title' # Panel Title
+    745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
+    8321f181-1adc-441d-9199-5af52c1c14a4: 'Primary Navigation' # Primary Navigation
+    91458f3d-5347-4b47-a507-b691e9a17943: 'Navigation Items' # Navigation Items
+    89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
+    c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
+    c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
+    ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
+    d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
+    de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
+    e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
+    ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
+    fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home
+    fe4b113d-bf1c-4f36-806f-80cb15f3cac8: Title # Title
+plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+system:
+  edition: solo
+  live: true
+  name: 'Waterloo Innovation Park'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

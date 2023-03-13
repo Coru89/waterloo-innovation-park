@@ -1,0 +1,32 @@
+// reference/variables/_typography.scss
+
+// Font Family
+$font-family-futura: 'Roboto', Helvetica, Arial, sans-serif;
+
+$font-family-sansserif: #{$font-family-futura}, Helvetica, Arial, sans-serif;
+$font-family-monospace: Consolas, monospace;
+
+// $font-family-body: $font-family-serif;
+// $font-family-heading: $font-family-serif;
+
+// Font Size
+
+$font-size-base: 1rem;
+
+$font-size-smaller: 0.8125rem;
+$font-size-small: 0.875rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.125rem;
+$font-size-larger: 1.25rem;
+
+// Font Weight
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 700;
+
+// Line Height
+
+$line-height-body: 1.5;
+$line-height-heading: 1.3;

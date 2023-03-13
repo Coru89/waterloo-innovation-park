@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 89833881-16ce-4ec4-abfd-1f352dc99fd8 # Common
+handle: contentPanels
+instructions: 'Add, remove or reorder content panels'
+name: Content
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_contentpanels}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

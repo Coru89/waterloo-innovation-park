@@ -1,0 +1,114 @@
+@import '../reference/reference';
+
+$block: 'mobile-nav';
+
+.#{$block} {
+	background-color: $white;
+	box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.05);
+	box-sizing: border-box;
+	height: 100%;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 2.5rem;
+	position: fixed;
+	right: -280px;
+	top: 0;
+	transition: right 0.5s ease;
+	width: 280px;
+	z-index: 3000;
+
+	@include media-min(lg) {
+		display: none;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		transition: none !important;
+	}
+
+	&--open {
+		right: 0;
+	}
+
+	&__header {
+		font-weight: 700;
+		margin-top: 1.5rem;
+	}
+
+	&__anchor {
+		color: $grey-dark;
+		display: inline-block;
+		font-size: 1.375rem;
+		font-weight: $font-weight-semibold;
+		width: 100%;
+		text-decoration: none;
+
+		&--active {
+			color: #094cae;
+		}
+	}
+
+	&__exit-button {
+		background-color: transparent;
+		border: 0;
+		box-sizing: border-box;
+		padding: 1rem;
+		position: absolute;
+		right: 2.2rem;
+		top: 1.6rem;
+
+
+		&::before,
+		&::after {
+			background-color: $grey-dark;
+			content: ' ';
+			height: 1rem;
+			left: 50%;
+			position: absolute;
+			top: 9px;
+			width: 2px;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		&:focus::before,
+		&:focus::after,
+		&:hover::before,
+		&:hover::after {
+			background-color: $blue-light;
+		}
+	}
+
+	&__item {
+		padding-bottom: 1.5rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 1.5rem;
+		padding: 0;
+	}
+
+	.language-switcher {
+		ul {
+			list-style: none;
+			padding: 2rem 0;
+		}
+		
+		.is-active,
+		span {
+			display: none;
+		}
+	}
+
+}

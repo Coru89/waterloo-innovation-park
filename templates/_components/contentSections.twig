@@ -1,0 +1,138 @@
+{% for block in entry.contentPanels.all() %}
+	{% if block.type == "heroPanel" %}
+		<section class="hero-panel">
+			<div class="u-container">
+				<div class="hero-panel__container">
+					<div class="hero-panel__content">
+						{% if block.subject %}
+							<h4 class="hero-panel__subject">{{ block.subject }}</h4>
+						{% endif %}
+						<h1 class="hero-panel__title panel__heading">{{block.panelTitle}}</h1>
+						<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
+					</div>
+
+					{% set image = block.image.one() %}
+					<div class="hero-panel__picture-container">
+						<picture class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
+							<img alt="" class="hero-panel__image panel__image object-fit" src="{{image.getUrl()}}" loading="lazy"/>
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+	{% elseif block.type == "heroPanelDark" %}
+		<section class="hero-panel hero-panel--dark">
+			<div class="u-container">
+				<div class="hero-panel__container">
+
+					{% set image = block.image.one() %}
+					<div class="hero-panel__picture-container">
+						<picture class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
+							<img alt="" class="hero-panel__image panel__image object-fit" src="{{image.getUrl()}}" loading="lazy"/>
+						</picture>
+					</div>
+
+					<div class="hero-panel__content">
+						{% if block.subject %}
+							<h4 class="hero-panel__subject">{{ block.subject }}</h4>
+						{% endif %}
+						<h1 class="hero-panel__title panel__heading">{{block.panelTitle}}</h1>
+						<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
+						{% if block.heroButtonText %}
+							<a class="button button--arrow" href="{{block.heroButtonHref}}">
+								{{block.heroButtonText}}
+							</a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</section>
+	{% elseif block.type == "callToAction" %}
+		<section class="call-to-action">
+			<div class="u-container">
+				<div class="call-to-action__content">
+					<h3 class="call-to-action__headline">
+						{{block.panelTitle}}
+					</h3>
+					{% if block.buttonText %}
+						<a class="button button--arrow" href="{{block.buttonHref}}">
+							{{block.buttonText}}
+						</a>
+					{% endif %}
+				</div>
+			</div>
+		</section>
+	{% elseif block.type == "imagePanel" %}
+		<section class="image-panel">
+			<picture class="image-panel__picture" role="presentation">
+				{% set image = block.image.one() %}
+				<img alt="" class="image-panel__image" src="{{image.getUrl()}}" loading="lazy"/>
+			</picture>
+		</section>
+	{% elseif block.type == "statsPanel" %}
+		<section class="stats-panel">
+			<div class="u-container">
+				<div class="stats-panel__row">
+					{% if block.statisticOneValue %}
+						<div class="stats-panel__column">
+							<div class="stats-panel__number">{{ block.statisticOneValue }}</div>
+							<div class="stats-panel__desc">{{ block.statisticOneDescription }}</div>
+						</div>
+					{% endif %}
+					{% if block.statisticTwoValue %}
+						<div class="stats-panel__column">
+							<div class="stats-panel__number">{{ block.statisticTwoValue }}</div>
+							<div class="stats-panel__desc">{{ block.statisticTwoDescription }}</div>
+						</div>
+					{% endif %}
+					{% if block.statisticThreeValue %}
+						<div class="stats-panel__column">
+							<div class="stats-panel__number">{{ block.statisticThreeValue }}</div>
+							<div class="stats-panel__desc">{{ block.statisticThreeDescription }}</div>
+						</div>
+					{% endif %}
+					{% if block.statisticFourValue %}
+						<div class="stats-panel__column">
+							<div class="stats-panel__number">{{ block.statisticFourValue }}</div>
+							<div class="stats-panel__desc">{{ block.statisticFourDescription }}</div>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</section>
+	{% elseif block.type == "contentPanel" %}
+		<section class="content-panel">
+			<div class="u-container">
+				<div class="content-panel__container">
+					<h1 class="panel__heading">{{ block.panelTitle }}</h1>
+					<div class="panel__content">{{ block.panelSubheading }}</div>
+				</div>
+			</div>
+		</section>
+	{% elseif block.type == "iconPanel" %}
+		<section class="feature-panel">
+			<div class="u-container">
+				<h1 class="feature-panel__heading panel__heading">
+					{{ block.panelTitle }}
+				</h1>
+				<div class="feature-panel__wrapper">
+					{% for item in entry.iconItems.all() %}
+						<div class="feature-panel__item">
+							<div class="feature-panel__picture">
+								<picture class="feature-panel__picture u-hidden-on-no-js">
+									{% set icon = item.itemIcon.one() %}
+									<img alt="{{ item.itemHeading }} icon" class="feature-panel__image object-fit" src="{{icon.getUrl()}}" loading="lazy">
+								</picture>
+							</div>
+							<h2>{{ item.itemHeading }}</h2>
+							<div class="feature-panel__item--description">
+								{{ item.itemDescription }}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+	{% endif %}
+
+{% endfor %}

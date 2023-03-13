@@ -1,0 +1,20 @@
+// reference/variables/_global.scss
+
+$global-border-radius: 0.125rem;
+$global-grid-columns: 12;
+$global-grid-gutter-width: 1rem;
+$global-max-width: 80rem;
+$global-transition: all 250ms ease-in-out;
+
+@mixin keyframes($animation-name) {
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	animation: #{$str};
+}
+
+
+ $box-shadow: 0 2px 4px 2px rgb(0 0 0 / 5%);

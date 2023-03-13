@@ -1,0 +1,115 @@
+@import '../reference/reference';
+
+$block: 'header';
+
+.#{$block} {
+	width: 100%;
+	z-index: $z-index-hotel;
+
+	@include media-min(lg) {
+		top: 1rem;
+	}
+
+	&--sticky {
+		background-color: $white;
+		box-shadow: 0 2px 0.5rem -1px rgba(176, 183, 188, 0.4);
+		position: fixed;
+		top: 0;
+		z-index: $z-index-india;
+	}
+
+	&__container {
+		display: flex;
+		flex-flow: column-reverse;
+	}
+
+	&__column {
+		&:nth-of-type(1) {
+			flex-basis: 110px;
+			flex-grow: 1;
+		}
+
+		&:nth-of-type(3) {
+			flex-basis: 140px;
+			flex-grow: 1;
+		}
+
+		&--button {
+			display: none;
+
+			@include media-min(lg) {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+	}
+
+	&__logo-anchor {
+		display: block;
+		width: 156px;
+
+		@include media-min(lg) {
+			width: 210px;
+		}
+
+		svg {
+			display: block;
+			width: 100%;
+
+			@include media-min(lg) {
+				height: auto;
+				width: 210px;
+			}
+		}
+	}
+
+	&__mobile-nav-button {
+		background-color: transparent;
+		border: 0;
+		box-sizing: border-box;
+		cursor: pointer;
+		display: flex;
+		margin: 0;
+		padding-bottom: 0.5rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-top: 0.5rem;
+
+		@include media-min(lg) {
+			display: none;
+		}
+
+		&:focus svg,
+		&:hover svg {
+			stroke: $blue-light;
+		}
+	}
+
+	&__row {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: 1.5rem 0;
+
+		@include media-min(lg) {
+			padding: 2rem 0;
+		}
+
+		&--utility {
+			@include media-max(lg) {
+				display: none;
+			}
+
+			&::after {
+				background-color: $grey-lighter;
+				content: "";
+				display: block;
+				height: 1px;
+				left: 0;
+				position: absolute;
+				top: 3rem;
+				width: 100vw;
+			}
+		}
+	}
+}

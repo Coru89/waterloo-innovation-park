@@ -1,0 +1,59 @@
+@import '../reference/reference';
+
+$block: 'primary-nav';
+
+.#{$block} {
+	display: none;
+
+	@include media-min(lg) {
+		display: block;
+	}
+
+	&__anchor {
+		color: $grey-dark;
+		display: inline-block;
+		font-size: 1rem;
+		font-weight: $font-weight-semibold;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		pointer-events: auto;
+		position: relative;
+		text-decoration: none;
+
+		&::after {
+			background-color: $white;
+			bottom: -4px;
+			content: '';
+			display: block;
+			height: 1px;
+			position: relative;
+			width: 100%;
+		}
+
+		&:focus,
+		&:hover {
+			color: $blue;
+
+			&::after {
+				background-color: $blue;
+			}
+		}
+
+		&--active {
+			color: #094cae;
+		}
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__list {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		pointer-events: none;
+	}
+}

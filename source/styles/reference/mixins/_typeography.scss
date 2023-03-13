@@ -1,0 +1,9 @@
+@mixin heading-sm {
+	font-size: $font-size-medium;
+	font-weight: $font-weight-semibold;
+	margin-top: 0;
+
+	@include media-min(md) {
+		font-size: $font-size-large;
+	}
+}

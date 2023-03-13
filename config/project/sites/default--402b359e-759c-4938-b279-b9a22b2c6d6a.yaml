@@ -1,0 +1,9 @@
+baseUrl: '@web'
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: 'Waterloo Innovation Park'
+primary: true
+siteGroup: 0b9c054a-9bbd-4547-b554-70bfd7142228 # Waterloo Innovation Park
+sortOrder: 1

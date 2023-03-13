@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "outDir": "./web/assets/scripts/",
+    "noImplicitAny": true,
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false
+  }
+}

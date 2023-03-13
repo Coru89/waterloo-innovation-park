@@ -1,0 +1,78 @@
+field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  305b4a3d-50b4-48a2-84f2-7cf8c8e24a4d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2 # Panel Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2135836d-280a-40a2-8639-bd0cf29c70c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1da30993-295b-40b9-aab0-24e5a9812929 # Panel Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85e4d323-90fe-4f06-8e83-6bb8a14dbe52
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4f5030ff-d953-4be0-aba7-8d3a83b83a1a
+        userCondition: null
+fields:
+  1da30993-295b-40b9-aab0-24e5a9812929: # Panel Subheading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: panelSubheading
+    instructions: 'Panel Subheading'
+    name: 'Panel Subheading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Panel Subheading'
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: # Panel Title
+    columnSuffix: null
+    contentColumnType: string(512)
+    fieldGroup: null
+    handle: panelTitle
+    instructions: 'Panel Title'
+    name: 'Panel Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 128
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Panel Title'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contentPanel
+name: 'Content Panel'
+sortOrder: 3

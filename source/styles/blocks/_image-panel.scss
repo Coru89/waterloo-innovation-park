@@ -1,0 +1,33 @@
+@import '../reference/reference';
+
+$block: 'image-panel';
+
+.#{$block} {
+	height: 275px;
+	overflow: hidden;
+	position: relative;
+
+	@include media-min(lg) {
+		height: 500px;
+	}
+
+	&__picture {
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__image {
+		display: block;
+		font-family: "object-fit:cover;object-position:center center";
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+		user-select: none;
+		width: 100%;
+	}
+}

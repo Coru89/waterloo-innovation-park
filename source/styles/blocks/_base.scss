@@ -1,0 +1,231 @@
+@import '../reference/reference';
+
+@font-face {
+	font-family: 'Futura Std Book';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Futura Std Book'), url('fonts/FuturaStdBook.woff') format('woff');
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+}
+
+.body {
+	color: $grey;
+	font-family: $font-family-futura;
+	font-size: $font-size-small;
+	line-height: 1.5;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+
+	@include media-min(sm) {
+		font-size: $font-size-medium;
+		line-height: 1.6;
+	}
+
+	&--no-scroll {
+		overflow-y: hidden;
+	}
+
+	&__wrapper {
+		overflow: hidden;
+		position: relative;
+		right: 0;
+		transition: right 0.5s ease;
+
+		@media (prefers-reduced-motion: reduce) {
+			transition: none !important;
+		}
+
+		@include media-min(lg) {
+			overflow: visible;
+		}
+
+		&--mobile-nav-open {
+			overflow: hidden;
+			right: 280px;
+			transition: right 0.5s ease;
+
+			@include media-min(lg) {
+				right: 0;
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				transition: none !important;
+			}
+		}
+	}
+}
+
+.main {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.15s ease-out;
+	text-decoration: underline;
+
+	&::after {
+		transition: background-color 0.15s ease-out;
+	}
+}
+
+p {
+	a {
+		color: #3d3d3d;
+		box-shadow: inset 0 -1px 0 #c6c4c4;
+		text-decoration: none;
+
+		&:hover {
+			box-shadow: inset 0 -1px 0 #094cae;
+		}
+	}
+}
+
+img {
+	display: block;
+}
+
+picture {
+	display: block;
+}
+
+h1 {
+	color: $grey-dark;
+	font-size: 1.625rem;
+	font-weight: $font-weight-bold;
+	line-height: 1.25;
+	margin-bottom: 0.75rem;
+	margin-top: 0;
+
+	@include media-min(md) {
+		font-size: 2.5rem;
+	}
+}
+
+h2 {
+	color: $grey-dark;
+	font-size: 1.375rem;
+	font-weight: $font-weight-semibold;
+	line-height: 1.25;
+	margin-bottom: 1rem;
+	margin-top: 0;
+
+	@include media-min(md) {
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	color: $grey-dark;
+	font-size: $font-size-medium;
+	font-weight: $font-weight-semibold;
+	line-height: 1.25;
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+
+	@include media-min(md) {
+		font-size: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+}
+
+p {
+	margin-top: 0;
+}
+
+.skip-link {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	&:focus {
+		display: block;
+		font-size: 1rem;
+		height: auto;
+		line-height: 1.5;
+		position: static;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;
+	}
+}
+
+.u-container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1356px;
+	padding-left: 1.375rem;
+	padding-right: 1.375rem;
+}
+
+.u-display-none {
+	display: none !important;
+}
+
+.u-fade-out {
+	opacity: 0 !important;
+
+	.no-js & {
+		opacity: 1 !important;
+	}
+}
+
+.u-scale-fade-out {
+	opacity: 0 !important;
+	transform: translate(-50%, -50%) scale(1.05) !important;
+
+	.no-js & {
+		opacity: 1 !important;
+		transform: translate(-50%, -50%) scale(1) !important;
+	}
+}
+
+.u-hidden {
+	height: 0;
+	opacity: 0 !important;
+	pointer-events: none;
+}
+
+.u-scroll {
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.u-slide-relative {
+	position: relative !important;
+	z-index: 6000 !important;
+
+	.no-js & {
+		position: static !important;
+		z-index: auto !important;
+	}
+}
+
+.no-js .u-no-js-display-none {
+	display: none !important;
+}
+
+.picture {
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+
+.grecaptcha-badge {
+	display: none;
+	opacity: 0;
+}
