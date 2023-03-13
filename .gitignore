@@ -9,3 +9,4 @@ node_modules
 # Prevent to .sql files (added by fortrabbit/craft-copy)
 *.sql
 
+node_modules
