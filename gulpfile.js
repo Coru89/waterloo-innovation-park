@@ -92,7 +92,7 @@ function watchTask(){
 	watch('templates/**/*.twig').on('change', browsersync.reload);
 	watch('source/styles/**/*.scss', css); // change to your source directory
 	watch('source/scripts/*.ts', ts); // change to your source directory
-    watch('source/images/*.*', img); // change to your source directory
+    watch('source/images/*.*', imgPassThru); // change to your source directory
 }
 
 // Tasks to define the execution of the functions simultaneously or in series
