@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: false
+handle: siteNavigation
+name: 'Site Navigation'
+propagationMethod: all
+siteSettings:
+  402b359e-759c-4938-b279-b9a22b2c6d6a: # Waterloo Innovation Park
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 61d8a091-c7e2-47cd-a08a-13815021f083
+type: structure

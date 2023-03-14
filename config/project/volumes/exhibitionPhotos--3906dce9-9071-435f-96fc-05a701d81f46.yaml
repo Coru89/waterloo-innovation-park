@@ -1,0 +1,66 @@
+fieldLayouts:
+  5859c595-11ce-4bfb-9d33-5204daf2e1fb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: da13d0f8-4c04-4b5c-b8ea-136bfc15bffc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 26fc28f1-4155-4d34-bff5-e2d9d618308e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fc7a3993-cf51-41d5-a5ff-c71f787910a7
+        userCondition: null
+fs: exhibitionPhotos
+handle: exhibitionPhotos
+name: 'Exhibition Photos'
+sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

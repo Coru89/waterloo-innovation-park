@@ -1,0 +1,19 @@
+columnSuffix: japvdewo
+contentColumnType: text
+fieldGroup: 24a64e3b-2ad3-479e-89dc-1c16e57368ac # Booking
+handle: bookingPropertyManagerImageCaption
+instructions: null
+name: 'Property Manager Image Caption'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

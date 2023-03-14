@@ -1,0 +1,27 @@
+columnSuffix: jtvhrald
+contentColumnType: text
+fieldGroup: cc67c156-422d-4f9e-be71-f3d094eb08e5 # Art Gallery
+handle: exhibitionSummary
+instructions: null
+name: 'Exhibition Summary'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

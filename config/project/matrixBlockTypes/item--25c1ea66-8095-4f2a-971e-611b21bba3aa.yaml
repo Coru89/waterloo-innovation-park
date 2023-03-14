@@ -1,0 +1,166 @@
+field: 771b1ebb-9bc3-4a71-9969-b7e5f1020bb7 # Property Item
+fieldLayouts:
+  12f1ca5e-a89a-401c-b017-3f17cee26690:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 865120ee-347d-4344-95ec-61b32b775de0 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6880c5e-3199-4d1d-9f73-aac3cb35d473
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 703da12e-6c3e-477c-847b-e1a6b6953e8e # Property Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d84a05a2-8f2e-4cf2-afb0-3b9611bae043
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bc928e65-aad4-49d8-bfd2-4bc0a487d1ec # Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03a10e6d-3120-4e2d-995c-83961ad57d2b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b41afa41-893f-4b11-970e-c75f2431f0be # Learn More Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b8a3f145-5a24-429c-abe4-73cec002ccfc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8128265a-ce05-4d0b-9f93-1f431fa5e087
+        userCondition: null
+fields:
+  703da12e-6c3e-477c-847b-e1a6b6953e8e: # Property Name
+    columnSuffix: ioczutvb
+    contentColumnType: text
+    fieldGroup: null
+    handle: propertyName
+    instructions: null
+    name: 'Property Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  865120ee-347d-4344-95ec-61b32b775de0: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:38134199-860e-4c8f-9bc6-d1e314e1884a' # Leasing
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9cfc771b-b401-4434-bbd3-e0e94c877314' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:38134199-860e-4c8f-9bc6-d1e314e1884a' # Leasing
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b41afa41-893f-4b11-970e-c75f2431f0be: # Learn More Link
+    columnSuffix: uzmopjop
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: learnMoreLink
+    instructions: null
+    name: 'Learn More Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: # Subheading
+    columnSuffix: zwmopanb
+    contentColumnType: text
+    fieldGroup: null
+    handle: subheading
+    instructions: null
+    name: Subheading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: item
+name: Item
+sortOrder: 1

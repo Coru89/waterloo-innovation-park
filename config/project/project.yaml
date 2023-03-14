@@ -1,9 +1,23 @@
-dateModified: 1678706343
+dateModified: 1678789810
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  exhibitionPhotos:
+    hasUrls: true
+    name: 'Exhibition Photos'
+    settings:
+      path: '@webroot/exhibition-photos'
+    type: craft\fs\Local
+    url: '@web/exhibition-photos'
+  leasing:
+    hasUrls: true
+    name: Leasing
+    settings:
+      path: '@webroot/leasing'
+    type: craft\fs\Local
+    url: '@web/leasing'
   uploads:
     hasUrls: true
     name: Uploads
@@ -18,33 +32,74 @@ meta:
     0d01ac2a-6f7f-4925-8c97-10d917e18c84: Title # Title
     0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
+    2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager' # Property Manager
+    3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
     5bb2582c-1b3b-4a0a-b234-64558f60c9a9: Image # Image
+    5e5cfcfd-2853-4707-b73e-471efcd57cc8: Default # Default
     5e672526-c38e-4fdc-b248-363c3c83ef20: Subject # Subject
+    5f8cb9f8-3c0c-4264-8031-dbfe5b65434a: 'Property Manager Email' # Property Manager Email
     6dc1ef68-7606-4254-8f3e-ab00a4a0b146: 'Button Link' # Button Link
+    6f01e9c8-9af2-4589-8d81-a9ed56130cc9: 'Job Title' # Job Title
+    7b3301be-ed48-400a-a679-7b61d6a9fab8: Path # Path
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
+    8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
+    9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
     9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
+    15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: 'Phone Link' # Phone Link
+    24a64e3b-2ad3-479e-89dc-1c16e57368ac: Booking # Booking
+    25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
+    26baa828-2510-4546-ab8a-4866ca224fa2: 'Featured Exhibit' # Featured Exhibit
+    31aa51d3-2c41-4a98-8464-95f377cc4f07: 'Lease Managers Heading' # Lease Managers Heading
+    34e247a1-8be7-4932-a481-cfa735abdba3: 'Exhibition Summary' # Exhibition Summary
     36e3ae0f-08a5-4193-af58-4ed32c350d94: Image # Image
     42a3ddcd-d834-49a3-a79e-21c3f11a6ab6: 'Image panel' # Image panel
+    45e37949-8c8b-424e-8d3e-8d4b606ed084: Item # Item
+    52d8ea63-1195-47df-9693-9e83d7049cd2: 'Lease Managers' # Lease Managers
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
     95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
     220d125c-af88-4a55-9b6c-ddae8a634855: 'Content Panel' # Content Panel
+    335c9bcd-5565-445e-a5cf-ed5a78aac5e7: 'Phone Display' # Phone Display
     402b359e-759c-4938-b279-b9a22b2c6d6a: 'Waterloo Innovation Park' # Waterloo Innovation Park
+    0493ce96-a299-4502-9f34-15fe3bebbdaa: Artist # Artist
     687cd2f1-06f5-4174-ab03-40daaa93ad90: 'Panel Title' # Panel Title
+    703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
+    771b1ebb-9bc3-4a71-9969-b7e5f1020bb7: 'Property Item' # Property Item
+    903cf4e1-deba-4181-804b-66520fe03fdc: Image # Image
+    3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
+    8267e525-8100-4ca9-9949-0677504ad351: email # email
     8321f181-1adc-441d-9199-5af52c1c14a4: 'Primary Navigation' # Primary Navigation
+    37175b69-3644-4f1e-a348-e82fd2565057: 'Property Manager Image Caption' # Property Manager Image Caption
     91458f3d-5347-4b47-a507-b691e9a17943: 'Navigation Items' # Navigation Items
+    465854cd-ce73-4e46-905e-7b925a0307e2: 'Exhibition Name' # Exhibition Name
+    506955ce-fa3f-407f-9b5c-f7d79b9b1e42: Exhibitions # Exhibitions
+    865120ee-347d-4344-95ec-61b32b775de0: Image # Image
+    36824767-1aa1-48a4-b266-8271b9035f52: Default # Default
+    38134199-860e-4c8f-9bc6-d1e314e1884a: Leasing # Leasing
+    87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
     89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
+    a8b4a8b9-f098-48a3-b3c9-9149a1f3d3e7: 'Art Name' # Art Name
+    b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
+    b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
+    b41afa41-893f-4b11-970e-c75f2431f0be: 'Learn More Link' # Learn More Link
+    baa2eb32-a191-474e-b7da-50764f46b1e5: Info # Info
+    bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Subheading # Subheading
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
     c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
+    cb1ecf4b-0473-4929-80c1-830b574c0c48: Cost # Cost
+    cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
+    cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
+    d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
+    e2190436-67a6-4e37-bc3b-b0e52e23f9e7: 'Gallery Items' # Gallery Items
     ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
     fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home
     fe4b113d-bf1c-4f36-806f-80cb15f3cac8: Title # Title

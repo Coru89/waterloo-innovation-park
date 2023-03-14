@@ -69,67 +69,12 @@
 				<img alt="" class="image-panel__image" src="{{image.getUrl()}}" loading="lazy"/>
 			</picture>
 		</section>
-	{% elseif block.type == "statsPanel" %}
-		<section class="stats-panel">
-			<div class="u-container">
-				<div class="stats-panel__row">
-					{% if block.statisticOneValue %}
-						<div class="stats-panel__column">
-							<div class="stats-panel__number">{{ block.statisticOneValue }}</div>
-							<div class="stats-panel__desc">{{ block.statisticOneDescription }}</div>
-						</div>
-					{% endif %}
-					{% if block.statisticTwoValue %}
-						<div class="stats-panel__column">
-							<div class="stats-panel__number">{{ block.statisticTwoValue }}</div>
-							<div class="stats-panel__desc">{{ block.statisticTwoDescription }}</div>
-						</div>
-					{% endif %}
-					{% if block.statisticThreeValue %}
-						<div class="stats-panel__column">
-							<div class="stats-panel__number">{{ block.statisticThreeValue }}</div>
-							<div class="stats-panel__desc">{{ block.statisticThreeDescription }}</div>
-						</div>
-					{% endif %}
-					{% if block.statisticFourValue %}
-						<div class="stats-panel__column">
-							<div class="stats-panel__number">{{ block.statisticFourValue }}</div>
-							<div class="stats-panel__desc">{{ block.statisticFourDescription }}</div>
-						</div>
-					{% endif %}
-				</div>
-			</div>
-		</section>
 	{% elseif block.type == "contentPanel" %}
 		<section class="content-panel">
 			<div class="u-container">
 				<div class="content-panel__container">
 					<h1 class="panel__heading">{{ block.panelTitle }}</h1>
 					<div class="panel__content">{{ block.panelSubheading }}</div>
-				</div>
-			</div>
-		</section>
-	{% elseif block.type == "iconPanel" %}
-		<section class="feature-panel">
-			<div class="u-container">
-				<h1 class="feature-panel__heading panel__heading">
-					{{ block.panelTitle }}
-				</h1>
-				<div class="feature-panel__wrapper">
-					{% for item in entry.iconItems.all() %}
-						<div class="feature-panel__item">
-							<div class="feature-panel__picture">
-								<picture class="feature-panel__picture u-hidden-on-no-js">
-									{% set icon = item.itemIcon.one() %}
-									<img alt="{{ item.itemHeading }} icon" class="feature-panel__image object-fit" src="{{icon.getUrl()}}" loading="lazy">
-								</picture>
-							</div>
-							<h2>{{ item.itemHeading }}</h2>
-							<div class="feature-panel__item--description">
-								{{ item.itemDescription }}
-							</div>
-						</div>
-					{% endfor %}
 				</div>
 			</div>
 		</section>

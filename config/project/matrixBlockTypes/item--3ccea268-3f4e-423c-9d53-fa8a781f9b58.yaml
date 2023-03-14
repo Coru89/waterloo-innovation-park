@@ -1,0 +1,169 @@
+field: 52d8ea63-1195-47df-9693-9e83d7049cd2 # Lease Managers
+fieldLayouts:
+  8f21595b-766f-4e8b-a939-05bfcd841686:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cb191950-443f-46b3-8914-5a71580972f5 # Full Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb655a1d-d968-4262-80f0-321323d44c9e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6f01e9c8-9af2-4589-8d81-a9ed56130cc9 # Job Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6970807-73db-4fa1-a031-e079f2b17a25
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 335c9bcd-5565-445e-a5cf-ed5a78aac5e7 # Phone Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a6501f6-beff-4e1a-af6c-4569271d522f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 15b5c3b8-1bf0-499c-84f7-3a6c39f656d1 # Phone Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 446cf9fd-9376-44ac-9682-b855ec8de813
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8267e525-8100-4ca9-9949-0677504ad351 # email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bae7947f-a77e-4fc5-ba78-605c46e1b3bf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 46d42be1-ba48-4fe1-8794-2edff7ed284f
+        userCondition: null
+fields:
+  6f01e9c8-9af2-4589-8d81-a9ed56130cc9: # Job Title
+    columnSuffix: soolgjsl
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobTitle
+    instructions: null
+    name: 'Job Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: # Phone Link
+    columnSuffix: ebxhfgyc
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: phoneLink
+    instructions: null
+    name: 'Phone Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - tel
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  335c9bcd-5565-445e-a5cf-ed5a78aac5e7: # Phone Display
+    columnSuffix: sgrbekwb
+    contentColumnType: text
+    fieldGroup: null
+    handle: phoneDisplay
+    instructions: null
+    name: 'Phone Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8267e525-8100-4ca9-9949-0677504ad351: # email
+    columnSuffix: cyuothyl
+    contentColumnType: text
+    fieldGroup: null
+    handle: email
+    instructions: null
+    name: email
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cb191950-443f-46b3-8914-5a71580972f5: # Full Name
+    columnSuffix: taiusnyu
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: null
+    name: 'Full Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: item
+name: item
+sortOrder: 1

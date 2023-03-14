@@ -1,0 +1,19 @@
+columnSuffix: hxcisdfe
+contentColumnType: text
+fieldGroup: 87976032-e2ff-41bd-a53c-f0e4719793b4 # Lease
+handle: leaseManagersHeading
+instructions: null
+name: 'Lease Managers Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'Get in touch with the leasing managers'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

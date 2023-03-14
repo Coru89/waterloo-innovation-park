@@ -1,0 +1,19 @@
+columnSuffix: edksimyv
+contentColumnType: text
+fieldGroup: cc67c156-422d-4f9e-be71-f3d094eb08e5 # Art Gallery
+handle: exhibitionName
+instructions: null
+name: 'Exhibition Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

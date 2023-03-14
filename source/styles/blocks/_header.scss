@@ -23,7 +23,11 @@ $block: 'header';
 		flex-flow: column-reverse;
 	}
 
-	&__column {
+	&__inner {
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
 		&:nth-of-type(1) {
 			flex-basis: 110px;
 			flex-grow: 1;
@@ -32,6 +36,10 @@ $block: 'header';
 		&:nth-of-type(3) {
 			flex-basis: 140px;
 			flex-grow: 1;
+		}
+
+		@include media-min(md) {
+			display: flex;
 		}
 
 		&--button {

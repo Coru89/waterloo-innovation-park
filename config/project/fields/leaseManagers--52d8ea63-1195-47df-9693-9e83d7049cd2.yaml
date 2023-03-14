@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 87976032-e2ff-41bd-a53c-f0e4719793b4 # Lease
+handle: leaseManagers
+instructions: null
+name: 'Lease Managers'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_leasemanagers}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
