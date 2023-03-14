@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 37
+template: /the-link/edit
+uriParts:
+  - the-link/edit/event/new
+uriPattern: the-link/edit/event/new

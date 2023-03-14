@@ -1,1 +1,15 @@
 {% extends 'base.twig' %}
+
+{% set pageTitle = "Month" %}
+{% set page = "month" %}
+
+{% block contentCalendar %}
+    {% set blocks = craft.entries.section('theLink').one().contentPanels.all() %}
+	{% include '_components/content-sections' with { 'blocks': blocks } only %}
+{% endblock %}
+
+{# {% block content %}
+	<div class="u-container">
+		{% include "_components/calendar.twig" %}
+	</div>
+{% endblock %} #}

@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 35
+template: /the-link/export
+uriParts:
+  - the-link/export/event/
+  -
+    - number
+    - \d+
+uriPattern: 'the-link/export/event/<number:\d+>'

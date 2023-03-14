@@ -1,0 +1,22 @@
+allowRepeatingEvents: true
+color: '#E393E6'
+description: 'The default calendar'
+descriptionFieldHandle: null
+fieldLayout: null
+handle: default
+hasTitleField: true
+icsHash: null
+icsTimezone: floating
+locationFieldHandle: null
+name: Default
+siteSettings:
+  2a966d53-04f0-40e2-9939-9dbb97b315e5:
+    enabledByDefault: true
+    hasUrls: null
+    siteId: 402b359e-759c-4938-b279-b9a22b2c6d6a # Waterloo Innovation Park
+    template: null
+    uriFormat: null
+titleFormat: null
+titleLabel: Title
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

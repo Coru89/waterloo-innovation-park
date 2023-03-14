@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 29
+template: /the-link/day
+uriParts:
+  - the-link/day/calendar/
+  -
+    - slug
+    - '[^\/]+'
+uriPattern: 'the-link/day/calendar/<slug:[^\/]+>'
