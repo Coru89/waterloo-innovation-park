@@ -72,26 +72,16 @@ function css() {
         .pipe(browsersync.stream());
 }
 
-function img() {
+function imgPassThru() {
     const source = './source/images/**/*.*';
 
     return src(source)
         .pipe(changed(source))
-		
         .pipe(dest('./web/assets/images'))
         .pipe(browsersync.stream());
 }
 
-// Optimize images
-
-// function img() {
-//     return src('./src/img/*')
-//         .pipe(imagemin())
-//         .pipe(dest('./assets/img'));
-// }
-
 // Watch files
-
 function watchTask(){
 	browsersync.init({
 		proxy: {
@@ -103,8 +93,6 @@ function watchTask(){
 	watch('source/styles/**/*.scss', css); // change to your source directory
 	watch('source/scripts/*.ts', ts); // change to your source directory
     watch('source/images/*.*', img); // change to your source directory
-	// watch('src/images/*', optimizeimg); // change to your source directory
-	// watch('dist/images/*.{jpg,png}', webpImage); // change to your source directory
 }
 
 // Tasks to define the execution of the functions simultaneously or in series
@@ -112,7 +100,7 @@ function watchTask(){
 exports.watchTask = watchTask;
 exports.ts = ts;
 exports.css = css;
-exports.img = img;
+exports.imgPassThru = imgPassThru;
 exports.clear = clear;
 
 // Default Gulp task 
@@ -120,7 +108,7 @@ exports.default = series(
     clear,
 	css,
 	ts,
-    img,
+    imgPassThru,
 	watchTask
 );
 
