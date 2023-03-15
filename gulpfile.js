@@ -55,7 +55,6 @@ function css() {
     return gulp.src(source)
         .pipe(changed(source))
 		.pipe(sass({
-			style: 'compressed',
 			errLogToConsole: false,
 			onError: function(err) {
 				return notify().write(err);
@@ -68,7 +67,7 @@ function css() {
         .pipe(rename({
             extname: '.min.css'
         }))
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(gulp.dest('./web/assets/styles'))
         .pipe(browsersync.stream());
 }

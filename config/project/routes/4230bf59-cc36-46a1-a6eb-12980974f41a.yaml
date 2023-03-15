@@ -1,0 +1,13 @@
+siteUid: null
+sortOrder: 43
+template: /_pages/interior_the_link
+uriParts:
+  0: the-link/
+  1:
+    - year
+    - '\d{4}'
+  3: /
+  4:
+    - month
+    - '(?:0?[1-9]|1[012])'
+uriPattern: 'the-link/<year:\d{4}>/<month:(?:0?[1-9]|1[012])>'

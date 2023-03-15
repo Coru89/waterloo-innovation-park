@@ -2,7 +2,7 @@
 import { Popover } from 'bootstrap';
 
 export namespace Calendar {
-  const els = document.querySelectorAll('#event-popover');
+  const els = document.querySelectorAll('[data-toggle="popover"]');
   
   els.forEach((el) => {
     const titleEl = el.querySelector('.qtip .title');

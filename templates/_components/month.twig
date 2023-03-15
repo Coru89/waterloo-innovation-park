@@ -1,24 +1,9 @@
-{# {% extends './_pages/interior_the_link.twig' %} #}
-
-
-{# Acquire URL segments #}
-{# {% set segment1 = craft.app.request.segment(1) %}
-{% set segment2 = craft.app.request.segment(2) %}
-{% set segment3 = craft.app.request.segment(3) %}
-{% set segment4 = craft.app.request.segment(4) %}
-{% set segment5 = craft.app.request.segment(5) %}
-{% set segment6 = craft.app.request.segment(6) %}
-{% set segment7 = craft.app.request.segment(7) %} #}
-
+{% extends "calendar/layouts/_layout.html" %}
 
 {% set pageTitle = "Month" %}
 {% set page = "month" %}
 
 {% block content %}
-
-    {# <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> #}
-
 
     <h1>Month View</h1>
     <p class="lead">Below is full month calendar view, which allows you to see all your event occurrences.</p>
@@ -38,15 +23,12 @@
     <div class="row">
         <div class="col-md-9">
 
-            {% include "the-link/layouts/_calendar_banner.html" %}
+            {% include "calendar/layouts/_calendar_banner.html" %}
 
             <div id="month_calendar">
                 {% set month = craft.calendar.month({
                     date: targetDate,
                     calendar: calendarHandle,
-                    eventRender: function(event, element) {
-                        element.attr('title', event.description); // Set the description as the title attribute
-                    }
                 }) %}
 
                 {% set dateBoundsHelper = now.diff(month.nextDate)|date('%r%a') %}
@@ -55,7 +37,7 @@
                     <div class="col-3">
                     {% if dateBoundsHelper > -365 %}
                         <a class="btn btn-outline-secondary"
-                           href="{{ siteUrl }}the-link/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
+                           href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
                             <span class="fas fa-arrow-left"></span> {{ month.previousDate.format('F') }}
                         </a>
                     {% endif %}
@@ -63,7 +45,7 @@
 
                     <div class="col-auto">
                         <h3>
-                            {% include "the-link/layouts/_month_heading.html" with {month: month} only %} &nbsp;
+                            {% include "calendar/layouts/_month_heading.html" with {month: month} only %} &nbsp;
                             <span class="badge {{ month.eventCount ? "badge-warning" : "badge-secondary" }}">
                                 {{ month.eventCount }} event{{ month.eventCount > 1 or month.eventCount == 0 ? "s" }}
                             </span>
@@ -73,7 +55,7 @@
                     <div class="col-3 clearfix">
                     {% if dateBoundsHelper < 365 %}
                         <a class="btn btn-outline-secondary float-right"
-                           href="{{ siteUrl }}the-link/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
+                           href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
                             {{ month.nextDate.format('F') }} <span class="fas fa-arrow-right"></span>
                         </a>
                     {% endif %}
@@ -98,7 +80,7 @@
                                 <td class="day_cell{{ day.dateLocalized.isToday ? " today" }}">
                                     <div class="date{{ day.eventCount ? " has_events" }}">
                                         <a class="num"
-                                           href="{{ siteUrl }}the-link/day/{{ segment3 == 'calendar' ? "calendar/"~segment4~"/" }}{{ day.date.format('Y/m/d') }}">
+                                           href="{{ siteUrl }}calendar/day/{{ segment3 == 'calendar' ? "calendar/"~segment4~"/" }}{{ day.date.format('Y/m/d') }}">
                                             {{ day.date.format('j') }}
                                         </a>
                                     </div>
@@ -112,7 +94,7 @@
                                 {% endif %}
 
                                 {% for event in day.events %}
-                                    {% include "the-link/layouts/_event.html" %}
+                                    {% include "calendar/layouts/_event.html" %}
                                 {% endfor %}
                                 </td>
                             {% endfor %}
@@ -125,25 +107,8 @@
         </div>
 
         <div class="col-md-3">
-            {% include "the-link/layouts/_sidebar.html" %}
+            {% include "calendar/layouts/_sidebar.html" %}
         </div>
     </div>
+
 {% endblock %}
-
-
-<div class="popover bs-popover-bottom bs-popover-auto fade show" role="tooltip" id="popover356887" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(314.545px, 1193.64px, 0px);" data-popper-placement="bottom">
-	<div class="arrow"></div>
-	<h3 class="popover-header">Corey Leaves on vacation
-		<span class="event_time">
-			<span class="far fa-clock"></span>
-			All Day
-		</span>
-	</h3>
-	<div class="popover-body">
-		<span class="fas fa-calendar-alt"></span>
-		<span>Default</span>
-		<hr>
-		April 3, 2023 (All Day)
-
-	</div>
-</div>

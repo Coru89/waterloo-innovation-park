@@ -11,22 +11,22 @@ if (elNavButton) {
 }
 
 // close mobile nav if user clicks outside of nav
-document.onclick = (e) => {
-    const target = e.currentTarget as Element;
-  if (
-    !target.classList.contains('nav') &&
-    !target.classList.contains('site-head__inner') &&
-    !target.classList.contains('social-icons__list') &&
-    !target.classList.contains('nav__button') &&
-    !target.classList.contains('nav__item-link') &&
-    !target.classList.contains('nav__item-link-text') &&
-    !target.classList.contains('nav__secondary')
-  ) {
-    if (elNavButton) {
-      elNavButton.classList.remove('nav__button--active');
-    }
-  }
-};
+// document.onclick = (e) => {
+//     const target = e.currentTarget as Element;
+//   if (
+//     !target.classList.contains('nav') &&
+//     !target.classList.contains('site-head__inner') &&
+//     !target.classList.contains('social-icons__list') &&
+//     !target.classList.contains('nav__button') &&
+//     !target.classList.contains('nav__item-link') &&
+//     !target.classList.contains('nav__item-link-text') &&
+//     !target.classList.contains('nav__secondary')
+//   ) {
+//     if (elNavButton) {
+//       elNavButton.classList.remove('nav__button--active');
+//     }
+//   }
+// };
 
 // remove active / open classes from mobile nav if window is resized to desktop-sized viewport
 window.addEventListener('resize', function () {

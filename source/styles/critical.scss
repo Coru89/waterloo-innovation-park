@@ -1,7 +1,13 @@
-@import 'vendor/normalize/normalize';
+@import './vendor/bootstrap/scss/bootstrap';
+// @import './vendor/bootstrap/bootstrap';
+@import './vendor/full-calendar/main';
+
+//@import './vendor/bootstrap';
+
+
+// @import 'vendor/normalize/normalize';
 @import 'blocks/base';
 @import 'blocks/button';
 @import 'blocks/header';
 @import 'blocks/nav';
 @import 'blocks/page-intro';
-
