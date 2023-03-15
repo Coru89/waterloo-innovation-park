@@ -14,9 +14,9 @@
     {% endset %}
 {% endif %}
 
-<div class="event tips{{ classes }}"{{ style }} data-toggle="popover">
+<div class="event tips{{ classes }} popover-arrow"{{ style }} id="event-popover" data-toggle="popover">
     {% if event.multiDay %}
-        <a href="{{ siteUrl }}the-link/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
+        <a href="{{ siteUrl }}calendar-demo/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
            style="color: {{ event.calendar.contrastColor }} !important;">
             {% autoescape false %}
                 {{ day.containsDate(event.startDateLocalized) or day.containsDate(event.endDateLocalized) ? event.title : "&nbsp;"|raw }}
@@ -26,11 +26,11 @@
         {% if not event.allDay %}
             <span class="calendar-color" style="background-color: {{ event.calendar.color }};"></span>
         {% endif %}
-        <a href="{{ siteUrl }}the-link/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
+        <a href="{{ siteUrl }}calendar-demo/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
            {% if event.allDay %}style="color: {{ event.calendar.contrastColor }};"{% endif %}>
             {{ event.title }}
         </a>
     {% endif %}
 
-    {% include "the-link/layouts/_event_popover.html" %}
+    {% include "calendar-demo/layouts/_event_popover.html" %}
 </div>

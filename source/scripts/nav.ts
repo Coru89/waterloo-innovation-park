@@ -1,11 +1,14 @@
-// get needed elements to attach event listeners
+export namespace Nav {
+  // get needed elements to attach event listeners
 const elSecondaryNav = document.querySelectorAll('.nav__item--has-level-2 > .nav__item-link');
 const elNavButton = document.querySelector('.nav__button');
 
 // toggle open and close mobile nav
-elNavButton.addEventListener('click', () => {
+if (elNavButton) {
+  elNavButton.addEventListener('click', () => {
     elNavButton.classList.toggle('nav__button--active');
-});
+  });
+}
 
 // close mobile nav if user clicks outside of nav
 document.onclick = (e) => {
@@ -19,7 +22,9 @@ document.onclick = (e) => {
     !target.classList.contains('nav__item-link-text') &&
     !target.classList.contains('nav__secondary')
   ) {
-    elNavButton.classList.remove('nav__button--active');
+    if (elNavButton) {
+      elNavButton.classList.remove('nav__button--active');
+    }
   }
 };
 
@@ -29,7 +34,9 @@ window.addEventListener('resize', function () {
 
   if (newWidth > 768) {
     document.querySelectorAll('.nav__sublist--open').forEach(el => el.classList.remove('nav__sublist--open'));
-    elNavButton.classList.remove('nav__button--active');
+    if (elNavButton) {
+      elNavButton.classList.remove('nav__button--active');
+    }
   }
 });
 
@@ -67,3 +74,5 @@ elSecondaryNav.forEach((el) => {
     elLevel2List.classList.toggle('nav__sublist--open');
   });
 });
+
+}

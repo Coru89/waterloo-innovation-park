@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "module": "system",
-    "outDir": "./web/assets/scripts/",
-    "noImplicitAny": true,
     "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strictPropertyInitialization": false
-  }
+    "module": "commonjs",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "source/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

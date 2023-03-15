@@ -1,57 +1,58 @@
-        
-const {
-    src,
-    dest,
-    parallel,
-    series,
-    watch
-} = require('gulp');
 
 // Load plugins
+const gulp = require('gulp');
 
+var browserify = require('browserify');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const tsify = require('tsify');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
+
+const changed = require('gulp-changed');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
-const concat = require('gulp-concat');
+
 const clean = require('gulp-clean');
-//const imagemin = require('gulp-imagemin');
-const changed = require('gulp-changed');
+
 const browsersync = require('browser-sync').create();
-const typescript = require('gulp-typescript');
 
 // Clean assets
 
 function clear() {
-    return src('./web/assets/*', {
+    return gulp.src('/source/scripts/*.ts', {
             read: false
         })
         .pipe(clean());
 }
 
 function ts() {
-    return src('./source/scripts/*.ts')
-	.pipe(typescript({
-		noImplicitAny: true,
-		outFile: 'output.js'
-	}))
-    .pipe(concat('bundle.js'))
+    return browserify({
+        basedir: '.',
+        debug: true,
+        entries: ['./source/scripts/index.ts'],
+        cache: {},
+        packageCache: {}
+    })
+    .plugin(tsify)
+    .bundle()
+    .pipe(source('bundle.js'))
+    .pipe(buffer())
     .pipe(uglify())
     .pipe(rename({
         extname: '.min.js'
     }))
-    .pipe(dest('./web/assets/scripts'))
-	.pipe(browsersync.stream());
+    .pipe(gulp.dest('./web/assets/scripts'))
+    .pipe(browsersync.stream());
 }
 
 
 // CSS function 
-
 function css() {
     const source = './source/styles/**/*.scss';
 
-    return src(source)
+    return gulp.src(source)
         .pipe(changed(source))
 		.pipe(sass({
 			style: 'compressed',
@@ -68,18 +69,20 @@ function css() {
             extname: '.min.css'
         }))
         .pipe(cssnano())
-        .pipe(dest('./web/assets/styles'))
+        .pipe(gulp.dest('./web/assets/styles'))
         .pipe(browsersync.stream());
 }
 
 function imgPassThru() {
     const source = './source/images/**/*.*';
 
-    return src(source)
+    return gulp.src(source)
         .pipe(changed(source))
-        .pipe(dest('./web/assets/images'))
+        .pipe(gulp.dest('./web/assets/images'))
         .pipe(browsersync.stream());
 }
+
+
 
 // Watch files
 function watchTask(){
@@ -89,13 +92,13 @@ function watchTask(){
     	}
 	});
 
-	watch('templates/**/*.twig').on('change', browsersync.reload);
-	watch('source/styles/**/*.scss', css); // change to your source directory
-	watch('source/scripts/*.ts', ts); // change to your source directory
-    watch('source/images/*.*', imgPassThru); // change to your source directory
+	gulp.watch('templates/**/*.twig').on('change', browsersync.reload);
+	gulp.watch('source/styles/**/*.scss', css); // change to your source directory
+	gulp.watch('source/scripts/*.ts', ts); // change to your source directory
+  gulp.watch('source/images/*.*', imgPassThru); // change to your source directory
 }
 
-// Tasks to define the execution of the functions simultaneously or in series
+// Tasks to define the execution of the functions simultaneously or in gulp.series
 
 exports.watchTask = watchTask;
 exports.ts = ts;
@@ -104,7 +107,7 @@ exports.imgPassThru = imgPassThru;
 exports.clear = clear;
 
 // Default Gulp task 
-exports.default = series(
+exports.default = gulp.series(
     clear,
 	css,
 	ts,
@@ -116,5 +119,5 @@ exports.default = series(
 
 
 exports.watch = watchTask;
-//exports.default = series(clear, parallel(css));
+//exports.default = gulp.series(clear, gulp.parallel(css));
     

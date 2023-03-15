@@ -1,22 +1,42 @@
 allowRepeatingEvents: true
 color: '#E393E6'
 description: 'The default calendar'
-descriptionFieldHandle: null
-fieldLayout: null
+descriptionFieldHandle: '0'
+fieldLayout:
+  tabs:
+    -
+      elementCondition: null
+      elements:
+        -
+          elementCondition: null
+          fieldUid: b19956e7-f23d-451e-93c0-712acc2c2b9a # Event Description
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 5ef410a0-9b74-4b73-9096-1562cb5cb294
+          userCondition: null
+          warning: null
+          width: 100
+      name: 'Event Metadata'
+      uid: bed1db9e-5285-4c94-b548-5a79add53dbb
+      userCondition: null
+  uid: 09d1bac7-97eb-4882-b482-33c7f028b469
 handle: default
 hasTitleField: true
 icsHash: null
 icsTimezone: floating
-locationFieldHandle: null
+locationFieldHandle: '0'
 name: Default
 siteSettings:
   2a966d53-04f0-40e2-9939-9dbb97b315e5:
     enabledByDefault: true
-    hasUrls: null
+    hasUrls: false
     siteId: 402b359e-759c-4938-b279-b9a22b2c6d6a # Waterloo Innovation Park
     template: null
     uriFormat: null
-titleFormat: null
+titleFormat: ''
 titleLabel: Title
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationKeyFormat: ''
+titleTranslationMethod: none

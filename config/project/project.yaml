@@ -1,4 +1,4 @@
-dateModified: 1678826404
+dateModified: 1678894323
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -52,6 +52,7 @@ meta:
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
     9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
     15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: 'Phone Link' # Phone Link
+    21bdf77a-7ef8-4373-91e0-b6f8b61e6459: Events # Events
     24a64e3b-2ad3-479e-89dc-1c16e57368ac: Booking # Booking
     25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
     26baa828-2510-4546-ab8a-4866ca224fa2: 'Featured Exhibit' # Featured Exhibit
@@ -93,6 +94,7 @@ meta:
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
     b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
     b41afa41-893f-4b11-970e-c75f2431f0be: 'Learn More Link' # Learn More Link
+    b19956e7-f23d-451e-93c0-712acc2c2b9a: 'Event Description' # Event Description
     baa2eb32-a191-474e-b7da-50764f46b1e5: Info # Info
     bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Subheading # Subheading
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
