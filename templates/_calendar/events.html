@@ -1,4 +1,4 @@
-{% extends "calendar/layouts/_layout.html" %}
+{% extends "__calendar/layouts/_layout.twig" %}
 
 {% set pageTitle = "Events List" %}
 {% set page = "events" %}
@@ -121,7 +121,7 @@
         </div>
 
         <div class="col-sm-12 col-md-3">
-            {% include "calendar/layouts/_sidebar.html" %}
+            {% include "_calendar/layouts/_sidebar.html" %}
             <br />
             <h3>Events by Month</h3>
             <div class="list-group">

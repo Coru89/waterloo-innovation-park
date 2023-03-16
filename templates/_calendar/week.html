@@ -1,4 +1,4 @@
-{% extends "calendar/layouts/_layout.html" %}
+{% extends "__calendar/layouts/_layout.twig" %}
 
 {% set pageTitle = "Week" %}
 {% set page = "week" %}
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-md-9">
 
-            {% include "calendar/layouts/_calendar_banner.html" %}
+            {% include "__calendar/layouts/_calendar_banner.html" %}
 
             <div id="week_calendar">
                 {% set week = craft.calendar.week({
@@ -132,7 +132,7 @@
         </div>
 
         <div class="col-md-3">
-            {% include "calendar/layouts/_sidebar.html" %}
+            {% include "_calendar/layouts/_sidebar.html" %}
         </div>
 
     </div>

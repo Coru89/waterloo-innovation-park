@@ -1,4 +1,4 @@
-{% extends "calendar/layouts/_layout.html" %}
+{% extends "_calendar/layouts/_layout.twig" %}
 
 {% set pageTitle = "Month" %}
 {% set page = "month" %}
@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-md-9">
 
-            {% include "calendar/layouts/_calendar_banner.html" %}
+            {% include "_calendar/layouts/_calendar_banner.html" %}
 
             <div id="month_calendar">
                 {% set month = craft.calendar.month({
@@ -45,7 +45,7 @@
 
                     <div class="col-auto">
                         <h3>
-                            {% include "calendar/layouts/_month_heading.html" with {month: month} only %} &nbsp;
+                            {% include "_calendar/layouts/_month_heading.html" with {month: month} only %} &nbsp;
                             <span class="badge {{ month.eventCount ? "badge-warning" : "badge-secondary" }}">
                                 {{ month.eventCount }} event{{ month.eventCount > 1 or month.eventCount == 0 ? "s" }}
                             </span>
@@ -94,7 +94,7 @@
                                 {% endif %}
 
                                 {% for event in day.events %}
-                                    {% include "calendar/layouts/_event.html" %}
+                                    {% include "_calendar/layouts/_event.html" %}
                                 {% endfor %}
                                 </td>
                             {% endfor %}

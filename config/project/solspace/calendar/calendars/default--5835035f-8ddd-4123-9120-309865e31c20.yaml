@@ -1,5 +1,5 @@
 allowRepeatingEvents: true
-color: '#E393E6'
+color: '#085a80'
 description: 'The default calendar'
 descriptionFieldHandle: '0'
 fieldLayout:
@@ -32,10 +32,10 @@ name: Default
 siteSettings:
   2a966d53-04f0-40e2-9939-9dbb97b315e5:
     enabledByDefault: true
-    hasUrls: false
+    hasUrls: true
     siteId: 402b359e-759c-4938-b279-b9a22b2c6d6a # Waterloo Innovation Park
-    template: null
-    uriFormat: null
+    template: _pages/interior_about.twig
+    uriFormat: the-link
 titleFormat: ''
 titleLabel: Title
 titleTranslationKeyFormat: ''

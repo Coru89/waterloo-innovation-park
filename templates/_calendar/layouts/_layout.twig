@@ -87,10 +87,27 @@
 			</header>
 
 			<main class="main" id="main-content" tabindex="0">
+
+			
 			{% block layout %}
-				{% block content %}{% endblock %}
+				{% block content %}
+				
+				{% endblock %}
 				{% block contentCalendar %}{% endblock %}
+
+				{% block contentTest %}
+				{% set blocks = craft.entries.section('theLink').one().contentPanels.all() %}
+				{% include '_components/content-sections.twig' with { 'blocks': blocks } only %}
+
+					{% endblock %}
+
+
+
+
+				
 			{% endblock %}
+
+
 			</main>
 
 			{% include '_components/footer' %}
