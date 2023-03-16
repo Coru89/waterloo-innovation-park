@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 63
+template: /_calendar/event
+uriParts:
+  - the-link/calendar/event
+uriPattern: the-link/calendar/event

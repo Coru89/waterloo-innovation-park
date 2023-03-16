@@ -1,0 +1,17 @@
+siteUid: null
+sortOrder: 60
+template: /_calendar/day
+uriParts:
+  - the-link/calendar/
+  -
+    - year
+    - '\d{4}'
+  - /
+  -
+    - month
+    - '(?:0?[1-9]|1[012])'
+  - /
+  -
+    - day
+    - '(?:0?[1-9]|[12][0-9]|3[01])'
+uriPattern: 'the-link/calendar/<year:\d{4}>/<month:(?:0?[1-9]|1[012])>/<day:(?:0?[1-9]|[12][0-9]|3[01])>'

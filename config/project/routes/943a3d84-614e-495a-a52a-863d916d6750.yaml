@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 67
+template: /_calendar/resources/event.json
+uriParts:
+  - calendar/resources/event.json
+uriPattern: calendar/resources/event.json

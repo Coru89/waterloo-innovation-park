@@ -1,0 +1,13 @@
+siteUid: null
+sortOrder: 57
+template: /_calendar/month.html
+uriParts:
+  0: the-link/calendar/
+  1:
+    - year
+    - '\d{4}'
+  3: /
+  4:
+    - month
+    - '(?:0?[1-9]|1[012])'
+uriPattern: 'the-link/calendar/<year:\d{4}>/<month:(?:0?[1-9]|1[012])>'

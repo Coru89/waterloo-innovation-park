@@ -1,10 +1,12 @@
-{% extends "__calendar/layouts/_layout.twig" %}
+{% extends "_calendar/layouts/_layout.twig" %}
 
 {% set pageTitle = "Calendars" %}
 {% set page = "calendars" %}
 
 {% block content %}
 
+	<div class="u-container">
+		
 	<h1>Calendars</h1>
 	<p class="lead">Below is an overview over your site's calendars and events.</p>
 	<hr /><br />
@@ -72,7 +74,6 @@
 					</ul>
 				</div>
 
-
 			{% else %}
 				<div class="alert alert-danger" role="alert">
 					<p class="lead">
@@ -88,5 +89,7 @@
 		</div>
 
 	</div>
+</div>
+
 
 {% endblock %}

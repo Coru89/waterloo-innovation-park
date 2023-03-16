@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: calendarEvent
+name: 'Calendar Event'
+propagationMethod: all
+siteSettings:
+  402b359e-759c-4938-b279-b9a22b2c6d6a: # Waterloo Innovation Park
+    enabledByDefault: true
+    hasUrls: true
+    template: _components/_event.html
+    uriFormat: the-link/calendar/event
+type: channel

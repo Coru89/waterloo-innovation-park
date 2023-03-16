@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 68
+template: /_calendar/month
+uriParts:
+  - the-link
+uriPattern: the-link

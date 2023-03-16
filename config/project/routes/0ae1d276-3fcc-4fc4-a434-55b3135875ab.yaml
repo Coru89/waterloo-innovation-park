@@ -1,9 +1,0 @@
-siteUid: null
-sortOrder: 36
-template: /the-link/edit
-uriParts:
-  - the-link/edit/event/
-  -
-    - number
-    - \d+
-uriPattern: 'the-link/edit/event/<number:\d+>'

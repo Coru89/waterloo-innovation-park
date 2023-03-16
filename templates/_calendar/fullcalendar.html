@@ -1,4 +1,4 @@
-{% extends "__calendar/layouts/_layout.twig" %}
+{% extends "_calendar/layouts/_layout.twig" %}
 
 {% set pageTitle = "Full Calendar" %}
 {% set page = "fullcalendar" %}
@@ -12,7 +12,7 @@
 {% set segment5 = craft.app.request.segment(6) %}
 
 {% block content %}
-
+<div class="u-container">
     <h1>Full Calendar</h1>
     <p class="lead">
         Below is an implementation of the <a href="http://fullcalendar.io">FullCalendar.io</a> JS library.
@@ -20,11 +20,11 @@
     </p>
     <hr /><br />
 
-    <div class="row">
-        <div class="col-sm-12 col-md-12">
-            <div id="calendar-wrapper"></div>
-        </div>
+
+    
+        <div id="calendar-wrapper"></div>
     </div>
+
 
 {% endblock %}
 
@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.12/jquery.timepicker.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="{{ siteUrl }}assets/calendar/css/full-calendar.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -103,7 +102,7 @@
                             break;
                     }
 
-                    var url = '{{ siteUrl }}calendar/fullcalendar/' + view + '/' + year + '/' + month + '/' + day;
+                    var url = '{{ siteUrl }}the-link/calendar/' + view + '/' + year + '/' + month + '/' + day;
 
                     history.pushState('data', '', url);
                 }
@@ -149,7 +148,7 @@
                       eventList[i].end = moment(event.end).add(2, 's').utc().format();
                     }
                     if (event.repeats) {
-                      eventList[i].url = '{{ siteUrl }}calendar-demo/event/' + event.id + '/' + moment(event.start).utc().format('YYYY/MM/DD');
+                      eventList[i].url = '{{ siteUrl }}the-link/calendar/event/' + event.id + '/' + moment(event.start).utc().format('YYYY/MM/DD');
                     }
                   }
 
@@ -190,7 +189,8 @@
             var month = date.format('MM');
             var day = date.format('DD');
 
-            window.location.href = '{{ siteUrl }}calendar/event/' + event.id + '/' + year + '/' + month + '/' + day;
+            window.location.href = '{{ siteUrl }}the-link/calendar/event/' + event.id + '/' + year + '/' + month + '/' + day;
+            window.location.href = '{{ siteUrl }}the-link/calendar/event/' + event.id;
         }
 
         /**
@@ -455,6 +455,7 @@
                     my: 'center',
                     at: 'center',
                     target: $(window)
+                    // target: [document.body.clientWidth / 2, document.body.scrollTop + document.body.clientHeight / 2]
                 },
                 show: {
                     ready: true,
@@ -551,6 +552,7 @@
                                     }
                                 },
                                 error: function (response) {
+                                    console.log(response);
                                     alert(response);
                                 }
                             });
@@ -592,7 +594,7 @@
             </div>
             <div class="col-md-12">
                 <select class="form-control" name="calendarId">
-                    {% for calendar in craft.calendar.allowedCalendars %}
+                    {% for calendar in craft.calendar.calendars %}
                         <option value="{{ calendar.id }}">
                             {{ calendar.name }}
                         </option>

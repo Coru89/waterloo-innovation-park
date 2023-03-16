@@ -1,4 +1,4 @@
-dateModified: 1678938744
+dateModified: 1678982410
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -43,6 +43,7 @@ meta:
     6a083dd0-c3a0-40c7-a437-2c5c4610fa50: Heading # Heading
     6dc1ef68-7606-4254-8f3e-ab00a4a0b146: 'Button Link' # Button Link
     6f01e9c8-9af2-4589-8d81-a9ed56130cc9: 'Job Title' # Job Title
+    07b6aedb-1dae-4e10-97cd-ccd64792dd3c: 'Calendar Month' # Calendar Month
     7b3301be-ed48-400a-a679-7b61d6a9fab8: Path # Path
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
@@ -70,6 +71,7 @@ meta:
     335c9bcd-5565-445e-a5cf-ed5a78aac5e7: 'Phone Display' # Phone Display
     402b359e-759c-4938-b279-b9a22b2c6d6a: 'Waterloo Innovation Park' # Waterloo Innovation Park
     0493ce96-a299-4502-9f34-15fe3bebbdaa: Artist # Artist
+    521d22c7-c391-491b-9238-b639c414b014: Default # Default
     687cd2f1-06f5-4174-ab03-40daaa93ad90: 'Panel Title' # Panel Title
     703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
@@ -85,11 +87,13 @@ meta:
     506955ce-fa3f-407f-9b5c-f7d79b9b1e42: Exhibitions # Exhibitions
     865120ee-347d-4344-95ec-61b32b775de0: Image # Image
     5835035f-8ddd-4123-9120-309865e31c20: Default # Default
+    32696244-3536-4ecc-8033-b838c6c2ca46: 'Calendar Month' # Calendar Month
     36824767-1aa1-48a4-b266-8271b9035f52: Default # Default
     38134199-860e-4c8f-9bc6-d1e314e1884a: Leasing # Leasing
     87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
     89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
     a8b4a8b9-f098-48a3-b3c9-9149a1f3d3e7: 'Art Name' # Art Name
+    afb98157-06dd-4f20-a32d-7759850afba2: 'Stat Holidays' # Stat Holidays
     b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
     b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
@@ -110,6 +114,9 @@ meta:
     e2190436-67a6-4e37-bc3b-b0e52e23f9e7: 'Gallery Items' # Gallery Items
     ec147d51-bd50-4e6e-8f06-fdd1c19ad61a: 'The Link' # The Link
     ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
+    f7cc076a-7bed-4b46-91c0-ee10cea4047f: 'Calendar Event' # Calendar Event
+    fcb36e41-37af-489d-bbfd-024c1809c71c: Default # Default
+    fd4a7dce-3e40-4c7e-92d2-4d0879c934c3: 'Caelndar Day' # Caelndar Day
     fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home
     fe4b113d-bf1c-4f36-806f-80cb15f3cac8: Title # Title
 plugins:
@@ -131,7 +138,7 @@ plugins:
       overlapThreshold: 5
       pluginName: null
       quickCreateEnabled: ''
-      showDisabledEvents: '1'
+      showDisabledEvents: ''
       showMiniCal: '1'
       timeFormat: auto
       timeInterval: 30
@@ -139,6 +146,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  minical:
+    edition: standard
+    enabled: true
+    licenseKey: 6J9WCW6A0HQH66SVHHDH4JDI
+    schemaVersion: 1.0.1
   redactor:
     edition: standard
     enabled: true

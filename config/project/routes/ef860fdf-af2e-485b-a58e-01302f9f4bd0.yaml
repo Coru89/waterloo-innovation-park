@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 47
+sortOrder: 45
 template: /calendar/week
 uriParts:
   - calendar/week/calendar/

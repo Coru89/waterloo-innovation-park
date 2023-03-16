@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 53
+sortOrder: 50
 template: /calendar/event
 uriParts:
   - calendar/event/

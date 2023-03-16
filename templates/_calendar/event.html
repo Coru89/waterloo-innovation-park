@@ -1,11 +1,12 @@
-{% extends "__calendar/layouts/_layout.twig" %}
+{% extends "_calendar/layouts/_layout.twig" %}
 
 {% set pageTitle = "Event" %}
 {% set page = "event" %}
 
 {% block content %}
 
-	<h1>Event View</h1>
+<div class="u-container">
+    <h1>Event View</h1>
 	<p class="lead">
 		Below is an individual event view, which allows you to see full details and occurrences for the given event.
 	</p>
@@ -23,14 +24,14 @@
 	<div class="row">
 		<div class="col-md-9">
 			<div id="events_calendar">
-
                 {% set occurrenceDate = null %}
                 {% if segment4 and segment5 and segment6 %}
                     {% set occurrenceDate = segment4~"-"~segment5~"-"~segment6 %}
+
                 {% endif %}
 
                 {% if event is not defined %}
-                    {% set event = craft.calendar.event(segment3, {targetDate: occurrenceDate}) %}
+                    {% set event = craft.calendar.event(segment4, {targetDate: occurrenceDate}) %}
 
                     {% if event and event.repeating %}
                         {% set event = craft.calendar.addFirstOccurrenceDate(event) %}
@@ -38,11 +39,13 @@
 
                 {% endif %}
 
+                <script>console.log(occurrenceDate);</script>
+
                 {% if event %}
 
                     <div class="btn-group float-right" role="group" aria-label="actions">
                         {% if craft.calendar.exportEnabled %}
-                            <a href="{{ siteUrl }}calendar/export/event/{{ segment3 }}"
+                            <a href="{{ siteUrl }}calendar/export/event/{{ segment4 }}"
                                class="btn btn-primary btn-sm"
                                role="button">
                                 <span class="fas fa-file-export" aria-hidden="true"></span>
@@ -51,7 +54,7 @@
                         {% endif %}
 
                         {% if craft.calendar.canEditEvent(event) %}
-                            <a href="{{ siteUrl }}calendar/edit/event/{{ segment3 }}"
+                            <a href="{{ siteUrl }}the-link/calendar/edit/event/{{ segment4 }}"
                                class="btn btn-warning btn-sm"
                                role="button">
                                 <span class="fas fa-edit"></span>
@@ -67,7 +70,7 @@
                             <th style="width: 20%;">Calendar</th>
                             <td>
                                 <span class="fas fa-calendar-alt" style="color: {{ event.calendar.color }};"></span>&nbsp;
-                                <a href="{{ siteUrl }}calendar/calendars/{{ event.calendar.handle }}" style="color: {{ event.calendar.color }};">
+                                <a href="{{ siteUrl }}the-link/calendar/{{ event.calendar.handle }}" style="color: {{ event.calendar.color }};">
                                     {{ event.calendar.name }}
                                 </a>
                             </td>
@@ -152,12 +155,12 @@
                                                     {% endif %}
                                                 </small>
 
-                                                <a href="{{ siteUrl }}calendar/event/{{ occurrence.id }}/{{ occurrence.startDate.format("Y/m/d") }}" class="badge mr-2"
+                                                <a href="{{ siteUrl }}the-link/calendar/event/{{ occurrence.id }}/{{ occurrence.startDate.format("Y/m/d") }}" class="badge mr-2"
                                                    style="background-color: {{ occurrence.calendar.color }}; color: {{ occurrence.calendar.contrastColor }} !important;">
                                                     View Recurrence
                                                 </a>
                                                 <a class="badge badge-primary"
-                                                   href="{{ siteUrl }}calendar/day/{{ occurrence.startDate.format("Y/m/d") }}">
+                                                   href="{{ siteUrl }}the-link/calendar/{{ occurrence.startDate.format("Y/m/d") }}">
                                                     View Day in Calendar
                                                 </a>
                                             </li>
@@ -187,5 +190,8 @@
 		</div>
 
     </div>
+</div>
+
+
 
 {% endblock %}

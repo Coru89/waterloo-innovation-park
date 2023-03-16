@@ -1,9 +1,0 @@
-siteUid: null
-sortOrder: 38
-template: /the-link/export
-uriParts:
-  - the-link/export/calendar/
-  -
-    - number
-    - \d+
-uriPattern: 'the-link/export/calendar/<number:\d+>'

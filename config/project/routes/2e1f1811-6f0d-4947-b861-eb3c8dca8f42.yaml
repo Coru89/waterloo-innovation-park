@@ -1,9 +1,0 @@
-siteUid: null
-sortOrder: 40
-template: /the-link/resources/event_data
-uriParts:
-  - the-link/resources/event_data/
-  -
-    - number
-    - \d+
-uriPattern: 'the-link/resources/event_data/<number:\d+>'

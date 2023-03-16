@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 61
+template: /_calendar/event
+uriParts:
+  - the-link/calendar/event/
+  -
+    - number
+    - \d+
+uriPattern: 'the-link/calendar/event/<number:\d+>'

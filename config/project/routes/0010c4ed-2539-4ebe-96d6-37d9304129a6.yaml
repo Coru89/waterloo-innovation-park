@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 59
+template: /_calendar/index
+uriParts:
+  - the-link/calendar
+uriPattern: the-link/calendar

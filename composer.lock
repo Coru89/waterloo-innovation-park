@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "902a7edfbea2ac73c8b2892616a0e992",
+    "content-hash": "61882b182b6a33383519c667099baf27",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -440,11 +440,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/0f27b7245610d64eb7312848ffa2cc26762c6c3e",
-                "reference": "0f27b7245610d64eb7312848ffa2cc26762c6c3e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/e0734dad8bc29c7a69a9d7bf4d62a3da6d3b5c1d",
+                "reference": "e0734dad8bc29c7a69a9d7bf4d62a3da6d3b5c1d",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +535,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2023-03-09T21:06:00+00:00"
+            "time": "2023-03-14T21:02:01+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -869,6 +869,59 @@
                 "symmetric key cryptography"
             ],
             "time": "2021-04-09T23:57:26+00:00"
+        },
+        {
+            "name": "dispositiontools/craft-minical",
+            "version": "4.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dispositiontools/craft-minical/zipball/141eeca9786c1c4297bb5d4aaeaff0f80e9e2199",
+                "reference": "141eeca9786c1c4297bb5d4aaeaff0f80e9e2199",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Minical",
+                "handle": "minical",
+                "developer": "Disposition Tools",
+                "developerUrl": "https://www.disposition.tools",
+                "documentationUrl": "https://disposition.tools/craft-plugins/mini-cal",
+                "changelogUrl": "https://raw.githubusercontent.com/dispositiontools/minical/master/CHANGELOG.md",
+                "components": {
+                    "layout": "dispositiontools\\minical\\services\\Layout"
+                },
+                "class": "dispositiontools\\minical\\Minical"
+            },
+            "autoload": {
+                "psr-4": {
+                    "dispositiontools\\minical\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Disposition Tools",
+                    "homepage": "https://www.disposition.tools"
+                }
+            ],
+            "description": "Show entries in a calendar layout",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "minical"
+            ],
+            "support": {
+                "docs": "https://github.com/dispositiontools/minical/blob/master/README.md",
+                "issues": "https://github.com/dispositiontools/minical/issues"
+            },
+            "time": "2022-10-21T22:29:56+00:00"
         },
         {
             "name": "doctrine/collections",

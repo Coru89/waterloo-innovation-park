@@ -10,9 +10,10 @@
 {# 
     {% set blocks = craft.entries.section('theLink').one().contentPanels.all() %}
 	{% include '_components/content-sections' with { 'blocks': blocks } only %} #}
-	
-	{% include "_calendar/index.html" %}
 
+		<div class="u-container">
+		{% include "_calendar/day.html" %}
+	</div>
 
 {# {% block content %}
 	<div class="u-container">

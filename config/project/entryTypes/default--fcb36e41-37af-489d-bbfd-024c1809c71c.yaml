@@ -1,0 +1,43 @@
+fieldLayouts:
+  d5c3db7e-f6c2-4739-b787-dd87a93bc5d9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 43a89c9f-9aea-4da3-9973-8bdf71b7e1ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ffb8e471-4f26-42f7-9cb6-fdfa6c4f3c67
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: f7cc076a-7bed-4b46-91c0-ee10cea4047f # Calendar Event
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

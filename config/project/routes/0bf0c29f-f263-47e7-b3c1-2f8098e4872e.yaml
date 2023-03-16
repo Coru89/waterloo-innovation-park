@@ -1,21 +1,21 @@
 siteUid: null
-sortOrder: 54
-template: /calendar/event
+sortOrder: 56
+template: the-link/_calendar/event
 uriParts:
-  - calendar/event/
-  -
+  0: calendar/event/
+  1:
     - number
     - \d+
-  - /
-  -
+  3: /
+  4:
     - year
     - '\d{4}'
-  - /
-  -
+  6: /
+  7:
     - month
     - '(?:0?[1-9]|1[012])'
-  - /
-  -
+  9: /
+  10:
     - day
     - '(?:0?[1-9]|[12][0-9]|3[01])'
 uriPattern: 'calendar/event/<number:\d+>/<year:\d{4}>/<month:(?:0?[1-9]|1[012])>/<day:(?:0?[1-9]|[12][0-9]|3[01])>'

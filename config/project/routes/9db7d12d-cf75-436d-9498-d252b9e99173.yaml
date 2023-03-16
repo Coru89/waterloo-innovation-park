@@ -1,9 +1,9 @@
 siteUid: null
-sortOrder: 57
-template: /calendar/edit
+sortOrder: 64
+template: /_calendar/edit
 uriParts:
-  - calendar/edit/event/
+  - the-link/calendar/edit/event/
   -
     - number
     - \d+
-uriPattern: 'calendar/edit/event/<number:\d+>'
+uriPattern: 'the-link/calendar/edit/event/<number:\d+>'
