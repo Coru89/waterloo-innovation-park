@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 36
+template: /_calendar/month
+uriParts:
+  - the-link/calendar/month/
+  -
+    - slug
+    - '[^\/]+'
+uriPattern: 'the-link/calendar/month/<slug:[^\/]+>'

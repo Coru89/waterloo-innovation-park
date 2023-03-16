@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 53
+sortOrder: 32
 template: /calendar/edit
 uriParts:
   - calendar/edit/event/new

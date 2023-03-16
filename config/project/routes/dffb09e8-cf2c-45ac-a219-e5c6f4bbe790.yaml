@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 60
+sortOrder: 40
 template: /_calendar/day
 uriParts:
   - the-link/calendar/

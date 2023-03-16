@@ -13,6 +13,7 @@
 
     {% set targetDate = "today" %}
     {% set calendarHandle = null %}
+
     {% if segment3 == "calendar" %}
         {% set calendarHandle = segment4 %}
         {% if segment5 %}
@@ -29,8 +30,8 @@
 
             <div id="month_calendar">
                 {% set month = craft.calendar.month({
-                    date: targetDate,
-                    calendar: calendarHandle,
+                    date: "today",
+                    calendar: segment4,
                 }) %}
 
                 {% set dateBoundsHelper = now.diff(month.nextDate)|date('%r%a') %}

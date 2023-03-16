@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 52
+sortOrder: 31
 template: /calendar/export
 uriParts:
   - calendar/export/event/

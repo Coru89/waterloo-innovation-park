@@ -1,5 +1,5 @@
 siteUid: null
-sortOrder: 57
+sortOrder: 37
 template: /_calendar/month.html
 uriParts:
   0: the-link/calendar/

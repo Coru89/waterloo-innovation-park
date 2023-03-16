@@ -1,4 +1,4 @@
-{% extends "_calendar/layouts/_layout.twig" %}
+{% extends "calendar-demo/layouts/_layout.html" %}
 
 {% set pageTitle = "Month" %}
 {% set page = "month" %}
@@ -10,9 +10,9 @@
     <hr /><br />
 
     {% set targetDate = "today" %}
-    {# {% set calendarHandle = null %} #}
+    {% set calendarHandle = null %}
     {% if segment3 == "calendar" %}
-        {% set calendarHandle = 'holidays' %}
+        {% set calendarHandle = segment4 %}
         {% if segment5 %}
             {% set targetDate = segment5~"-"~segment6~"-01" %}
         {% endif %}
@@ -23,12 +23,12 @@
     <div class="row">
         <div class="col-md-9">
 
-            {% include "_calendar/layouts/_calendar_banner.html" %}
+            {% include "calendar-demo/layouts/_calendar_banner.html" %}
 
             <div id="month_calendar">
                 {% set month = craft.calendar.month({
                     date: targetDate,
-                    calendar: 'holidays',
+                    calendar: calendarHandle,
                 }) %}
 
                 {% set dateBoundsHelper = now.diff(month.nextDate)|date('%r%a') %}
@@ -37,7 +37,7 @@
                     <div class="col-3">
                     {% if dateBoundsHelper > -365 %}
                         <a class="btn btn-outline-secondary"
-                           href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
+                           href="{{ siteUrl }}calendar-demo/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
                             <span class="fas fa-arrow-left"></span> {{ month.previousDate.format('F') }}
                         </a>
                     {% endif %}
@@ -45,7 +45,7 @@
 
                     <div class="col-auto">
                         <h3>
-                            {% include "_calendar/layouts/_month_heading.html" with {month: month} only %} &nbsp;
+                            {% include "calendar-demo/layouts/_month_heading.html" with {month: month} only %} &nbsp;
                             <span class="badge {{ month.eventCount ? "badge-warning" : "badge-secondary" }}">
                                 {{ month.eventCount }} event{{ month.eventCount > 1 or month.eventCount == 0 ? "s" }}
                             </span>
@@ -55,7 +55,7 @@
                     <div class="col-3 clearfix">
                     {% if dateBoundsHelper < 365 %}
                         <a class="btn btn-outline-secondary float-right"
-                           href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
+                           href="{{ siteUrl }}calendar-demo/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
                             {{ month.nextDate.format('F') }} <span class="fas fa-arrow-right"></span>
                         </a>
                     {% endif %}
@@ -80,7 +80,7 @@
                                 <td class="day_cell{{ day.dateLocalized.isToday ? " today" }}">
                                     <div class="date{{ day.eventCount ? " has_events" }}">
                                         <a class="num"
-                                           href="{{ siteUrl }}calendar/day/{{ segment3 == 'calendar' ? "calendar/"~segment4~"/" }}{{ day.date.format('Y/m/d') }}">
+                                           href="{{ siteUrl }}calendar-demo/day/{{ segment3 == 'calendar' ? "calendar/"~segment4~"/" }}{{ day.date.format('Y/m/d') }}">
                                             {{ day.date.format('j') }}
                                         </a>
                                     </div>
@@ -94,7 +94,7 @@
                                 {% endif %}
 
                                 {% for event in day.events %}
-                                    {% include "_calendar/layouts/_event.html" %}
+                                    {% include "calendar-demo/layouts/_event.html" %}
                                 {% endfor %}
                                 </td>
                             {% endfor %}
@@ -107,7 +107,7 @@
         </div>
 
         <div class="col-md-3">
-            {% include "_calendar/layouts/_sidebar.html" %}
+            {% include "calendar-demo/layouts/_sidebar.html" %}
         </div>
     </div>
 
