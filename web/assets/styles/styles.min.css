@@ -427,3 +427,8 @@
   user-select: none;
   width: 100%;
 }
+
+#month_calendar #days_of_week th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

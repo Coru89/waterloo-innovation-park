@@ -1,4 +1,5 @@
-// .calendar {
 
-// }
-
+#month_calendar #days_of_week th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
