@@ -428,6 +428,10 @@
   width: 100%;
 }
 
+iframe#calendar {
+  height: 100vh;
+}
+
 #month_calendar #days_of_week th {
   overflow: hidden;
   text-overflow: ellipsis;

@@ -4,6 +4,11 @@
 {% set page = "month" %}
 
 {% block content %}
+
+    <h1>Month View</h1>
+    <p class="lead">Below is full month calendar view, which allows you to see all your event occurrences.</p>
+    <hr /><br />
+
     {% set targetDate = "today" %}
     {% set calendarHandle = null %}
     {% if segment3 == "calendar" %}
@@ -105,8 +110,5 @@
             {% include "calendar/layouts/_sidebar.html" %}
         </div>
     </div>
-
-
-
 
 {% endblock %}

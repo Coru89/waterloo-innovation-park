@@ -13,14 +13,7 @@
 		<meta property="og:locale" content="en_US">
 
 		<meta name="google-site-verification" content=""/>
-{# 
-		<style>
-			:root {
-			  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-			}
-		</style> #}
-
-
+		{# 
 		<!--DNS Prefetch -->
 		{# <link rel="dns-prefetch" href="https://www.gstatic.com">
 			<link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -41,7 +34,8 @@
 		<link
 		rel="stylesheet" href="/assets/styles/critical.min.css">
 		<!--Asynchronously load the non-critical CSS. -->
-		<link rel="stylesheet" rel="preload" as="style" href="/assets/styles/styles.min.css"> {% block styles %}{% endblock %}
+		<link rel="stylesheet" rel="preload" as="style" href="/assets/styles/styles.min.css"> 
+		{% block styles %}{% endblock %}
 
 		<!--If no js is available, load the non-critical CSS immediately. -->
 		<noscript>
@@ -49,13 +43,9 @@
 		</noscript>
 
 		<!--Inline the critical JS. -->
-		{# <script src="/assets/scripts/head.min.js"></script> #}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		{# <script src="//cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.js"></script> #}
 		<script src="//code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 
-		{% block headerCss %}{% endblock %}
-		{# {% block footerJs %}{% endblock %} #}
 	</head>
 
 	{# Acquire URL segments #}
@@ -100,7 +90,6 @@
 		</div>
 		
 		<script type="module" src="/assets/scripts/bundle.min.js" async defer></script>
-		{% block footerJs %}{% endblock %}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
