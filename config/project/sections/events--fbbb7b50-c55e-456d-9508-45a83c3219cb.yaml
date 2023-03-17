@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _pages/interior_events.twig
-    uriFormat: events
+    uriFormat: the-link/events
 type: single
