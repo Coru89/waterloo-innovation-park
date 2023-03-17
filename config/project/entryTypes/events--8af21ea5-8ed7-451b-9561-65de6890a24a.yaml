@@ -1,0 +1,43 @@
+fieldLayouts:
+  ec28b2ec-7d23-4826-9a09-fb601ced754f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ab249965-6027-4e9d-955e-99fdee6c522a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 632ab84e-a9a9-4f7b-9ec5-1b71de6bc302
+        userCondition: null
+handle: events
+hasTitleField: false
+name: Events
+section: fbbb7b50-c55e-456d-9508-45a83c3219cb # Events
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

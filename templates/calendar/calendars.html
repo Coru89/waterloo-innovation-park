@@ -1,4 +1,4 @@
-{% extends "calendar-demo/layouts/_layout.html" %}
+{% extends "calendar/layouts/_layout.html" %}
 
 {% set pageTitle = "Calendars" %}
 {% set page = "calendars" %}
@@ -30,7 +30,7 @@
 							{{ calendar.name }}
 						</span>
 						{% if craft.calendar.exportEnabled %}
-							<a href="{{ siteUrl }}calendar-demo/export/calendar/{{ calendar.id }}" class="btn btn-light btn-sm border-light border border-dark">
+							<a href="{{ siteUrl }}calendar/export/calendar/{{ calendar.id }}" class="btn btn-light btn-sm border-light border border-dark">
 								<span class="fas fa-file-export"></span>&nbsp;
 								Export Events
 							</a>
@@ -53,9 +53,9 @@
 						</li>
 						<li class="list-group-item">
 							<strong>View events by:&nbsp;</strong>
-							<a href="{{ siteUrl }}calendar-demo/month/calendar/{{ calendar.handle }}" class="btn btn-secondary btn-sm">Month</a>
-							<a href="{{ siteUrl }}calendar-demo/week/calendar/{{ calendar.handle }}" class="btn btn-secondary btn-sm">Week</a>
-							<a href="{{ siteUrl }}calendar-demo/day/calendar/{{ calendar.handle }}" class="btn btn-secondary btn-sm">Day</a>
+							<a href="{{ siteUrl }}calendar/month/calendar/{{ calendar.handle }}" class="btn btn-secondary btn-sm">Month</a>
+							<a href="{{ siteUrl }}calendar/week/calendar/{{ calendar.handle }}" class="btn btn-secondary btn-sm">Week</a>
+							<a href="{{ siteUrl }}calendar/day/calendar/{{ calendar.handle }}" class="btn btn-secondary btn-sm">Day</a>
 						</li>
 						<li class="list-group-item">
 							<strong>Upcoming Events:</strong>
@@ -66,7 +66,7 @@
 									calendarId: calendar.id,
 									limit: segment3 ? 20 : 5
 								}) %}
-								{% include "calendar-demo/layouts/_calendar_events.html" %}
+								{% include "calendar/layouts/_calendar_events.html" %}
 							</div>
 						</li>
 					</ul>
@@ -84,7 +84,7 @@
 		</div>
 
 		<div class="col-sm-12 col-md-3">
-			{% include "calendar-demo/layouts/_sidebar.html" %}
+			{% include "calendar/layouts/_sidebar.html" %}
 		</div>
 
 	</div>

@@ -1,4 +1,4 @@
-{% extends "calendar-demo/layouts/_layout.html" %}
+{% extends "calendar/layouts/_layout.html" %}
 
 {% set pageTitle = "Event" %}
 {% set page = "edit" %}
@@ -33,7 +33,7 @@
                     <form method="post">
                         {{ csrfInput() }}
                         <input type="hidden" name="action" value="calendar/legacy-events/save-event" />
-                        <input type="hidden" name="redirect" value="{{ (siteUrl~"calendar-demo/event/{id}")|hash }}" />
+                        <input type="hidden" name="redirect" value="{{ (siteUrl~"calendar/event/{id}")|hash }}" />
                         <input type="hidden" name="eventId" value="{{ event.id }}" />
                         <input type="hidden" name="slug" value="{{ event.slug }}" />
 
@@ -478,7 +478,7 @@
         </div>
 
         <div class="col-md-3">
-            {% include "calendar-demo/layouts/_sidebar.html" %}
+            {% include "calendar/layouts/_sidebar.html" %}
         </div>
 
     </div>

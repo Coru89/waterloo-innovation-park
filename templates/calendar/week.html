@@ -1,4 +1,4 @@
-{% extends "calendar-demo/layouts/_layout.html" %}
+{% extends "calendar/layouts/_layout.html" %}
 
 {% set pageTitle = "Week" %}
 {% set page = "week" %}
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-md-9">
 
-            {% include "calendar-demo/layouts/_calendar_banner.html" %}
+            {% include "calendar/layouts/_calendar_banner.html" %}
 
             <div id="week_calendar">
                 {% set week = craft.calendar.week({
@@ -39,7 +39,7 @@
                     <div class="col-2">
                     {% if dateBoundsHelper > -365 %}
                         <a class="btn btn-outline-secondary"
-                           href="{{ siteUrl }}calendar-demo/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.previousDate.format('Y/m/d') }}">
+                           href="{{ siteUrl }}calendar/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.previousDate.format('Y/m/d') }}">
                             <span class="fas fa-arrow-left"></span> Last Week
                         </a>
                     {% endif %}
@@ -57,7 +57,7 @@
                     <div class="col-2 clearfix">
                     {% if dateBoundsHelper < 365 %}
                         <a class="btn btn-outline-secondary float-right"
-                           href="{{ siteUrl }}calendar-demo/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.nextDate.format('Y/m/d') }}">
+                           href="{{ siteUrl }}calendar/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.nextDate.format('Y/m/d') }}">
                             Next Week <span class="fas fa-arrow-right"></span>
                         </a>
                     {% endif %}
@@ -68,7 +68,7 @@
                     <ul class="list-group mb-4">
                         <li class="list-group-item list-group-item-{{ day.dateLocalized.isToday ? "warning" : "secondary" }}">
                             <a class="text-dark font-weight-bold"
-                               href="{{ siteUrl }}calendar-demo/day/{{ segment3 == "calendar" ? segment3~"/"~segment4~"/" }}{{ day.date.format('Y/m/d') }}">
+                               href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? segment3~"/"~segment4~"/" }}{{ day.date.format('Y/m/d') }}">
                                 {% if day.dateLocalized.isToday %}
                                     TODAY
                                 {% else %}
@@ -105,7 +105,7 @@
                                                     {% endif %}
                                                 {% endif %}
                                                 <b>
-                                                    <a href="{{ siteUrl }}calendar-demo/event/{{ event.id }}/{{ event.repeating ? event.startDate.format("Y/m/d") }}"
+                                                    <a href="{{ siteUrl }}calendar/event/{{ event.id }}/{{ event.repeating ? event.startDate.format("Y/m/d") }}"
                                                        class="calendar_event_title">
                                                         {{ event.title }}</a>
                                                 </b>
@@ -114,7 +114,7 @@
                                                 {% endif %}
                                             </div>
 
-                                            <a href="{{ siteUrl }}calendar-demo/calendars/{{ event.calendar.handle }}"
+                                            <a href="{{ siteUrl }}calendar/calendars/{{ event.calendar.handle }}"
                                                class="badge"
                                                style="background-color: {{ event.calendar.color }}; color: {{ event.calendar.contrastColor }};">
                                                 {{ event.calendar.name }}
@@ -132,7 +132,7 @@
         </div>
 
         <div class="col-md-3">
-            {% include "calendar-demo/layouts/_sidebar.html" %}
+            {% include "calendar/layouts/_sidebar.html" %}
         </div>
 
     </div>

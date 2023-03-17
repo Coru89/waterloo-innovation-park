@@ -1,4 +1,4 @@
-{% extends "calendar-demo/layouts/_layout.html" %}
+{% extends "calendar/layouts/_layout.html" %}
 
 {% set pageTitle = "Day" %}
 {% set page = "day" %}
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-md-9">
 
-            {% include "calendar-demo/layouts/_calendar_banner.html" %}
+            {% include "calendar/layouts/_calendar_banner.html" %}
 
             {% set day = craft.calendar.day({
                 date: targetDate,
@@ -40,7 +40,7 @@
                     <div class="col-2">
                     {% if dateBoundsHelper > -365 %}
                         <a class="btn btn-outline-secondary"
-                           href="{{ siteUrl }}calendar-demo/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.previousDate.format('Y/m/d') }}">
+                           href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.previousDate.format('Y/m/d') }}">
                             <span class="fas fa-arrow-left"></span> Previous
                         </a>
                     {% endif %}
@@ -58,7 +58,7 @@
                     <div class="col-2 clearfix">
                     {% if dateBoundsHelper < 365 %}
                         <a class="btn btn-outline-secondary float-right"
-                           href="{{ siteUrl }}calendar-demo/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.nextDate.format('Y/m/d') }}">
+                           href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.nextDate.format('Y/m/d') }}">
                             Next <span class="fas fa-arrow-right"></span>
                         </a>
                     {% endif %}
@@ -86,7 +86,7 @@
                                         >
                                             <div>
                                                 <b>
-                                                    <a href="{{ siteUrl }}calendar-demo/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
+                                                    <a href="{{ siteUrl }}calendar/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
                                                        style="color: {{ event.calendar.contrastColor }} !important;">
                                                         {{ event.title }}</a>
                                                 </b>
@@ -96,7 +96,7 @@
                                                 {% endif %}
                                             </div>
 
-                                            <a href="{{ siteUrl }}calendar-demo/calendars/{{ event.calendar.handle }}/"
+                                            <a href="{{ siteUrl }}calendar/calendars/{{ event.calendar.handle }}/"
                                                class="badge"
                                                style="background-color: {{ event.calendar.color }}; color: {{ event.calendar.contrastColor }};">
                                                 {{ event.calendar.name }}
@@ -141,7 +141,7 @@
                                                     {% endif %}
                                                     &nbsp;
                                                     <b>
-                                                        <a href="{{ siteUrl }}calendar-demo/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
+                                                        <a href="{{ siteUrl }}calendar/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
                                                            class="calendar_event_title">
                                                             {{ event.title }}
                                                         </a>
@@ -152,7 +152,7 @@
                                                     {% endif %}
                                                 </div>
 
-                                                <a href="{{ siteUrl }}calendar-demo/calendars/{{ event.calendar.handle }}/"
+                                                <a href="{{ siteUrl }}calendar/calendars/{{ event.calendar.handle }}/"
                                                    class="badge"
                                                    style="background-color: {{ event.calendar.color }}; color: {{ event.calendar.contrastColor }};">
                                                     {{ event.calendar.name }}
@@ -169,7 +169,7 @@
         </div>
 
         <div class="col-md-3">
-            {% include "calendar-demo/layouts/_sidebar.html" %}
+            {% include "calendar/layouts/_sidebar.html" %}
         </div>
 
     </div>

@@ -246,5 +246,19 @@
 
 </div>
 
+<script>
 
+window.addEventListener('beforeunload', function() {
+  sessionStorage.setItem('scrollPosition', window.pageYOffset || document.documentElement.scrollTop);
+});
+window.addEventListener('load', function() {
+  var storedPosition = sessionStorage.getItem('scrollPosition');
+  if (storedPosition) {
+    window.scrollTo(0, storedPosition);
+    sessionStorage.removeItem('scrollPosition');
+  }
+});
+
+    </script>
 {% endblock %}
+

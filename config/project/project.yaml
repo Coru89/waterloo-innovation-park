@@ -1,4 +1,4 @@
-dateModified: 1678988652
+dateModified: 1679035929
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -46,6 +46,7 @@ meta:
     07b6aedb-1dae-4e10-97cd-ccd64792dd3c: 'Calendar Month' # Calendar Month
     7b3301be-ed48-400a-a679-7b61d6a9fab8: Path # Path
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
+    8af21ea5-8ed7-451b-9561-65de6890a24a: Events # Events
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
     8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
@@ -115,6 +116,7 @@ meta:
     ec147d51-bd50-4e6e-8f06-fdd1c19ad61a: 'The Link' # The Link
     ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
     f7cc076a-7bed-4b46-91c0-ee10cea4047f: 'Calendar Event' # Calendar Event
+    fbbb7b50-c55e-456d-9508-45a83c3219cb: Events # Events
     fcb36e41-37af-489d-bbfd-024c1809c71c: Default # Default
     fd4a7dce-3e40-4c7e-92d2-4d0879c934c3: 'Caelndar Day' # Caelndar Day
     fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demo Templates for Calendar">
+    <meta name="author" content="Solspace">
+    <title>Calendar Demo | {{ pageTitle ? pageTitle : "Home" }}</title>
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+    <link
+    rel="stylesheet" href="/assets/styles/critical.min.css">
+    <!--Asynchronously load the non-critical CSS. -->
+    <link rel="stylesheet" rel="preload" as="style" href="/assets/styles/styles.min.css">
+
+    {% block headerCss %}{% endblock %}
+
+
+</head>
+
+{# Acquire URL segments #}
+{% set segment1 = craft.app.request.segment(1) %}
+{% set segment2 = craft.app.request.segment(2) %}
+{% set segment3 = craft.app.request.segment(3) %}
+{% set segment4 = craft.app.request.segment(4) %}
+{% set segment5 = craft.app.request.segment(5) %}
+{% set segment6 = craft.app.request.segment(6) %}
+{% set segment7 = craft.app.request.segment(7) %}
+
+<body onLoad="resizeParent();" role="document">
+
+{% if page is not defined %}
+    {% set page = "month" %}
+{% endif %}
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script type="module" src="/assets/scripts/bundle.min.js" async defer></script>
+
+
+
+{% block footerJs %}{% endblock %}
+
+<script type="text/javascript">
+    function resizeParent() {
+      var height = document.getElementsByTagName("html")[0].scrollHeight;
+      window.parent.postMessage(["setIframeHeight", height], "*");
+    }
+  </script>
+    
+</body>
+</html>
