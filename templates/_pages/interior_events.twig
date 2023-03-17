@@ -17,17 +17,23 @@
 
 <script type="text/javascript">
 
-let myIframe = document.getElementById('calendar');
-    let heightVal;
-    myIframe.addEventListener("load", function() {
-  window.addEventListener('message', function(e) {
-    var eventName = e.data[0];
-    heightVal = e.data[1];
-    console.log(heightVal);
-    {# myIframe.height = heightVal + 'px'; #}
-          myIframe.style.height = heightVal + 'px';
-  }, false);
+  let myIframe = document.getElementById('calendar');
+  let heightVal;
+
+  myIframe.addEventListener("load", function() {
+    const height = myIframe.contentWindow.document.body.scrollHeight;
+    // Set the iframe's height to the calculated height
+    myIframe.style.height = `${height}px`;
   });
+
+  {# myIframe.addEventListener("load", function() {
+    window.addEventListener('message', function(e) {
+      var eventName = e.data[0];
+      heightVal = e.data[1];
+      console.log(heightVal);
+      myIframe.style.height = heightVal + 'px';
+    }, false);
+  }); #}
 
   window.addEventListener('resize', resizeIframe);
 
@@ -39,23 +45,6 @@ function resizeIframe() {
   // Set the iframe's height to the calculated height
   myIframe.style.height = `${height}px`;
 }
-
-
-    {# myIframe.addEventListener("load", function() {
-      console.log('wrong height', myIframe.scrollHeight);
-
-      window.addEventListener("resize", function() {
-        console.log('hi');
-        myIframe = document.getElementById('calendar');
-        newHeight = myIframe.scrollHeight;
-        console.log(newHeight);
-        myIframe.style.height = newHeight + 'px';
-      })
-    }) #}
-
-
-
-     
 
 
 </script>
