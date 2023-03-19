@@ -1,1 +1,8 @@
 {% extends 'base.twig' %}
+
+{% set body_class = 'page-interior' %}
+
+{% block content %}
+    {% include '_components/page-intro' %}
+    {% include '_components/content-sections' %}
+{% endblock %}

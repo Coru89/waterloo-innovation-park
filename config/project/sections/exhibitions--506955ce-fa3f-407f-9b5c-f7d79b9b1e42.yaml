@@ -1,7 +1,7 @@
 defaultPlacement: beginning
 enableVersioning: true
 handle: exhibitions
-name: Exhibitions
+name: Exhibits
 propagationMethod: all
 siteSettings:
   402b359e-759c-4938-b279-b9a22b2c6d6a: # Waterloo Innovation Park

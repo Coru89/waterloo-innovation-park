@@ -1,0 +1,43 @@
+@import '../reference/reference';
+
+$block: 'gallery-rollup';
+
+.#{$block} {
+    &__inner {
+        margin: 3rem auto;
+
+        @include media-min(md) {
+            margin: 6rem auto;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 2rem;
+        grid-auto-rows: 1fr;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media-min(sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-min(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-min(lg) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        &:hover {
+            .#{$block}__picture-container {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+

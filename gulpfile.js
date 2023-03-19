@@ -94,7 +94,7 @@ function watchTask(){
 	gulp.watch('templates/**/*.twig').on('change', browsersync.reload);
 	gulp.watch('source/styles/**/*.scss', css); // change to your source directory
 	gulp.watch('source/scripts/*.ts', ts); // change to your source directory
-  gulp.watch('source/images/*.*', imgPassThru); // change to your source directory
+    gulp.watch('source/images/*.*', imgPassThru); // change to your source directory
 }
 
 // Tasks to define the execution of the functions simultaneously or in gulp.series

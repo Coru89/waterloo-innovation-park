@@ -1,70 +1,13 @@
+{# setting the base layout based on if ajax request #}
 {% set theLayout = craft.app.request.isAjax and not craft.app.request.isLivePreview ? 'ajaxLayout' : 'base' %}
 {% extends theLayout %}
 
-{% set displayLimit = 1 %}
+{% set displayLimit = 4 %}
 {% set entries = craft.entries.section('exhibitions').one().galleryItems.limit(displayLimit) %}
 
+{% set body_class = 'page-interior' %}
 
-{% block content %}
-    {% paginate entries as pageInfo, pageEntries %}
-        <div class="u-container">
-            <h1>News</h1>
-		    <p>Introduction</p>
-            <ul class="js-ajaxPagination"> {% for card in pageEntries %}
-                <li>{{card.artName}}</li>
-                {% endfor %}
-            </ul>
-
-            {% if pageInfo is defined and pageInfo.total > displayLimit %}
-                <p>
-                    <a class="js-loadMore button" href="{{ '/' ~ craft.app.request.pathInfo ~ '/p' ~ (pageInfo.currentPage + 1) }}">Load more</a>
-                </p>
-            {% endif %}
-        </div>
-		
-	{% endblock %}
-
-	{# =============================================================================== #}
-
-	{% block ajaxContent %}
-		{% for card in pageEntries %}
-			<li>{{card.artName}}</li>
-		{% endfor %}
-	{% endblock %}
-
-	{% paginate entries as pageInfo, pageEntries %}
-		{% if pageInfo is defined and pageInfo.total > displayLimit %}
-
-			{% js %}
-			var currentPage = 1;
-					var perPage =
-			{{displayLimit}};
-					var count = perPage;
-			
-					document.querySelector('.js-loadMore').addEventListener('click', e => {
-						e.preventDefault();
-						e.currentTarget.classList.add('disabled', 'pointer-events-none');
-						var originalWidth = e.currentTarget.offsetWidth;
-						var buttonText = document.querySelector('.js-loadMore').textContent;
-						e.currentTarget.style.width = originalWidth;
-						e.currentTarget.textContent = 'Loading...';
-
-						if({{ pageInfo.total }} > count){
-							fetch(e.currentTarget.getAttribute('href'), {
-								headers: {
-									'X-Requested-With': 'XMLHttpRequest',
-								},
-								method: 'GET'
-							}).then(response => response.text()).then(data => {
-			
-								document.querySelector('.js-ajaxPagination').insertAdjacentHTML('beforeend', data);
-								var button = document.querySelector('.js-loadMore');
-								button.textContent = buttonText;
-								// increment the counters
-								count = count + perPage;
-								currentPage++;
-								button.style.display = 'inline-block';
-								button.href = '/{{ craft.app.request.pathInfo }}/p' + (currentPage + 1);
-								button.classList.remove('disabled', 'pointer-events-none');
-								if({{ pageInfo.total }}
-			<= count){ button.remove(); } }); } }); {% endjs %} {% endif %}
+{% block layout %}
+	{% include '_components/page-intro' %}
+	{% include '_components/featured-exhibit-rollup' %}
+{% endblock %}

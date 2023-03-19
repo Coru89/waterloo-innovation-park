@@ -1,0 +1,9 @@
+<section class="gallery-rollup">
+    <div class="u-container gallery-rollup__inner">
+        <ul class="gallery-rollup__list">
+            {% for item in entry.galleryItems %}
+                {% include '_components/gallery-card' with {'item': item} %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>

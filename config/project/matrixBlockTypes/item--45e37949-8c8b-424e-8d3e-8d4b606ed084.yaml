@@ -31,7 +31,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cb1ecf4b-0473-4929-80c1-830b574c0c48 # Cost
+            fieldUid: cb1ecf4b-0473-4929-80c1-830b574c0c48 # Price
             instructions: null
             label: null
             required: false
@@ -113,7 +113,8 @@ fields:
       allowSelfRelations: false
       allowSubfolders: false
       allowUploads: true
-      allowedKinds: null
+      allowedKinds:
+        - image
       branchLimit: null
       defaultUploadLocationSource: 'volume:3906dce9-9071-435f-96fc-05a701d81f46' # Exhibition Photos
       defaultUploadLocationSubpath: null
@@ -122,7 +123,7 @@ fields:
       maxRelations: 1
       minRelations: null
       previewMode: full
-      restrictFiles: false
+      restrictFiles: true
       restrictLocation: false
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:9cfc771b-b401-4434-bbd3-e0e94c877314' # Uploads
@@ -139,7 +140,7 @@ fields:
             - class
             - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       sources:
@@ -210,13 +211,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  cb1ecf4b-0473-4929-80c1-830b574c0c48: # Cost
+  cb1ecf4b-0473-4929-80c1-830b574c0c48: # Price
     columnSuffix: rakmnugu
     contentColumnType: integer(10)
     fieldGroup: null
-    handle: cost
+    handle: price
     instructions: null
-    name: Cost
+    name: Price
     searchable: false
     settings:
       currency: USD
