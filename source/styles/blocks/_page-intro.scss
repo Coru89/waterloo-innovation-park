@@ -2,5 +2,36 @@
 
 $block: 'page-intro';
 
-// .#{$block} {
-//   }
+.#{$block} {
+    &__inner {
+        margin: 2rem auto;
+
+        @include media-min(md){
+            display: flex;
+            margin: 3rem auto;
+        }
+    }
+
+    &__row {
+        @include media-min(md){
+            flex-basis: 50%;
+
+            &:first-of-type {
+                margin-right: 20px;
+            }
+
+            &:last-of-type {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__summary {
+        line-height: 34px;
+    }
+
+    &__open-message {
+        margin-top: 20px;
+    }
+}
+

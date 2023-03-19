@@ -1,4 +1,4 @@
-dateModified: 1679068481
+dateModified: 1679217258
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -43,17 +43,19 @@ meta:
     6a083dd0-c3a0-40c7-a437-2c5c4610fa50: Heading # Heading
     6dc1ef68-7606-4254-8f3e-ab00a4a0b146: 'Button Link' # Button Link
     6f01e9c8-9af2-4589-8d81-a9ed56130cc9: 'Job Title' # Job Title
-    07b6aedb-1dae-4e10-97cd-ccd64792dd3c: 'Calendar Month' # Calendar Month
+    6f949aa8-1797-4b29-b437-d531558d65c7: 'Button Text' # Button Text
     7b3301be-ed48-400a-a679-7b61d6a9fab8: Path # Path
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
     8af21ea5-8ed7-451b-9561-65de6890a24a: Events # Events
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
     8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
+    8e4b80d0-1d95-4b57-80ef-2131c2a8441e: 'Page Intro' # Page Intro
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
     9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
     15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: 'Phone Link' # Phone Link
+    16a6044c-5238-4f14-8aad-ce2d5bf16347: 'Page Summary' # Page Summary
     21bdf77a-7ef8-4373-91e0-b6f8b61e6459: Events # Events
     24a64e3b-2ad3-479e-89dc-1c16e57368ac: Booking # Booking
     25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
@@ -70,9 +72,9 @@ meta:
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
     220d125c-af88-4a55-9b6c-ddae8a634855: 'Content Panel' # Content Panel
     335c9bcd-5565-445e-a5cf-ed5a78aac5e7: 'Phone Display' # Phone Display
+    354ce86f-294c-4c2e-a75a-be2deb8cb9d0: 'Page Heading' # Page Heading
     402b359e-759c-4938-b279-b9a22b2c6d6a: 'Waterloo Innovation Park' # Waterloo Innovation Park
     0493ce96-a299-4502-9f34-15fe3bebbdaa: Artist # Artist
-    521d22c7-c391-491b-9238-b639c414b014: Default # Default
     687cd2f1-06f5-4174-ab03-40daaa93ad90: 'Panel Title' # Panel Title
     703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
@@ -87,7 +89,6 @@ meta:
     506955ce-fa3f-407f-9b5c-f7d79b9b1e42: Exhibitions # Exhibitions
     865120ee-347d-4344-95ec-61b32b775de0: Image # Image
     5835035f-8ddd-4123-9120-309865e31c20: Default # Default
-    32696244-3536-4ecc-8033-b838c6c2ca46: 'Calendar Month' # Calendar Month
     36824767-1aa1-48a4-b266-8271b9035f52: Default # Default
     38134199-860e-4c8f-9bc6-d1e314e1884a: Leasing # Leasing
     87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
@@ -103,6 +104,7 @@ meta:
     bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Subheading # Subheading
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
     c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
+    cadde915-c6fb-46a6-a77a-6fafdcb4e322: 'Page Summary' # Page Summary
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Cost # Cost
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
@@ -112,12 +114,10 @@ meta:
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
     e2190436-67a6-4e37-bc3b-b0e52e23f9e7: 'Gallery Items' # Gallery Items
+    ec1c3db1-02e8-4fdd-b5ad-f3f9bd90e586: 'Button Link' # Button Link
     ec147d51-bd50-4e6e-8f06-fdd1c19ad61a: 'The Link' # The Link
     ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
-    f7cc076a-7bed-4b46-91c0-ee10cea4047f: 'Calendar Event' # Calendar Event
     fbbb7b50-c55e-456d-9508-45a83c3219cb: Events # Events
-    fcb36e41-37af-489d-bbfd-024c1809c71c: Default # Default
-    fd4a7dce-3e40-4c7e-92d2-4d0879c934c3: 'Caelndar Day' # Caelndar Day
     fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home
     fe4b113d-bf1c-4f36-806f-80cb15f3cac8: Title # Title
 plugins:

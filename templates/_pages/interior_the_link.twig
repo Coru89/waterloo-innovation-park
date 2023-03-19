@@ -1,21 +1,8 @@
-{# {% extends 'base.twig' %} #}
+{% extends 'base.twig' %}
 
-{% set pageTitle = "Month" %}
-{% set page = "month" %}
+{% set body_class = 'page-interior' %}
 
-{# {% block contentCalendar %}
-    {% set blocks = craft.entries.section('theLink').one().contentPanels.all() %}
-	{% include '_components/content-sections' with { 'blocks': blocks } only %}
-{% endblock %} #}
-{# 
-    {% set blocks = craft.entries.section('theLink').one().contentPanels.all() %}
-	{% include '_components/content-sections' with { 'blocks': blocks } only %} #}
-	
-	{% include "_calendar/index.html" %}
-
-
-{# {% block content %}
-	<div class="u-container">
-		{% include "calendar/month.html" %}
-	</div>
-{% endblock %} #}
+{% block content %}
+    {% include '_components/page-intro' %}
+    {% include '_components/content-sections' %}
+{% endblock %}

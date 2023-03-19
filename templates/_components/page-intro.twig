@@ -1,0 +1,28 @@
+<div class="page-intro">
+	<div class="page-intro__inner u-container">
+		<div class="page-intro__row">
+			<h1 class="page-intro__heading">{{entry.title}}</h1>
+			{% set url = craft.app.request.url %}
+			{% if url == "/the-link" %}
+				<div class="page-intro__open-message">
+					<svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.666 6.285a.976.976 0 0 0-1.38 0h-.001a.976.976 0 0 0 0 1.38v.002a.976.976 0 0 0 1.38 0l.002-.001a.976.976 0 0 0 0-1.38l-.001-.001Zm0 11.048a.976.976 0 0 0-1.38 0l-.001.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.002a.976.976 0 0 0 0-1.38l-.001-.002Zm-2.978-5.81h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm12.695 0h-3.906V7.62h-1.954v5.858h5.86v-1.954Zm-4.884-5.859h.002a.976.976 0 0 0 0-1.951h-.002a.976.976 0 0 0 0 1.951Zm6.215.62a.976.976 0 0 0-1.38 0v.002a.976.976 0 0 0 1.381 1.381v-.001a.976.976 0 0 0 0-1.38v-.001ZM12.5 0C5.49 0 0 5.49 0 12.5S5.49 25 12.5 25 25 19.51 25 12.5 19.51 0 12.5 0Zm0 23.047c-5.914 0-10.547-4.633-10.547-10.547 0-5.914 4.633-10.547 10.547-10.547 5.914 0 10.547 4.633 10.547 10.547 0 5.914-4.633 10.547-10.547 10.547Zm7.813-11.524h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm-1.599 5.81a.976.976 0 0 0-1.38 0v.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.001a.976.976 0 0 0 0-1.38v-.002Zm-6.213 2.005h-.002a.976.976 0 0 0 0 1.951h.002a.976.976 0 0 0 0-1.951Z" fill="#000"/></svg>
+					<span>Monday to Friday, from 9am to 3pm.</span>
+				</div>
+			{% endif %}
+		</div>
+		{% if entry.pageSummary or entry.buttonText %}
+			<div class="page-intro__row">
+				{% if entry.pageSummary %}
+					<p class="page-intro__summary">{{entry.pageSummary}}</p>
+				{% endif %}
+
+				{% if entry.buttonText %}
+					<a class="button button--arrow" href="{{entry.buttonHref}}">
+						{{entry.buttonText}}
+					</a>
+				{% endif %}
+			{% endif %}
+
+		</div>
+	</div>
+</div>

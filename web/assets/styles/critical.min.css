@@ -13348,3 +13348,33 @@ p {
 .nav .social-icons__list {
   margin-bottom: 0;
 }
+
+.page-intro__inner {
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .page-intro__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3rem auto;
+  }
+}
+@media (min-width: 768px) {
+  .page-intro__row {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  .page-intro__row:first-of-type {
+    margin-right: 20px;
+  }
+  .page-intro__row:last-of-type {
+    margin-left: 20px;
+  }
+}
+.page-intro__summary {
+  line-height: 34px;
+}
+.page-intro__open-message {
+  margin-top: 20px;
+}
