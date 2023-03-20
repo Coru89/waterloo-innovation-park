@@ -1,9 +1,9 @@
-columnSuffix: fzrlkfii
+columnSuffix: apmkyvwv
 contentColumnType: text
 fieldGroup: cc67c156-422d-4f9e-be71-f3d094eb08e5 # Art Gallery
-handle: pageSummary
-instructions: null
-name: 'Page Summary'
+handle: exhibitionDate
+instructions: 'e.g. November 11th 2022 - January 31st, 2023'
+name: Date
 searchable: false
 settings:
   byteLimit: null
@@ -11,9 +11,9 @@ settings:
   code: false
   columnType: null
   initialRows: 4
-  multiline: true
+  multiline: false
   placeholder: null
-  uiMode: enlarged
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

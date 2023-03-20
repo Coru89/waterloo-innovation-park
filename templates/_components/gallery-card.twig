@@ -1,3 +1,5 @@
+{% set item = craft.entries.section('exhibitions').one().galleryItems.id(itemId).one() %}
+
 <li class="gallery-card__item">
 	<div class="gallery-card__picture-container">
 		{% set image = item.image.one() %}

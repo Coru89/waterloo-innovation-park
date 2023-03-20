@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _pages/interior_the_link.twig
-    uriFormat: the-link/book-private-events
+    uriFormat: the-link
 type: single

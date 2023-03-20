@@ -1,7 +1,0 @@
-
-{% block ajaxContent %}
-	{% paginate entries as pageInfo, pageEntries %}
-	{% for item in pageEntries %}
-		{% include '_components/gallery-card' with {'item': item} %}	
-	{% endfor %}
-{% endblock %}

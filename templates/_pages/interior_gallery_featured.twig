@@ -1,13 +1,9 @@
-{# setting the base layout based on if ajax request #}
-{% set theLayout = craft.app.request.isAjax and not craft.app.request.isLivePreview ? 'ajaxLayout' : 'base' %}
-{% extends theLayout %}
-
-{% set displayLimit = 4 %}
-{% set entries = craft.entries.section('exhibitions').one().galleryItems.limit(displayLimit) %}
+{% extends 'base.twig' %}
 
 {% set body_class = 'page-interior' %}
 
 {% block layout %}
 	{% include '_components/page-intro' %}
-	{% include '_components/featured-exhibit-rollup' %}
+	{{ sprig('_components/featured-exhibit-rollup', {'limit': 1}, {'s-listen': '#gallery-card'}) }}
+	{{ sprig('_components/past-exhibits-rollup', {'limit': 3}) }}
 {% endblock %}

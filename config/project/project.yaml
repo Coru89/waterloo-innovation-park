@@ -1,4 +1,4 @@
-dateModified: 1679233454
+dateModified: 1679327520
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -34,6 +34,7 @@ meta:
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
     2a874f96-2ff5-4132-815e-da2d51664308: 'Book Private Event' # Book Private Event
     2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager' # Property Manager
+    2f95f803-ea1a-450d-856b-d4604d326a97: Date # Date
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
     5b4ec8f1-aa69-4807-871b-8e4f533f4440: 'Lease now' # Lease now
@@ -66,6 +67,7 @@ meta:
     36e3ae0f-08a5-4193-af58-4ed32c350d94: Image # Image
     42a3ddcd-d834-49a3-a79e-21c3f11a6ab6: 'Image panel' # Image panel
     45e37949-8c8b-424e-8d3e-8d4b606ed084: Item # Item
+    47b5e67e-c01b-4de1-94dd-e0501368e229: Artist # Artist
     52d8ea63-1195-47df-9693-9e83d7049cd2: 'Lease Managers' # Lease Managers
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
@@ -90,6 +92,7 @@ meta:
     465854cd-ce73-4e46-905e-7b925a0307e2: 'Exhibition Name' # Exhibition Name
     506955ce-fa3f-407f-9b5c-f7d79b9b1e42: Exhibits # Exhibits
     865120ee-347d-4344-95ec-61b32b775de0: Image # Image
+    3653102e-75a7-411d-bfbf-ea9d4de077f4: 'Rollup Image' # Rollup Image
     5835035f-8ddd-4123-9120-309865e31c20: Default # Default
     36824767-1aa1-48a4-b266-8271b9035f52: Default # Default
     38134199-860e-4c8f-9bc6-d1e314e1884a: Leasing # Leasing
@@ -106,7 +109,6 @@ meta:
     bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Subheading # Subheading
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
     c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
-    cadde915-c6fb-46a6-a77a-6fafdcb4e322: 'Page Summary' # Page Summary
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
@@ -162,6 +164,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.2.0
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
 system:
   edition: solo
   live: true

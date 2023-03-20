@@ -5,6 +5,7 @@
     "craftcms/redactor": "3.0.3",
     "dispositiontools/craft-minical": "4.0.0",
     "ether/seo": "v4.0.3",
+    "putyourlightson/craft-sprig": "2.5.1",
     "solspace/craft-calendar": "4.0.7",
     "vlucas/phpdotenv": "^5.4.0"
   },
