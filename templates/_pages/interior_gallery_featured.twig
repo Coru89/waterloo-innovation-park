@@ -4,6 +4,6 @@
 
 {% block layout %}
 	{% include '_components/page-intro' %}
-	{{ sprig('_components/featured-exhibit-rollup', {'limit': 1}, {'s-listen': '#gallery-card'}) }}
-	{{ sprig('_components/past-exhibits-rollup', {'limit': 3}) }}
+	{{ sprig('_components/featured-exhibit-rollup', {'limit': 4}) }}
+	{{ sprig('_components/past-exhibits-rollup', {'limit': 12}) }}
 {% endblock %}

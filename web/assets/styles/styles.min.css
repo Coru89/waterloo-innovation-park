@@ -288,13 +288,6 @@
   text-decoration: underline;
 }
 
-.gallery-card__picture-container {
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
-  transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
-}
 .gallery-card__image {
   height: auto;
   width: 100%;
@@ -346,6 +339,10 @@
 .gallery-rollup__item:hover .gallery-rollup__picture-container {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+.gallery-rollup__button {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-panel {
@@ -486,6 +483,42 @@
   -ms-user-select: none;
   user-select: none;
   width: 100%;
+}
+
+.past-exhibits-rollup__list {
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .past-exhibits-rollup__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.past-exhibits-rollup__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+.past-exhibits-rollup__link:hover, .past-exhibits-rollup__link:focus {
+  color: #000;
+}
+.past-exhibits-rollup__picture {
+  max-width: 120px;
+  margin-right: 28px;
+}
+.past-exhibits-rollup__image {
+  height: auto;
+  width: 100%;
+}
+.past-exhibits-rollup__info-title {
+  font-weight: 700;
 }
 
 iframe#calendar {

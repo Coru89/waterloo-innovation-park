@@ -9,9 +9,10 @@
 		<ul class="past-exhibits-rollup__list">
 			{% for item in entries %}
 			<li class="past-exhibits-rollup__item">
+			<a href={{item.url}} class="past-exhibits-rollup__link">
 				{% set image = item.exhibitionRollupImage.one() %}
 				{% if image %}
-					<picture class="past-exhibits-rollup__image">
+					<picture class="past-exhibits-rollup__picture">
 						<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [80, 100, 120], { format: 'webp', } ), sizes: '(max-width: 768px) 25%, 120px' }) }}>
 						<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [80, 100, 120], { format: 'jpeg', } ), sizes: '(max-width: 768px) 25%, 120px' }) }}>
 						<img alt="{{item.artName}}" class="past-exhibits-rollup__image" src={{image.url}} width={{image.width}} height={{image.height}} loading="lazy">
@@ -19,33 +20,35 @@
 				{% endif %}
 				<div class="past-exhibits-rollup__content">
 					{% if item.exhibitionArtist %}
-						<div class="past-exhibits-rollup__info-title past-exhibits-rollup__info"><span>Artist:</span>{{item.exhibitionArtist}}</div>
+						<div class="past-exhibits-rollup__info-title past-exhibits-rollup__info"><span>Artist: </span>{{item.exhibitionArtist}}</div>
 					{% endif %}
-					{% if item.exhibitionSummary %}
-						<div class="past-exhibits-rollup__info"><span>Exhibit Title:</span>{{item.exhibitionSummary}}</div>
+					{% if item.title %}
+						<div class="past-exhibits-rollup__info"><span>Exhibit Title: </span>{{item.title}}</div>
 					{% endif %}
 					{% if item.exhibitionDate %}
 						<div class="past-exhibits-rollup__info">{{item.exhibitionDate}}</div>
 					{% endif %}
 				</div>
+			</a>
 			</li>
 			{% endfor %}
 		</ul>
+
+		{# If the total entry count is greater than the number that has been displayed #}
+		{% if entryQuery.count() > offset + entries|length %}
+		{# Increments `offset` by the value of `limit` #}
+		<button class="gallery-rollup__button" id="past-exhibits-load-more" sprig s-val:offset="{{ offset + limit }}"
+			{# Appends entries #}
+			s-select=".past-exhibits-rollup__list li" s-target=".past-exhibits-rollup__list" s-swap="beforeend"
+			{# If this button was clicked then swap it out-of-band #}
+			{{ sprig.trigger == 'past-exhibits-load-more' ? 's-swap-oob="true"' }}
+		>
+			Show More
+		</button>
+		{% else %}
+		{# Swaps the button out-of-band with a dummy button that is hidden #}
+			<button class="gallery-rollup__button" id="past-exhibits-load-more" s-swap-oob="true" style="display: none"></button>
+		{% endif %}
 	</div>
 </section>
 
-{# If the total entry count is greater than the number that has been displayed #}
-{% if entryQuery.count() > offset + entries|length %}
-  {# Increments `offset` by the value of `limit` #}
-  <button id="past-exhibits-load-more" sprig s-val:offset="{{ offset + limit }}"
-    {# Appends entries #}
-    s-select=".past-exhibits-rollup__list li" s-target=".past-exhibits-rollup__list" s-swap="beforeend"
-    {# If this button was clicked then swap it out-of-band #}
-    {{ sprig.trigger == 'past-exhibits-load-more' ? 's-swap-oob="true"' }}
-  >
-    Show More
-  </button>
-{% else %}
-  {# Swaps the button out-of-band with a dummy button that is hidden #}
-    <button id="past-exhibits-load-more" s-swap-oob="true" style="display: none"></button>
-{% endif %}

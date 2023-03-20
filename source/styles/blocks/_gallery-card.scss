@@ -3,14 +3,6 @@
 $block: 'gallery-card';
 
 .#{$block} {
-    &__picture {
-        &-container {
-            position: relative;
-            transform-style: preserve-3d;
-            transition: all .8s cubic-bezier(.34,1.45,.7,1);
-        }
-    }
-
     &__image {
         height: auto;
         width: 100%;
