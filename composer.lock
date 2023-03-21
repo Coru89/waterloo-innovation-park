@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bc6503301ec7ac6dd25ac9603b1f993",
+    "content-hash": "00b3a39ba3266601fcbc2d0789ede18e",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -440,11 +440,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.3",
+            "version": "4.4.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d1edaf139b2245dda24fe172a80ec58c5c1a1174",
-                "reference": "d1edaf139b2245dda24fe172a80ec58c5c1a1174",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/bee9366fd101ff5da96cc71eb5464a501520be41",
+                "reference": "bee9366fd101ff5da96cc71eb5464a501520be41",
                 "shasum": ""
             },
             "require": {
@@ -535,15 +535,15 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2023-03-16T18:21:00+00:00"
+            "time": "2023-03-20T22:35:35+00:00"
         },
         {
             "name": "craftcms/contact-form",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/5e93f5248f8e035c9c6eecae664a84378ef1572f",
-                "reference": "5e93f5248f8e035c9c6eecae664a84378ef1572f",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/f8d09c727cd3d4cba7d046bb49cbe1ce422affd0",
+                "reference": "f8d09c727cd3d4cba7d046bb49cbe1ce422affd0",
                 "shasum": ""
             },
             "require": {
@@ -588,7 +588,7 @@
                 "docs": "https://github.com/craftcms/contact-form/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/contact-form/commits/v2.atom"
             },
-            "time": "2022-05-02T22:28:13+00:00"
+            "time": "2023-03-16T21:54:21+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -706,11 +706,11 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/19578a713a06aedd4e0efb5dd80cb3947a5849c4",
-                "reference": "19578a713a06aedd4e0efb5dd80cb3947a5849c4",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/3e71faf0f129025d8814207e496870ce6deeef01",
+                "reference": "3e71faf0f129025d8814207e496870ce6deeef01",
                 "shasum": ""
             },
             "require": {
@@ -753,7 +753,7 @@
                 "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
             },
-            "time": "2023-01-01T01:36:37+00:00"
+            "time": "2023-03-16T23:00:48+00:00"
         },
         {
             "name": "craftcms/server-check",

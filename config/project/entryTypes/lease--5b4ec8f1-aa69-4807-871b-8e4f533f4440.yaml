@@ -32,6 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 56b20bcf-23a6-4b09-ab8c-00a3d69c54c1 # Page Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f80d257-d009-4551-bdea-cb774f923948
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 31aa51d3-2c41-4a98-8464-95f377cc4f07 # Lease Managers Heading
             instructions: null
             label: null

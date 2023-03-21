@@ -1,8 +1,8 @@
 {
   "require": {
-    "craftcms/cms": "^4.4.0",
-    "craftcms/contact-form": "3.0.0",
-    "craftcms/redactor": "3.0.3",
+    "craftcms/cms": "4.4.4",
+    "craftcms/contact-form": "3.0.1",
+    "craftcms/redactor": "3.0.4",
     "dispositiontools/craft-minical": "4.0.0",
     "ether/seo": "v4.0.3",
     "putyourlightson/craft-sprig": "2.5.1",

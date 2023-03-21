@@ -32,14 +32,6 @@ $block: 'gallery-rollup';
         }
     }
 
-    &__item {
-        &:hover {
-            .#{$block}__picture-container {
-                transform: rotateY(180deg);
-            }
-        }
-    }
-
     &__button {
         display: block;
         margin: 0 auto;

@@ -1,0 +1,56 @@
+@import '../reference/reference';
+
+$block: 'lease-rollup';
+
+.#{$block} {
+    &__inner {
+        margin: 3rem auto;
+
+        @include media-min(md) {
+            margin: 6rem auto;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 2rem;
+        grid-auto-rows: 1fr;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media-min(sm) {
+            gap: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-min(lg) {
+            gap: 5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__picture {
+        margin-bottom: 1.5rem;
+    }
+
+    &__property {
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &__details {
+        line-height: 32px;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__image {
+        height: auto;
+        width: 100%;
+    }
+}
+

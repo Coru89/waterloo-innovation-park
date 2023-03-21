@@ -1,4 +1,4 @@
-dateModified: 1679327520
+dateModified: 1679373031
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -56,6 +56,7 @@ meta:
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
     9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
+    9f2bc7d7-ce7d-4a3e-8704-3b608e00d2d6: Properties # Properties
     15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: 'Phone Link' # Phone Link
     16a6044c-5238-4f14-8aad-ce2d5bf16347: 'Page Summary' # Page Summary
     21bdf77a-7ef8-4373-91e0-b6f8b61e6459: Events # Events
@@ -68,7 +69,9 @@ meta:
     42a3ddcd-d834-49a3-a79e-21c3f11a6ab6: 'Image panel' # Image panel
     45e37949-8c8b-424e-8d3e-8d4b606ed084: Item # Item
     47b5e67e-c01b-4de1-94dd-e0501368e229: Artist # Artist
+    52ac9c9a-5d73-4e34-b24e-edf09a5a6b47: Default # Default
     52d8ea63-1195-47df-9693-9e83d7049cd2: 'Lease Managers' # Lease Managers
+    56b20bcf-23a6-4b09-ab8c-00a3d69c54c1: 'Page Summary' # Page Summary
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
     86bf8d52-4937-4435-86ec-d080ca4fd0d7: 'Book Private Event' # Book Private Event
@@ -106,7 +109,7 @@ meta:
     b41afa41-893f-4b11-970e-c75f2431f0be: 'Learn More Link' # Learn More Link
     b19956e7-f23d-451e-93c0-712acc2c2b9a: 'Event Description' # Event Description
     baa2eb32-a191-474e-b7da-50764f46b1e5: Info # Info
-    bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Subheading # Subheading
+    bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Details # Details
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
     c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price

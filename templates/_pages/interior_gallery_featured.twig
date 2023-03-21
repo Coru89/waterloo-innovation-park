@@ -3,6 +3,7 @@
 {% set body_class = 'page-interior' %}
 
 {% block layout %}
+	{{ sprig.script }}
 	{% include '_components/page-intro' %}
 	{{ sprig('_components/featured-exhibit-rollup', {'limit': 4}) }}
 	{{ sprig('_components/past-exhibits-rollup', {'limit': 12}) }}
