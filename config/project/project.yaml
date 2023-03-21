@@ -1,8 +1,16 @@
-dateModified: 1679373031
+dateModified: 1679413385
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    host: smtp.gmail.com
+    password: tzbjfzvmwcavfmzp
+    port: '587'
+    useAuthentication: '1'
+    username: corey.james.keller@gmail.com
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   exhibitionPhotos:
     hasUrls: true
@@ -33,7 +41,7 @@ meta:
     0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
     2a874f96-2ff5-4132-815e-da2d51664308: 'Book Private Event' # Book Private Event
-    2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager' # Property Manager
+    2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager Image' # Property Manager Image
     2f95f803-ea1a-450d-856b-d4604d326a97: Date # Date
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
@@ -154,6 +162,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Waterloo Innovation Park'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: corey.james.keller@gmail.com
   minical:
     edition: standard
     enabled: true

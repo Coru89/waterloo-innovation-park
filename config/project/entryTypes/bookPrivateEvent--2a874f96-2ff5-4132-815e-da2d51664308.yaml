@@ -32,36 +32,78 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cadde915-c6fb-46a6-a77a-6fafdcb4e322
+            fieldUid: 56b20bcf-23a6-4b09-ab8c-00a3d69c54c1 # Page Summary
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a12e3c85-e532-434f-8fc6-ff212e1199be
+            uid: b8f66742-85d0-457c-ac9a-b5746eaaa7e9
             userCondition: null
             warning: null
             width: 100
-        name: 'Page Intro'
-        uid: 5da9591a-e127-4c34-b031-551d3c121c64
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
-            fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+            fieldUid: 2e724cd6-994a-493e-945a-c6dadbff9837 # Property Manager Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1cf5ded5-8430-4825-8ec6-dc165d9a8b90
+            uid: b7dbea73-fa14-4f98-bac0-4246bb9834b2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 37175b69-3644-4f1e-a348-e82fd2565057 # Property Manager Image Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c1b620b-5063-4837-8a7e-369fe30d7fe2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f8cb9f8-3c0c-4264-8031-dbfe5b65434a # Property Manager Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a87027f-cdc8-490b-83be-f31ad9409faf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8cef2e04-1901-44a9-bf0c-0f320e8760ba # Property Manager Phone Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5e08e8dd-1d10-4341-8806-13447be8666d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b29d046d-03e7-4eb8-9248-7c870d157e78 # Property Manager Phone Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ce43164-77bb-4b1e-aa7d-89a829190d3c
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 0c1e7755-9eee-4e46-a287-dd2be0ce0373
+        uid: 5da9591a-e127-4c34-b031-551d3c121c64
         userCondition: null
 handle: bookPrivateEvent
 hasTitleField: true

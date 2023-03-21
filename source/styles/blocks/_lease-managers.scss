@@ -1,6 +1,6 @@
 @import '../reference/reference';
 
-$block: 'lease-rollup';
+$block: 'lease-managers';
 
 .#{$block} {
     &__inner {
@@ -9,6 +9,10 @@ $block: 'lease-rollup';
         @include media-min(md) {
             margin: 6rem auto;
         }
+    }
+
+    &__heading {
+        margin-bottom: 3rem;
     }
 
     &__list {
@@ -30,28 +34,42 @@ $block: 'lease-rollup';
         }
     }
 
-    &__picture {
-        margin-bottom: 1.5rem;
+    &__contact {
+        display: flex;
+        flex-direction: row;
+
+        @include media-min(lg) {
+            flex-direction: column;
+        }
+
+        @include media-min(xl) {
+            flex-direction: row;
+        }
     }
 
-    &__property {
+    &__name {
         font-size: 24px;
         font-weight: 700;
-        line-height: 32px;
     }
 
-    &__details {
+    &__phone, &__email {
+        color: $black;
         line-height: 32px;
+
+        &:hover, &:focus {
+            color: $black;
+        }
+    }
+
+    &__phone {
+        @include media-min(xl) {
+            margin-right: .5rem;
+        }
     }
 
     &__button {
         display: block;
         margin: 0 auto;
-    }
-
-    &__image {
-        height: auto;
-        width: 100%;
     }
 }
 

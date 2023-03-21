@@ -12508,7 +12508,7 @@ html {
 }
 
 .body {
-  color: #3d3d3d;
+  color: #000;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -12577,7 +12577,7 @@ a::after {
 }
 
 p a {
-  color: #3d3d3d;
+  color: #000;
   -webkit-box-shadow: inset 0 -1px 0 #c6c4c4;
   box-shadow: inset 0 -1px 0 #c6c4c4;
   text-decoration: none;

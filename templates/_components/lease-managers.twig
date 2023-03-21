@@ -1,0 +1,19 @@
+{% set items = craft.entries.section('lease').one().leaseManagers.all() %}
+
+<section class="lease-managers">
+    <div class="lease-managers__inner u-container">
+        <h2 class="lease-managers__heading">{{entry.leaseManagersHeading}}</h2>
+        <ul class="lease-managers__list">
+            {% for item in items %}     
+                <li class="lease-managers__item">
+                    <div class="lease-managers__name">{{ item.fullName }}</div>
+                    <div class="lease-managers__title">{{ item.jobTitle }}</div>
+                    <div class="lease-managers__contact">
+                        <a href={{ item.phoneLink }} class="lease-managers__phone">{{ item.phoneDisplay }}</a>
+                        <a href={{ item.email }} class="lease-managers__phone">{{ item.email }}</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

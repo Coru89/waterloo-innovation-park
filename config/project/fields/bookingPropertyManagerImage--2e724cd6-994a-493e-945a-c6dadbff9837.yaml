@@ -3,7 +3,7 @@ contentColumnType: string
 fieldGroup: 24a64e3b-2ad3-479e-89dc-1c16e57368ac # Booking
 handle: bookingPropertyManagerImage
 instructions: null
-name: 'Property Manager'
+name: 'Property Manager Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -35,7 +35,7 @@ settings:
         - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:

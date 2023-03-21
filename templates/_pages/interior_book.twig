@@ -3,6 +3,127 @@
 {% set body_class = 'page-interior' %}
 
 {% block content %}
-    {% include '_components/page-intro' %}
-    {% include '_components/content-sections' %}
+    <section class="booking">
+        <div class="u-container">
+            <div class="booking__row">
+                <div class="booking__column">
+                    {% set image = entry.bookingPropertyManagerImage.one() %}
+                    {% if image %}
+                        <picture class="booking__manager-picture">
+                            <source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
+                            <source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
+                            <img alt="{{image.alt}}" class="booking__image" src={{image.url}} width={{image.width}} height={{image.height}} loading="lazy">
+                        </picture>
+                    {% endif %}
+                    {% if entry.bookingPropertyManagerImageCaption %}
+                        <div class="booking__caption">{{entry.bookingPropertyManagerImageCaption}}</div>
+                    {% endif %}
+
+                    {% if entry.bookingPropertyManagerEmail %}
+                        <a class="booking__email">{{entry.bookingPropertyManagerEmail}}</a>
+                    {% endif %}
+
+                    {% if entry.bookingPropertyManagerPhoneDisplay and entry.bookingPropertyManagerPhoneLink %}
+                        <a href={{entry.bookingPropertyManagerPhoneLink}} class="booking__phone">{{entry.bookingPropertyManagerPhoneDisplay}}</a>
+                    {% endif %}
+
+                </div>
+                <div class="booking__column">
+                    <h3>Want to work together?</h3>
+                    <p>Let’s talk about your project.</p>
+                    {% macro errorList(errors) %}
+                        {% if errors %}
+                            {{ ul(errors, {class: 'errors'}) }}
+                        {% endif %}
+                    {% endmacro %}
+
+                    {% if craft.app.session.hasFlash('notice') %}
+                        <p class="booking-form__alert booking-form__alert--success">{{ craft.app.session.getFlash('notice') }}</p>
+                    {% elseif craft.app.session.hasFlash('error') %}
+                        <p class="booking-form__alert booking-form__alert--error">{{ craft.app.session.getFlash('error') }}</p>
+                    {% endif %}
+
+                    {% set submission = submission ?? null %}
+
+                    <form class="booking-form" method="post" action="" accept-charset="UTF-8">
+                        {# {{ csrfInput() }} #}
+                        {{ csrfInput() }}
+                        {{ actionInput('contact-form/send') }}
+                        {# {{ redirectInput('/contact') }} #}
+
+                        {% if craft.app.session.hasFlash('success') %}
+                            <div>Thank you for your message.</div>
+                            {% else  %}
+                            <div class="booking-form__group">
+                            <h3><label for="from-name">Your Name</label></h3>
+
+
+                                {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                                    id: 'from-email',
+                                    autocomplete: 'email',
+                                }) }}
+                                {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+                            </div>
+
+                            <div class="booking-form__group">
+                                {{ input('text', 'fromName', submission.fromName ?? '', {
+                                    id: 'from-name',
+                                    autocomplete: 'name'
+                                }) }}
+                                {{ submission ? _self.errorList(submission.getErrors('fromName')) }}
+                                
+                                {{ input('text', 'message[Company Name]', submission.message.companyName ?? '', {
+                                    id: 'companyName',
+                                    autocomplete: 'company name',
+                                    placeholder: 'Company Name *',
+                                }) }}
+                                 {{ submission ? _self.errorList(submission.getErrors('message.companyName')) }}
+
+                            </div>
+
+                            <div class="booking-form__group">
+                                {{ input('text', 'message[Date Requested]', submission.message.dateRequested ?? '', {
+                                    id: 'date-requested',
+                                    autocomplete: 'date requested',
+                                    placeholder: 'Date requested *',
+                                }) }}
+                                {{ submission ? _self.errorList(submission.getErrors('message.dateRequested')) }}
+                            </div>
+
+                            <div class="booking-form__group">
+                                {{ input('text', 'message[Start Time]', submission.message.startTime ?? '', {
+                                    id: 'start-time',
+                                    autocomplete: 'start time',
+                                    placeholder: 'Start time *',
+                                }) }}
+                                 {{ submission ? _self.errorList(submission.getErrors('message.startTime')) }}
+
+                                {{ input('text', 'message[End Time]', submission.message.endTime ?? '', {
+                                    id: 'end-time',
+                                    autocomplete: 'end time',
+                                    placeholder: 'End time *',
+                                }) }}
+                                 {{ submission ? _self.errorList(submission.getErrors('message.endTime')) }}
+                            </div>
+                            <div class="booking-form__group">
+                                {# <span>Please briefly describe what you would like to use this space for and how many people you expect.</span> #}
+                                {{ tag('textarea', {
+                                    text: submission.message.body ?? '',
+                                    id: 'message',
+                                    name: 'submission[body]',
+                                    rows: 10,
+                                    cols: 40,
+                                }) }}
+                                {{ submission ? _self.errorList(submission.getErrors('message')) }}
+                            </div>
+                            <div class="booking-form__group">
+                                <button type="submit" class="button">Submit</button>
+                            </div>
+                        {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
+
