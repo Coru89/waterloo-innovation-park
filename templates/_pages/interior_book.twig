@@ -106,11 +106,11 @@
                                  {{ submission ? _self.errorList(submission.getErrors('message.endTime')) }}
                             </div>
                             <div class="booking-form__group">
-                                {# <span>Please briefly describe what you would like to use this space for and how many people you expect.</span> #}
+                                <span>Please briefly describe what you would like to use this space for and how many people you expect.</span>
                                 {{ tag('textarea', {
                                     text: submission.message.body ?? '',
                                     id: 'message',
-                                    name: 'submission[body]',
+                                    name: 'message[body]',
                                     rows: 10,
                                     cols: 40,
                                 }) }}
