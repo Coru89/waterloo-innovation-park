@@ -1946,6 +1946,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .gallery-card__image {
+  cursor: pointer;
   height: auto;
   width: 100%;
 }

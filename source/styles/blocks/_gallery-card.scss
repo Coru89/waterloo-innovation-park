@@ -4,6 +4,7 @@ $block: 'gallery-card';
 
 .#{$block} {
     &__image {
+        cursor: pointer;
         height: auto;
         width: 100%;
     }
