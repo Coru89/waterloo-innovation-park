@@ -20,6 +20,8 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.9",
+    "@types/fancybox": "^3.5.3",
     "bootstrap": "^5.2.3",
     "node-sass": "^8.0.0"
   }

@@ -9,11 +9,23 @@
 		{% set image = item.image.one() %}
 
 		{% if image %}
-			<picture class="gallery-card__picture gallery-card__picture--front">
-				<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
-				<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
-				<img alt="{{item.artName}}" class="gallery-card__image gallery-card__image--front" src={{image.url}} width={{image.width}} height={{image.height}} loading="lazy">
+			<div>
+			<picture
+				class="gallery-card__picture"
+				{# setting image to use for fancybox image preview #}
+				data-fancybox data-caption="{{item.artName}}"
+				data-srcset="{{image.getSrcset([320, 360, 412, 600, 768, 1024, 1280, 1440, 1600, 1920, 2560], { format: 'webp', })}}"
+				data-srcset="{{image.getSrcset([320, 360, 412, 600, 768, 1024, 1280, 1440, 1600, 1920, 2560], { format: 'jpeg', })}}"
+				sizes: '100vw'
+				data-src={{image.url}}
+			>
+				<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 304px'}) }}>
+				<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 304px'}) }}>
+				<img alt="{{item.artName}}" class="gallery-card__image" src={{image.url}} width={{image.width}} height={{image.height}}>
 			</picture>
+
+			</div>
+
 		{% endif %}
 	</div>
 	<div class="gallery-card__text">
