@@ -10,15 +10,14 @@
 }
 
 #tool-tip {
-  background-color: white;
-  border-radius: 4px;
-  border: $grey 1px solid;
-  color: black;
-  display: none;
-  font-size: 13px;
-  padding: 5px 10px;
-  position: absolute;
-  z-index: 99;
+    background-color: white;
+    border-radius: 4px;
+    border: $grey 1px solid;
+    color: $grey;
+    display: none;
+    font-size: 13px;
+    padding: 5px 10px;
+    position: absolute;
 }
 
 #tool-tip[data-show] {
@@ -28,20 +27,42 @@
 #arrow,
 #arrow::before {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background: inherit;
+   width: 8px;
+   height: 8px;
+//   background: red;
+//   border: 1px solid $grey;
+
+
 }
 
 #arrow {
-  visibility: hidden;
+    top: 0;
+//   visibility: hidden;
+  //background-color: red;
+
 }
 
 #arrow::before {
-  visibility: visible;
+//   visibility: visible;
   content: "";
   transform: rotate(45deg);
+  top: -4px;
+  border: 1px solid $grey;
 }
+
+
+#arrow::after {
+    top: 0;
+    width: 12px;
+    height: 8px;
+    content: "";
+    display: block;
+    background: $white;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 #tooltip[data-popper-placement^="top"] > #arrow {
   bottom: -4px;

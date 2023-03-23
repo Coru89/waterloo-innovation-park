@@ -61,6 +61,8 @@ export namespace Calendar {
       buttonElement.addEventListener(event, () => {
         // Hide the tooltip
         const tooltip: HTMLElement | null = buttonElement.querySelector("#tool-tip");
+        const arrow: HTMLElement | null = buttonElement.querySelector(".arrow");
+
         if (tooltip) {
           tooltip.removeAttribute("data-show");
         }
@@ -71,7 +73,16 @@ export namespace Calendar {
           // ...options,
           modifiers: [
             ...options.modifiers,
-            { name: "eventListeners", enabled: false },
+            {
+              name: "eventListeners",
+              enabled: false
+            },
+            {
+            name: 'arrow',
+            options: {
+              element: arrow,
+            },
+          }
           ],
         }));
       });
@@ -87,11 +98,11 @@ export namespace Calendar {
     });
   }
 
-  // if (menuButtonEl && dropDownEl) {
-  //   menuButtonEl.addEventListener("blur", function () {
-  //   dropDownEl.classList.remove('show');
-  //   });
-  // }
+   if (menuButtonEl && dropDownEl) {
+     menuButtonEl.addEventListener("blur", function () {
+     dropDownEl.classList.remove('show');
+     });
+   }
 
   let myIframe: HTMLIFrameElement | null = document.querySelector("#calendar");
 

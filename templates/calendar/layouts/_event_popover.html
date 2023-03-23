@@ -1,6 +1,6 @@
-<div id="tool-tip">
+<div id="tool-tip" role="tooltip">
     <div class="title">
-        {{ event.title }}
+        <h5>{{ event.title }}</h5>
         <span class='event_time'>
             <span class='far fa-clock'></span>
             {% if event.allDay %}
@@ -47,4 +47,5 @@
             {{ event.readableRepeatRule }}
         {% endif %}
     </div>
+    <div id="arrow" data-popper-placement="top" data-popper-arrow></div>
 </div>
