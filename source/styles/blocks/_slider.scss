@@ -7,6 +7,14 @@ $block: "image-slider";
     visibility: visible;
   }
 
+  &__inner {
+    margin: 3rem auto;
+
+    @include media-min(md) {
+      margin: 6rem auto;
+    }
+  }
+
   &__slide {
     position: relative;
     height: 250px !important;

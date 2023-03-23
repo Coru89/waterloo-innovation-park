@@ -887,6 +887,14 @@ p {
 .image-slider--visible {
   visibility: visible;
 }
+.image-slider__inner {
+  margin: 3rem auto;
+}
+@media (min-width: 768px) {
+  .image-slider__inner {
+    margin: 6rem auto;
+  }
+}
 .image-slider__slide {
   position: relative;
   height: 250px !important;
