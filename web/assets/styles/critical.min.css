@@ -889,7 +889,22 @@ p {
 }
 .image-slider__slide {
   position: relative;
-  height: 500px !important;
+  height: 250px !important;
+}
+@media (min-width: 768px) {
+  .image-slider__slide {
+    height: 300px !important;
+  }
+}
+@media (min-width: 1052px) {
+  .image-slider__slide {
+    height: 400px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .image-slider__slide {
+    height: 500px !important;
+  }
 }
 .image-slider__picture {
   position: absolute;
