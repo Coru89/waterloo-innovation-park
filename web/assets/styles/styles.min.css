@@ -1680,7 +1680,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .call-to-action {
-  background: #094cae;
+  background: #0A78FF;
   color: #fff;
   text-align: center;
 }
@@ -1826,7 +1826,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .footer {
-  color: #202020;
+  color: #0B0E26;
   font-size: 1rem;
   margin-bottom: 3rem;
 }
@@ -1856,7 +1856,7 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 .footer__row:last-child {
-  border-top: 1px solid #3d3d3d;
+  border-top: 1px solid #383943;
   padding: 1rem 0;
 }
 .footer__row:last-child .footer__column:last-child {
@@ -1878,7 +1878,7 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 .footer__column {
-  border-bottom: 1px solid #3d3d3d;
+  border-bottom: 1px solid #383943;
   padding: 1.5rem 0;
 }
 @media (min-width: 1052px) {
@@ -1901,7 +1901,7 @@ html.with-fancybox body.hide-scrollbar {
   border-bottom: 0 none;
 }
 .footer__heading {
-  color: #202020;
+  color: #0B0E26;
   font-size: 0.875rem;
   font-weight: 400;
   margin: 0 0 1rem;
@@ -1936,12 +1936,12 @@ html.with-fancybox body.hide-scrollbar {
   padding: 0;
 }
 .footer__link {
-  color: #202020;
+  color: #0B0E26;
   font-weight: 400;
   text-decoration: none;
 }
 .footer__link:focus, .footer__link:hover {
-  color: #094cae;
+  color: #0A78FF;
   text-decoration: underline;
 }
 
@@ -1957,7 +1957,7 @@ html.with-fancybox body.hide-scrollbar {
   font-weight: 300;
 }
 .gallery-card__name {
-  color: #094cae;
+  color: #0A78FF;
   font-size: 1.25rem;
   line-height: 1.3;
   margin-bottom: 0.25rem;
@@ -2073,7 +2073,7 @@ html.with-fancybox body.hide-scrollbar {
   text-transform: uppercase;
 }
 .hero-panel--dark {
-  background-color: #202020;
+  background-color: #0B0E26;
   color: #fff;
 }
 @media (max-width: 1051px) {
@@ -2173,15 +2173,6 @@ html.with-fancybox body.hide-scrollbar {
 }
 .past-exhibits-rollup__info-title {
   font-weight: 700;
-}
-
-iframe#calendar {
-  height: 100vh;
-}
-
-#month_calendar #days_of_week th {
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .lease-rollup__inner {

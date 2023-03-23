@@ -1,9 +1,69 @@
+@import "../reference/reference";
+
+.dropdown-menu {
+  position: absolute;
+  top: 38px;
+}
+
+.calendar-color {
+  z-index: -1;
+}
+
+#tool-tip {
+  background-color: white;
+  border-radius: 4px;
+  border: $grey 1px solid;
+  color: black;
+  display: none;
+  font-size: 13px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 99;
+}
+
+#tool-tip[data-show] {
+  display: block;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^="top"] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^="bottom"] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^="left"] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^="right"] > #arrow {
+  left: -4px;
+}
 
 iframe#calendar {
-    height: 100vh;
+  height: 100vh;
 }
 
 #month_calendar #days_of_week th {
-    overflow: hidden;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
