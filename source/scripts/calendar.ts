@@ -5,7 +5,6 @@ import { createPopper } from '@popperjs/core';
 export namespace Calendar {
   const els = document.querySelectorAll('[data-toggle="popover"]');
   const popperInstances: any[] = [];
-  console.log('els', els);
 
   //attach popper instances
   els.forEach((buttonElement, index) => {
@@ -39,8 +38,6 @@ export namespace Calendar {
         }
         const popperInstance = popperInstances[index];
 
-
-        console.log(index, tooltip, popperInstance);
         // Enable the event listeners
         popperInstance.setOptions((options: any) => ({
           ...options,
@@ -128,15 +125,4 @@ export namespace Calendar {
       myIframe.style.height = `${height}px`;
     }
   }
-
-  // let heightVal;
-
-  // {# myIframe.addEventListener("load", function() {
-  //   window.addEventListener('message', function(e) {
-  //     var eventName = e.data[0];
-  //     heightVal = e.data[1];
-  //     console.log(heightVal);
-  //     myIframe.style.height = heightVal + 'px';
-  //   }, false);
-  // }); #}
 }
