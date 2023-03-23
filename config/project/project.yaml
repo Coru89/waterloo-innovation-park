@@ -1,4 +1,4 @@
-dateModified: 1679555018
+dateModified: 1679589931
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -169,7 +169,7 @@ plugins:
       allowAttachments: ''
       allowedMessageFields: null
       prependSender: 'On behalf of'
-      prependSubject: 'New message from Waterloo Innovation Park'
+      prependSubject: ''
       successFlashMessage: 'Your message has been sent.'
       toEmail: corey.james.keller@gmail.com
   copy:

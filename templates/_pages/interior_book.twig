@@ -45,7 +45,7 @@
 
                     {% set submission = submission ?? null %}
 
-                    <form class="booking-form" method="post" action="" accept-charset="UTF-8">
+                    <form id="form" class="booking-form" method="post" action="" accept-charset="UTF-8">
                         {# {{ csrfInput() }} #}
                         {{ csrfInput() }}
                         {{ actionInput('contact-form/send') }}
@@ -55,9 +55,8 @@
                             <div>Thank you for your message.</div>
                             {% else  %}
                             <div class="booking-form__group">
-                            <h3><label for="from-name">Your Name</label></h3>
-
-
+                                {# set the email subject #}
+                                <input type="hidden" name="subject" value="Waterloo Innovation Park - Booking Request" data-original-value="Waterloo Innovation Park - Booking Request">
                                 {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
                                     id: 'from-email',
                                     autocomplete: 'email',
@@ -117,7 +116,7 @@
                                 {{ submission ? _self.errorList(submission.getErrors('message')) }}
                             </div>
                             <div class="booking-form__group">
-                                <button type="submit" class="button">Submit</button>
+                                <button id="submit" type="submit" class="button">Submit</button>
                             </div>
                         {% endif %}
                     </form>
