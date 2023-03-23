@@ -1,22 +1,48 @@
 
 // Load plugins
-const gulp = require('gulp');
+// const gulp = require('gulp');
 
-var browserify = require('browserify');
-const source = require('vinyl-source-stream');
-const buffer = require('vinyl-buffer');
-const tsify = require('tsify');
-const uglify = require('gulp-uglify');
-const rename = require('gulp-rename');
+// var browserify = require('browserify');
+// const source = require('vinyl-source-stream');
+// const buffer = require('vinyl-buffer');
+// const tsify = require('tsify');
+// const uglify = require('gulp-uglify');
+// const rename = require('gulp-rename');
 
-const changed = require('gulp-changed');
-const sass = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
-const cssnano = require('gulp-cssnano');
+// const changed = require('gulp-changed');
+// const sass = require('gulp-sass')(require('sass'));
+// const autoprefixer = require('gulp-autoprefixer');
+// const cssnano = require('gulp-cssnano');
 
-const clean = require('gulp-clean');
+// const clean = require('gulp-clean');
 
-const browsersync = require('browser-sync').create();
+// const browsersync = require('browser-sync').create();
+
+import gulp from 'gulp';
+
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
+import buffer from 'vinyl-buffer';
+import tsify from 'tsify';
+import uglify from 'gulp-uglify';
+import rename from 'gulp-rename';
+
+import changed from 'gulp-changed';
+// import sass from 'gulp-sass';
+
+import gulpSass from "gulp-sass";
+import nodeSass from "sass";
+    
+const sass = gulpSass(nodeSass);
+
+import autoprefixer from 'gulp-autoprefixer';
+import cssnano from 'gulp-cssnano';
+
+import clean from 'gulp-clean';
+
+import { create as browserSync } from 'browser-sync';
+const browsersync = browserSync();
+
 
 // Clean assets
 

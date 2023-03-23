@@ -1,21 +1,97 @@
-// import * as Bootstrap from 'bootstrap'
-import { Popover } from "bootstrap";
+
+
+import { createPopper } from '@popperjs/core';
 
 export namespace Calendar {
   const els = document.querySelectorAll('[data-toggle="popover"]');
+  const popperInstances: any[] = [];
+  console.log('els', els);
 
-  els.forEach((el) => {
-    const titleEl = el.querySelector(".qtip .title");
-    const contentEl = el.querySelector(".qtip .content");
+  //attach popper instances
+  els.forEach((buttonElement, index) => {
+    const toolTipElement: HTMLElement | null = buttonElement.querySelector("#tool-tip");
+    if (toolTipElement) {
+      const popperInstance = createPopper(buttonElement, toolTipElement, {
+        modifiers: [
+          {
+            name: "offset",
+            options: {
+              offset: [0, 8],
+            },
+          },
+        ],
+      });
+      popperInstances.push(popperInstance);
+    }
 
-    new Popover(el, {
-      title: titleEl ? titleEl.outerHTML : "error",
-      content: contentEl ? contentEl.outerHTML : "Could not retrieve event",
-      trigger: "hover focus",
-      html: true,
-      placement: "top",
+  });
+
+  const showEvents = ["mouseenter", "focus"];
+  const hideEvents = ["mouseleave", "blur"];
+
+  showEvents.forEach((event) => {
+    els.forEach((buttonElement, index) => {
+      buttonElement.addEventListener(event, () => {
+        // Make the tooltip visible
+        const tooltip: HTMLElement | null = buttonElement.querySelector("#tool-tip");
+        if (tooltip) {
+          tooltip.setAttribute("data-show", "");
+        }
+        const popperInstance = popperInstances[index];
+
+
+        console.log(index, tooltip, popperInstance);
+        // Enable the event listeners
+        popperInstance.setOptions((options: any) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: "eventListeners", enabled: true },
+          ],
+        }));
+
+        // Update its position
+        popperInstance.update();
+      });
     });
   });
+
+  hideEvents.forEach((event) => {
+    els.forEach((buttonElement, index) => {
+      buttonElement.addEventListener(event, () => {
+        // Hide the tooltip
+        const tooltip: HTMLElement | null = buttonElement.querySelector("#tool-tip");
+        if (tooltip) {
+          tooltip.removeAttribute("data-show");
+        }
+
+        const popperInstance = popperInstances[index];
+        // Disable the event listeners
+        popperInstance.setOptions((options: any) => ({
+          // ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: "eventListeners", enabled: false },
+          ],
+        }));
+      });
+    });
+  });
+
+  const menuButtonEl: HTMLElement | null = document.querySelector('#calendar-month-menu');
+  const dropDownEl: Element | null = document.querySelector('.dropdown-menu');
+
+  if (menuButtonEl && dropDownEl) {
+    menuButtonEl.addEventListener("click", function () {
+    dropDownEl.classList.add('show');
+    });
+  }
+
+  // if (menuButtonEl && dropDownEl) {
+  //   menuButtonEl.addEventListener("blur", function () {
+  //   dropDownEl.classList.remove('show');
+  //   });
+  // }
 
   let myIframe: HTMLIFrameElement | null = document.querySelector("#calendar");
 

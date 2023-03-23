@@ -19,6 +19,18 @@ fieldLayout:
           userCondition: null
           warning: null
           width: 100
+        -
+          elementCondition: null
+          fieldUid: 169eb7a3-ac32-4f0f-afd8-eb8b92803b1b # Event Image
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: cd626b09-c45e-4816-baaa-70b444b88ab6
+          userCondition: null
+          warning: null
+          width: 100
       name: 'Event Metadata'
       uid: bed1db9e-5285-4c94-b548-5a79add53dbb
       userCondition: null

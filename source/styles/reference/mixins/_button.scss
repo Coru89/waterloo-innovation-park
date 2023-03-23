@@ -16,7 +16,7 @@
 
 	&:focus,
 	&:hover {
-		background-color: $blue-dark;
+		background-color: $blue;
 	}
 }
 
@@ -52,11 +52,11 @@
 }
 
 @mixin button--secondary {
-	background-color: $blue-lighter;
+	background-color: $blue-light;
 
 	&:focus,
 	&:hover {
-		background-color: $blue-dark;
+		background-color: $blue;
 	}
 }
 
