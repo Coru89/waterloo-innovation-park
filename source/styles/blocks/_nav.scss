@@ -386,20 +386,26 @@
     }
   }
 
-  .social-icons {
-    padding: 1rem 0;
-
-    @include media-min(sm) {
-      margin: 0;
-      padding-top: 0;
-    }
-
+  &__logo-mobile {
     @include media-min(md) {
       display: none;
     }
-
-    &__list {
-      margin-bottom: 0;
-    }
   }
+
+  // .social-icons {
+  //   padding: 1rem 0;
+
+  //   @include media-min(sm) {
+  //     margin: 0;
+  //     padding-top: 0;
+  //   }
+
+  //   @include media-min(md) {
+  //     display: none;
+  //   }
+
+  //   &__list {
+  //     margin-bottom: 0;
+  //   }
+  // }
 }

@@ -903,22 +903,10 @@ p {
     float: none;
   }
 }
-.nav .social-icons {
-  padding: 1rem 0;
-}
-@media (min-width: 544px) {
-  .nav .social-icons {
-    margin: 0;
-    padding-top: 0;
-  }
-}
 @media (min-width: 768px) {
-  .nav .social-icons {
+  .nav__logo-mobile {
     display: none;
   }
-}
-.nav .social-icons__list {
-  margin-bottom: 0;
 }
 
 .page-intro__inner {
