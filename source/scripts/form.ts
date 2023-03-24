@@ -1,6 +1,6 @@
 export namespace form {
   const formEl = document.querySelector("#form");
-  const buttonEl: HTMLButtonElement | null = document.querySelector('#submit');
+  const buttonEl: HTMLButtonElement | null = document.querySelector('.forms__submit');
 
   // this creates unique subject lines and appends 'from [name]'
   if (formEl) {
@@ -9,11 +9,13 @@ export namespace form {
       // avoid double submission
       if (buttonEl) {
         buttonEl.disabled = true;
+        buttonEl.classList.add('forms__submit--loading');
       }
 
       const subject = formEl.querySelector(
         "input[name=subject]"
       ) as HTMLInputElement;
+
       const fromName = (
         formEl.querySelector("input[name=fromName]") as HTMLInputElement
       ).value;

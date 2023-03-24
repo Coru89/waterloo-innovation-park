@@ -3,6 +3,86 @@
 {% set body_class = 'page-interior' %}
 
 {% block content %}
-    {% include '_components/page-intro' %}
-    {% include '_components/content-sections' %}
+	<section class="contact">
+		<div class="u-container-small contact__inner ">
+			{% macro errorList(errors) %}
+				{% if errors %}
+					{{ ul(errors, {class: 'forms__errors'}) }}
+				{% endif %}
+			{% endmacro %}
+
+			{% set submission = submission ?? null %}
+
+			<form id="form" class="forms" method="post" action="" accept-charset="UTF-8">
+				{{ csrfInput() }}
+				{{ actionInput('contact-form/send') }}
+
+				<h2 class="forms__heading">Have a question? Feel free to reach out.</h2>
+
+				{% if craft.app.session.hasFlash('success') %}
+					<div>Thank you for your message.</div>
+				{% else  %}
+					{# set the email subject #}
+					<input type="hidden" name="subject" value="Waterloo Innovation Park - Question" data-original-value="Waterloo Innovation Park - Question">
+					<input type="hidden" name="message[Start Time]" value="n/a">
+					<input type="hidden" name="message[End Time]" value="n/a">
+					<input type="hidden" name="message[Date Requested]" value="n/a">
+
+					<div class="forms__group">
+
+						<div class="forms__input">
+							{{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                            id: 'from-email',
+                            autocomplete: 'email',
+							placeholder: 'Email*'
+                        }) }}
+							{{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+						</div>
+					</div>
+
+					<div class="forms__group forms__group--50">
+						<div class="forms__input">
+							{{ input('text', 'fromName', submission.fromName ?? '', {
+								id: 'from-name',
+								autocomplete: 'name',
+								placeholder: 'Name*'
+							}) }}
+							{{ submission ? _self.errorList(submission.getErrors('fromName')) }}
+						</div>
+
+						<div class="forms__input">
+							{{ input('text', 'message[Company Name]', submission.message.companyName ?? '', {
+                                    id: 'companyName',
+                                    autocomplete: 'company name',
+                                    placeholder: 'Company name*'
+                                }) }}
+							{{ submission ? _self.errorList(submission.getErrors('message.companyName')) }}
+						</div>
+					</div>
+
+					<div class="forms__group">
+						{{ tag('textarea', {
+                            text: submission.message.body ?? '',
+                            id: 'message',
+                            name: 'message[body]',
+                            rows: 10,
+                            cols: 40,
+							placeholder: 'Comment'
+                        }) }}
+						{{ submission ? _self.errorList(submission.getErrors('message.body')) }}
+					</div>
+
+					<div class="forms__group forms__submit-group">
+						<button id="submit" type="submit" class="button forms__submit">Submit</button>
+						{% if craft.app.session.hasFlash('notice') %}
+							<p class="forms__alert forms__alert--success">{{ craft.app.session.getFlash('notice') }}</p>
+						{% elseif craft.app.session.hasFlash('error') %}
+							<p class="forms__alert forms__alert--error">{{ craft.app.session.getFlash('error') }}</p>
+						{% endif %}
+					</div>
+				{% endif %}
+			</form>
+
+		</div>
+	</section>
 {% endblock %}

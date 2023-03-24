@@ -21,17 +21,11 @@ class Module extends \yii\base\Module
                 /** @var Submission $submission */
                 $submission = $e->sender;
 
-                // if (empty($submission->message['body'])) {
-                //     // Add the error
-                //     // (This will be accessible via `message.getErrors(fromName')` in the template.)
-                //     $submission->addError('message.body', 'Comments cannot be blank.');
-                // }
-
-                // if (empty($submission->fromEmail)) {
-                //     // Add the error
-                //     // (This will be accessible via `message.getErrors(fromName')` in the template.)
-                //     $submission->addError('fromEmail', 'Email cannot be blank.');
-                // }
+                if (empty($submission->message['body'])) {
+                     // Add the error
+                     // (This will be accessible via `message.getErrors(fromName')` in the template.)
+                     $submission->addError('message.body', 'Comments cannot be blank.');
+                 }
 
                 // Make sure that `fromName` was filled in
                 if (empty($submission->fromName)) {
@@ -41,32 +35,42 @@ class Module extends \yii\base\Module
                 }
 
                 // Make sure that `message[Company Name]` was filled in
-                 if (empty($submission->message['Company Name'])) {
-                     // Add the error
-                     // (This will be accessible via `message.getErrors('message.companyName')` in the template.)
-                     $submission->addError('message.companyName', 'Company name cannot be blank.');
-                 }
+                if (empty($submission->message['Company Name'])) {
+                    // Add the error
+                    // (This will be accessible via `message.getErrors('message.companyName')` in the template.)
+                    $submission->addError('message.companyName', 'Company name cannot be blank.');
+                }
+                
+                if (empty($submission->message['Date Requested'])) {
+                    $submission->addError('message.dateRequested', 'Date time cannot be blank.');
+                }
 
-                 // Make sure that `message[Phone]` was filled in
-                 if (empty($submission->message['Date Requested'])) {
-                     // Add the error
-                     // (This will be accessible via `message.getErrors('message.phone')` in the template.)
-                     $submission->addError('message.dateRequested', 'Date time cannot be blank.');
-                 }
+                if (empty($submission->message['Start Time'])) {
+                    $submission->addError('message.startTime', 'Start time cannot be blank.');
+                }
 
-                 // Make sure that `message[Phone]` was filled in
-                 if (empty($submission->message['Start Time'])) {
-                     // Add the error
-                     // (This will be accessible via `message.getErrors('message.phone')` in the template.)
-                     $submission->addError('message.startTime', 'Start time cannot be blank.');
-                 }
+                if (empty($submission->message['End Time'])) {
+                    $submission->addError('message.endTime', 'End requested cannot be blank.');
+                }
 
-                 // Make sure that `message[Phone]` was filled in
-                 if (empty($submission->message['End Time'])) {
-                     // Add the error
-                     // (This will be accessible via `message.getErrors('message.phone')` in the template.)
-                     $submission->addError('message.endTime', 'End time cannot be blank.');
-                 }
+                // if fields have n/a passed in, then remove them from $sumbission so they dont show in the email.
+                // i am passing n/a via hidden fields in the case in which they are not being used for contact form
+                if (isset ($submission->message['Date Requested']) && $submission->message['Date Requested'] === 'n/a') {
+                unset($submission->message['Date Requested']);
+                }
+
+                if (isset ($submission->message['Start Time']) && $submission->message['Start Time'] === 'n/a') {
+                unset($submission->message['Start Time']);
+                }
+
+                if (isset ($submission->message['End Time']) && $submission->message['End Time'] === 'n/a') {
+                unset($submission->message['End Time']);
+                }
+
+                if (isset ($submission->message['Company Name']) && $submission->message['Company Name'] === 'n/a') {
+                unset($submission->message['Company Name']);
+                }
+
             }
         );
     }

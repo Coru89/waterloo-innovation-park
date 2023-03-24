@@ -13,7 +13,7 @@ html {
 }
 
 .body {
-	color: $black;
+	color: $grey-dark;
 	font-family: $font-family-futura;
 	font-size: $font-size-small;
 	line-height: 1.5;
@@ -81,7 +81,7 @@ p {
 		text-decoration: none;
 
 		&:hover {
-			box-shadow: inset 0 -1px 0 #094cae;
+			box-shadow: inset 0 -1px 0 $blue;
 		}
 	}
 }
@@ -95,8 +95,8 @@ picture {
 }
 
 h1 {
-	color: $grey-dark;
-	font-size: 1.625rem;
+	color: $grey-darker;
+	font-size: 3.5rem;
 	font-weight: $font-weight-bold;
 	line-height: 1.25;
 	margin-bottom: 0.75rem;
@@ -108,7 +108,7 @@ h1 {
 }
 
 h2 {
-	color: $grey-dark;
+	color: $grey-darker;
 	font-size: 1.375rem;
 	font-weight: $font-weight-semibold;
 	line-height: 1.25;
@@ -121,7 +121,7 @@ h2 {
 }
 
 h3 {
-	color: $grey-dark;
+	color: $grey-darker;
 	font-size: $font-size-medium;
 	font-weight: $font-weight-semibold;
 	line-height: 1.25;
@@ -164,6 +164,14 @@ p {
 	box-sizing: border-box;
 	margin: 0 auto;
 	max-width: 1356px;
+	padding-left: 1.375rem;
+	padding-right: 1.375rem;
+}
+
+.u-container-small {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 750px;
 	padding-left: 1.375rem;
 	padding-right: 1.375rem;
 }

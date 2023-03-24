@@ -12508,8 +12508,8 @@ textarea.form-control-lg {
 #tool-tip {
   background-color: white;
   border-radius: 4px;
-  border: #383943 1px solid;
-  color: #383943;
+  border: #C0C0C0 1px solid;
+  color: #C0C0C0;
   display: none;
   font-size: 13px;
   padding: 5px 10px;
@@ -12536,7 +12536,7 @@ textarea.form-control-lg {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -4px;
-  border: 1px solid #383943;
+  border: 1px solid #C0C0C0;
 }
 
 #arrow::after {
