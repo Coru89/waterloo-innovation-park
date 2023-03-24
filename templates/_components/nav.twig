@@ -1,17 +1,20 @@
 <nav id="nav" class="nav">
-    <button class="nav__button" id="nav" aria-label="toggle navigation menu">
-		<svg class="nav__button--open" fill="#234a9e" viewBox="0 0 100 80" width="25" height="25">
+	<button class="nav__button" id="nav" aria-label="toggle navigation menu">
+		<svg class="nav__button--open" fill="#234a9e" viewbox="0 0 100 80" width="25" height="25">
 			<rect width="100" height="15"></rect>
 			<rect y="30" width="100" height="15"></rect>
 			<rect y="60" width="100" height="15"></rect>
 		</svg>
-		<svg class="nav__button--close mobile-nav__exit-button" fill="#234a9e" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+		<svg class="nav__button--close mobile-nav__exit-button" fill="#234a9e" width="18" height="18" viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 			<line x1="1" y1="1" x2="17" y2="17" stroke="black" stroke-width="2"/>
 			<line x1="1" y1="17" x2="17" y2="1" stroke="black" stroke-width="2"/>
 		</svg>
-    </button>
-	    <div class="nav__wrapper">
-			<ul class="nav__list" role="menu">
+	</button>
+	<div class="nav__wrapper">
+		<a href="/" class="header__logo-anchor" title="A logo">
+			<img alt="Waterloo Innovation Park + The Link Logo" src="/assets/images/logo.png">
+		</a>
+		<ul class="nav__list" role="menu">
 			{% set pages = craft.entries.section('siteNavigation').all() %}
 			{% if pages is defined %}
 				{% for page in pages %}
@@ -20,7 +23,7 @@
 						<li class="nav__item nav__item--has-level-2" role="presentation">
 							<a class="nav__item-link" href="{{ page.path }}">
 								<span class="nav__item-link-text">{{ page.title }}</span>
-								<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+								<svg class="arrow" viewbox="0 0 24 24" aria-hidden="true">
 									<path d="M9.707 18.707l6-6a.999.999 0 0 0 0-1.414l-6-6a.999.999 0 1 0-1.414 1.414L13.586 12l-5.293 5.293a.999.999 0 1 0 1.414 1.414z"></path>
 								</svg>
 							</a>
@@ -47,4 +50,5 @@
 			{% endif %}
 		</ul>
 	</div>
+	<div class="nav__overlay"></div>
 </nav>
