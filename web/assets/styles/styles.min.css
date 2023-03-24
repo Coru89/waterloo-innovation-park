@@ -1767,45 +1767,6 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 
-.call-to-action {
-  background: #0A78FF;
-  color: #fff;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .call-to-action {
-    text-align: left;
-  }
-}
-.call-to-action__content {
-  padding: 2.5rem 1rem;
-}
-@media (min-width: 768px) {
-  .call-to-action__content {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 3rem 0;
-  }
-}
-.call-to-action h3 {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 768px) {
-  .call-to-action h3 {
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
-}
-
 .booking {
   padding: 5rem 0;
 }
@@ -2491,5 +2452,92 @@ html.with-fancybox body.hide-scrollbar {
   to {
     -webkit-transform: translate(-50%, -50%) rotate(360deg);
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.event-slider__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #0B0E26;
+  padding: 3rem;
+}
+.event-slider__column {
+  max-width: 50%;
+}
+
+.call-to-action {
+  background: #0A78FF;
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .call-to-action {
+    text-align: left;
+  }
+}
+.call-to-action__content {
+  padding: 2.5rem 1rem;
+}
+@media (min-width: 768px) {
+  .call-to-action__content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+}
+.call-to-action h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .call-to-action h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.instagram {
+  background-color: #F3F5F7;
+  visibility: hidden;
+}
+.instagram--visible {
+  visibility: visible;
+}
+.instagram__inner {
+  padding: 2rem 1.125rem;
+}
+@media (min-width: 768px) {
+  .instagram__inner {
+    padding: 5rem 1.125rem;
+    text-align: center;
+  }
+}
+.instagram__subheading {
+  margin-bottom: 2.5rem;
+}
+.instagram__image {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  height: 314px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .instagram__image {
+    height: 314px;
   }
 }

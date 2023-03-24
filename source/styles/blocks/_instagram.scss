@@ -1,0 +1,34 @@
+$block: "instagram";
+
+.#{$block} {
+  background-color: $grey-lighter;
+  visibility: hidden;
+
+  &--visible {
+    visibility: visible;
+  }
+
+  &__inner {
+    padding: 2rem 1.125rem;
+
+    @include media-min(md) {
+      padding: 5rem 1.125rem;
+      text-align: center;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center center;
+    height: 314px;
+    width: 100%;
+
+    @include media-min(md) {
+      height: 314px;
+    }
+  }
+}

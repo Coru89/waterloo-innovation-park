@@ -152,15 +152,14 @@ h1 {
 h2 {
   color: #0B0E26;
   font-family: Manrope, Helvetica, Arial, sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   font-weight: 500;
-  line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 0;
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -210,8 +209,8 @@ p {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 1313px;
-  padding-left: 1.375rem;
-  padding-right: 1.375rem;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
 }
 
 .u-container-small {
@@ -219,8 +218,8 @@ p {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 750px;
-  padding-left: 1.375rem;
-  padding-right: 1.375rem;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
 }
 
 .u-display-none {
@@ -982,10 +981,6 @@ p {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
-}
-.image-slider__image-container {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 .image-slider__content {
   color: #fff;

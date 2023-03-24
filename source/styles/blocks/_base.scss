@@ -176,14 +176,13 @@ h1 {
 h2 {
 	color: $grey-darker;
 	font-family: $font-family-heading;
-	font-size: 1.375rem;
+	font-size: 1.875rem;
 	font-weight: $font-weight-semibold;
-	line-height: 1.25;
 	margin-bottom: 1rem;
 	margin-top: 0;
 
 	@include media-min(md) {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 }
 
@@ -232,16 +231,16 @@ p {
 	box-sizing: border-box;
 	margin: 0 auto;
 	max-width: 1313px;
-	padding-left: 1.375rem;
-	padding-right: 1.375rem;
+	padding-left: 1.125rem;
+	padding-right: 1.125rem;
 }
 
 .u-container-small {
 	box-sizing: border-box;
 	margin: 0 auto;
 	max-width: 750px;
-	padding-left: 1.375rem;
-	padding-right: 1.375rem;
+	padding-left: 1.125rem;
+	padding-right: 1.125rem;
 }
 
 .u-display-none {

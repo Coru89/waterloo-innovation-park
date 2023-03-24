@@ -1,0 +1,17 @@
+@import '../reference/reference';
+
+$block: 'event-slider';
+
+.#{$block} {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        background-color: $grey-darker;
+        padding: 3rem;
+    }
+
+    &__column {
+        max-width: 50%;
+    }
+}

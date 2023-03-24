@@ -1,10 +1,10 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 21bdf77a-7ef8-4373-91e0-b6f8b61e6459 # Events
-handle: eventImage
-instructions: null
-name: 'Event Image'
-searchable: true
+handle: eventSliderPosterImage
+instructions: 'Provide an image for the events slider'
+name: 'Event Slider Poster Image'
+searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
@@ -15,7 +15,7 @@ settings:
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: 1
+  maxRelations: null
   minRelations: null
   previewMode: full
   restrictFiles: false
@@ -38,8 +38,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources:
-    - 'volume:9cfc771b-b401-4434-bbd3-e0e94c877314' # Uploads
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

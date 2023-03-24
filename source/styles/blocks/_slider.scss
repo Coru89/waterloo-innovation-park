@@ -47,10 +47,6 @@ $block: "image-slider";
     z-index: -1;
     transform: translateY(-50%);
     top: 50%;
-
-    &-container {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    }
   }
 
   &__content {

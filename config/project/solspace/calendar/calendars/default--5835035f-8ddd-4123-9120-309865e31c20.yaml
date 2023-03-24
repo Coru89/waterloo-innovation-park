@@ -31,6 +31,30 @@ fieldLayout:
           userCondition: null
           warning: null
           width: 100
+        -
+          elementCondition: null
+          fieldUid: 9d0ece9f-df15-4593-94b1-66eb90467427 # Event Slider Poster Image
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: cc58d7d7-805e-4fa0-b0e8-0970c43641d9
+          userCondition: null
+          warning: null
+          width: 100
+        -
+          elementCondition: null
+          fieldUid: 809ce6db-5c77-4e75-9eb9-1d42abe1485b # Event Slider Details
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: b650b567-f8b3-4aaa-8720-042a88974235
+          userCondition: null
+          warning: null
+          width: 100
       name: 'Event Metadata'
       uid: bed1db9e-5285-4c94-b548-5a79add53dbb
       userCondition: null

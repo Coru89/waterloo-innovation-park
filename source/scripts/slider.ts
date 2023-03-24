@@ -2,12 +2,18 @@ import Glide from'@glidejs/glide';
 
 export namespace slider {
     const glideEl = document.querySelector('.glide');
+    const glideInstaEl = document.querySelector('.instagram-glide');
 
     if (glideEl) {
-        initGlide();
+        initImageGlide();
     }
 
-    function initGlide() {
+    if (glideInstaEl) {
+        initInstaGlide();
+    }
+
+
+    function initImageGlide() {
         var glide = new Glide('.glide', {
             type: 'carousel',
             autoplay: 10000,
@@ -42,7 +48,32 @@ export namespace slider {
     
               glide.mount()
     }
-    
 
+    function initInstaGlide() {
+        var glide = new Glide('.instagram-glide', {
+            type: 'carousel',
+            autoplay: 10000,
+            gap: 30,
+            perView: 4,
+            breakpoints: {
+                768: {
+                    perView: 2
+                },
+                1200: {
+                    perView: 3
+                }
+            }
+        })      
+    
+        // fixes cumulative layout shift
+        glide.on(['build.before'], function() {
+            if (glideInstaEl) {
+                glideInstaEl.classList.add('instagram--visible');
+            }
+            });
+
+            glide.mount()
+    }
+    
 }
     

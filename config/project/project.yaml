@@ -1,4 +1,4 @@
-dateModified: 1679654777
+dateModified: 1679663859
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -45,6 +45,7 @@ meta:
     0afdac73-846a-4985-a071-851fed756ca9: 'Button Text' # Button Text
     0b9c054a-9bbd-4547-b554-70bfd7142228: 'Waterloo Innovation Park' # Waterloo Innovation Park
     0d01ac2a-6f7f-4925-8c97-10d917e18c84: Title # Title
+    0d0605aa-2db0-476d-a8cd-009b9efc4eeb: 'Button Link' # Button Link
     0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
     1f0b8178-c969-454d-94a7-ae7d3f373f86: Subheading # Subheading
@@ -52,6 +53,7 @@ meta:
     2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager Image' # Property Manager Image
     2f95f803-ea1a-450d-856b-d4604d326a97: Date # Date
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
+    3e1d40f9-bcc2-45e5-a18f-9a845b7988db: 'Button Text' # Button Text
     4b4b1468-382a-43a9-a954-3816f65567a2: Heading # Heading
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
     4df73862-66da-4140-8eac-6eeb31f2aa4c: 'Button Link' # Button Link
@@ -70,6 +72,7 @@ meta:
     7c0905c7-cf97-4e6a-85aa-2dec1a0f13e5: 'Button Text' # Button Text
     7c65acbe-cf3a-4d9d-8c29-198033c701a3: Instagram # Instagram
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
+    8a9c949f-a4f8-46c9-b908-e0fba1e95286: Summary # Summary
     8af21ea5-8ed7-451b-9561-65de6890a24a: Events # Events
     8c002f04-e95f-478c-924a-13bda79698f8: 'Past Exhibit' # Past Exhibit
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
@@ -77,6 +80,7 @@ meta:
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
+    9d0ece9f-df15-4593-94b1-66eb90467427: 'Event Slider Poster Image' # Event Slider Poster Image
     9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
     9f2bc7d7-ce7d-4a3e-8704-3b608e00d2d6: Properties # Properties
     15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: 'Phone Link' # Phone Link
@@ -91,6 +95,7 @@ meta:
     42a3ddcd-d834-49a3-a79e-21c3f11a6ab6: 'Image panel' # Image panel
     45e37949-8c8b-424e-8d3e-8d4b606ed084: Item # Item
     47b5e67e-c01b-4de1-94dd-e0501368e229: Artist # Artist
+    51f09ffd-ffd8-4abf-9a71-5bbb77aac42b: 'Event Slider' # Event Slider
     52ac9c9a-5d73-4e34-b24e-edf09a5a6b47: Default # Default
     52d8ea63-1195-47df-9693-9e83d7049cd2: 'Lease Managers' # Lease Managers
     075e886a-d174-424c-938b-98d8a9b420ae: 'Image Slider' # Image Slider
@@ -108,9 +113,11 @@ meta:
     0493ce96-a299-4502-9f34-15fe3bebbdaa: Artist # Artist
     687cd2f1-06f5-4174-ab03-40daaa93ad90: 'Panel Title' # Panel Title
     703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
+    710f40a4-9595-439f-ba53-b0995864d7ca: Heading # Heading
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
     750a3bea-3a7c-48b8-a453-41661ad274fa: 'Page Intro' # Page Intro
     771b1ebb-9bc3-4a71-9969-b7e5f1020bb7: 'Property Item' # Property Item
+    809ce6db-5c77-4e75-9eb9-1d42abe1485b: 'Event Slider Details' # Event Slider Details
     903cf4e1-deba-4181-804b-66520fe03fdc: Image # Image
     959a923c-97d7-425f-baea-2a45e43116cf: 'Past Exhibit' # Past Exhibit
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
@@ -147,6 +154,7 @@ meta:
     cc822dad-031d-4617-957a-65ba55d4ddb3: instagram # instagram
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
+    d40fc290-3cb8-4974-b1e9-4ab5e279ce4a: Limit # Limit
     d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
@@ -201,11 +209,11 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       dump: false
-      instagramUser: applcor
-      proxyKey: ''
+      instagramUser: thelink_innovationpark
+      proxyKey: GPdOk5ibUUjHwnOn8fnY
       subpath: ''
       timeout: 10
-      useProxy: false
+      useProxy: true
       useVolume: true
       volume: instagram
   minical:

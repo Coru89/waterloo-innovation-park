@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'instagramUser' => '#chiangmai',
-    'dump' => true,
-    'useVolume' => false,
-    'volume' => 'instagram',
-    'subpath' => '',
+    'proxyKey' => 'GPdOk5ibUUjHwnOn8fnY',
+    'useProxy' => true,
+    'timeout' => 10,
 ];

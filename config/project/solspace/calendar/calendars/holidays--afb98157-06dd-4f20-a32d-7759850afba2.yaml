@@ -2,7 +2,63 @@ allowRepeatingEvents: true
 color: '#c9970d'
 description: ''
 descriptionFieldHandle: '0'
-fieldLayout: null
+fieldLayout:
+  tabs:
+    -
+      elementCondition: null
+      elements:
+        -
+          elementCondition: null
+          fieldUid: b19956e7-f23d-451e-93c0-712acc2c2b9a # Event Description
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 9001f54d-2391-435d-93fa-453f5725e002
+          userCondition: null
+          warning: null
+          width: 100
+        -
+          elementCondition: null
+          fieldUid: 169eb7a3-ac32-4f0f-afd8-eb8b92803b1b # Event Image
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 8c27f8f8-8136-4532-a1ed-8868c1b718b0
+          userCondition: null
+          warning: null
+          width: 100
+        -
+          elementCondition: null
+          fieldUid: 9d0ece9f-df15-4593-94b1-66eb90467427 # Event Slider Poster Image
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 07899259-ab9d-4895-bf05-20ca813a8fe6
+          userCondition: null
+          warning: null
+          width: 100
+        -
+          elementCondition: null
+          fieldUid: 809ce6db-5c77-4e75-9eb9-1d42abe1485b # Event Slider Details
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 84d90ab7-2caa-449f-bfdb-6036d3b1fe60
+          userCondition: null
+          warning: null
+          width: 100
+      name: 'Event Metadata'
+      uid: 36ef5429-0007-4caa-b6fe-3b19d0640c83
+      userCondition: null
+  uid: f7b061b3-3949-479f-b1de-ea19457eb182
 handle: holidays
 hasTitleField: true
 icsHash: null
