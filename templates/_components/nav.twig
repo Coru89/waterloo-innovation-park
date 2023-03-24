@@ -28,6 +28,13 @@
 								</svg>
 							</a>
 							<ul class="nav__sublist">
+								{% if page.path %}
+								<li class="nav__item nav__item-level-2">
+									<a class="nav__item-link nav__item-link-level-2" href="{{ page.path }}">
+										<span class="nav__item-link-text">{{ page.title }}</span>
+									</a>
+								</li>
+								{% endif %}
 								{% for child in page.children %}
 									<li class="nav__item nav__item-level-2">
 										<a class="nav__item-link nav__item-link-level-2" href="{{ child.path }}">
