@@ -32,13 +32,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 56b20bcf-23a6-4b09-ab8c-00a3d69c54c1 # Page Summary
+            fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b8f66742-85d0-457c-ac9a-b5746eaaa7e9
+            uid: 3c08d3f1-c62e-43d1-ad75-9f94fe763021
             userCondition: null
             warning: null
             width: 100

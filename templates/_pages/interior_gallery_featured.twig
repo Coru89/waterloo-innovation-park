@@ -4,7 +4,8 @@
 
 {% block layout %}
 	{{ sprig.script }}
-	{% include '_components/page-intro' %}
+	{% include '_components/content-sections' %}
 	{{ sprig('_components/featured-exhibit-rollup', {'limit': 4}) }}
 	{{ sprig('_components/past-exhibits-rollup', {'limit': 12}) }}
 {% endblock %}
+	

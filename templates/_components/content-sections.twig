@@ -72,7 +72,11 @@
 		<section class="image-panel">
 			<picture class="image-panel__picture" role="presentation">
 				{% set image = block.image.one() %}
-				<img alt="" class="image-panel__image" src="{{image.getUrl()}}" loading="lazy"/>
+				<picture class="image-slider__picture">
+					<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '100vw'}) }}>
+					<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '100vw'}) }}>
+					<img style="object-position: center {{block.imageVerticalPosition}}%" alt="{{image.alt}}" class="image-panel__image" src={{image.url}} width={{image.width}} height={{image.height}}>
+				</picture>
 			</picture>
 		</section>
 	{% elseif block.type == "contentPanel" %}
@@ -84,6 +88,51 @@
 				</div>
 			</div>
 		</section>
+	{% elseif block.type == "instagram" %}	
+		{% set items = craft.instagram.getFeed() %}
+
+		<h2>{{block.heading}}</h2>
+		<span>{{block.subheading}}</span>
+
+		{% for item in craft.instagram.getFeed() %}
+		<a href="https://www.instagram.com/p/{{ item.shortcode }}/" target="_blank" rel="noopener noreferrer">
+		<img src="{{ item.thumbnail }}" alt="" />
+		</a>
+		<p>{{ item.caption }}</p>
+		<p>{{ item.likes }} Likes / {{ item.comments }} Comments</p>
+		{% endfor %}
+
+	{% elseif block.type == "pageIntro" %}
+		<div class="page-intro">
+			<div class="page-intro__inner u-container">
+				<div class="page-intro__row">
+					<h1 class="page-intro__heading">{{block.pageHeading}}</h1>
+					{% set url = craft.app.request.url %}
+					{% if url == "/the-link" %}
+						<div class="page-intro__open-message">
+							<svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.666 6.285a.976.976 0 0 0-1.38 0h-.001a.976.976 0 0 0 0 1.38v.002a.976.976 0 0 0 1.38 0l.002-.001a.976.976 0 0 0 0-1.38l-.001-.001Zm0 11.048a.976.976 0 0 0-1.38 0l-.001.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.002a.976.976 0 0 0 0-1.38l-.001-.002Zm-2.978-5.81h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm12.695 0h-3.906V7.62h-1.954v5.858h5.86v-1.954Zm-4.884-5.859h.002a.976.976 0 0 0 0-1.951h-.002a.976.976 0 0 0 0 1.951Zm6.215.62a.976.976 0 0 0-1.38 0v.002a.976.976 0 0 0 1.381 1.381v-.001a.976.976 0 0 0 0-1.38v-.001ZM12.5 0C5.49 0 0 5.49 0 12.5S5.49 25 12.5 25 25 19.51 25 12.5 19.51 0 12.5 0Zm0 23.047c-5.914 0-10.547-4.633-10.547-10.547 0-5.914 4.633-10.547 10.547-10.547 5.914 0 10.547 4.633 10.547 10.547 0 5.914-4.633 10.547-10.547 10.547Zm7.813-11.524h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm-1.599 5.81a.976.976 0 0 0-1.38 0v.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.001a.976.976 0 0 0 0-1.38v-.002Zm-6.213 2.005h-.002a.976.976 0 0 0 0 1.951h.002a.976.976 0 0 0 0-1.951Z" fill="#000"/></svg>
+							<span>Monday to Friday, from 9am to 3pm.</span>
+						</div>
+					{% endif %}
+				</div>
+				{% if block.pageSummary or block.buttonText %}
+					<div class="page-intro__row">
+						{% if block.pageSummary %}
+							<p class="page-intro__summary">{{block.pageSummary}}</p>
+						{% endif %}
+
+						{% if block.buttonText %}
+							<a class="button button--arrow" href="{{block.buttonHref}}">
+								{{block.buttonText}}
+							</a>
+						{% endif %}
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+
+
 
 	{% elseif block.type == "imageSlider" %}
 		<section class="glide image-slider">

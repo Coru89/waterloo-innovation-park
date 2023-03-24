@@ -32,13 +32,43 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cadde915-c6fb-46a6-a77a-6fafdcb4e322
+            fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 95324875-51ce-469f-991a-b168a65d40f7
+            uid: 396d0599-4a5e-442d-aa43-661d78e9111a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e77ae473-a86b-4a41-a7c8-9388d460bab0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7bc74160-416f-46f7-9447-6f6fad7b93ec # Page Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a6b8c93-0b39-44b5-a245-9e58b9878f67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56b20bcf-23a6-4b09-ab8c-00a3d69c54c1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 821c1153-6c26-4733-b977-2a291c16903f
             userCondition: null
             warning: null
             width: 100
@@ -69,29 +99,11 @@ fieldLayouts:
         name: 'Page Intro'
         uid: 7db536ab-5c65-45b2-bf7d-182e006ca1d2
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 396d0599-4a5e-442d-aa43-661d78e9111a
-            userCondition: null
-            warning: null
-            width: 100
-        name: Content
-        uid: e77ae473-a86b-4a41-a7c8-9388d460bab0
-        userCondition: null
 handle: about
-hasTitleField: true
+hasTitleField: false
 name: About
 section: ee51cfa4-ec13-4103-bf30-68e7c1b63ac5 # About
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

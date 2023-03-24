@@ -1,5 +1,6 @@
 {
   "require": {
+    "codemonauts/craft-instagram-feed": "^2.1",
     "craftcms/cms": "4.4.4",
     "craftcms/contact-form": "3.0.1",
     "craftcms/redactor": "3.0.4",

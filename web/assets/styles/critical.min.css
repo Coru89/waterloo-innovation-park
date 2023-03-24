@@ -1,8 +1,44 @@
 @font-face {
-  font-family: "Futura Std Book";
+  font-family: "Manrope";
+  src: local("Manrope ExtraLight"), local("Manrope-ExtraLight"), url("fonts/Manrope-ExtraLight.woff2") format("woff2"), url("fonts/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope Medium"), local("Manrope-Medium"), url("fonts/Manrope-Medium.woff2") format("woff2"), url("fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope Regular"), local("Manrope-Regular"), url("fonts/Manrope-Regular.woff2") format("woff2"), url("fonts/Manrope-Regular.woff") format("woff");
   font-weight: normal;
-  src: local("Futura Std Book"), url("fonts/FuturaStdBook.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope SemiBold"), local("Manrope-SemiBold"), url("fonts/Manrope-SemiBold.woff2") format("woff2"), url("fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope Light"), local("Manrope-Light"), url("fonts/Manrope-Light.woff2") format("woff2"), url("fonts/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope Bold"), local("Manrope-Bold"), url("fonts/Manrope-Bold.woff2") format("woff2"), url("fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 html {
   -webkit-font-smoothing: antialiased;
@@ -11,17 +47,18 @@ html {
 
 .body {
   color: #383943;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-family: Manrope, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 26px;
+  margin: 0;
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
 }
 @media (min-width: 544px) {
   .body {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.125rem;
+    line-height: 32px;
   }
 }
 .body--no-scroll {
@@ -99,6 +136,7 @@ picture {
 
 h1 {
   color: #0B0E26;
+  font-family: Manrope, Helvetica, Arial, sans-serif;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.25;
@@ -113,6 +151,7 @@ h1 {
 
 h2 {
   color: #0B0E26;
+  font-family: Manrope, Helvetica, Arial, sans-serif;
   font-size: 1.375rem;
   font-weight: 500;
   line-height: 1.25;
@@ -127,6 +166,7 @@ h2 {
 
 h3 {
   color: #0B0E26;
+  font-family: Manrope, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25;
@@ -169,7 +209,7 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1356px;
+  max-width: 1313px;
   padding-left: 1.375rem;
   padding-right: 1.375rem;
 }

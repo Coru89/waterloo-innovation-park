@@ -1,4 +1,4 @@
-dateModified: 1679589931
+dateModified: 1679654777
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -19,6 +19,13 @@ fs:
       path: '@webroot/exhibition-photos'
     type: craft\fs\Local
     url: '@web/exhibition-photos'
+  instagram:
+    hasUrls: true
+    name: Instagram
+    settings:
+      path: '@webroot/instagram'
+    type: craft\fs\Local
+    url: '@web/instagram'
   leasing:
     hasUrls: true
     name: Leasing
@@ -40,11 +47,14 @@ meta:
     0d01ac2a-6f7f-4925-8c97-10d917e18c84: Title # Title
     0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
+    1f0b8178-c969-454d-94a7-ae7d3f373f86: Subheading # Subheading
     2a874f96-2ff5-4132-815e-da2d51664308: 'Book Private Event' # Book Private Event
     2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager Image' # Property Manager Image
     2f95f803-ea1a-450d-856b-d4604d326a97: Date # Date
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
+    4b4b1468-382a-43a9-a954-3816f65567a2: Heading # Heading
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
+    4df73862-66da-4140-8eac-6eeb31f2aa4c: 'Button Link' # Button Link
     04e5c194-9ae4-47b7-984b-0892ca576ec9: Images # Images
     5b4ec8f1-aa69-4807-871b-8e4f533f4440: 'Lease now' # Lease now
     5bb2582c-1b3b-4a0a-b234-64558f60c9a9: Image # Image
@@ -56,11 +66,14 @@ meta:
     6f01e9c8-9af2-4589-8d81-a9ed56130cc9: 'Job Title' # Job Title
     6f949aa8-1797-4b29-b437-d531558d65c7: 'Button Text' # Button Text
     7b3301be-ed48-400a-a679-7b61d6a9fab8: Path # Path
+    7bc74160-416f-46f7-9447-6f6fad7b93ec: 'Page Heading' # Page Heading
+    7c0905c7-cf97-4e6a-85aa-2dec1a0f13e5: 'Button Text' # Button Text
+    7c65acbe-cf3a-4d9d-8c29-198033c701a3: Instagram # Instagram
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
     8af21ea5-8ed7-451b-9561-65de6890a24a: Events # Events
+    8c002f04-e95f-478c-924a-13bda79698f8: 'Past Exhibit' # Past Exhibit
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
     8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
-    8e4b80d0-1d95-4b57-80ef-2131c2a8441e: 'Page Intro' # Page Intro
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
@@ -80,11 +93,11 @@ meta:
     47b5e67e-c01b-4de1-94dd-e0501368e229: Artist # Artist
     52ac9c9a-5d73-4e34-b24e-edf09a5a6b47: Default # Default
     52d8ea63-1195-47df-9693-9e83d7049cd2: 'Lease Managers' # Lease Managers
-    56b20bcf-23a6-4b09-ab8c-00a3d69c54c1: 'Page Summary' # Page Summary
     075e886a-d174-424c-938b-98d8a9b420ae: 'Image Slider' # Image Slider
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
     86bf8d52-4937-4435-86ec-d080ca4fd0d7: 'Book Private Event' # Book Private Event
+    87f60dce-cac6-4d30-90ef-a6a2040f4d0d: 'Post Count' # Post Count
     95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
     169eb7a3-ac32-4f0f-afd8-eb8b92803b1b: 'Event Image' # Event Image
@@ -96,13 +109,16 @@ meta:
     687cd2f1-06f5-4174-ab03-40daaa93ad90: 'Panel Title' # Panel Title
     703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
+    750a3bea-3a7c-48b8-a453-41661ad274fa: 'Page Intro' # Page Intro
     771b1ebb-9bc3-4a71-9969-b7e5f1020bb7: 'Property Item' # Property Item
     903cf4e1-deba-4181-804b-66520fe03fdc: Image # Image
+    959a923c-97d7-425f-baea-2a45e43116cf: 'Past Exhibit' # Past Exhibit
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
     8267e525-8100-4ca9-9949-0677504ad351: email # email
     37175b69-3644-4f1e-a348-e82fd2565057: 'Property Manager Image Caption' # Property Manager Image Caption
     91458f3d-5347-4b47-a507-b691e9a17943: 'Navigation Items' # Navigation Items
     92500a08-4b00-4235-be91-e4a8d210dd0d: 'The Link' # The Link
+    321611e0-0312-43af-a816-cd4e1af60c8f: 'Page Summary' # Page Summary
     465854cd-ce73-4e46-905e-7b925a0307e2: 'Exhibition Name' # Exhibition Name
     506955ce-fa3f-407f-9b5c-f7d79b9b1e42: Exhibits # Exhibits
     865120ee-347d-4344-95ec-61b32b775de0: Image # Image
@@ -113,7 +129,9 @@ meta:
     87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
     89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
     a8b4a8b9-f098-48a3-b3c9-9149a1f3d3e7: 'Art Name' # Art Name
+    ad3311a0-c30e-4a01-9405-46dc2bb50f43: 'Page Heading' # Page Heading
     afb98157-06dd-4f20-a32d-7759850afba2: 'Stat Holidays' # Stat Holidays
+    b1c63a82-dac1-486f-a4f0-a01d8bd252d6: 'Image Vertical Position' # Image Vertical Position
     b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
     b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
@@ -126,6 +144,7 @@ meta:
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
+    cc822dad-031d-4617-957a-65ba55d4ddb3: instagram # instagram
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
     d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
@@ -176,6 +195,19 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  instagramfeed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      dump: false
+      instagramUser: applcor
+      proxyKey: ''
+      subpath: ''
+      timeout: 10
+      useProxy: false
+      useVolume: true
+      volume: instagram
   minical:
     edition: standard
     enabled: true

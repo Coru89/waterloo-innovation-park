@@ -32,13 +32,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 56b20bcf-23a6-4b09-ab8c-00a3d69c54c1 # Page Summary
+            fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4f80d257-d009-4551-bdea-cb774f923948
+            uid: f0743eb9-e831-4b89-969a-01f51b0c0eeb
             userCondition: null
             warning: null
             width: 100
@@ -88,7 +88,7 @@ fieldLayouts:
         uid: c6c250e6-ba47-423b-a29b-9eb02505aa94
         userCondition: null
 handle: lease
-hasTitleField: true
+hasTitleField: false
 name: 'Lease now'
 section: 7d4ea53b-345f-4ffd-aeb1-c3be93482fcb # Lease now
 sortOrder: 1

@@ -1,0 +1,137 @@
+field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  6471b5b0-b703-41ec-86d0-f1e94aa32ed5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ad3311a0-c30e-4a01-9405-46dc2bb50f43 # Page Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17a17978-8531-47b5-bc71-98812e7afe06
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 321611e0-0312-43af-a816-cd4e1af60c8f # Page Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d244f825-ff48-4622-a7f1-a9ebc3775108
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4df73862-66da-4140-8eac-6eeb31f2aa4c # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fcb5330-33b4-48ef-8071-15f3ad2908b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7c0905c7-cf97-4e6a-85aa-2dec1a0f13e5 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25f2f281-4fb0-4ee0-abe0-6728c4c1c962
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 151fcebe-eb3c-4ed1-92b3-6d1d60686b8b
+        userCondition: null
+fields:
+  4df73862-66da-4140-8eac-6eeb31f2aa4c: # Button Link
+    columnSuffix: kyqruirk
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonHref
+    instructions: null
+    name: 'Button Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  7c0905c7-cf97-4e6a-85aa-2dec1a0f13e5: # Button Text
+    columnSuffix: isukcbdh
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  321611e0-0312-43af-a816-cd4e1af60c8f: # Page Summary
+    columnSuffix: xmlsiapy
+    contentColumnType: text
+    fieldGroup: null
+    handle: pageSummary
+    instructions: null
+    name: 'Page Summary'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ad3311a0-c30e-4a01-9405-46dc2bb50f43: # Page Heading
+    columnSuffix: mrszjpae
+    contentColumnType: text
+    fieldGroup: null
+    handle: pageHeading
+    instructions: null
+    name: 'Page Heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: pageIntro
+name: 'Page Intro'
+sortOrder: 8

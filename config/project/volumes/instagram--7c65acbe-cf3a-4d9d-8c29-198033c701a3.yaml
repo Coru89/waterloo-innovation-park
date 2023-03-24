@@ -1,5 +1,5 @@
 fieldLayouts:
-  3b7b6aa5-04f1-4476-9775-4ff89b5737f8:
+  17025839-b91b-4427-ac34-586e51b605f6:
     tabs:
       -
         elementCondition: null
@@ -25,31 +25,19 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 096f7cac-788f-4c34-a234-a43fa153a512
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3570a13c-a035-4e51-aa09-b39d1b4a1437
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 59dd4244-25bd-4965-8b5a-660f6a22354b
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 69937934-238e-4e7f-8423-ed689637a578
+        uid: 6405d649-c5c7-451a-b154-93b7dcde1df4
         userCondition: null
-handle: theLink
-hasTitleField: false
-name: 'The Link'
-section: 92500a08-4b00-4235-be91-e4a8d210dd0d # The Link
-sortOrder: 1
-titleFormat: '{section.name|raw}'
+fs: instagram
+handle: instagram
+name: Instagram
+sortOrder: 4
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

@@ -29,6 +29,7 @@
 
 				</div>
 				<div class="booking__column">
+					{% include '_components/content-sections' %}
 					{% macro errorList(errors) %}
 						{% if errors %}
 							{{ ul(errors, {class: 'forms__errors'}) }}

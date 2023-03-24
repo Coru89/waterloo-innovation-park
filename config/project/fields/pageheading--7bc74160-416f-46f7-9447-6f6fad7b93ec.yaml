@@ -1,9 +1,9 @@
-columnSuffix: xwtgovqu
+columnSuffix: uuqshsed
 contentColumnType: text
 fieldGroup: 89833881-16ce-4ec4-abfd-1f352dc99fd8 # Common
-handle: pageSummary
+handle: pageheading
 instructions: null
-name: 'Page Summary'
+name: 'Page Heading'
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: false
   columnType: null
   initialRows: 4
-  multiline: true
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -1,0 +1,111 @@
+field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  54a60cdb-e795-4485-a5f7-1197ff48cc91:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4b4b1468-382a-43a9-a954-3816f65567a2 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a831bb8-5aa2-4704-8f3f-d5e2292a3a8a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1f0b8178-c969-454d-94a7-ae7d3f373f86 # Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aaf1b8ee-8fc8-4ffb-83e5-91b29269196f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 87f60dce-cac6-4d30-90ef-a6a2040f4d0d # Post Count
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3fa8521b-f1cb-4ae1-82c1-631b4bce10fa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d7df8621-c9c6-425a-b0bb-cb0d04ed0119
+        userCondition: null
+fields:
+  1f0b8178-c969-454d-94a7-ae7d3f373f86: # Subheading
+    columnSuffix: kouhoabc
+    contentColumnType: text
+    fieldGroup: null
+    handle: subheading
+    instructions: null
+    name: Subheading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4b4b1468-382a-43a9-a954-3816f65567a2: # Heading
+    columnSuffix: ybbirrie
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  87f60dce-cac6-4d30-90ef-a6a2040f4d0d: # Post Count
+    columnSuffix: goplphge
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: postCount
+    instructions: null
+    name: 'Post Count'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: instagram
+name: instagram
+sortOrder: 9

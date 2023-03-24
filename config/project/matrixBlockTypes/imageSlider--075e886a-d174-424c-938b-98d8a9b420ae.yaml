@@ -71,4 +71,4 @@ fields:
     type: craft\fields\Assets
 handle: imageSlider
 name: 'Image Slider'
-sortOrder: 8
+sortOrder: 7

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pastExhibit
+name: 'Past Exhibit'
+propagationMethod: all
+siteSettings:
+  402b359e-759c-4938-b279-b9a22b2c6d6a: # Waterloo Innovation Park
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/interior_gallery_past.twig
+    uriFormat: past-exhibit
+type: single

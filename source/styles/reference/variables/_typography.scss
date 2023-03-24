@@ -1,13 +1,12 @@
 // reference/variables/_typography.scss
 
 // Font Family
-$font-family-futura: 'Roboto', Helvetica, Arial, sans-serif;
 
-$font-family-sansserif: #{$font-family-futura}, Helvetica, Arial, sans-serif;
-$font-family-monospace: Consolas, monospace;
+$font-family-sans-serif:  Manrope, Helvetica, Arial, sans-serif;
+// $font-family-serif: Consolas, monospace;
 
-// $font-family-body: $font-family-serif;
-// $font-family-heading: $font-family-serif;
+$font-family-body: $font-family-sans-serif;
+$font-family-heading: $font-family-sans-serif;
 
 // Font Size
 
