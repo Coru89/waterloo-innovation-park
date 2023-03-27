@@ -2631,6 +2631,11 @@ html.with-fancybox body.hide-scrollbar {
     flex-direction: row;
   }
 }
+@media (min-width: 1052px) {
+  .event-slider__row-top:first-of-type {
+    margin-right: 4rem;
+  }
+}
 .event-slider__row-top .event-slider__column:first-of-type, .event-slider__row-top .event-slider__column:last-of-type {
   margin-right: auto;
 }

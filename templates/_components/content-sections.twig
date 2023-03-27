@@ -184,8 +184,8 @@
 		<section class="{% if events | length > 1 %}glide-event {% endif %}event-slider">
 			<div class="{% if events | length <= 1 %}u-container {% endif %}event-slider__inner">
 				
-				<div class="event-slider__panel-content {% if block.contentLocation == "top"%} event-slider__panel-content--top{% endif %}">
-					<div class="event-slider__row event-slider__row-top u-container">
+				<div class="event-slider__panel-content u-container {% if block.contentLocation == "top"%} event-slider__panel-content--top{% endif %}">
+					<div class="event-slider__row event-slider__row-top">
 					{% if block.heading and block.contentLocation != "none"%}
 						<div class="event-slider__column">
 							<h2 class="event-slider__heading">{{block.heading}}</h2>
@@ -193,7 +193,7 @@
 					{% endif %}
 					</div>
 					{% if block.contentLocation == "top" %}
-						<div class="event-slider__row event-slider__row-top u-container">
+						<div class="event-slider__row event-slider__row-top">
 							{% if block.summary %}
 								<div class="event-slider__column">
 									<p class="event-slider__summary">{{block.summary}}</p>
