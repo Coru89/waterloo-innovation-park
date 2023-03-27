@@ -13,6 +13,12 @@ $block: "event-slider";
     }
   }
 
+  &__heading {
+    @include media-min(lg) {
+      white-space: nowrap;
+    }
+  }
+
   &__panel-content {
     &--top {
       .#{$block}__row {
@@ -62,6 +68,10 @@ $block: "event-slider";
             }
           }
         }
+      }
+
+      .button {
+        white-space: nowrap;
       }
     }
   }
@@ -179,7 +189,7 @@ $block: "event-slider";
           }
 
           &:nth-of-type(2) {
-            width: 68%;
+            width: fit-content;
           }
         }
       }

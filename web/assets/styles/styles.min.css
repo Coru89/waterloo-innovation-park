@@ -2465,6 +2465,11 @@ html.with-fancybox body.hide-scrollbar {
     padding-top: 8rem;
   }
 }
+@media (min-width: 1052px) {
+  .event-slider__heading {
+    white-space: nowrap;
+  }
+}
 .event-slider__panel-content--top .event-slider__row .button {
   margin-top: 1.5rem;
 }
@@ -2521,6 +2526,9 @@ html.with-fancybox body.hide-scrollbar {
     margin-left: 4rem;
     margin-top: 0;
   }
+}
+.event-slider__panel-content--top .button {
+  white-space: nowrap;
 }
 .event-slider__slide-content {
   background-color: #0B0E26;
@@ -2647,7 +2655,9 @@ html.with-fancybox body.hide-scrollbar {
     width: fit-content;
   }
   .event-slider__row-top .event-slider__column:nth-of-type(2) {
-    width: 68%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .event-slider__row-top .image-slider__controls {
