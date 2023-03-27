@@ -2,8 +2,8 @@
 {% set classes = classes ~ (event.allDay ? " all_day") %}
 {% if event.multiDay %}
     {% set classes = classes ~ " multi_day" %}
-    {% set classes = classes ~ (day.containsDate(event.startDateLocalized) ? " first_day") %}
-    {% set classes = classes ~ (day.containsDate(event.endDateLocalized) ? " last_day") %}
+    {% set classes = classes ~ (day.containsDate(event.startDate) ? " first_day") %}
+    {% set classes = classes ~ (day.containsDate(event.endDate) ? " last_day") %}
 {% endif %}
 
 {% set style = "" %}
@@ -15,11 +15,11 @@
 {% endif %}
 
 <div class="event tips{{ classes }}"{{ style }} data-toggle="popover">
-    {% if event.multiDay %}
+    {% if event.multiDay %}    
         <a href="{{ siteUrl }}calendar/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}"
            style="color: {{ event.calendar.contrastColor }} !important;">
             {% autoescape false %}
-                {{ day.containsDate(event.startDateLocalized) or day.containsDate(event.endDateLocalized) ? event.title : "&nbsp;"|raw }}
+                {{ day.containsDate(event.startDate) or day.containsDate(event.endDate) ? event.title : "&nbsp;"|raw }}
             {% endautoescape %}
         </a>
     {% else %}

@@ -65,6 +65,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 56c3c12e-76ff-4b2e-8e3c-382ad3315b5b # Section Content Location
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca65b546-4cdb-4fe4-a3f7-4848f89c1050
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: ed5c58c3-40e2-49f6-b6b9-7e2572a74f7f
         userCondition: null
@@ -73,7 +85,7 @@ fields:
     columnSuffix: ndoucoss
     contentColumnType: string(255)
     fieldGroup: null
-    handle: ButtonHref
+    handle: buttonHref
     instructions: null
     name: 'Button Link'
     searchable: false
@@ -88,7 +100,7 @@ fields:
     columnSuffix: akkxszqq
     contentColumnType: text
     fieldGroup: null
-    handle: ButtonText
+    handle: buttonText
     instructions: null
     name: 'Button Text'
     searchable: false
@@ -124,6 +136,52 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  56c3c12e-76ff-4b2e-8e3c-382ad3315b5b: # Section Content Location
+    columnSuffix: skejqriv
+    contentColumnType: string
+    fieldGroup: null
+    handle: contentLocation
+    instructions: null
+    name: 'Section Content Location'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - none
+            -
+              - value
+              - none
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Top
+            -
+              - value
+              - top
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Bottom
+            -
+              - value
+              - bottom
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   710f40a4-9595-439f-ba53-b0995864d7ca: # Heading
     columnSuffix: rbfdraxs
     contentColumnType: text

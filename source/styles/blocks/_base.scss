@@ -177,6 +177,7 @@ h2 {
 	font-family: $font-family-heading;
 	font-size: 1.875rem;
 	font-weight: $font-weight-semibold;
+	line-height: 1.25;
 	margin-bottom: 1rem;
 	margin-top: 0;
 
@@ -188,15 +189,27 @@ h2 {
 h3 {
 	color: $grey-darker;
 	font-family: $font-family-heading;
-	font-size: $font-size-medium;
+	font-size: 1.5rem;
 	font-weight: $font-weight-semibold;
-	line-height: 1.25;
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+
+	@include media-min(md) {
+		font-size: 2rem;
+		margin-bottom: 0.75rem;
+	}
+}
+
+h4 {
+	color: $grey-darker;
+	font-family: $font-family-heading;
+	font-size: 18px;
+	font-weight: $font-weight-normal;
 	margin-bottom: 0.5rem;
 	margin-top: 0;
 
 	@include media-min(md) {
 		font-size: 1.5rem;
-		margin-bottom: 0.75rem;
 	}
 }
 

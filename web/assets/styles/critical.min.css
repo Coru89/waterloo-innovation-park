@@ -153,6 +153,7 @@ h2 {
   font-family: Manrope, Helvetica, Arial, sans-serif;
   font-size: 1.875rem;
   font-weight: 500;
+  line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 0;
 }
@@ -165,16 +166,29 @@ h2 {
 h3 {
   color: #0B0E26;
   font-family: Manrope, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.25;
   margin-bottom: 0.5rem;
   margin-top: 0;
 }
 @media (min-width: 768px) {
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0.75rem;
+  }
+}
+
+h4 {
+  color: #0B0E26;
+  font-family: Manrope, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.5rem;
   }
 }
 
@@ -936,7 +950,20 @@ p {
   line-height: 34px;
 }
 .page-intro__open-message {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
   margin-top: 20px;
+  text-transform: uppercase;
+}
+.page-intro__open-message svg {
+  margin-right: 1rem;
 }
 
 .image-slider {

@@ -68,10 +68,10 @@ name: 'Stat Holidays'
 siteSettings:
   30c79483-840b-4c06-bcd7-fe958f77f2c0:
     enabledByDefault: true
-    hasUrls: true
+    hasUrls: false
     siteId: 402b359e-759c-4938-b279-b9a22b2c6d6a # Waterloo Innovation Park
-    template: stat-holidays/_entry
-    uriFormat: 'stat-holidays/{slug}'
+    template: null
+    uriFormat: null
 titleFormat: ''
 titleLabel: Title
 titleTranslationKeyFormat: ''

@@ -1,4 +1,4 @@
-dateModified: 1679663859
+dateModified: 1679925221
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -98,6 +98,7 @@ meta:
     51f09ffd-ffd8-4abf-9a71-5bbb77aac42b: 'Event Slider' # Event Slider
     52ac9c9a-5d73-4e34-b24e-edf09a5a6b47: Default # Default
     52d8ea63-1195-47df-9693-9e83d7049cd2: 'Lease Managers' # Lease Managers
+    56c3c12e-76ff-4b2e-8e3c-382ad3315b5b: 'Section Content Location' # Section Content Location
     075e886a-d174-424c-938b-98d8a9b420ae: 'Image Slider' # Image Slider
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
@@ -151,7 +152,7 @@ meta:
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
-    cc822dad-031d-4617-957a-65ba55d4ddb3: instagram # instagram
+    cc822dad-031d-4617-957a-65ba55d4ddb3: Instagram # Instagram
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
     d40fc290-3cb8-4974-b1e9-4ab5e279ce4a: Limit # Limit
@@ -162,6 +163,7 @@ meta:
     ec1c3db1-02e8-4fdd-b5ad-f3f9bd90e586: 'Button Link' # Button Link
     ec147d51-bd50-4e6e-8f06-fdd1c19ad61a: 'The Link' # The Link
     ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
+    ef382811-26e2-4369-910e-ffa10df24c8b: Account # Account
     fbbb7b50-c55e-456d-9508-45a83c3219cb: Events # Events
     fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home
     fe4b113d-bf1c-4f36-806f-80cb15f3cac8: Title # Title
@@ -175,10 +177,10 @@ plugins:
       allDay: false
       authoredEventEditOnly: ''
       defaultView: month
-      demoBannerDisabled: true
+      demoBannerDisabled: '1'
       descriptionFieldHandle: null
       eventDuration: 60
-      firstDayOfWeek: '-1'
+      firstDayOfWeek: '0'
       guestAccess: null
       locationFieldHandle: null
       overlapThreshold: 5
@@ -237,8 +239,9 @@ system:
   edition: solo
   live: true
   name: 'Waterloo Innovation Park'
+  retryDuration: null
   schemaVersion: 4.4.0.4
-  timeZone: America/Los_Angeles
+  timeZone: America/Toronto
 users:
   allowPublicRegistration: false
   defaultGroup: null

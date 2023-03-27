@@ -1,17 +1,228 @@
-@import '../reference/reference';
+@import "../reference/reference";
 
-$block: 'event-slider';
+$block: "event-slider";
 
 .#{$block} {
-    &__content {
+  &__inner {
+    padding-bottom: 3rem;
+    padding-top: 3.5rem;
+
+    @include media-min(md) {
+      padding-bottom: 7rem;
+      padding-top: 8rem;
+    }
+  }
+
+  &__panel-content {
+    &--top {
+      .#{$block}__row {
+        .button {
+          margin-top: 1.5rem;
+        }
+      }
+
+      @include media-min(md) {
+        align-items: flex-start;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+
+        .#{$block}__row {
+          &:first-of-type {
+            width: 50%;
+          }
+
+          &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .button {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      @include media-min(lg) {
+        .#{$block}__row {
+          display: block;
+
+          &:first-of-type {
+            width: fit-content;
+          }
+
+          &:last-of-type {
+            align-items: flex-start;
+            flex-direction: row;
+            width: 66.66%;
+
+            .button {
+              margin-left: 4rem;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__slide {
+    &-content {
+      background-color: $grey-darker;
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 3rem;
+
+      * {
         color: $white;
-        background-color: $grey-darker;
-        padding: 3rem;
+      }
+
+      &__column {
+        width: 50%;
+
+        &:first-of-type {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    &-bottom {
+      margin-top: 2rem;
+
+      @include media-min(md) {
+        flex-direction: row;
+      }
+
+      .#{$block}__column {
+        &:first-of-type {
+          order: 2;
+        }
+
+        &:nth-of-type(2) {
+          order: 1;
+        }
+
+        &:nth-of-type(3) {
+          margin-right: auto;
+          order: 3;
+        }
+
+        @include media-min(md) {
+          width: calc(33.33% - 2rem);
+
+          .button {
+            float: right;
+          }
+
+          &:first-of-type {
+            margin-right: 2rem;
+            order: initial;
+          }
+
+          &:nth-of-type(2) {
+            order: initial;
+          }
+
+          &:nth-of-type(3) {
+            margin-right: 0;
+            order: initial;
+          }
+        }
+      }
+
+      .#{$block}__summary {
+        margin: 1.5rem 0 2.5rem;
+
+        @include media-min(md) {
+          margin: 0;
+        }
+      }
+
+      .image-slider__controls {
+        margin-top: 0;
+      }
     }
 
-    &__column {
-        max-width: 50%;
+    &-top {
+      &:nth-of-type(2) {
+        margin-bottom: 2rem;
+      }
+
+      @include media-min(md) {
+        flex-direction: row;
+      }
+
+      .#{$block}__column {
+        &:first-of-type,
+        &:last-of-type {
+          margin-right: auto;
+        }
+
+        @include media-min(md) {
+          &:first-of-type {
+            margin-right: auto;
+            width: fit-content;
+          }
+
+          &:nth-of-type(2) {
+            width: 68%;
+          }
+        }
+      }
+
+      .image-slider__controls {
+        margin: 1.5rem 0 2.5rem;
+
+        @include media-min(lg) {
+          margin: 0 1rem 0;
+        }
+      }
     }
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__summary {
+    margin-bottom: 0;
+  }
+
+  &__date,
+  &__details {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  &__image {
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+
+    @include media-min(md) {
+      height: 370px;
+    }
+
+    @include media-min(lg) {
+      height: 450px;
+    }
+
+    @include media-min(xl) {
+      height: 549px;
+    }
+
+    @include media-min(xxl) {
+      height: 580px;
+    }
+  }
 }
