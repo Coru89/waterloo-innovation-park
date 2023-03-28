@@ -3,8 +3,8 @@
 $block: 'call-to-action';
 
 .#{$block} {
-	background: $blue;
-	color: $white;
+	background: $grey-lighter;
+	color: $grey-darker;
 	text-align: center;
 
 	@include media-min(md) {
@@ -23,7 +23,6 @@ $block: 'call-to-action';
 	}
 
 	h3 {
-		color: $white;
 		font-size: 1.5rem;
 		margin-bottom: 1.5rem;
 

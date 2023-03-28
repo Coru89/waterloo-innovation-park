@@ -72,7 +72,7 @@ $block: 'hero-panel';
 	}
 
 	&--dark {
-		background-color: $grey-dark;
+		background-color: $grey-darker;
 		color: $white;
 
 		.#{$block} {

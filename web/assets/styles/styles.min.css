@@ -2080,7 +2080,7 @@ html.with-fancybox body.hide-scrollbar {
   text-transform: uppercase;
 }
 .hero-panel--dark {
-  background-color: #383943;
+  background-color: #0B0E26;
   color: #fff;
 }
 @media (max-width: 1051px) {
@@ -2712,8 +2712,8 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .call-to-action {
-  background: #0A78FF;
-  color: #fff;
+  background: #F3F5F7;
+  color: #0B0E26;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -2739,7 +2739,6 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 .call-to-action h3 {
-  color: #fff;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -2780,5 +2779,45 @@ html.with-fancybox body.hide-scrollbar {
 @media (min-width: 768px) {
   .instagram__image {
     height: 314px;
+  }
+}
+
+.calendar__inner {
+  padding-top: 4rem;
+  padding-bottom: 4.25rem;
+}
+@media (min-width: 768px) {
+  .calendar__inner {
+    padding-top: 6.25rem;
+    padding-bottom: 6.5rem;
+  }
+}
+.calendar__row {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .calendar__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+  }
+}
+.calendar__column {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .calendar__column {
+    width: calc(50% - 2rem);
+  }
+  .calendar__column:first-of-type {
+    margin-right: 1rem;
+  }
+  .calendar__column:last-of-type {
+    margin-left: 1rem;
   }
 }

@@ -1,5 +1,25 @@
 @import "../reference/reference";
 
+$block: "calendar";
+
+.#{$block} {
+  &__column {
+    &:first-of-type {
+      margin-bottom: .5rem;
+      @include media-min(md) {
+        margin-bottom: 0;
+      }
+    }
+    &:last-of-type {
+      text-align: left;
+
+      @include media-min(md) {
+        text-align: right;
+      }
+    }
+  }
+}
+
 .dropdown-menu {
   position: absolute;
   top: 48px;
@@ -10,34 +30,54 @@
 }
 
 body {
-	font-family: $font-family-body;
-	color: $grey-darker;
+  font-family: $font-family-body;
+  color: $grey-darker;
 }
 
 .calendar-layout {
   .row {
-    .col-md-9 {
+    .col-lg-9 {
       padding-left: 0;
-    }
-
-    .col-md-3 {
       padding-right: 0;
     }
+
+    .col-lg-3 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include media-min(md) {
+      .col-lg-9 {
+        padding-left: 0;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+      }
+  
+      .col-lg-3 {
+        padding-right: 0;
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+      }
+    }
+
   }
 }
 
 #month_calendar {
-	.col-last {
-		display: flex;
-		justify-content: flex-end;
-	}
-	.button--arrow--right {
-		text-align: right;
-	}
-	.badge-warning {
-		font-size: 18px;
-		color: $grey-darker;
-	}
+  .col-last {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button--arrow--right {
+    text-align: right;
+  }
+  .badge-warning {
+    display: none;
+    font-size: 18px;
+    color: $grey-darker;
+
+    @include media-min(lg) {
+      display: inline;
+    }
+  }
 }
 
 #calendar-month-menu {
@@ -52,7 +92,6 @@ body {
     transition: transform 0.15s ease-in-out;
     width: 14px;
   }
-
 }
 
 .dropdown-toggle::after {
@@ -61,14 +100,15 @@ body {
 }
 
 #tool-tip {
-    background-color: white;
-    border-radius: 4px;
-    border: $grey 1px solid;
-    color: $grey;
-    display: none;
-    font-size: 13px;
-    padding: 5px 10px;
-    position: absolute;
+  background-color: white;
+  border-radius: 4px;
+  border: $grey 1px solid;
+  color: $grey-darker;
+  display: none;
+  font-size: 13px;
+  max-width: 300px;
+  padding: 5px 10px;
+  position: absolute;
 }
 
 #tool-tip[data-show] {
@@ -78,42 +118,33 @@ body {
 #arrow,
 #arrow::before {
   position: absolute;
-   width: 8px;
-   height: 8px;
-//   background: red;
-//   border: 1px solid $grey;
-
-
+  width: 8px;
+  height: 8px;
 }
 
 #arrow {
-    top: 0;
-//   visibility: hidden;
-  //background-color: red;
-
+  top: 0;
 }
 
 #arrow::before {
-//   visibility: visible;
   content: "";
   transform: rotate(45deg);
   top: -4px;
   border: 1px solid $grey;
 }
 
-
 #arrow::after {
-    top: 0;
-    width: 12px;
-    height: 8px;
-    content: "";
-    display: block;
-    background: $white;
-    position: relative;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  top: 0;
+  width: 12px;
+  height: 8px;
+  content: "";
+  display: block;
+  background: $white;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 #tooltip[data-popper-placement^="top"] > #arrow {
   bottom: -4px;

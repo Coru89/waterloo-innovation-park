@@ -17,8 +17,7 @@
 
 	<div class="calendar-layout">
 		<div class="row">
-			<div class="col-md-9">
-
+			<div class="col-lg-9">
 				{% include "calendar/layouts/_calendar_banner.html" %}
 
 				<div id="month_calendar">
@@ -30,29 +29,26 @@
 					{% set dateBoundsHelper = now.diff(month.nextDate)|date('%r%a') %}
 
 					<div class="row justify-content-between mb-3">
-						<div class="col-3">
+						<div class="col-sm-7 calendar__column">
 							{% if dateBoundsHelper > -365 %}
 								<a class="button button--arrow button--arrow-left" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
 									{{ month.previousDate.format('F') }}
 								</a>
 							{% endif %}
+                            {% if dateBoundsHelper < 365 %}
+								<a class="button button--arrow float-right" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
+									{{ month.nextDate.format('F') }}
+								</a>
+							{% endif %}
 						</div>
 
-						<div class="col-auto">
+						<div class="col-sm-5 calendar__column">
 							{% include "calendar/layouts/_month_heading.html" with {month: month} only %}
 							&nbsp;
 							<span class="badge {{ month.eventCount ? " badge-warning" : " badge-secondary" }}">
 								{{ month.eventCount }}
 								event{{ month.eventCount > 1 or month.eventCount == 0 ? "s" }}
 							</span>
-						</div>
-
-						<div class="col-3 col-last">
-							{% if dateBoundsHelper < 365 %}
-								<a class="button button--arrow float-right" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
-									{{ month.nextDate.format('F') }}
-								</a>
-							{% endif %}
 						</div>
 					</div>
 
@@ -100,14 +96,14 @@
 
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-lg-3">
 				{% include "calendar/layouts/_sidebar.html" %}
 			</div>
 		</div>
 
-		<div class="row">
+		{# <div class="row">
 			{% include "calendar/events.html" %}
-		</div>
+		</div> #}
 	</div>
 
 

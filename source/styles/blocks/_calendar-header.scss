@@ -1,0 +1,40 @@
+@import "../reference/reference";
+
+$block: 'calendar';
+
+.#{$block} {
+  &__inner {
+    padding-top: 4rem;
+    padding-bottom: 4.25rem;
+
+    @include media-min(md) {
+      padding-top: 6.25rem;
+      padding-bottom: 6.5rem;
+    }
+  }
+
+  &__row {
+    margin-bottom: 1.5rem;
+
+    @include media-min(md) {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__column {
+    width: 100%;
+
+    @include media-min(md) {
+      width: calc(50% - 2rem);
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+      &:last-of-type {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

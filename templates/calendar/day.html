@@ -4,13 +4,6 @@
 {% set page = "day" %}
 
 {% block content %}
-
-    <h1>Day View</h1>
-    <p class="lead">
-        Below is full day calendar view, which allows you to see all your event occurrences by the hour.
-    </p>
-    <hr /><br />
-
     {% set targetDate = "today" %}
     {% set calendarHandle = null %}
     {% if segment3 == "calendar" %}

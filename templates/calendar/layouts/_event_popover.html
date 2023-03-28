@@ -28,6 +28,8 @@
     <div class="content">
         <span class='fas fa-calendar-alt' style='color: {{ event.calendar.color }};'></span>
         <span style='color: {{ event.calendar.color }};'>{{ event.calendar.name }}</span>
+        {% if event.description %}<div>{{event.description | truncate(140)}}{% if event.description | length > 144 %}...{% endif %}</div>{% endif %} 
+
         <hr />
         {% if event.allDay %}
             {% if event.multiDay %}

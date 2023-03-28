@@ -222,18 +222,17 @@
 	padding-bottom: 5px;
 }
 #mini_calendar .mini_calendar_days th {
-	color: $white;
-	background: $blue;
+	background: $blue-light;
 	border: 1px solid $grey;
 	border-width: 1px 0;
 }
 #mini_calendar th a {
-	color: #000;
+	color: $black;
 	font-size: 15px;
 }
 #mini_calendar td a {
 	display: block;
-	color: #fff;
+	color: $white;
 }
 #mini_calendar td div, #mini_calendar td.has_events div #mini_calendar td.mini_calendar_pad div {
 	vertical-align: middle;

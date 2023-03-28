@@ -4,13 +4,6 @@
 {% set page = "event" %}
 
 {% block content %}
-
-	<h1>Event View</h1>
-	<p class="lead">
-		Below is an individual event view, which allows you to see full details and occurrences for the given event.
-	</p>
-    <hr /><br />
-
     {% set eventSaved = craft.app.session.getFlash('calendar_event_saved') %}
     {% if eventSaved %}
         <div class="alert alert-success alert-dismissible" role="alert">

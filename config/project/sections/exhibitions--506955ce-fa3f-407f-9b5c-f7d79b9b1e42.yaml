@@ -8,7 +8,7 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _pages/interior_gallery_past.twig
-    uriFormat: 'past-exhibitions/{slug}'
+    uriFormat: 'the-link/{slug}'
 structure:
   maxLevels: null
   uid: e7268dfd-80b1-4952-a57b-d01fb2ce0266

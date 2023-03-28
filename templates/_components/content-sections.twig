@@ -164,32 +164,20 @@
 
 	{% elseif block.type == "calendar" %}
 		  <section class="calendar">
-			<div class="u-container">
-				<div class="event-slider__section-header">
-					<div class="event-slider__row event-slider__row">
-						{% if block.heading %}
-							<div class="event-slider__column">
-								<h2 class="event-slider__heading">{{block.heading}}</h2>
-							</div>
-						{% endif %}
-					</div>
+			<div class="u-container calendar__inner">
+				<div class="calendar__row">
+					{% if block.heading %}
+						<div class="calendar__column">
+							<h2 class="calendar__heading">{{block.heading}}</h2>
+						</div>
+					{% endif %}
 
-					<div class="event-slider__row event-slider__row">
-						{% if block.summary %}
-							<div class="event-slider__column">
-								<p class="event-slider__summary">{{block.summary}}</p>
-							</div>	
-						{% endif %}
 
-						{% if block.buttonText %}
-							<div class="event-slider__column">
-								<a class="button button--arrow" href="{{block.buttonHref}}">
-									{{block.buttonText}}
-								</a>
-							</div>	
-						{% endif %}
-					</div>
-
+					{% if block.summary %}
+						<div class="calendar__column">
+							<p class="calendar__summary">{{block.summary}}</p>
+						</div>	
+					{% endif %}
 				</div>
 				<div class="calendar__wrapper">
 					<iframe id="calendar" style="width: 100%; height: 100vh; border: none;" src="{{siteUrl}}/calendar/month" frameborder="0" scrolling="no"></iframe>
