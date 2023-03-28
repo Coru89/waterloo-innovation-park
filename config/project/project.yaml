@@ -1,16 +1,12 @@
-dateModified: 1680016679
+dateModified: 1680018400
 email:
-  fromEmail: corey.james.keller@gmail.com
+  fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
   replyToEmail: null
   template: null
   transportSettings:
-    host: smtp.gmail.com
-    password: tzbjfzvmwcavfmzp
-    port: '587'
-    useAuthentication: '1'
-    username: corey.james.keller@gmail.com
-  transportType: craft\mail\transportadapters\Smtp
+    command: '/usr/sbin/sendmail -bs'
+  transportType: craft\mail\transportadapters\Sendmail
 fs:
   exhibitionPhotos:
     hasUrls: true
