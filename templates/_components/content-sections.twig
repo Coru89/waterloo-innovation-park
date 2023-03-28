@@ -45,7 +45,7 @@
 						<h1 class="hero-panel__title panel__heading">{{block.panelTitle}}</h1>
 						<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
 						{% if block.heroButtonText %}
-							<a class="button button--arrow" href="{{block.heroButtonHref}}">
+							<a class="button button--light button--arrow" href="{{block.heroButtonHref}}">
 								{{block.heroButtonText}}
 							</a>
 						{% endif %}
@@ -165,6 +165,32 @@
 	{% elseif block.type == "calendar" %}
 		  <section class="calendar">
 			<div class="u-container">
+				<div class="event-slider__section-header">
+					<div class="event-slider__row event-slider__row">
+						{% if block.heading %}
+							<div class="event-slider__column">
+								<h2 class="event-slider__heading">{{block.heading}}</h2>
+							</div>
+						{% endif %}
+					</div>
+
+					<div class="event-slider__row event-slider__row">
+						{% if block.summary %}
+							<div class="event-slider__column">
+								<p class="event-slider__summary">{{block.summary}}</p>
+							</div>	
+						{% endif %}
+
+						{% if block.buttonText %}
+							<div class="event-slider__column">
+								<a class="button button--arrow" href="{{block.buttonHref}}">
+									{{block.buttonText}}
+								</a>
+							</div>	
+						{% endif %}
+					</div>
+
+				</div>
 				<div class="calendar__wrapper">
 					<iframe id="calendar" style="width: 100%; height: 100vh; border: none;" src="{{siteUrl}}/calendar/month" frameborder="0" scrolling="no"></iframe>
 				</div>
@@ -174,7 +200,7 @@
 	{% elseif block.type == "eventSlider" %}
 
 		{% set eventOptions = {
-			limit: block.limit ? block.limit : 6,
+			limit: block.limit,
 			rangeStart: 'today',
 			rangeEnd: '+3 months',
 			eventSliderPosterImage: ':notempty:'
@@ -182,15 +208,15 @@
 		{% paginate craft.calendar.events(eventOptions) as pageInfo, events %}
 
 		<section class="{% if events | length > 1 %}glide-event {% endif %}event-slider">
-			<div class="{% if events | length <= 1 %}u-container {% endif %}event-slider__inner">
+			<div class="event-slider__inner{% if events | length <= 1 %} u-container{% endif %}{% if block.topPadding == 'true' %} event-slider__inner--remove-padding{% endif %}">
 				
-				<div class="event-slider__panel-content u-container {% if block.contentLocation == "top"%} event-slider__panel-content--top{% endif %}">
+				<div class="event-slider__section-header u-container">
 					<div class="event-slider__row event-slider__row-top">
-					{% if block.heading and block.contentLocation != "none"%}
-						<div class="event-slider__column">
-							<h2 class="event-slider__heading">{{block.heading}}</h2>
-						</div>
-					{% endif %}
+						{% if block.heading and block.contentLocation != "none"%}
+							<div class="event-slider__column">
+								<h2 class="event-slider__heading">{{block.heading}}</h2>
+							</div>
+						{% endif %}
 					</div>
 					{% if block.contentLocation == "top" %}
 						<div class="event-slider__row event-slider__row-top">
@@ -206,13 +232,11 @@
 										{{block.buttonText}}
 									</a>
 								</div>	
-							{% endif %}
-							
+							{% endif %}							
 						</div>
 					{% endif %}
 				</div>
 				
-
 				<div class="glide__track" data-glide-el="track">
 					<ul class="glide__slides">
 					{% paginate craft.calendar.events(eventOptions) as pageInfo, events %}

@@ -2,14 +2,10 @@
     @include button;    
 }
 
-.button--inverse {
-    @include button--inverse;    
+.button--light {
+    @include button--light;    
 }
 
 .button--arrow {
     @include button--arrow;
-}
-
-.button--secondary {
-    @include button--secondary;
 }

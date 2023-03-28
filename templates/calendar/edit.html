@@ -525,7 +525,7 @@
             click: function () {
               self.val(1 - self.val());
               $(this)
-                .removeClass("btn-primary btn-secondary")
+                .removeClass("btn-primary")
                 .addClass(self.val() == 0 ? "btn-secondary" : "btn-primary")
                 .text(self.val() == 0 ? "Off" : "On");
 

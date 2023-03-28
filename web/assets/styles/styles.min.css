@@ -2465,16 +2465,19 @@ html.with-fancybox body.hide-scrollbar {
     padding-top: 8rem;
   }
 }
+.event-slider__inner--remove-padding {
+  padding-top: 0;
+}
 @media (min-width: 1052px) {
   .event-slider__heading {
     white-space: nowrap;
   }
 }
-.event-slider__panel-content--top .event-slider__row .button {
+.event-slider__section-header .event-slider__row .button {
   margin-top: 1.5rem;
 }
 @media (min-width: 768px) {
-  .event-slider__panel-content--top {
+  .event-slider__section-header {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -2486,10 +2489,10 @@ html.with-fancybox body.hide-scrollbar {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .event-slider__panel-content--top .event-slider__row:first-of-type {
+  .event-slider__section-header .event-slider__row:first-of-type {
     width: 50%;
   }
-  .event-slider__panel-content--top .event-slider__row:last-of-type {
+  .event-slider__section-header .event-slider__row:last-of-type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2499,20 +2502,20 @@ html.with-fancybox body.hide-scrollbar {
     flex-direction: column;
     width: 50%;
   }
-  .event-slider__panel-content--top .event-slider__row:last-of-type .button {
+  .event-slider__section-header .event-slider__row:last-of-type .button {
     margin-left: 0;
   }
 }
 @media (min-width: 1052px) {
-  .event-slider__panel-content--top .event-slider__row {
+  .event-slider__section-header .event-slider__row {
     display: block;
   }
-  .event-slider__panel-content--top .event-slider__row:first-of-type {
+  .event-slider__section-header .event-slider__row:first-of-type {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-  .event-slider__panel-content--top .event-slider__row:last-of-type {
+  .event-slider__section-header .event-slider__row:last-of-type {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -2522,13 +2525,13 @@ html.with-fancybox body.hide-scrollbar {
     flex-direction: row;
     width: 66.66%;
   }
-  .event-slider__panel-content--top .event-slider__row:last-of-type .button {
+  .event-slider__section-header .event-slider__row:last-of-type .button {
     margin-left: 4rem;
     margin-top: 0;
   }
-}
-.event-slider__panel-content--top .button {
-  white-space: nowrap;
+  .event-slider__section-header .button {
+    white-space: nowrap;
+  }
 }
 .event-slider__slide-content {
   background-color: #0B0E26;

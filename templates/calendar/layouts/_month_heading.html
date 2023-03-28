@@ -1,12 +1,15 @@
 <div class="btn-group" role="group" aria-label="Month navigation">
     <button id="calendar-month-menu"
-            type="button"
-            class="btn btn-secondary dropdown-toggle"
+            type="button button--dropdown"
+            class="button dropdown-toggle"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
     >
-        <strong>{{ month.date.format('F Y') }}</strong> <span class="caret"></span>
+        <strong>{{ month.date.format('F Y') }}</strong>
+        <svg class="arrow" fill="#fff" viewbox="0 0 24 24" aria-hidden="true">
+            <path d="M9.707 18.707l6-6a.999.999 0 0 0 0-1.414l-6-6a.999.999 0 1 0-1.414 1.414L13.586 12l-5.293 5.293a.999.999 0 1 0 1.414 1.414z"></path>
+        </svg>
     </button>
     <div class="dropdown-menu">
         {% for date in month.dateRange(-6, 6) %}

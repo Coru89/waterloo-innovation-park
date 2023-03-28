@@ -77,6 +77,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: e12bca54-c3b9-4ba0-9641-31e98bd18527 # Remove padding top?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d19c3210-04e9-4626-b830-3fd278a1e1e5
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: ed5c58c3-40e2-49f6-b6b9-7e2572a74f7f
         userCondition: null
@@ -223,6 +235,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
+  e12bca54-c3b9-4ba0-9641-31e98bd18527: # Remove padding top?
+    columnSuffix: inxoydnv
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: topPadding
+    instructions: 'Optionally remove the top whitespace from the section.'
+    name: 'Remove padding top?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
 handle: eventSlider
 name: 'Event Slider'
 sortOrder: 10

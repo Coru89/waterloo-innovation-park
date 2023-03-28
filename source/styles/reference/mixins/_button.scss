@@ -1,11 +1,12 @@
 @mixin button {
 	-webkit-appearance: none;
-	border-radius: .1rem;
+	border-radius: 30px;
 	border: none;
 	display: inline-block;
 	font-size: 1rem;
 	line-height: 1.5;
 	padding: .5rem 1rem;
+	padding: .75rem 2.5rem;
 	text-decoration: none;
 	transition: background-color .15s ease-out;
     -moz-appearance: none;
@@ -17,37 +18,31 @@
 	&:focus,
 	&:hover {
 		background-color: $blue;
+		color: $white;
 	}
 }
 
-
-
-@mixin button--inverse {
-	border-radius: .1rem;
+@mixin button--light {
+	border-radius: 30px;
 	display: inline-block;
 	font-size: 1rem;
 	line-height: 1.5;
-	padding: .5rem 1rem;
+	padding: .75rem 2.5rem;
 	text-decoration: none;
 	transition: background-color .15s ease-out;
-    background-color: $white;
-    border-color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
     box-shadow: 0 0.125rem 0.25rem rgb(23 31 56 / 8%);
-    color: $blue;
+    color: $white;
 
 	&:focus,
 	&:hover {
-		border-color: $white;
+		background-color: transparent;
 		color: $white;
-		background-color: $blue;
-
-		&::after {
-			background-image: url('/assets/images/icons/arrow.svg') !important;
-		}
 	}
 
 	&::after {
-		background-image: url('/assets/images/icons/arrow-blue.svg') !important;
+		background-image: url('/assets/images/icons/arrow.svg') !important;
 	}
 }
 
@@ -61,7 +56,7 @@
 }
 
 @mixin button--arrow {
-	padding-right: 2.5rem;
+	padding-right: 3.75rem;
 	position: relative;
 
 	&::after {
@@ -73,10 +68,18 @@
 		height: 12px;
 		position: absolute;
 		position: absolute;
-		right: 0;
-		right: 1rem;
+		right: 2.25rem;
 		top: 50%;
 		transform: translateY(-50%);
 		width: 14px;
+	}
+
+	&-left {
+		padding-left: 3.75rem;
+		padding-right: 2.5rem;
+		&::after{
+			transform: translateY(-50%) rotate(180deg);
+			left: 2.25rem;
+		}
 	}
 }

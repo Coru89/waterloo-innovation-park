@@ -2,11 +2,62 @@
 
 .dropdown-menu {
   position: absolute;
-  top: 38px;
+  top: 48px;
 }
 
 .calendar-color {
   z-index: -1;
+}
+
+body {
+	font-family: $font-family-body;
+	color: $grey-darker;
+}
+
+.calendar-layout {
+  .row {
+    .col-md-9 {
+      padding-left: 0;
+    }
+
+    .col-md-3 {
+      padding-right: 0;
+    }
+  }
+}
+
+#month_calendar {
+	.col-last {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.button--arrow--right {
+		text-align: right;
+	}
+	.badge-warning {
+		font-size: 18px;
+		color: $grey-darker;
+	}
+}
+
+#calendar-month-menu {
+  position: relative;
+  padding-right: 3.75rem;
+  .arrow {
+    height: 14px;
+    top: 50%;
+    right: 2.25rem;
+    position: absolute;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.15s ease-in-out;
+    width: 14px;
+  }
+
+}
+
+.dropdown-toggle::after {
+  display: none;
+  content: none;
 }
 
 #tool-tip {

@@ -298,12 +298,13 @@ p {
 
 .button {
   -webkit-appearance: none;
-  border-radius: 0.1rem;
+  border-radius: 30px;
   border: none;
   display: inline-block;
   font-size: 1rem;
   line-height: 1.5;
   padding: 0.5rem 1rem;
+  padding: 0.75rem 2.5rem;
   text-decoration: none;
   -webkit-transition: background-color 0.15s ease-out;
   transition: background-color 0.15s ease-out;
@@ -316,37 +317,34 @@ p {
 }
 .button:focus, .button:hover {
   background-color: #0A78FF;
+  color: #fff;
 }
 
-.button--inverse {
-  border-radius: 0.1rem;
+.button--light {
+  border-radius: 30px;
   display: inline-block;
   font-size: 1rem;
   line-height: 1.5;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 2.5rem;
   text-decoration: none;
   -webkit-transition: background-color 0.15s ease-out;
   transition: background-color 0.15s ease-out;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(23, 31, 56, 0.08);
   box-shadow: 0 0.125rem 0.25rem rgba(23, 31, 56, 0.08);
-  color: #0A78FF;
-}
-.button--inverse:focus, .button--inverse:hover {
-  border-color: #fff;
   color: #fff;
-  background-color: #0A78FF;
 }
-.button--inverse:focus::after, .button--inverse:hover::after {
+.button--light:focus, .button--light:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.button--light::after {
   background-image: url("/assets/images/icons/arrow.svg") !important;
-}
-.button--inverse::after {
-  background-image: url("/assets/images/icons/arrow-blue.svg") !important;
 }
 
 .button--arrow {
-  padding-right: 2.5rem;
+  padding-right: 3.75rem;
   position: relative;
 }
 .button--arrow::after {
@@ -358,19 +356,20 @@ p {
   height: 12px;
   position: absolute;
   position: absolute;
-  right: 0;
-  right: 1rem;
+  right: 2.25rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 14px;
 }
-
-.button--secondary {
-  background-color: rgba(10, 120, 255, 0.1);
+.button--arrow-left {
+  padding-left: 3.75rem;
+  padding-right: 2.5rem;
 }
-.button--secondary:focus, .button--secondary:hover {
-  background-color: #0A78FF;
+.button--arrow-left::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  left: 2.25rem;
 }
 
 .header {
@@ -482,7 +481,7 @@ p {
   }
 }
 .header__mobile-nav-button:focus svg, .header__mobile-nav-button:hover svg {
-  stroke: rgba(10, 120, 255, 0.1);
+  stroke: #DCE8F8;
 }
 .header__row {
   -webkit-box-align: center;
@@ -579,7 +578,7 @@ p {
   transform: rotate(-45deg);
 }
 .nav__button--close:focus::before, .nav__button--close:focus::after, .nav__button--close:hover::before, .nav__button--close:hover::after {
-  background-color: rgba(10, 120, 255, 0.1);
+  background-color: #DCE8F8;
 }
 .nav__button--open {
   pointer-events: none;

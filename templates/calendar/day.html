@@ -39,9 +39,9 @@
                 <div class="row justify-content-between mb-3">
                     <div class="col-2">
                     {% if dateBoundsHelper > -365 %}
-                        <a class="btn btn-outline-secondary"
+                        <a class="button button--arrow button--arrow-left"
                            href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.previousDate.format('Y/m/d') }}">
-                            <span class="fas fa-arrow-left"></span> Previous
+                            Previous
                         </a>
                     {% endif %}
                     </div>
@@ -57,9 +57,9 @@
 
                     <div class="col-2 clearfix">
                     {% if dateBoundsHelper < 365 %}
-                        <a class="btn btn-outline-secondary float-right"
+                        <a class="button button--arrow float-right"
                            href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.nextDate.format('Y/m/d') }}">
-                            Next <span class="fas fa-arrow-right"></span>
+                            Next
                         </a>
                     {% endif %}
                     </div>

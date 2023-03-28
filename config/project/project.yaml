@@ -1,4 +1,4 @@
-dateModified: 1679925221
+dateModified: 1680002400
 email:
   fromEmail: corey.james.keller@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -121,6 +121,7 @@ meta:
     809ce6db-5c77-4e75-9eb9-1d42abe1485b: 'Event Slider Details' # Event Slider Details
     903cf4e1-deba-4181-804b-66520fe03fdc: Image # Image
     959a923c-97d7-425f-baea-2a45e43116cf: 'Past Exhibit' # Past Exhibit
+    1057c048-812f-4e87-b8f7-208e91e4c8fc: 'Button Text' # Button Text
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
     8267e525-8100-4ca9-9949-0677504ad351: email # email
     37175b69-3644-4f1e-a348-e82fd2565057: 'Property Manager Image Caption' # Property Manager Image Caption
@@ -137,6 +138,7 @@ meta:
     87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
     89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
     a8b4a8b9-f098-48a3-b3c9-9149a1f3d3e7: 'Art Name' # Art Name
+    a702171c-dc55-496a-8140-10a53900a54a: 'Button Link' # Button Link
     ad3311a0-c30e-4a01-9405-46dc2bb50f43: 'Page Heading' # Page Heading
     afb98157-06dd-4f20-a32d-7759850afba2: 'Stat Holidays' # Stat Holidays
     b1c63a82-dac1-486f-a4f0-a01d8bd252d6: 'Image Vertical Position' # Image Vertical Position
@@ -154,10 +156,12 @@ meta:
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
     cc822dad-031d-4617-957a-65ba55d4ddb3: Instagram # Instagram
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
+    d3d92310-a896-45d2-810b-4f797da224ff: Summary # Summary
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
     d40fc290-3cb8-4974-b1e9-4ab5e279ce4a: Limit # Limit
     d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
+    e12bca54-c3b9-4ba0-9641-31e98bd18527: 'Remove padding top?' # Remove padding top?
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
     e2190436-67a6-4e37-bc3b-b0e52e23f9e7: 'Gallery Items' # Gallery Items
     ec1c3db1-02e8-4fdd-b5ad-f3f9bd90e586: 'Button Link' # Button Link
@@ -177,7 +181,7 @@ plugins:
       allDay: false
       authoredEventEditOnly: ''
       defaultView: month
-      demoBannerDisabled: '1'
+      demoBannerDisabled: true
       descriptionFieldHandle: null
       eventDuration: 60
       firstDayOfWeek: '0'
