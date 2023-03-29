@@ -1,0 +1,117 @@
+$block: "link-stats";
+
+.#{$block} {
+    background-color: $grey-lighter;
+
+    &__inner {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+
+        @include media-min(md) {
+            padding-bottom: 7rem;
+            padding-top: 7.5rem;
+        }
+    }
+
+    &__heading {
+        @include media-min(md) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__icon {
+        border-radius: 10px;
+        margin-right: 2rem;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        background-color: $blue-light;
+        position: relative;
+
+        svg {
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem 0;
+
+        @include media-min(sm) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        @include media-min(md) {
+            gap: 5rem 9rem;
+        }
+
+        @include media-min(lg) {
+            display: grid;
+            gap: 5rem 9rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__description {
+        @include media-min(md) {
+            max-width: 190px;
+        }
+    }
+}
+
+.#{$block}-home {
+    background-color: $grey-lighter;
+
+    &__inner {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+
+        @include media-min(md) {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 4rem;
+            padding-top: 4rem;
+        }
+    }
+
+    &__column {
+        &:last-of-type {
+            display: grid;
+            gap: 1.5rem 0;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        @include media-min(sm) {
+            &:last-of-type {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        @include media-min(md) {
+            &:first-of-type {
+                width: calc(40% - 2rem);
+                margin-right: 1rem;
+            }
+
+            &:last-of-type {
+                gap: 2.5rem;
+                grid-template-columns: repeat(2, 1fr);
+                width: calc(60% - 2rem);
+                margin-left: 1rem;
+            }
+        }
+    }
+
+}

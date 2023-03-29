@@ -3,6 +3,10 @@
 {% set body_class = 'page-home' %}
 
 {% block content %}
-	{% include '_components/page-intro' %}
+	{# {% include '_components/page-intro' %} #}
+
+	{% include '_components/link-stats-home' %}
+	{% include '_components/link-stats' %}
+	
 	{% include '_components/content-sections' %}
 {% endblock %}

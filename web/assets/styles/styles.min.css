@@ -2821,3 +2821,116 @@ html.with-fancybox body.hide-scrollbar {
     margin-left: 1rem;
   }
 }
+
+.link-stats {
+  background-color: #F3F5F7;
+}
+.link-stats__inner {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .link-stats__inner {
+    padding-bottom: 7rem;
+    padding-top: 7.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .link-stats__heading {
+    margin-bottom: 3.5rem;
+  }
+}
+.link-stats__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.link-stats__icon {
+  border-radius: 10px;
+  margin-right: 2rem;
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  background-color: #DCE8F8;
+  position: relative;
+}
+.link-stats__icon svg {
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.link-stats__items {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem 0;
+}
+@media (min-width: 544px) {
+  .link-stats__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .link-stats__items {
+    gap: 5rem 9rem;
+  }
+}
+@media (min-width: 1052px) {
+  .link-stats__items {
+    display: grid;
+    gap: 5rem 9rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .link-stats__description {
+    max-width: 190px;
+  }
+}
+
+.link-stats-home {
+  background-color: #F3F5F7;
+}
+.link-stats-home__inner {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .link-stats-home__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+}
+.link-stats-home__column:last-of-type {
+  display: grid;
+  gap: 1.5rem 0;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 544px) {
+  .link-stats-home__column:last-of-type {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .link-stats-home__column:first-of-type {
+    width: calc(40% - 2rem);
+    margin-right: 1rem;
+  }
+  .link-stats-home__column:last-of-type {
+    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(60% - 2rem);
+    margin-left: 1rem;
+  }
+}
