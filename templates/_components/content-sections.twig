@@ -89,7 +89,7 @@
 			</div>
 		</section>
 	{% elseif block.type == "instagram" %}
-		{% set items = craft.instagram.getFeed() %}
+		{% set items = craft.instagram.getFeed(block.account) %}
 		<section class="instagram instagram-glide">
 			<div class="u-container instagram__inner">
 				<h2 class="instagram__heading">{{block.heading}}</h2>

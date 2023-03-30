@@ -1,4 +1,4 @@
-dateModified: 1680181045
+dateModified: 1680191111
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -99,7 +99,7 @@ meta:
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
     86bf8d52-4937-4435-86ec-d080ca4fd0d7: 'Book Private Event' # Book Private Event
-    87f60dce-cac6-4d30-90ef-a6a2040f4d0d: 'Post Count' # Post Count
+    87f60dce-cac6-4d30-90ef-a6a2040f4d0d: 'Post Limit' # Post Limit
     95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
     169eb7a3-ac32-4f0f-afd8-eb8b92803b1b: 'Event Image' # Event Image
