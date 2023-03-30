@@ -1,0 +1,14 @@
+columnSuffix: umuygdou
+contentColumnType: string(255)
+fieldGroup: 89833881-16ce-4ec4-abfd-1f352dc99fd8 # Common
+handle: linkedin
+instructions: null
+name: LinkedIn
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

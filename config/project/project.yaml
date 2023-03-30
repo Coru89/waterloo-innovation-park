@@ -1,4 +1,4 @@
-dateModified: 1680194960
+dateModified: 1680198606
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -43,6 +43,7 @@ meta:
     0d01ac2a-6f7f-4925-8c97-10d917e18c84: Title # Title
     0d0605aa-2db0-476d-a8cd-009b9efc4eeb: 'Button Link' # Button Link
     0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
+    0f2f856e-d16b-4407-9c3b-d0b013f21282: Twitter # Twitter
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
     1f0b8178-c969-454d-94a7-ae7d3f373f86: Subheading # Subheading
     2a874f96-2ff5-4132-815e-da2d51664308: 'Book Private Event' # Book Private Event
@@ -64,6 +65,7 @@ meta:
     6dc1ef68-7606-4254-8f3e-ab00a4a0b146: 'Button Link' # Button Link
     6f01e9c8-9af2-4589-8d81-a9ed56130cc9: 'Job Title' # Job Title
     6f949aa8-1797-4b29-b437-d531558d65c7: 'Button Text' # Button Text
+    6fea7256-a827-45a0-bc83-3e4ccc95682d: LinkedIn # LinkedIn
     7b3301be-ed48-400a-a679-7b61d6a9fab8: Path # Path
     7bc74160-416f-46f7-9447-6f6fad7b93ec: 'Page Heading' # Page Heading
     7c0905c7-cf97-4e6a-85aa-2dec1a0f13e5: 'Button Text' # Button Text
@@ -86,6 +88,7 @@ meta:
     24a64e3b-2ad3-479e-89dc-1c16e57368ac: Booking # Booking
     25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
     26baa828-2510-4546-ab8a-4866ca224fa2: 'Featured Exhibit' # Featured Exhibit
+    31a9da1e-374b-4022-b98e-180349d41568: 'Social Links' # Social Links
     31aa51d3-2c41-4a98-8464-95f377cc4f07: 'Lease Managers Heading' # Lease Managers Heading
     34e247a1-8be7-4932-a481-cfa735abdba3: 'Exhibition Summary' # Exhibition Summary
     36e3ae0f-08a5-4193-af58-4ed32c350d94: Image # Image
@@ -141,6 +144,7 @@ meta:
     b1c63a82-dac1-486f-a4f0-a01d8bd252d6: 'Image Vertical Position' # Image Vertical Position
     b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
+    b7cc4e3f-4830-4d21-8c33-0fd45bf0efdf: Facebook # Facebook
     b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
     b41afa41-893f-4b11-970e-c75f2431f0be: 'Learn More Link' # Learn More Link
     b19956e7-f23d-451e-93c0-712acc2c2b9a: 'Event Description' # Event Description
@@ -159,6 +163,7 @@ meta:
     d3d92310-a896-45d2-810b-4f797da224ff: Summary # Summary
     d4f3f3d0-aeef-48c3-ad9c-af361d012f75: 'The Link (Footer Links)' # The Link (Footer Links)
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
+    d23cf1d8-0be6-484f-8af4-890dfd300055: Instagram # Instagram
     d40fc290-3cb8-4974-b1e9-4ab5e279ce4a: Limit # Limit
     d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
