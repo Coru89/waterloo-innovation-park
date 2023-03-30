@@ -1,0 +1,77 @@
+columnSuffix: blussgcl
+contentColumnType: text
+fieldGroup: 89833881-16ce-4ec4-abfd-1f352dc99fd8 # Common
+handle: navItems
+instructions: null
+name: 'Footer Nav Items'
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Button Text'
+            -
+              - handle
+              - buttonText
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Button Link'
+            -
+              - handle
+              - buttonHref
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - Label
+            -
+              - handle
+              - label
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col2
+          - ''
+        -
+          - col1
+          - ''
+        -
+          - col3
+          - ''
+  maxRows: null
+  minRows: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

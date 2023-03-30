@@ -1,0 +1,24 @@
+fieldLayouts:
+  f4b8883c-8f15-4d9c-a349-b9263e78dcc8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c27feab1-3cbb-4d0e-9bf7-ddcf2ac7a63e # Footer Nav Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb501a1b-ca79-41dc-b9d5-5cb69335c396
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Nav Items'
+        uid: 1c09a4b2-9301-42bc-a643-fc808ffad0a6
+        userCondition: null
+handle: footerLinksColumn2
+name: 'Waterloo Innovation Park (Footer Links)'
+sortOrder: 4

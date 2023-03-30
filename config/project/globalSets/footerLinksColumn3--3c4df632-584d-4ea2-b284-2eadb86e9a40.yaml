@@ -1,0 +1,24 @@
+fieldLayouts:
+  b4d34ed0-3b0f-4b00-ba1d-93c144bdb620:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c27feab1-3cbb-4d0e-9bf7-ddcf2ac7a63e # Footer Nav Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a979a21a-dd73-4467-bbbd-282766fd5f1d
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Nav Items'
+        uid: d34b613a-9124-41bb-ac64-074cd4e44db0
+        userCondition: null
+handle: footerLinksColumn3
+name: 'Get In Touch (Footer Links)'
+sortOrder: 5

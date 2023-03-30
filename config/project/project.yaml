@@ -1,4 +1,4 @@
-dateModified: 1680191111
+dateModified: 1680194960
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -48,6 +48,7 @@ meta:
     2a874f96-2ff5-4132-815e-da2d51664308: 'Book Private Event' # Book Private Event
     2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager Image' # Property Manager Image
     2f95f803-ea1a-450d-856b-d4604d326a97: Date # Date
+    3c4df632-584d-4ea2-b284-2eadb86e9a40: 'Get In Touch (Footer Links)' # Get In Touch (Footer Links)
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
     3e1d40f9-bcc2-45e5-a18f-9a845b7988db: 'Button Text' # Button Text
     4b4b1468-382a-43a9-a954-3816f65567a2: Heading # Heading
@@ -146,6 +147,7 @@ meta:
     baa2eb32-a191-474e-b7da-50764f46b1e5: Info # Info
     bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Details # Details
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
+    c27feab1-3cbb-4d0e-9bf7-ddcf2ac7a63e: 'Footer Nav Items' # Footer Nav Items
     c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
@@ -153,7 +155,9 @@ meta:
     cc822dad-031d-4617-957a-65ba55d4ddb3: Instagram # Instagram
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
     d0d7fc9a-ecb7-4bbf-be37-f1c6061c4856: 'The Link Stats' # The Link Stats
+    d088b088-f039-408a-91f6-f1c22c96e161: 'Waterloo Innovation Park (Footer Links)' # Waterloo Innovation Park (Footer Links)
     d3d92310-a896-45d2-810b-4f797da224ff: Summary # Summary
+    d4f3f3d0-aeef-48c3-ad9c-af361d012f75: 'The Link (Footer Links)' # The Link (Footer Links)
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
     d40fc290-3cb8-4974-b1e9-4ab5e279ce4a: Limit # Limit
     d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
