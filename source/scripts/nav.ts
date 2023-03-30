@@ -23,7 +23,7 @@ export namespace Nav {
   window.addEventListener("resize", function () {
     const newWidth = window.innerWidth;
 
-    if (newWidth > 768) {
+    if (newWidth > 1052) {
       document
         .querySelectorAll(".nav__sublist--open")
         .forEach((el) => el.classList.remove("nav__sublist--open"));
@@ -39,7 +39,7 @@ export namespace Nav {
       const target = e.currentTarget as Element;
 
       //only apply for mobile
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 1052) {
         return;
       }
 

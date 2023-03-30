@@ -304,8 +304,7 @@ p {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
-  padding: 0.5rem 1rem;
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   -webkit-transition: background-color 0.15s ease-out;
   transition: background-color 0.15s ease-out;
@@ -326,7 +325,7 @@ p {
   display: inline-block;
   font-size: 1rem;
   line-height: 1.5;
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   -webkit-transition: background-color 0.15s ease-out;
   transition: background-color 0.15s ease-out;
@@ -403,9 +402,9 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
 }
 .header__inner:nth-of-type(1) {
@@ -517,11 +516,6 @@ p {
   width: 100vw;
 }
 
-@media (min-width: 768px) {
-  .nav {
-    margin-left: auto;
-  }
-}
 .nav__button {
   border: none;
   margin: 0;
@@ -552,7 +546,7 @@ p {
   border: 0;
   padding: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__button {
     display: none;
   }
@@ -612,7 +606,7 @@ p {
 .nav__overlay--active {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__overlay {
     display: none;
   }
@@ -641,7 +635,7 @@ p {
   width: 100%;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__wrapper {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -683,11 +677,11 @@ p {
   flex-wrap: wrap;
   left: 0;
   list-style: none;
-  margin: 1rem 0;
+  margin: 1rem 0 3.5rem;
   padding: 0;
   text-align: left;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -697,7 +691,7 @@ p {
     position: static;
   }
   .nav__list > .nav__item {
-    margin-right: 2rem;
+    margin-right: 3.75rem;
   }
   .nav__list > .nav__item::after {
     background-color: #0A78FF;
@@ -728,7 +722,7 @@ p {
 .nav__list::-webkit-scrollbar {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__list {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -738,12 +732,11 @@ p {
 .nav__item {
   border-bottom: 1px solid #C0C0C0;
   display: block;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   position: relative;
-  text-transform: uppercase;
   white-space: nowrap;
   width: 100%;
 }
@@ -753,11 +746,14 @@ p {
     transform: rotate(-90deg);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__item {
     border-bottom: 0;
     padding: 0.5rem 0;
     width: initial;
+  }
+  .nav__item:last-of-type {
+    margin-right: 0;
   }
 }
 .nav__item .arrow {
@@ -793,7 +789,7 @@ p {
   position: relative;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__item-link {
     display: inline-block;
     padding: initial;
@@ -805,12 +801,12 @@ p {
   position: static;
   text-transform: capitalize;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__item-link-level-2 {
     padding: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__item--has-level-2 {
     padding-right: 19px;
   }
@@ -839,7 +835,7 @@ p {
 .nav__item-level-2:last-child {
   border-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__item-level-2:last-child {
     border: 0;
   }
@@ -854,7 +850,7 @@ p {
   padding: 0 1.5rem;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1052px) {
   .nav__sublist {
     background: #fff;
     border: 1px solid #C0C0C0;
@@ -917,9 +913,30 @@ p {
     float: none;
   }
 }
-@media (min-width: 768px) {
+.nav__logo-mobile {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+@media (min-width: 1052px) {
   .nav__logo-mobile {
     display: none;
+  }
+}
+.nav__cta-mobile {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+@media (min-width: 1052px) {
+  .nav__cta-mobile {
+    display: none;
+  }
+}
+.nav__cta-desktop {
+  display: none;
+}
+@media (min-width: 1052px) {
+  .nav__cta-desktop {
+    display: block;
   }
 }
 

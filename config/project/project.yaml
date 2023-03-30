@@ -1,4 +1,4 @@
-dateModified: 1680018400
+dateModified: 1680181045
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -152,6 +152,7 @@ meta:
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
     cc822dad-031d-4617-957a-65ba55d4ddb3: Instagram # Instagram
     ce352345-5dc4-4b53-a997-af7ff50bf606: Image # Image
+    d0d7fc9a-ecb7-4bbf-be37-f1c6061c4856: 'The Link Stats' # The Link Stats
     d3d92310-a896-45d2-810b-4f797da224ff: Summary # Summary
     d8a9784a-a8a3-4e31-9bf5-73aa7bd6f67c: Home # Home
     d40fc290-3cb8-4974-b1e9-4ab5e279ce4a: Limit # Limit
@@ -159,6 +160,7 @@ meta:
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e12bca54-c3b9-4ba0-9641-31e98bd18527: 'Remove padding top?' # Remove padding top?
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
+    e696ca9b-87fe-4bc8-8350-a9a82cb85f30: 'The Link Stats Home' # The Link Stats Home
     e2190436-67a6-4e37-bc3b-b0e52e23f9e7: 'Gallery Items' # Gallery Items
     ec1c3db1-02e8-4fdd-b5ad-f3f9bd90e586: 'Button Link' # Button Link
     ec147d51-bd50-4e6e-8f06-fdd1c19ad61a: 'The Link' # The Link

@@ -25,7 +25,7 @@ $block: 'header';
 
 	&__inner {
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		position: relative;
 
 		&:nth-of-type(1) {

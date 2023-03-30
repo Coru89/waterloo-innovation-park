@@ -1,10 +1,6 @@
 @import '../reference/reference';
 
 .nav {
-  @include media-min(md) {
-    margin-left: auto;
-  }
-
   &__button {
     @include button-reset;
 
@@ -15,7 +11,7 @@
     transform: translateY(-50%);
     z-index: 4;
 
-    @include media-min(md) {
+    @include media-min(lg) {
       display: none;
     }
 
@@ -86,7 +82,7 @@
       display: block;
     }
 
-    @include media-min(md) {
+    @include media-min(lg) {
       display: none;
     }
   }
@@ -115,7 +111,7 @@
       z-index: 1;
     }
 
-    @include media-min(md) {
+    @include media-min(lg) {
       box-shadow: none;
       display: flex;
       margin: initial;
@@ -144,17 +140,17 @@
     flex-wrap: wrap;
     left: 0;
     list-style: none;
-    margin: 1rem 0;
+    margin: 1rem 0 3.5rem;
     padding: 0;
     text-align: left;
 
-    @include media-min(md) {
+    @include media-min(lg) {
       flex-direction: row;
       margin: 0;
       position: static;
 
       & > .nav__item {
-        margin-right: 2rem;
+        margin-right: 3.75rem;
 
         &::after {
           background-color: $blue;
@@ -188,7 +184,7 @@
       display: none;
     }
 
-    @include media-min(md) {
+    @include media-min(lg) {
       justify-content: flex-end;
     }
   }
@@ -196,12 +192,11 @@
   &__item {
     border-bottom: 1px solid $grey;
     display: block;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     margin: 0;
     padding: 0;
     position: relative;
-    text-transform: uppercase;
     white-space: nowrap;
     width: 100%;
 
@@ -213,10 +208,14 @@
       }
     }
 
-    @include media-min(md) {
+    @include media-min(lg) {
       border-bottom: 0;
       padding: 0.5rem 0;
       width: initial;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
 
     .arrow {
@@ -248,7 +247,7 @@
       position: relative;
       text-decoration: none;
 
-      @include media-min(md) {
+      @include media-min(lg) {
         display: inline-block;
         padding: initial;
       }
@@ -259,7 +258,7 @@
         position: static;
         text-transform: capitalize;
 
-        @include media-min(md) {
+        @include media-min(lg) {
           padding: 0;
         }
       }
@@ -267,7 +266,7 @@
 
     // a nav level 1 nav item that has level 2 nav under it
     &--has-level-2 {
-      @include media-min(md) {
+      @include media-min(lg) {
         padding-right: 19px;
 
         &:hover {
@@ -300,7 +299,7 @@
       &:last-child {
         border-bottom: 0;
 
-        @include media-min(md) {
+        @include media-min(lg) {
           border: 0;
         }
       }
@@ -318,7 +317,7 @@
 
     $triangle-size: 13px;
 
-    @include media-min(md) {
+    @include media-min(lg) {
       background: $white;
       border: 1px solid $grey;
       box-shadow: $box-shadow;
@@ -387,25 +386,28 @@
   }
 
   &__logo-mobile {
-    @include media-min(md) {
+    align-self: flex-start;
+
+    @include media-min(lg) {
       display: none;
     }
   }
 
-  // .social-icons {
-  //   padding: 1rem 0;
+  &__cta {
+    &-mobile {
+      align-self: flex-start;
+      @include media-min(lg) {
+        display: none;
+      }
+    }
 
-  //   @include media-min(sm) {
-  //     margin: 0;
-  //     padding-top: 0;
-  //   }
+    &-desktop {
+      display: none;
 
-  //   @include media-min(md) {
-  //     display: none;
-  //   }
+      @include media-min(lg) {
+        display: block;
+      }
+    }
 
-  //   &__list {
-  //     margin-bottom: 0;
-  //   }
-  // }
+  }
 }
