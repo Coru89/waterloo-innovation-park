@@ -462,6 +462,40 @@
 				</div>
 			</div>
 		</section>
+	{% elseif block.type == "double-text-column-with-3-images" %}
+		<section class="double-text-with-3-images">
+			<div class="double-text-with-3-images__inner">
+				<div class="double-text-with-3-images__heading-row">
+					<div class="double-text-with-3-images__heading">{{block.heading}}</div>
+					<a href={{block.buttonHref}} class="button button--light button--arrow">{{block.buttonText}}</a>
+				</div>
+				<div class="double-text-with-3-images__text-row">
+					{{block.text}}
+				</div>
+				<div class="double-text-with-3-images__image-row">
+					{% for image in block.images %}
+						<picture class="double-text-with-3-images__picture">
+							<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
+							<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
+							<img alt="{{image.alt}}" class="image-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
+						</picture>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+
+	{% elseif block.type == "map" %}
+		<section class="map">
+			<div class="u-container map__inner">
+				<h2 class="map__heading">{{ block.heading }}</h2>
+				<div class="map__summary">
+					{{block.summary}}
+				</div>
+				<a href={{block.buttonHref}} class="map__directions-link">{{block.buttonText}}</a>
+				{# <iframe src="" frameborder="0"></iframe> #}
+			</div>
+		</section>
+
 	{% endif %}
 
 {% endfor %}
