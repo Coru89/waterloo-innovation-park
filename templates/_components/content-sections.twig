@@ -492,7 +492,9 @@
 					{{block.summary}}
 				</div>
 				<a href={{block.buttonHref}} class="map__directions-link">{{block.buttonText}}</a>
-				{# <iframe src="" frameborder="0"></iframe> #}
+				<div id="map">
+					{{block.iframeEmbed | raw }}
+				</div>
 			</div>
 		</section>
 

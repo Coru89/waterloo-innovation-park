@@ -1,0 +1,174 @@
+field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  2d3ba72f-d2e8-4214-ab29-4878f3133c52:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e3793567-0e66-4d19-ba2b-740920371872 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a9294b2-f07b-42bf-82a2-619170b181fa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a51d302d-a33f-4abc-8ffe-bbaf14e67455 # Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47468338-1b32-4e19-9e51-abebfd01a1dc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f7eb4c7-c99f-4370-9524-4cf17afa2bbf # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc87bc65-dc0b-4585-9a88-ef6f7a7856fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07bbfe07-a50a-4e7a-a45d-28b6b1ad1f73 # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6495f30a-8d37-4c35-b68c-ede9357e4e37
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f7e10c1-d4ec-4f06-a166-d8de4344f974 # Iframe Embed
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43481fa8-24fe-4e4e-8a3e-a73e76d3c40e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 60a54b19-a2b2-454c-9726-c413cd959289
+        userCondition: null
+fields:
+  2f7e10c1-d4ec-4f06-a166-d8de4344f974: # Iframe Embed
+    columnSuffix: hctesasg
+    contentColumnType: text
+    fieldGroup: null
+    handle: iframeEmbed
+    instructions: null
+    name: 'Iframe Embed'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  07bbfe07-a50a-4e7a-a45d-28b6b1ad1f73: # Button Link
+    columnSuffix: fkqfivat
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonLink
+    instructions: null
+    name: 'Button Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9f7eb4c7-c99f-4370-9524-4cf17afa2bbf: # Button Text
+    columnSuffix: ihtzrpgd
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a51d302d-a33f-4abc-8ffe-bbaf14e67455: # Summary
+    columnSuffix: zcmxonsv
+    contentColumnType: text
+    fieldGroup: null
+    handle: summary
+    instructions: null
+    name: Summary
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 10
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e3793567-0e66-4d19-ba2b-740920371872: # Heading
+    columnSuffix: dqyjcnvs
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: map
+name: Map
+sortOrder: 13
