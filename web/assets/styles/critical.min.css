@@ -320,7 +320,19 @@ p {
   color: #fff;
 }
 
-.button--light {
+.button--outline-white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.button--outline-white:focus, .button--outline-white:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.button--outline-white::after {
+  background-image: url("/assets/images/icons/arrow.svg") !important;
+}
+
+.button--outline {
   border-radius: 30px;
   display: inline-block;
   font-size: 1rem;
@@ -330,17 +342,15 @@ p {
   -webkit-transition: background-color 0.15s ease-out;
   transition: background-color 0.15s ease-out;
   background-color: transparent;
-  border: 1px solid #fff;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(23, 31, 56, 0.08);
-  box-shadow: 0 0.125rem 0.25rem rgba(23, 31, 56, 0.08);
-  color: #fff;
+  border: 1px solid #0B0E26;
+  color: #0B0E26;
 }
-.button--light:focus, .button--light:hover {
+.button--outline:focus, .button--outline:hover {
   background-color: transparent;
-  color: #fff;
+  color: #0B0E26;
 }
-.button--light::after {
-  background-image: url("/assets/images/icons/arrow.svg") !important;
+.button--outline::after {
+  background-image: url("/assets/images/icons/arrow-dark.svg") !important;
 }
 
 .button--arrow {

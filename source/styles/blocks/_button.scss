@@ -2,8 +2,12 @@
     @include button;    
 }
 
-.button--light {
-    @include button--light;    
+.button--outline-white {
+    @include button--outline-white;    
+}
+
+.button--outline {
+    @include button--outline;    
 }
 
 .button--arrow {

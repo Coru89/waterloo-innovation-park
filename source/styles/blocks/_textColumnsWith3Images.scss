@@ -1,5 +1,80 @@
-$block: 'past-exhibits-rollup';
+$block: 'double-text-with-3-images';
 
-// .#{$block} {
+.#{$block} {
+    background-color: $grey-lighter;
 
-// }
+    &__inner {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+
+        @include media-min(md) {
+            padding-bottom: 4rem;
+            padding-top: 4.5rem;
+        }
+    }
+
+    &__heading {
+        @include media-min(md) {
+            width: 50%;
+        }
+
+        &-row {
+            margin-bottom: 3rem;
+
+            @include media-min(md) {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                gap: 0 2.5rem;
+            }
+
+            .button {
+                display: none;
+    
+                @include media-min(md) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__text-row {
+        margin-bottom: 4rem;
+
+        @include media-min(md) {
+            p {
+                column-count: 2;
+                column-gap: 2rem;
+            }
+
+            .button {
+                display: none;
+            } 
+        }
+
+    }
+
+    &__image-row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px 0;
+
+        @include media-min(md) {
+            align-items: center;
+            flex-direction: row;
+            gap: 0 2rem;
+            justify-content: space-between;
+        }
+    }
+
+    &__picture {
+        @include media-min(md) {
+            width: calc(33.33%);
+        }           
+    }
+
+    &__image {
+        height: auto;
+        width: 100%;
+    }
+}

@@ -22,7 +22,9 @@
 	}
 }
 
-@mixin button--light {
+
+
+@mixin button--outline {
 	border-radius: 30px;
 	display: inline-block;
 	font-size: 1rem;
@@ -31,8 +33,22 @@
 	text-decoration: none;
 	transition: background-color .15s ease-out;
     background-color: transparent;
+    border: 1px solid $grey-darker;
+    color: $grey-darker;
+
+	&:focus,
+	&:hover {
+		background-color: transparent;
+		color: $grey-darker;
+	}
+
+	&::after {
+		background-image: url('/assets/images/icons/arrow-dark.svg') !important;
+	}
+}
+
+@mixin button--outline-white {
     border: 1px solid $white;
-    box-shadow: 0 0.125rem 0.25rem rgb(23 31 56 / 8%);
     color: $white;
 
 	&:focus,
@@ -46,14 +62,14 @@
 	}
 }
 
-@mixin button--secondary {
-	background-color: $blue-light;
+// @mixin button--secondary {
+// 	background-color: $blue-light;
 
-	&:focus,
-	&:hover {
-		background-color: $blue;
-	}
-}
+// 	&:focus,
+// 	&:hover {
+// 		background-color: $blue;
+// 	}
+// }
 
 @mixin button--arrow {
 	padding-right: 3.75rem;
@@ -81,5 +97,12 @@
 			transform: translateY(-50%) rotate(180deg);
 			left: 2.25rem;
 		}
+	}
+}
+
+@mixin button--arrow-dark {
+	&::after {
+		background-image: url('/assets/images/icons/arrow.svg');
+	
 	}
 }

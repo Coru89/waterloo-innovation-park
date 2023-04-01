@@ -37,7 +37,7 @@
 		{# If the total entry count is greater than the number that has been displayed #}
 		{% if entryQuery.count() > offset + entries|length %}
 		{# Increments `offset` by the value of `limit` #}
-		<button class="gallery-rollup__button" id="past-exhibits-load-more" sprig s-val:offset="{{ offset + limit }}"
+		<button class="gallery-rollup__button button button--outline button--arrow" id="past-exhibits-load-more" sprig s-val:offset="{{ offset + limit }}"
 			{# Appends entries #}
 			s-select=".past-exhibits-rollup__list li" s-target=".past-exhibits-rollup__list" s-swap="beforeend"
 			{# If this button was clicked then swap it out-of-band #}
