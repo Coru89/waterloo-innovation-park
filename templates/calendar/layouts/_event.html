@@ -35,7 +35,7 @@
             {% endif %}
 
             {% if image is defined %}
-            <picture class="">
+            <picture class="event__picture">
                 <source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [120], { format: 'webp', } ), sizes: '100vw'}) }}>
                 <source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [120], { format: 'jpeg', } ), sizes: '100vw'}) }}>
                 <img style="width: 100%; height: auto;" alt="image.alt" src={{image.url}} width={{image.width}} height={{image.height}}>

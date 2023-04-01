@@ -170,3 +170,24 @@ iframe#calendar {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+.event:not(.multi_day) {
+  border-radius: 5px;
+}
+
+.event__picture {
+  padding: .25rem 0;
+
+  img {
+    border-radius: 2px;
+  }
+}
+
+#month_calendar .first_day {
+  border-radius: 5px 0 0 5px;
+}
+
+#month_calendar .last_day {
+  border-radius: 0 5px 5px 0;
+}

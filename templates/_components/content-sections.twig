@@ -433,8 +433,8 @@
 						{% for image in block.images %}
 						<li class="image-slider__slide glide__slide">
 							<picture class="image-slider__picture">
-								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
-								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
+								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 65vw'}) }}>
+								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 65vw'}) }}>
 								<img alt="{{image.alt}}" class="image-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
 							</picture>
 						</li>
@@ -462,11 +462,11 @@
 				</div>
 			</div>
 		</section>
-	{% elseif block.type == "double-text-column-with-3-images" %}
+	{% elseif block.type == "textColumnsWith3Images" %}
 		<section class="double-text-with-3-images">
-			<div class="double-text-with-3-images__inner">
+			<div class="u-container double-text-with-3-images__inner">
 				<div class="double-text-with-3-images__heading-row">
-					<div class="double-text-with-3-images__heading">{{block.heading}}</div>
+					<h2 class="double-text-with-3-images__heading">{{block.heading}}</h2>
 					<a href={{block.buttonHref}} class="button button--light button--arrow">{{block.buttonText}}</a>
 				</div>
 				<div class="double-text-with-3-images__text-row">
@@ -494,6 +494,32 @@
 				<a href={{block.buttonHref}} class="map__directions-link">{{block.buttonText}}</a>
 				<div id="map">
 					{{block.iframeEmbed | raw }}
+				</div>
+			</div>
+		</section>
+
+	{% elseif block.type == "ctaCards" %}
+		<section class="cta-cards">
+			<div class=" u-container cta-cards__inner">
+				<div class="cta-cards__item">
+					<h2 class="cta-cards__heading">{{block.cardHeading}}</h2>
+					<div class="cta-cards__cta">{{block.cardCta}}</div>
+					{% set image = block.cardImage.one() %}
+					<picture class="cta-cards__picture">
+						<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
+						<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
+						<img alt="{{image.alt}}" class="cta-cards__image" src={{image.url}} width={{image.width}} height={{image.height}}>
+					</picture>
+				</div>
+				<div class="cta-cards__item">
+					<h2 class="cta-cards__heading">{{block.cardHeading2}}</h2>
+					<div class="cta-cards__cta">{{block.cardCta2}}</div>
+					{% set image = block.cardImage2.one() %}
+					<picture class="cta-cards">
+						<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
+						<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
+						<img alt="{{image.alt}}" class="cta-cards__image" src={{image.url}} width={{image.width}} height={{image.height}}>
+					</picture>
 				</div>
 			</div>
 		</section>

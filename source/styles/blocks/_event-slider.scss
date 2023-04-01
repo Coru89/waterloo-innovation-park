@@ -9,7 +9,7 @@ $block: "event-slider";
 
     @include media-min(md) {
       padding-bottom: 7rem;
-      padding-top: 8rem;
+      padding-top: 4rem;
     }
 
     &--remove-padding {
@@ -24,9 +24,6 @@ $block: "event-slider";
   }
 
   &__section-header {
-    // &--top {
-      
-    //   }
     .#{$block}__row {
       .button {
         margin-top: 1.5rem;
@@ -138,7 +135,7 @@ $block: "event-slider";
           }
 
           &:first-of-type {
-            margin-right: 2rem;
+            // margin-right: 2rem;
             order: initial;
           }
 
@@ -162,7 +159,8 @@ $block: "event-slider";
       }
 
       .image-slider__controls {
-        margin-top: 0;
+        // margin-top: 0;
+        margin: 0 auto;
       }
     }
 

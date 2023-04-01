@@ -12669,6 +12669,25 @@ iframe#calendar {
   text-overflow: ellipsis;
 }
 
+.event:not(.multi_day) {
+  border-radius: 5px;
+}
+
+.event__picture {
+  padding: 0.25rem 0;
+}
+.event__picture img {
+  border-radius: 2px;
+}
+
+#month_calendar .first_day {
+  border-radius: 5px 0 0 5px;
+}
+
+#month_calendar .last_day {
+  border-radius: 0 5px 5px 0;
+}
+
 @font-face {
   font-family: "Manrope";
   src: local("Manrope ExtraLight"), local("Manrope-ExtraLight"), url("fonts/Manrope-ExtraLight.woff2") format("woff2"), url("fonts/Manrope-ExtraLight.woff") format("woff");
@@ -12786,9 +12805,9 @@ a::after {
 }
 
 p a {
-  color: #000;
-  -webkit-box-shadow: inset 0 -1px 0 #c6c4c4;
-  box-shadow: inset 0 -1px 0 #c6c4c4;
+  color: #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
   text-decoration: none;
 }
 p a:hover {

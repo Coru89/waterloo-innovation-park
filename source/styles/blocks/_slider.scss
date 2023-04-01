@@ -41,12 +41,14 @@ $block: "image-slider";
   }
 
   &__image {
-    height: auto;
-    position: relative;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    // position: relative;
     width: 100%;
     z-index: -1;
-    transform: translateY(-50%);
-    top: 50%;
+    // transform: translateY(-50%);
+    // top: 50%;
   }
 
   &__content {

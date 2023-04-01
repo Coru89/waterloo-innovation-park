@@ -25,8 +25,8 @@ export namespace slider {
             gap: 30,
             perView: 1,
             peek: {
-                before: 420,
-                after: 420
+                before: 321,
+                after: 321
             },
             breakpoints: {
                 768: {
