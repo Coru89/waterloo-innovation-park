@@ -1,0 +1,9 @@
+app: waterlooinnopark
+ssh_url: waterlooinnopark@deploy.us1.frbit.com
+git_remote: waterlooinnopark/master
+before:
+    code/up: {  }
+after:
+    code/down:
+        - 'php craft migrate/all'
+        - 'php craft project-config/apply'
