@@ -1,0 +1,47 @@
+field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  382222a1-fa80-40c8-8fc8-afe3d5e74cec:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8c6ac355-ba45-47f9-9d6c-13d9f0ecdc30 # Limit
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a456335-a873-4f3b-8271-511ef2c30579
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b90c4461-5e91-478f-8787-133081c891b8
+        userCondition: null
+fields:
+  8c6ac355-ba45-47f9-9d6c-13d9f0ecdc30: # Limit
+    columnSuffix: zfhculrh
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: limit
+    instructions: null
+    name: Limit
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: 12
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: featExhibitRollup
+name: 'Featured Exhibit Rollup'
+sortOrder: 16

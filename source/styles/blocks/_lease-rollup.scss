@@ -20,12 +20,10 @@ $block: 'lease-rollup';
         margin: 0;
 
         @include media-min(sm) {
-            gap: 3rem;
             grid-template-columns: repeat(2, 1fr);
         }
 
         @include media-min(lg) {
-            gap: 5rem;
             grid-template-columns: repeat(3, 1fr);
         }
     }
@@ -38,15 +36,15 @@ $block: 'lease-rollup';
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
+        margin-bottom: .5rem;
     }
 
     &__details {
         line-height: 32px;
     }
 
-    &__button {
-        display: block;
-        margin: 0 auto;
+    &__details {
+        margin-bottom: 2rem;
     }
 
     &__image {

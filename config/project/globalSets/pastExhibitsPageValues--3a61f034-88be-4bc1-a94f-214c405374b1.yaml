@@ -1,0 +1,89 @@
+fieldLayouts:
+  2f03884b-9dd5-4908-baea-9f1e0bce1c3c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            heading: 'Call to action'
+            type: craft\fieldlayoutelements\Heading
+            uid: 0f6f09c9-1d72-48c7-ab70-30ce3850a0ce
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: e38e9b53-b834-41a9-aa4c-ec123249d1b7 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4556932-2fa7-448d-96fa-eaa1225a70ab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 120c9344-1c5c-4d8c-89d8-34c7e76a8b31 # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8ba02a35-3c52-439a-8750-0709c8c085b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8adcdb41-46b1-4b0d-9ffd-58c644b0e161 # Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3baeabb1-31b6-45d0-ab5e-c2920d2bc2da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 7441fee9-192d-4788-8983-da10b98575d9
+            userCondition: null
+          -
+            elementCondition: null
+            heading: 'Page Intro'
+            type: craft\fieldlayoutelements\Heading
+            uid: d7ef0c60-bd9e-46cb-af6d-2fdd46afe3ed
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 7bc74160-416f-46f7-9447-6f6fad7b93ec # Page Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e82c02dc-b97e-49cf-b381-7697d5cf8295
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 775aefd3-8b22-4769-bea7-4c07cef58476 # Page Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bea6ff88-ee37-4c7f-8fbe-6b56df3de966
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 914d3bb9-ae74-47fa-a585-38ef059b0402
+        userCondition: null
+handle: pastExhibitsPageValues
+name: 'Past Exhibits Page Values'
+sortOrder: 7

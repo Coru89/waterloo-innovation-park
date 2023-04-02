@@ -1,0 +1,14 @@
+<section class="call-to-action">
+    <div class="u-container">
+        <div class="call-to-action__content">
+            <h3 class="call-to-action__headline">
+                {{entry.headline}}
+            </h3>
+            {% if entry.buttonTextCta %}
+                <a class="button button--arrow" href="{{entry.buttonHref}}">
+                    {{entry.buttonTextCta}}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</section>

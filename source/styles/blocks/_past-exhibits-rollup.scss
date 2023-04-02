@@ -3,17 +3,25 @@
 $block: 'past-exhibits-rollup';
 
 .#{$block} {
+    &__inner {
+        @include media-min(md) {
+            padding-top: 4.2rem;
+            padding-bottom: 4.2rem;
+        }
+    }
+
     &__list {
         display: grid;
         gap: 2rem;
         grid-auto-rows: 1fr;
         list-style: none;
-        padding: 0;
+        padding: 0 0 3rem;
         margin: 0;
         width: 100%;
 
         @include media-min(md) {
             grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 4.5rem;
         }
     }
 

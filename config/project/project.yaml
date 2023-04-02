@@ -1,4 +1,4 @@
-dateModified: 1680350289
+dateModified: 1680443278
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -50,6 +50,7 @@ meta:
     2e724cd6-994a-493e-945a-c6dadbff9837: 'Property Manager Image' # Property Manager Image
     2f7e10c1-d4ec-4f06-a166-d8de4344f974: 'Iframe Embed' # Iframe Embed
     2f95f803-ea1a-450d-856b-d4604d326a97: Date # Date
+    3a61f034-88be-4bc1-a94f-214c405374b1: 'Past Exhibits Page Values' # Past Exhibits Page Values
     3c4df632-584d-4ea2-b284-2eadb86e9a40: 'Get In Touch (Footer Links)' # Get In Touch (Footer Links)
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
     3e1d40f9-bcc2-45e5-a18f-9a845b7988db: 'Button Text' # Button Text
@@ -76,8 +77,9 @@ meta:
     7c65acbe-cf3a-4d9d-8c29-198033c701a3: Instagram # Instagram
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
     8a9c949f-a4f8-46c9-b908-e0fba1e95286: Summary # Summary
+    8adcdb41-46b1-4b0d-9ffd-58c644b0e161: Headline # Headline
     8af21ea5-8ed7-451b-9561-65de6890a24a: Events # Events
-    8c002f04-e95f-478c-924a-13bda79698f8: 'Past Exhibit' # Past Exhibit
+    8c6ac355-ba45-47f9-9d6c-13d9f0ecdc30: Limit # Limit
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
     8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
@@ -110,7 +112,9 @@ meta:
     86bf8d52-4937-4435-86ec-d080ca4fd0d7: 'Book Private Event' # Book Private Event
     87f60dce-cac6-4d30-90ef-a6a2040f4d0d: 'Post Limit' # Post Limit
     95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
+    96f722d9-925b-4e49-9b34-1494ea93ec47: CTA # CTA
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
+    120c9344-1c5c-4d8c-89d8-34c7e76a8b31: 'Button Link' # Button Link
     169eb7a3-ac32-4f0f-afd8-eb8b92803b1b: 'Event Image' # Event Image
     220d125c-af88-4a55-9b6c-ddae8a634855: 'Content Panel' # Content Panel
     284d17e3-f78c-42b0-a5d0-6cba8be9f1d0: 'Button Text' # Button Text
@@ -126,9 +130,9 @@ meta:
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
     750a3bea-3a7c-48b8-a453-41661ad274fa: 'Page Intro' # Page Intro
     771b1ebb-9bc3-4a71-9969-b7e5f1020bb7: 'Property Item' # Property Item
+    775aefd3-8b22-4769-bea7-4c07cef58476: 'Page Summary' # Page Summary
     809ce6db-5c77-4e75-9eb9-1d42abe1485b: 'Event Slider Details' # Event Slider Details
     903cf4e1-deba-4181-804b-66520fe03fdc: Image # Image
-    959a923c-97d7-425f-baea-2a45e43116cf: 'Past Exhibit' # Past Exhibit
     1057c048-812f-4e87-b8f7-208e91e4c8fc: 'Button Text' # Button Text
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
     4197b684-37e8-427d-9ed0-80a7712911bc: '2 Text Columns With 3 Images' # 2 Text Columns With 3 Images
@@ -149,7 +153,9 @@ meta:
     38134199-860e-4c8f-9bc6-d1e314e1884a: Leasing # Leasing
     87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
     89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
+    a4bee935-0cad-484e-8012-3896bc1f8544: 'Exhibit Rollup' # Exhibit Rollup
     a8b4a8b9-f098-48a3-b3c9-9149a1f3d3e7: 'Art Name' # Art Name
+    a8c7d91c-a2c3-4be3-b59e-c74e6e786255: 'Featured Exhibit Rollup' # Featured Exhibit Rollup
     a8d83305-ed06-4c80-971d-0a649f1c0cff: 'Heading - Card 1' # Heading - Card 1
     a51d302d-a33f-4abc-8ffe-bbaf14e67455: Summary # Summary
     a702171c-dc55-496a-8140-10a53900a54a: 'Button Link' # Button Link
@@ -183,15 +189,18 @@ meta:
     dd6f9a8d-814f-456d-8fc3-d60933f1ed0a: 'Heading - Card 2' # Heading - Card 2
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e12bca54-c3b9-4ba0-9641-31e98bd18527: 'Remove padding top?' # Remove padding top?
+    e38e9b53-b834-41a9-aa4c-ec123249d1b7: 'Button Text' # Button Text
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
     e696ca9b-87fe-4bc8-8350-a9a82cb85f30: 'The Link Stats Home' # The Link Stats Home
     e760a300-2ccc-4626-9448-8cd0009bfa9c: Images # Images
     e2190436-67a6-4e37-bc3b-b0e52e23f9e7: 'Gallery Items' # Gallery Items
     e3793567-0e66-4d19-ba2b-740920371872: Heading # Heading
+    e7435167-064b-48ec-953f-a5da23d3edda: Limit # Limit
     ec1c3db1-02e8-4fdd-b5ad-f3f9bd90e586: 'Button Link' # Button Link
     ec147d51-bd50-4e6e-8f06-fdd1c19ad61a: 'The Link' # The Link
     ee51cfa4-ec13-4103-bf30-68e7c1b63ac5: About # About
     ef382811-26e2-4369-910e-ffa10df24c8b: Account # Account
+    f0e3ba41-38ec-4d36-a57e-c1e10c10a52a: 'Past Exhibits Rollup' # Past Exhibits Rollup
     f8eb961a-512c-4bc3-acc8-573a8dbd4de2: Map # Map
     f76199d1-0bdf-4450-81d3-d2aefa255f91: 'Call-to-action - Card 2' # Call-to-action - Card 2
     fbbb7b50-c55e-456d-9508-45a83c3219cb: Events # Events

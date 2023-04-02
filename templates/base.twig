@@ -12,15 +12,17 @@
 		<meta property="og:site_name" content="Waterloo Innovation Park">
 		<meta property="og:locale" content="en_US">
 
-		<meta name="google-site-verification" content=""/>
+		<meta
+		name="google-site-verification" content=""/>
 		{# 
-		<!--DNS Prefetch -->
-		{# <link rel="dns-prefetch" href="https://www.gstatic.com">
-			<link rel="dns-prefetch" href="https://www.googletagmanager.com">
-			<link rel="dns-prefetch" href="https://www.google-analytics.com">
-		#}
+				<!--DNS Prefetch -->
+				{# <link rel="dns-prefetch" href="https://www.gstatic.com">
+					<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+					<link rel="dns-prefetch" href="https://www.google-analytics.com">
+				#}
 		<link
-		rel="dns-prefetch" href="https://polyfill.io"> <!--Favicon -->
+		rel="dns-prefetch" href="https://polyfill.io">
+		<!--Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link
@@ -34,8 +36,7 @@
 		<link
 		rel="stylesheet" href="/assets/styles/critical.min.css">
 		<!--Asynchronously load the non-critical CSS. -->
-		<link rel="stylesheet" rel="preload" as="style" href="/assets/styles/styles.min.css"> 
-		{% block styles %}{% endblock %}
+		<link rel="stylesheet" rel="preload" as="style" href="/assets/styles/styles.min.css"> {% block styles %}{% endblock %}
 
 		<!--If no js is available, load the non-critical CSS immediately. -->
 		<noscript>
@@ -62,8 +63,7 @@
 					<div class="header__container">
 						<div class="header__row">
 							<div class="header__inner">
-								<a
-									href="/" class="header__logo-anchor" title="A logo">
+								<a href="/" class="header__logo-anchor" title="A logo">
 									<img alt="Waterloo Innovation Park + The Link Logo" src="/assets/images/logo.png">
 								</a>
 								{% include '_components/nav' %}
@@ -75,17 +75,17 @@
 
 			</header>
 
-		
+
 			<main class="main" id="main-content" tabindex="0">
-			{% block layout %}
-				{% block content %}{% endblock %}
-			{% endblock %}
+				{% block layout %}
+					{% block content %}{% endblock %}
+				{% endblock %}
 			</main>
 
 			{% include '_components/footer' %}
 
 		</div>
-		
+
 		<script type="module" src="/assets/scripts/bundle.min.js" async defer></script>
 
 	</body>

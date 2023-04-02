@@ -264,10 +264,17 @@
       }
     }
 
+    &--mobile {
+      @include media-min(lg) {
+        display: none;
+      }
+    }
+
     // a nav level 1 nav item that has level 2 nav under it
     &--has-level-2 {
       @include media-min(lg) {
         padding-right: 19px;
+        pointer-events: all;
 
         &:hover {
           &::before {

@@ -49,7 +49,7 @@ fields:
     columnSuffix: null
     contentColumnType: string(256)
     fieldGroup: null
-    handle: buttonText
+    handle: buttonTextCta
     instructions: 'Button Text'
     name: 'Button Text'
     searchable: false
@@ -69,7 +69,7 @@ fields:
     columnSuffix: null
     contentColumnType: string(512)
     fieldGroup: null
-    handle: panelTitle
+    handle: headline
     instructions: Title
     name: Title
     searchable: false
@@ -89,7 +89,7 @@ fields:
     columnSuffix: null
     contentColumnType: string(255)
     fieldGroup: null
-    handle: buttonHref
+    handle: buttonHrefCta
     instructions: 'Button Link'
     name: 'Button Link'
     searchable: false

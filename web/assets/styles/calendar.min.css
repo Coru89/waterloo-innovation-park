@@ -12826,15 +12826,15 @@ picture {
 h1, .h1 {
   color: #0B0E26;
   font-family: Manrope, Helvetica, Arial, sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 400;
   line-height: 1.25;
   margin-bottom: 0.75rem;
   margin-top: 0;
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -12872,7 +12872,7 @@ h4, .h4 {
   color: #0B0E26;
   font-family: Manrope, Helvetica, Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   margin-top: 0;
 }
@@ -12911,7 +12911,7 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1313px;
+  max-width: 1356px;
   padding-left: 1.125rem;
   padding-right: 1.125rem;
 }

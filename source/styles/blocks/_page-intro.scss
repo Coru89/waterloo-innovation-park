@@ -17,17 +17,17 @@ $block: 'page-intro';
             flex-basis: 50%;
 
             &:first-of-type {
-                margin-right: 20px;
+                margin-right: 1.5rem;
             }
 
             &:last-of-type {
-                margin-left: 20px;
+                margin-left: 1.5rem;
             }
         }
     }
 
     &__summary {
-        line-height: 34px;
+        line-height: 32px;
     }
 
     &__open-message {
@@ -44,5 +44,19 @@ $block: 'page-intro';
         }
     }
 
+}
+
+.page-home {
+    .#{$block}__row {
+        flex-basis: auto;
+        
+        &:first-of-type {
+            width: 57%;
+        }
+
+        &:last-of-type {
+            width: 43%;
+        }
+    }
 }
 

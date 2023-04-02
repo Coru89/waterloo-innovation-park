@@ -1,20 +1,26 @@
 {% set offset = offset ?? 0 %}
 
 {% set entryQuery = craft.entries.section('exhibitions').one().galleryItems.offset(offset).limit(limit) %}
-{% set entries = entryQuery.ids() %}
+{% set galleryItems = entryQuery.ids() %}
+
+{% set entry = craft.entries.section('exhibitions').one() %}
+
+
 
 <section class="gallery-rollup">
   <div class="u-container gallery-rollup__inner">
+    <h2 class="gallery-rollup__heading">Featured work - "{{entry.title}}"</h2>
+        <div class="gallery-rollup__summary">{{ entry.exhibitionSummary }}</div>
     <ul class="gallery-rollup__list">
-      {% for itemId in entries %}
+      {% for itemId in galleryItems %}
         {{ sprig('_components/gallery-card', {'itemId': itemId }) }}
       {% endfor %}
     </ul>
 
     {# If the total entry count is greater than the number that has been displayed #}
-    {% if entryQuery.count() > offset + entries|length %}
+    {% if entryQuery.count() > offset + galleryItems|length %}
       {# Increments `offset` by the value of `limit` #}
-      <button class="gallery-rollup__button button button--outline button--arrow" id="featured-exhibit-load-more" sprig s-val:offset="{{ offset + limit }}"
+      <button class="gallery-rollup__button button button--outline" id="featured-exhibit-load-more" sprig s-val:offset="{{ offset + limit }}"
         {# Appends entries #}
         s-select=".gallery-rollup__list .gallery-card__item" s-target=".gallery-rollup__list" s-swap="beforeend"
         {# If this button was clicked then swap it out-of-band #}

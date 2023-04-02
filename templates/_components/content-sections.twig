@@ -54,20 +54,7 @@
 			</div>
 		</section>
 	{% elseif block.type == "callToAction" %}
-		<section class="call-to-action">
-			<div class="u-container">
-				<div class="call-to-action__content">
-					<h3 class="call-to-action__headline">
-						{{block.panelTitle}}
-					</h3>
-					{% if block.buttonText %}
-						<a class="button button--arrow" href="{{block.buttonHref}}">
-							{{block.buttonText}}
-						</a>
-					{% endif %}
-				</div>
-			</div>
-		</section>
+		{% include '_components/call-to-action' with {entry: block} %}
 	{% elseif block.type == "imagePanel" %}
 		<section class="image-panel">
 			<picture class="image-panel__picture" role="presentation">
@@ -250,35 +237,7 @@
 
 
 	{% elseif block.type == "pageIntro" %}
-		<div class="page-intro">
-			<div class="page-intro__inner u-container">
-				<div class="page-intro__row">
-					<h1 class="page-intro__heading">{{block.pageHeading}}</h1>
-					{% set url = craft.app.request.url %}
-					{% if url == "/the-link" %}
-						<div class="page-intro__open-message">
-							<svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.666 6.285a.976.976 0 0 0-1.38 0h-.001a.976.976 0 0 0 0 1.38v.002a.976.976 0 0 0 1.38 0l.002-.001a.976.976 0 0 0 0-1.38l-.001-.001Zm0 11.048a.976.976 0 0 0-1.38 0l-.001.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.002a.976.976 0 0 0 0-1.38l-.001-.002Zm-2.978-5.81h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm12.695 0h-3.906V7.62h-1.954v5.858h5.86v-1.954Zm-4.884-5.859h.002a.976.976 0 0 0 0-1.951h-.002a.976.976 0 0 0 0 1.951Zm6.215.62a.976.976 0 0 0-1.38 0v.002a.976.976 0 0 0 1.381 1.381v-.001a.976.976 0 0 0 0-1.38v-.001ZM12.5 0C5.49 0 0 5.49 0 12.5S5.49 25 12.5 25 25 19.51 25 12.5 19.51 0 12.5 0Zm0 23.047c-5.914 0-10.547-4.633-10.547-10.547 0-5.914 4.633-10.547 10.547-10.547 5.914 0 10.547 4.633 10.547 10.547 0 5.914-4.633 10.547-10.547 10.547Zm7.813-11.524h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm-1.599 5.81a.976.976 0 0 0-1.38 0v.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.001a.976.976 0 0 0 0-1.38v-.002Zm-6.213 2.005h-.002a.976.976 0 0 0 0 1.951h.002a.976.976 0 0 0 0-1.951Z" fill="#000"/></svg>
-							<span>Monday to Friday, from 9am to 3pm.</span>
-						</div>
-					{% endif %}
-				</div>
-				{% if block.pageSummary or block.buttonText %}
-					<div class="page-intro__row">
-						{% if block.pageSummary %}
-							<p class="page-intro__summary">{{block.pageSummary}}</p>
-						{% endif %}
-
-						{% if block.buttonText %}
-							<a class="button button--outline button--arrow" href="{{block.buttonHref}}">
-								{{block.buttonText}}
-							</a>
-						{% endif %}
-					{% endif %}
-
-				</div>
-			</div>
-		</div>
-
+		{% include '_components/page-intro' with {entry: block} %}
 	{% elseif block.type == "calendar" %}
 		  <section class="calendar">
 			<div class="u-container calendar__inner">
@@ -524,6 +483,27 @@
 				</div>
 			</div>
 		</section>
+
+	{% elseif block.type == "pastExhibitRollup" %}
+		{{ sprig('_components/past-exhibits-rollup', {'limit': block.limit}) }}
+
+	{% elseif block.type == "featExhibitRollup" %}
+		{{ sprig('_components/featured-exhibit-rollup', {'limit': block.limit, 'title': block.title, 'exhibitionSummary': block.exhibitionSummary }) }}
+
+	{# {% elseif block.type == "exhibitRollup" %}
+		<script>console.log('entry: '{{ entry | json_encode | raw }});</script>
+		<section class="gallery-rollup">
+			<div class="u-container gallery-rollup__inner">
+				<h2 class="gallery-rollup__heading">Featured work - {{entry.title}}</h2>
+				<a href="/the-link/featured-exhibit" class="gallery-rollup__back">< Go back to current featured exhibit</a>
+				<div class="gallery-rollup__summary">{{ entry.exhibitionSummary }}</div>
+				<ul class="gallery-rollup__list">
+					{% for itemId in entry.galleryItems.ids() %}
+						{% include '_components/gallery-card' with {'itemId': itemId, 'entryId': entry.Id} %}
+					{% endfor %}
+				</ul>
+			</div>
+		</section> #}
 
 	{% endif %}
 

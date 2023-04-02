@@ -1,0 +1,19 @@
+columnSuffix: balzaacy
+contentColumnType: text
+fieldGroup: 89833881-16ce-4ec4-abfd-1f352dc99fd8 # Common
+handle: pageSummary
+instructions: null
+name: 'Page Summary'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: 'IS this a default text'
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

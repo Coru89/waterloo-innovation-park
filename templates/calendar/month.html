@@ -31,12 +31,12 @@
 					<div class="row justify-content-between mb-3">
 						<div class="col-sm-7 calendar__column">
 							{% if dateBoundsHelper > -365 %}
-								<a class="button button--arrow button--arrow-left" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
+								<a class="button button--outline button--arrow button--arrow-left" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
 									{{ month.previousDate.format('F') }}
 								</a>
 							{% endif %}
                             {% if dateBoundsHelper < 365 %}
-								<a class="button button--arrow float-right" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
+								<a class="button button--outline button--arrow float-right" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
 									{{ month.nextDate.format('F') }}
 								</a>
 							{% endif %}

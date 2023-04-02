@@ -1,9 +1,9 @@
-columnSuffix: uuqshsed
+columnSuffix: oylpureb
 contentColumnType: text
-fieldGroup: 89833881-16ce-4ec4-abfd-1f352dc99fd8 # Common
-handle: pageheading
+fieldGroup: 96f722d9-925b-4e49-9b34-1494ea93ec47 # CTA
+handle: buttonTextCta
 instructions: null
-name: 'Page Heading'
+name: 'Button Text'
 searchable: false
 settings:
   byteLimit: null
