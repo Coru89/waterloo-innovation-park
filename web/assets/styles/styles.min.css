@@ -2561,7 +2561,7 @@ html.with-fancybox body.hide-scrollbar {
   gap: 3rem 2rem;
   grid-auto-rows: 1fr;
   list-style: none;
-  padding: 0 0 3rem;
+  padding: 0;
   margin: 0;
 }
 @media (min-width: 544px) {
@@ -2572,7 +2572,6 @@ html.with-fancybox body.hide-scrollbar {
 @media (min-width: 768px) {
   .gallery-rollup__list {
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 4.5rem;
   }
 }
 @media (min-width: 1052px) {
@@ -3080,15 +3079,26 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 
+.past-exhibits-rollup__inner {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 @media (min-width: 768px) {
   .past-exhibits-rollup__inner {
-    padding-top: 4.2rem;
-    padding-bottom: 4.2rem;
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+.past-exhibits-rollup__heading {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .past-exhibits-rollup__heading {
+    margin-bottom: 3.5rem;
   }
 }
 .past-exhibits-rollup__list {
   display: grid;
-  gap: 2rem;
   grid-auto-rows: 1fr;
   list-style: none;
   padding: 0 0 3rem;
@@ -3097,9 +3107,13 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 768px) {
   .past-exhibits-rollup__list {
+    gap: 0 7.5rem;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 4.5rem;
   }
+}
+.past-exhibits-rollup__item {
+  border-top: 1px solid #C0C0C0;
+  padding: 1.5rem 8px;
 }
 .past-exhibits-rollup__link {
   display: -webkit-box;
@@ -3112,15 +3126,28 @@ html.with-fancybox body.hide-scrollbar {
   color: #000;
 }
 .past-exhibits-rollup__picture {
-  max-width: 120px;
   margin-right: 28px;
 }
 .past-exhibits-rollup__image {
-  height: auto;
-  width: 100%;
+  height: 78px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 73px;
 }
 .past-exhibits-rollup__info-title {
   font-weight: 700;
+}
+.past-exhibits-rollup__button {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .past-exhibits-rollup__button {
+    margin-top: 4.5rem;
+  }
 }
 
 .double-text-with-3-images {

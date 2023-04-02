@@ -4,15 +4,26 @@ $block: 'past-exhibits-rollup';
 
 .#{$block} {
     &__inner {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        
         @include media-min(md) {
-            padding-top: 4.2rem;
-            padding-bottom: 4.2rem;
+            padding-top: 4.25rem;
+            padding-bottom: 4.25rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+
+        @include media-min(md) {
+            margin-bottom: 3.5rem;
         }
     }
 
     &__list {
         display: grid;
-        gap: 2rem;
+        // gap: 2rem;
         grid-auto-rows: 1fr;
         list-style: none;
         padding: 0 0 3rem;
@@ -20,9 +31,14 @@ $block: 'past-exhibits-rollup';
         width: 100%;
 
         @include media-min(md) {
+            gap: 0 7.5rem;
             grid-template-columns: repeat(2, 1fr);
-            padding-bottom: 4.5rem;
         }
+    }
+
+    &__item {
+        border-top: 1px solid $grey;
+        padding: 1.5rem 8px;
     }
 
     &__link {
@@ -36,18 +52,29 @@ $block: 'past-exhibits-rollup';
     }
 
     &__picture {
-        max-width: 120px;
         margin-right: 28px;
     }
 
     &__image {
-        height: auto;
-        width: 100%;
+        height: 78px;
+        object-fit: cover;
+        object-position: center;
+        width: 73px;
     }
 
     &__info {
         &-title {
             font-weight: 700;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+
+        @include media-min(md) {
+            margin-top: 4.5rem;
         }
     }
 }
