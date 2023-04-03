@@ -996,15 +996,17 @@ p {
   margin-right: 1rem;
 }
 
-.page-home .page-intro__row {
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-.page-home .page-intro__row:first-of-type {
-  width: 57%;
-}
-.page-home .page-intro__row:last-of-type {
-  width: 43%;
+@media (min-width: 768px) {
+  .page-home .page-intro__row {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .page-home .page-intro__row:first-of-type {
+    width: 57%;
+  }
+  .page-home .page-intro__row:last-of-type {
+    width: 43%;
+  }
 }
 
 .image-slider {
