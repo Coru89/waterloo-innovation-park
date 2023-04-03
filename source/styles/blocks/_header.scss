@@ -3,6 +3,7 @@
 $block: 'header';
 
 .#{$block} {
+	border-bottom: 1px solid $grey-light;
 	width: 100%;
 	z-index: $z-index-hotel;
 
@@ -98,10 +99,6 @@ $block: 'header';
 		display: flex;
 		justify-content: space-between;
 		padding: 1.5rem 0;
-
-		@include media-min(lg) {
-			padding: 2rem 0;
-		}
 
 		&--utility {
 			@include media-max(lg) {

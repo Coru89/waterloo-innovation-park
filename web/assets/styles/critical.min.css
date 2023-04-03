@@ -383,6 +383,7 @@ p {
 }
 
 .header {
+  border-bottom: 1px solid #C1C4CB;
   width: 100%;
   z-index: 8000;
 }
@@ -504,11 +505,6 @@ p {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1.5rem 0;
-}
-@media (min-width: 1052px) {
-  .header__row {
-    padding: 2rem 0;
-  }
 }
 @media (max-width: 1051px) {
   .header__row--utility {

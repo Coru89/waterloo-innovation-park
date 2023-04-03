@@ -7,29 +7,39 @@
 		<div class="u-container">
 			<div class="booking__row">
 				<div class="booking__column">
-					{% set image = entry.bookingPropertyManagerImage.one() %}
-					{% if image %}
-						<picture class="booking__manager-picture">
-							<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
-							<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
-							<img alt="{{image.alt}}" class="booking__image" src={{image.url}} width={{image.width}} height={{image.height}} loading="lazy">
-						</picture>
-					{% endif %}
-					{% if entry.bookingPropertyManagerImageCaption %}
-						<div class="booking__caption">{{entry.bookingPropertyManagerImageCaption}}</div>
-					{% endif %}
+					<div class="booking__picture-wrapper">
+						<h2 class="booking__heading">Book with us</h2>
+						{% set image = entry.bookingPropertyManagerImage.one() %}
+						{% if image %}
+							<picture class="booking__picture">
+								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
+								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
+								<img alt="{{image.alt}}" class="booking__image" src={{image.url}} width={{image.width}} height={{image.height}} loading="lazy">
+							</picture>
+						{% endif %}
+					</div>
 
-					{% if entry.bookingPropertyManagerEmail %}
-						<a class="booking__email">{{entry.bookingPropertyManagerEmail}}</a>
-					{% endif %}
+					<div class="booking__content-wrapper">
+						{% if entry.bookingPropertyManagerImageCaption %}		
+							<h4 class="booking__caption">{{entry.bookingPropertyManagerImageCaption}}</h4>
+						{% endif %}
 
-					{% if entry.bookingPropertyManagerPhoneDisplay and entry.bookingPropertyManagerPhoneLink %}
-						<a href={{entry.bookingPropertyManagerPhoneLink}} class="booking__phone">{{entry.bookingPropertyManagerPhoneDisplay}}</a>
-					{% endif %}
+						{% if entry.bookingPropertyManagerEmail %}
+							<div class="booking__email-container">
+								<a class="booking__email">{{entry.bookingPropertyManagerEmail}}</a>
+							</div>
+						{% endif %}
 
+						{% if entry.bookingPropertyManagerPhoneDisplay and entry.bookingPropertyManagerPhoneLink %}
+							<div class="booking__phone-container">
+								<span>Tel: <a href={{entry.bookingPropertyManagerPhoneLink}} class="booking__phone">{{entry.bookingPropertyManagerPhoneDisplay}}</a></span>
+							</div>
+						{% endif %}
+					</div>
 				</div>
 				<div class="booking__column">
-					{% include '_components/content-sections' %}
+					<h2 class="booking__heading-mobile">Book with us</h2>
+					<div class="booking__intro">Plan your next private event or book the boardroom at The Link today!</div>
 					{% macro errorList(errors) %}
 						{% if errors %}
 							{{ ul(errors, {class: 'forms__errors'}) }}
@@ -38,12 +48,11 @@
 
 					{% set submission = submission ?? null %}
 
+					<h3 class="booking__heading-form">Fill out the Booking Form</h3>
 					<form
 						id="form" class="forms" method="post" action="" accept-charset="UTF-8">
 						{{ csrfInput() }}
 						{{ actionInput('contact-form/send') }}
-
-                        <h2 class="forms__heading">Fill out the Booking Form</h2>
 
 						{% if craft.app.session.hasFlash('success') %}
 							<div>Thank you for your message.</div>
@@ -93,7 +102,6 @@
 								</div>
 							</div>
 
-
 							<div class="forms__group forms__group--50">
 								<div class="forms__input">
 									{{ input('text', 'message[Start Time]', submission.message.startTime ?? '', {
@@ -114,7 +122,7 @@
 								</div>
 							</div>
 							<div class="forms__group">
-								<span>Please briefly describe what you would like to use this space for and how many people you expect.</span>
+								<label>Please briefly describe what you would like to use this space for and how many people you expect.</label>
 								<div class="forms__input">
 									{{ tag('textarea', {
                                     text: submission.message.body ?? '',

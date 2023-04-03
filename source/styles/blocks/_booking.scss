@@ -3,43 +3,113 @@
 $block: "booking";
 
 .#{$block} {
-  padding: 5rem 0;
+  position: relative;
 
   &__row {
-    @include media-min(md) {
-      display: flex;
+    display: flex;
+    flex-direction: column;
+
+    @include media-min(lg) {
       flex-direction: row;
       justify-content: space-around;
     }
   }
 
   &__column {
+    position: relative;
+
     &:first-of-type {
-      margin-bottom: 3rem;
-      margin-right: 0;
+      background-color: $grey-lighter;
+      order: 2;
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+
+      &::before {
+        background-color: $grey-lighter;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: -1.25rem;
+        position: absolute;
+        right: -1.25rem;
+        top: 0;
+        z-index: -1;
+      }
 
       @include media-min(md) {
-        margin-bottom: 0;
-        margin-right: 2rem;
-        width: 50%;
+        display: flex;
       }
 
       @include media-min(lg) {
+        display: block;
+        margin-bottom: 0;
         margin-right: 4rem;
-        width: 40%;
+        order: 1;
+        padding: 7rem 5rem 0 0;
+        position: relative;
+        width: 30%;
+
+        &::before {
+          bottom: 0;
+          left: unset;
+          right: 0;
+          width: 100vw;
+          top: 0;
+          z-index: -1;
+        }
+
       }
     }
 
     &:last-of-type {
       margin-bottom: 3rem;
-
-      @include media-min(md) {
-        margin-bottom: 0;
-        width: 50%;
-      }
+      order: 1;
+      padding-top: 4rem;
 
       @include media-min(lg) {
-        width: 60%;
+        order: 2;
+        padding-top: 7rem;
+        width: 70%;
+      }
+    }
+
+    @include media-min(lg) {
+      padding-top: 7.5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  &__intro {
+    padding-bottom: 4.25rem;
+
+    @include media-min(lg) {
+      line-height: 0;
+      padding-bottom: 7rem;
+    }
+  }
+
+  &__heading {
+    display: none;
+
+    @include media-min(lg) {
+      display: block;
+      padding-bottom: 6rem;
+      line-height: 0;
+    }
+
+    &-mobile {
+      margin-bottom: 2rem;
+
+      @include media-min(lg) {
+       display: none;
+      }
+    }
+
+    &-form {
+      padding-bottom: 1.25rem;
+
+      @include media-min(lg) {
+        padding-bottom: 3.75rem;
       }
     }
   }
@@ -47,5 +117,37 @@ $block: "booking";
   &__image {
     height: auto;
     width: 100%;
+  }
+
+  &__picture {
+    margin-bottom: 2rem;
+
+    @include media-min(md) {
+      margin-right: 2rem
+    }
+
+    @include media-min(lg) {
+      display: block;
+      margin: 0 0 4rem;
+      
+    }
+  }
+
+  &__email, &__phone {
+    @include link;
+  }
+
+  &__email {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  &__caption {
+    margin-bottom: 2rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 2rem;
   }
 }
