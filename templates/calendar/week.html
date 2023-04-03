@@ -36,11 +36,11 @@
                 {% set dateBoundsHelper = now.diff(week.nextDate)|date('%r%a') %}
 
                 <div class="row justify-content-between mb-3">
-                    <div class="col-2">
+                    <div class="col-3">
                     {% if dateBoundsHelper > -365 %}
-                        <a class="button button-outline-secondary"
+                        <a class="button button--outline button--arrow button--arrow-left"
                            href="{{ siteUrl }}calendar/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.previousDate.format('Y/m/d') }}">
-                            <span class="fas fa-arrow-left"></span> Last Week
+                            Last Week
                         </a>
                     {% endif %}
                     </div>
@@ -54,11 +54,11 @@
                         </h3>
                     </div>
 
-                    <div class="col-2 clearfix">
+                    <div class="col-3 clearfix">
                     {% if dateBoundsHelper < 365 %}
-                        <a class="button button-outline-secondary float-right"
+                        <a class="button button button--outline button--arrow"
                            href="{{ siteUrl }}calendar/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.nextDate.format('Y/m/d') }}">
-                            Next Week <span class="fas fa-arrow-right"></span>
+                            Next Week
                         </a>
                     {% endif %}
                     </div>

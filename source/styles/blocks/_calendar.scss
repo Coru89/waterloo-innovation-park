@@ -20,6 +20,10 @@ $block: "calendar";
   }
 }
 
+.views {
+  margin-top: 1rem;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 48px;
@@ -69,25 +73,27 @@ body {
   .button--arrow--right {
     text-align: right;
   }
-  .badge-warning {
-    display: none;
-    font-size: 18px;
-    color: $grey-darker;
+}
 
-    @include media-min(lg) {
-      display: inline;
-    }
+.badge-warning {
+  display: none;
+  font-size: 18px;
+  color: $grey-darker;
+
+  @include media-min(lg) {
+    display: inline;
   }
 }
 
 #calendar-month-menu {
-  position: relative;
   padding-right: 3.75rem;
+  position: relative;
+
   .arrow {
     height: 14px;
-    top: 50%;
-    right: 2.25rem;
     position: absolute;
+    right: 2.25rem;
+    top: 50%;
     transform: translateY(-50%) rotate(90deg);
     transition: transform 0.15s ease-in-out;
     width: 14px;
@@ -101,7 +107,7 @@ body {
 
 #tool-tip {
   background-color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   border: $grey 1px solid;
   color: $grey-darker;
   display: none;
@@ -117,9 +123,9 @@ body {
 
 #arrow,
 #arrow::before {
+  height: 8px;
   position: absolute;
   width: 8px;
-  height: 8px;
 }
 
 #arrow {
@@ -127,23 +133,23 @@ body {
 }
 
 #arrow::before {
-  content: "";
-  transform: rotate(45deg);
-  top: -4px;
   border: 1px solid $grey;
+  content: "";
+  top: -4px;
+  transform: rotate(45deg);
 }
 
 #arrow::after {
-  top: 0;
-  width: 12px;
-  height: 8px;
+  background: $white;
   content: "";
   display: block;
-  background: $white;
-  position: relative;
-  z-index: 1;
+  height: 8px;
   left: 50%;
+  position: relative;
+  top: 0;
   transform: translateX(-50%);
+  width: 12px;
+  z-index: 1;
 }
 
 #tooltip[data-popper-placement^="top"] > #arrow {
@@ -173,7 +179,7 @@ iframe#calendar {
 
 
 .event:not(.multi_day) {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .event__picture {
@@ -185,9 +191,9 @@ iframe#calendar {
 }
 
 #month_calendar .first_day {
-  border-radius: 5px 0 0 5px;
+  border-radius: 6px 0 0 5px;
 }
 
 #month_calendar .last_day {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 6px 6px 0;
 }
