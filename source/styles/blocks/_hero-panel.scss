@@ -3,13 +3,19 @@
 $block: 'hero-panel';
 
 .#{$block} {
-	background-color: $white;
-	overflow: hidden;
-	padding: 2rem 0;
-	position: relative;
+	
+	// overflow: hidden;
+	// padding: 2rem 0;
+	// position: relative;
 
-	@include media-min(lg) {
-		padding: 10rem 0;
+	&__inner {
+		overflow: hidden;
+		padding: 2rem 0;
+		position: relative;
+
+		@include media-min(lg) {
+			padding: 7.25rem 0;
+		}
 	}
 
 	&__container {
@@ -24,6 +30,20 @@ $block: 'hero-panel';
 			padding: 0 6rem 0 0;
 			width: 50%;
 		}
+	}
+
+	&__description {
+		padding-bottom: 3rem;
+
+		@include media-min(md) {
+			padding-bottom: 4rem;
+		}
+
+		@include media-min(xl) {
+			max-width: 435px;
+		}
+
+		
 	}
 
 	&__picture-container {
@@ -72,10 +92,13 @@ $block: 'hero-panel';
 	}
 
 	&--dark {
-		background-color: $grey-darker;
-		color: $white;
+		 color: $white;
 
 		.#{$block} {
+			&__inner {
+				background-color: $grey-darker;
+			}
+
 			&__container {
 				@include media-max(lg) {
 					display: flex;
@@ -99,9 +122,9 @@ $block: 'hero-panel';
 				}
 			}
 
-			&__title {
-				color: $white;
-			}
+			// &__title {
+			// 	color: $white;
+			// }
 		}
 	}
 }

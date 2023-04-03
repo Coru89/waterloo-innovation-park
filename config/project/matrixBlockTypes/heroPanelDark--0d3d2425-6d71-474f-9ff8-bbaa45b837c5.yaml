@@ -22,7 +22,7 @@ fieldLayouts:
             fieldUid: fe4b113d-bf1c-4f36-806f-80cb15f3cac8 # Title
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: dfe609b6-1246-47a6-ba40-e82290f5ba75
@@ -85,7 +85,7 @@ fields:
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: heroButtonText
+    handle: buttonText
     instructions: null
     name: 'Button Text'
     searchable: false
@@ -201,7 +201,7 @@ fields:
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: heroButtonHref
+    handle: buttonHref
     instructions: null
     name: 'Button Link'
     searchable: false

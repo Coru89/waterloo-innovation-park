@@ -2730,15 +2730,14 @@ html.with-fancybox body.hide-scrollbar {
   margin: 0 auto;
 }
 
-.hero-panel {
-  background-color: #fff;
+.hero-panel__inner {
   overflow: hidden;
   padding: 2rem 0;
   position: relative;
 }
 @media (min-width: 1052px) {
-  .hero-panel {
-    padding: 10rem 0;
+  .hero-panel__inner {
+    padding: 7.25rem 0;
   }
 }
 .hero-panel__container {
@@ -2754,6 +2753,19 @@ html.with-fancybox body.hide-scrollbar {
   .hero-panel__content {
     padding: 0 6rem 0 0;
     width: 50%;
+  }
+}
+.hero-panel__description {
+  padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .hero-panel__description {
+    padding-bottom: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-panel__description {
+    max-width: 435px;
   }
 }
 .hero-panel__picture-container {
@@ -2804,8 +2816,10 @@ html.with-fancybox body.hide-scrollbar {
   text-transform: uppercase;
 }
 .hero-panel--dark {
-  background-color: #0B0E26;
   color: #fff;
+}
+.hero-panel--dark .hero-panel__inner {
+  background-color: #0B0E26;
 }
 @media (max-width: 1051px) {
   .hero-panel--dark .hero-panel__container {
@@ -2831,9 +2845,6 @@ html.with-fancybox body.hide-scrollbar {
     left: 0;
     right: calc(50vw - (100vw - 100%));
   }
-}
-.hero-panel--dark .hero-panel__title {
-  color: #fff;
 }
 
 .image-panel {

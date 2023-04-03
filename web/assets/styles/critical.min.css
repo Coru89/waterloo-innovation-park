@@ -320,18 +320,6 @@ p {
   color: #fff;
 }
 
-.button--outline-white {
-  border: 1px solid #fff;
-  color: #fff;
-}
-.button--outline-white:focus, .button--outline-white:hover {
-  background-color: transparent;
-  color: #fff;
-}
-.button--outline-white::after {
-  background-image: url("/assets/images/icons/arrow.svg") !important;
-}
-
 .button--outline {
   border-radius: 30px;
   display: inline-block;
@@ -351,6 +339,19 @@ p {
 }
 .button--outline::after {
   background-image: url("/assets/images/icons/arrow-dark.svg") !important;
+}
+
+.button--outline-white {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.button--outline-white:focus, .button--outline-white:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.button--outline-white::after {
+  background-image: url("/assets/images/icons/arrow.svg") !important;
 }
 
 .button--arrow {

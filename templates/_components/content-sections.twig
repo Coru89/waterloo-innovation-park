@@ -5,53 +5,40 @@
 {% endif %}
 
 {% for block in entries %}
-	{% if block.type == "heroPanel" %}
-		<section class="hero-panel">
-			<div class="u-container">
-				<div class="hero-panel__container">
-					<div class="hero-panel__content">
-						{% if block.subject %}
-							<h4 class="hero-panel__subject">{{ block.subject }}</h4>
-						{% endif %}
-						<h1 class="hero-panel__title panel__heading">{{block.panelTitle}}</h1>
-						<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
-					</div>
-
-					{% set image = block.image.one() %}
-					<div class="hero-panel__picture-container">
-						<picture class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
-							<img alt="" class="hero-panel__image panel__image object-fit" src="{{image.getUrl()}}" loading="lazy"/>
-						</picture>
-					</div>
-				</div>
-			</div>
-		</section>
-	{% elseif block.type == "heroPanelDark" %}
+	{% if block.type == "heroPanelDark" %}
 		<section class="hero-panel hero-panel--dark">
 			<div class="u-container">
-				<div class="hero-panel__container">
+				<h2 class="hero-panel__title panel__heading">{{block.panelTitle}}</h2>
+			</div>
+			<div class="hero-panel__inner">
+				<div class="u-container">
+					
+					<div class="hero-panel__container">
 
-					{% set image = block.image.one() %}
-					<div class="hero-panel__picture-container">
-						<picture class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
-							<img alt="" class="hero-panel__image panel__image object-fit" src="{{image.getUrl()}}" loading="lazy"/>
-						</picture>
-					</div>
+						{% set image = block.image.one() %}
+						<div class="hero-panel__picture-container">
+							<picture class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
+								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 50vw, 100vw'}) }}>
+								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 50vw, 100vw'}) }}>
+								<img alt="{{image.alt}}" class="hero-panel__image panel__image object-fit" src={{image.url}} width={{image.width}} height={{image.height}}>
+							</picture>
+						</div>
 
-					<div class="hero-panel__content">
-						{% if block.subject %}
-							<h4 class="hero-panel__subject">{{ block.subject }}</h4>
-						{% endif %}
-						<h1 class="hero-panel__title panel__heading">{{block.panelTitle}}</h1>
-						<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
-						{% if block.heroButtonText %}
-							<a class="button button--outline button--outline-white button--arrow" href="{{block.heroButtonHref}}">
-								{{block.heroButtonText}}
-							</a>
-						{% endif %}
+						<div class="hero-panel__content">
+							{% if block.subject %}
+								<h4 class="hero-panel__subject">{{ block.subject }}</h4>
+							{% endif %}
+							<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
+							{% if block.buttonText %}
+								<a class="button button--outline-white button--arrow" href="{{block.buttonHref}}">
+									{{block.buttonText}}
+								</a>
+							{% endif %}
+						</div>
 					</div>
 				</div>
 			</div>
+
 		</section>
 	{% elseif block.type == "callToAction" %}
 		{% include '_components/call-to-action' with {entry: block} %}
