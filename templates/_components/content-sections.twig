@@ -477,20 +477,21 @@
 	{% elseif block.type == "featExhibitRollup" %}
 		{{ sprig('_components/featured-exhibit-rollup', {'limit': block.limit, 'title': block.title, 'exhibitionSummary': block.exhibitionSummary }) }}
 
-	{# {% elseif block.type == "exhibitRollup" %}
-		<script>console.log('entry: '{{ entry | json_encode | raw }});</script>
-		<section class="gallery-rollup">
-			<div class="u-container gallery-rollup__inner">
-				<h2 class="gallery-rollup__heading">Featured work - {{entry.title}}</h2>
-				<a href="/the-link/featured-exhibit" class="gallery-rollup__back">< Go back to current featured exhibit</a>
-				<div class="gallery-rollup__summary">{{ entry.exhibitionSummary }}</div>
-				<ul class="gallery-rollup__list">
-					{% for itemId in entry.galleryItems.ids() %}
-						{% include '_components/gallery-card' with {'itemId': itemId, 'entryId': entry.Id} %}
-					{% endfor %}
-				</ul>
+	{% elseif block.type == "contactDetails" %}
+		<section class="contact-details">
+			<div class="contact-details__inner">
+				<div class="contact-details__row">
+					<div class="contact-details__row"></div>
+					<div class="contact-details__row"></div>
+					<div class="contact-details__row"></div>
+				</div>
+				<div class="contact-details__row">
+					<div class="contact-details__row"></div>
+					<div class="contact-details__row"></div>
+					<div class="contact-details__row"></div>
+				</div>
 			</div>
-		</section> #}
+		</section>
 
 	{% endif %}
 

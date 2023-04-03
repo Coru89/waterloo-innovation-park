@@ -3388,3 +3388,15 @@ html.with-fancybox body.hide-scrollbar {
   height: auto;
   width: 100%;
 }
+
+.contact__form {
+  background-color: #F3F5F7;
+  padding-bottom: 3.75rem;
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  .contact__form {
+    padding-bottom: 6rem;
+    padding-top: 7.75rem;
+  }
+}

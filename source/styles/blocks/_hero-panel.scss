@@ -3,11 +3,6 @@
 $block: 'hero-panel';
 
 .#{$block} {
-	
-	// overflow: hidden;
-	// padding: 2rem 0;
-	// position: relative;
-
 	&__inner {
 		overflow: hidden;
 		padding: 2rem 0;
@@ -42,8 +37,6 @@ $block: 'hero-panel';
 		@include media-min(xl) {
 			max-width: 435px;
 		}
-
-		
 	}
 
 	&__picture-container {

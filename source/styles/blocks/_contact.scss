@@ -1,0 +1,16 @@
+@import '../reference/reference';
+
+$block: 'contact';
+
+.#{$block} {
+    &__form {
+        background-color: $grey-lighter;
+        padding-bottom: 3.75rem;
+        padding-top: 2rem;
+
+        @include media-min(md) {
+            padding-bottom: 6rem;
+            padding-top: 7.75rem;
+        }
+    }
+}

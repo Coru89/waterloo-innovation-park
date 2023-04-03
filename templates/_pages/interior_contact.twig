@@ -4,17 +4,19 @@
 
 {% block content %}
 	<section class="contact">
-	{% include '_components/content-sections' %}
-		<div class="u-container-small contact__inner ">
-			{% macro errorList(errors) %}
-				{% if errors %}
-					{{ ul(errors, {class: 'forms__errors'}) }}
-				{% endif %}
-			{% endmacro %}
+		{% include '_components/content-sections' %}
 
-			{% set submission = submission ?? null %}
 
-			<form id="form" class="forms" method="post" action="" accept-charset="UTF-8">
+		{% macro errorList(errors) %}
+			{% if errors %}
+				{{ ul(errors, {class: 'forms__errors'}) }}
+			{% endif %}
+		{% endmacro %}
+
+		{% set submission = submission ?? null %}
+
+		<form id="form" class="forms contact__form" method="post" action="" accept-charset="UTF-8">
+			<div class="u-container-small">
 				{{ csrfInput() }}
 				{{ actionInput('contact-form/send') }}
 
@@ -82,8 +84,9 @@
 						{% endif %}
 					</div>
 				{% endif %}
-			</form>
+			</div>
+		</form>
 
-		</div>
+
 	</section>
 {% endblock %}
