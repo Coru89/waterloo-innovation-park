@@ -27,7 +27,7 @@ $block: "booking";
       &::before {
         background-color: $grey-lighter;
         bottom: 0;
-        content: '';
+        content: "";
         display: block;
         left: -1.25rem;
         position: absolute;
@@ -57,7 +57,6 @@ $block: "booking";
           top: 0;
           z-index: -1;
         }
-
       }
     }
 
@@ -101,7 +100,7 @@ $block: "booking";
       margin-bottom: 2rem;
 
       @include media-min(lg) {
-       display: none;
+        display: none;
       }
     }
 
@@ -123,17 +122,17 @@ $block: "booking";
     margin-bottom: 2rem;
 
     @include media-min(md) {
-      margin-right: 2rem
+      margin-right: 2rem;
     }
 
     @include media-min(lg) {
       display: block;
       margin: 0 0 4rem;
-      
     }
   }
 
-  &__email, &__phone {
+  &__email,
+  &__phone {
     @include link;
   }
 
