@@ -479,7 +479,7 @@
 
 	{% elseif block.type == "contactDetails" %}
 		<section class="contact-details">
-			<div class="contact-details__inner">
+			<div class="contact-details__inner u-container">
 				<div class="contact-details__row">
 					<div class="contact-details__column">
 						<h3 class="contact-details__heading">Waterloo Innovation Park</h3>
@@ -487,16 +487,40 @@
 					</div>
 					<div class="contact-details__column">
 						<div class="contact-details__address">
-							609-619 Kumpf Drive, Waterloo, 
-							ON N2V 1K8
+							<div>609-619 Kumpf Drive,</div>
+							<div>Waterloo,</div>
+							<div>ON N2V 1K8</div>
 						</div>
 					</div>
-					<div class="contact-details__column"></div>
+					<div class="contact-details__column">
+						<ul class="contact-details__list">
+							<li class="contact-details__item"><span class="contact-details__label">Hours of Operation: </span>9:00 AM - 3:00 PM</li>
+							<li class="contact-details__item"><span class="contact-details__label">General Inquiries</span><a href="mailto:" class="contact-details__link">Send us an e-mail</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone</span><a href="tel:+15194987429" class="contact-details__link">519-498-7429</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone</span><a href="tel:+15194987429" class="contact-details__link">519-498-7429</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone</span><a href="tel:+15194987429" class="contact-details__link">519-498-7429</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="contact-details__row">
-					<div class="contact-details__column"></div>
-					<div class="contact-details__column"></div>
-					<div class="contact-details__column"></div>
+					<div class="contact-details__column">
+						<h3 class="contact-details__heading">The Link</h3>
+						<a href="/" class="header__logo-anchor" title="A logo">
+							<img alt="The Link Logo" src="/assets/images/logo-small.png">
+						</a>
+					</div>
+					<div class="contact-details__column">
+						<div class="contact-details__address">
+							<div>611 Kumpf Drive,</div>
+							<div>Waterloo,</div>
+							<div>ON  N2V 1K8</div>
+						</div>
+					</div>
+					<div class="contact-details__column">
+						<h4 class="contact-details__inquiry">Contact Carly for any property management inquiries.</h4>
+						<div class="contact-details__tel">tel:<a href="tel:+14168641566" class="contact-details__tel-link">416.864.1566</a></div>
+						<div class="contact-details__email"><a href="mailto:email@website.ca" class="contact-details__email-link">email@website.ca</a></div> 
+					</div>
 				</div>
 			</div>
 		</section>

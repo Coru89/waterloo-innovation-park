@@ -3187,27 +3187,38 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 2.5rem;
 }
 
+.map__inner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .map__inner {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
 #map {
-  width: 100%;
-  height: auto;
-  max-height: 345px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 345px;
+  overflow: hidden;
+  width: 100%;
 }
-@media screen and (min-width: 750px) {
+@media (min-width: 768px) {
   #map {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 1320px) {
+@media (min-width: 1200px) {
   #map {
     max-height: 540px;
   }
@@ -3215,7 +3226,7 @@ html.with-fancybox body.hide-scrollbar {
 #map iframe {
   border: 0;
 }
-@media screen and (min-width: 1320px) {
+@media (min-width: 1200px) {
   #map iframe {
     margin-bottom: 0;
     margin-left: -15%;
@@ -3399,4 +3410,41 @@ html.with-fancybox body.hide-scrollbar {
     padding-bottom: 6rem;
     padding-top: 7.75rem;
   }
+}
+.contact-details__row {
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  .contact-details__row {
+    padding: 4.5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+.contact-details__row:last-of-type {
+  border-top: 1px solid #C1C4CB;
+  border-bottom: 1px solid #C1C4CB;
+}
+@media (min-width: 768px) {
+  .contact-details__row:last-of-type {
+    border-bottom: none;
+  }
+}
+@media (min-width: 768px) {
+  .contact-details__column {
+    width: 33.33%;
+  }
+}
+.contact-details__list {
+  padding: 0;
+  margin: 0;
+}
+.contact-details__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
