@@ -1,4 +1,622 @@
 field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  37d643c2-a5a2-4c27-a5d7-a7d8aacc9399:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cb6d8f3b-a601-41e8-8045-6ab67f0d37b8 # Waterloo Innovation Park Address Line 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f62674e-6f9f-461d-9d33-b855e5903814
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b87bb998-aa92-42fc-aee9-1adb2c624a30 # Waterloo Innovation Park Address Line 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7680b32e-84b4-4423-9c99-4b6443f82880
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 88c281ce-36ef-4427-abcf-672942cfa723 # Waterloo Innovation Park Address Line 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92e97f57-0d99-407a-85c0-5373f4e5e869
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd # Waterloo Innovation Park Hours of Operation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08aed9a8-1529-403d-82d6-59a3f9eae224
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4f9aa02-65e9-4d0c-8726-9a5782e118c8 # Waterloo Innovation Park Inquiries Email Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bef20ddf-facf-4f7b-aaa8-beaceae028e3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d970ca81-be2c-4ab3-a6d4-156dafe345fe # Waterloo Innovation Park Inquiries Phone Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eca1e4b3-1ab8-43f0-840f-34fe77108c51
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e63c55f2-78e4-45cc-9bd8-445b5d5b071a # Waterloo Innovation Park Inquiries Phone Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 020c5900-48d6-47cd-96d3-d4c3aa083b7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a25069d-8aa9-47ef-89a1-edb4d04fd404 # Waterloo Innovation Park Leasing Phone Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83eb5b23-5634-432b-9f8f-537b1b5e0a68
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: faa07140-e5cb-4752-9790-0260ba2b62da # Waterloo Innovation Park Leasing Phone Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8f69bb4-2152-4e17-a045-6a09dc85ba26
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c5990ae-a749-4e23-b10b-0c65891d8383 # Waterloo Innovation Park Emergency Phone Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42d24e05-acfb-4d05-aafa-db81fbce0698
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9953bc18-4725-4380-adb8-e62a02c6f0d2 # Waterloo Innovation Park Emergency Phone Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4a75298-6d91-4e82-b832-59cf8dbc2388
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 453f82b1-cdae-4a97-aeb4-b566b6be9bb6 # The Link Address Line 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3f1df0d-afc3-47c4-91e9-1148821cfc2c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2fd8d280-fb8e-43d9-b018-a532fa8ca8d0 # The Link Address Line 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4462d3f-ea11-4a5b-9952-6469c7305d57
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f70dd77-6168-4476-ba73-4ddee8861a31 # The Link Address Line 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45e21e58-c1c4-44e6-96d7-42e40f1c0b38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6f40448c-1230-427f-9e39-355a9fab9fad # The Link Contact Message
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82dc719c-327e-48ee-ac3f-448c1aba0ab6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6f3a3a27-541a-4c9a-a2ed-48831a335e49 # The Link Phone Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ada7ed05-c42b-4a73-962f-4eb97d467c92
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac896e2d-c524-475b-9740-71f975b24844 # The Link Phone Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18e5459c-01ea-4d19-b0c1-d442f5f2920e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d4461882-7624-4f6f-ac6c-c06ea4a4689d # The Link Email Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dddf2461-472e-465b-a36d-5866c010d7ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a351d7f-aa37-4d4b-8cbc-822719d3e521 # The Link Email Display
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 50e8c107-873d-497a-aacd-a2d1d82dd231
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e052d9ee-ca0a-4e1b-b451-41a37658bdc8
+        userCondition: null
+fields:
+  0a351d7f-aa37-4d4b-8cbc-822719d3e521: # The Link Email Display
+    columnSuffix: yrrbjohg
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkEmailDisplay
+    instructions: null
+    name: 'The Link Email Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2fd8d280-fb8e-43d9-b018-a532fa8ca8d0: # The Link Address Line 2
+    columnSuffix: fhelkrxu
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkAddressLine2
+    instructions: null
+    name: 'The Link Address Line 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3a25069d-8aa9-47ef-89a1-edb4d04fd404: # Waterloo Innovation Park Leasing Phone Link
+    columnSuffix: ibphhqtx
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipLeasingPhoneLink
+    instructions: null
+    name: 'Waterloo Innovation Park Leasing Phone Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5f70dd77-6168-4476-ba73-4ddee8861a31: # The Link Address Line 3
+    columnSuffix: lulqnygw
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkAddressLine3
+    instructions: null
+    name: 'The Link Address Line 3'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6c5990ae-a749-4e23-b10b-0c65891d8383: # Waterloo Innovation Park Emergency Phone Link
+    columnSuffix: hbasbwyz
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipEmergencyPhoneLink
+    instructions: null
+    name: 'Waterloo Innovation Park Emergency Phone Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6f3a3a27-541a-4c9a-a2ed-48831a335e49: # The Link Phone Link
+    columnSuffix: denkltqc
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkPhoneLink
+    instructions: null
+    name: 'The Link Phone Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6f40448c-1230-427f-9e39-355a9fab9fad: # The Link Contact Message
+    columnSuffix: xicjhyxf
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkContactMessage
+    instructions: null
+    name: 'The Link Contact Message'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  88c281ce-36ef-4427-abcf-672942cfa723: # Waterloo Innovation Park Address Line 3
+    columnSuffix: tzupfaom
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipAddressLine3
+    instructions: null
+    name: 'Waterloo Innovation Park Address Line 3'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  453f82b1-cdae-4a97-aeb4-b566b6be9bb6: # The Link Address Line 1
+    columnSuffix: mlyztbej
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkAddressLine1
+    instructions: null
+    name: 'The Link Address Line 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd: # Waterloo Innovation Park Hours of Operation
+    columnSuffix: oxghlrrq
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipHoursOfOperation
+    instructions: null
+    name: 'Waterloo Innovation Park Hours of Operation'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9953bc18-4725-4380-adb8-e62a02c6f0d2: # Waterloo Innovation Park Emergency Phone Display
+    columnSuffix: rfhuaume
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipEmergencyPhoneDisplay
+    instructions: null
+    name: 'Waterloo Innovation Park Emergency Phone Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a4f9aa02-65e9-4d0c-8726-9a5782e118c8: # Waterloo Innovation Park Inquiries Email Link
+    columnSuffix: sgsdfnqy
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipInquiriesEmailLink
+    instructions: null
+    name: 'Waterloo Innovation Park Inquiries Email Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ac896e2d-c524-475b-9740-71f975b24844: # The Link Phone Display
+    columnSuffix: sfmjcvyg
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkPhoneDisplay
+    instructions: null
+    name: 'The Link Phone Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b87bb998-aa92-42fc-aee9-1adb2c624a30: # Waterloo Innovation Park Address Line 2
+    columnSuffix: heaaoxqp
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipAddressLine2
+    instructions: null
+    name: 'Waterloo Innovation Park Address Line 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cb6d8f3b-a601-41e8-8045-6ab67f0d37b8: # Waterloo Innovation Park Address Line 1
+    columnSuffix: uwlicxrp
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipAddressLine1
+    instructions: null
+    name: 'Waterloo Innovation Park Address Line 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d970ca81-be2c-4ab3-a6d4-156dafe345fe: # Waterloo Innovation Park Inquiries Phone Link
+    columnSuffix: eabuymqv
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipInquiriesPhoneLink
+    instructions: null
+    name: 'Waterloo Innovation Park Inquiries Phone Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d4461882-7624-4f6f-ac6c-c06ea4a4689d: # The Link Email Link
+    columnSuffix: kfxghkmm
+    contentColumnType: text
+    fieldGroup: null
+    handle: theLinkEmailLink
+    instructions: null
+    name: 'The Link Email Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e63c55f2-78e4-45cc-9bd8-445b5d5b071a: # Waterloo Innovation Park Inquiries Phone Display
+    columnSuffix: uvzjvxpk
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipInquiriesPhoneDisplay
+    instructions: null
+    name: 'Waterloo Innovation Park Inquiries Phone Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  faa07140-e5cb-4752-9790-0260ba2b62da: # Waterloo Innovation Park Leasing Phone Display
+    columnSuffix: zwxyzkqj
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipLeasingPhoneDisplay
+    instructions: null
+    name: 'Waterloo Innovation Park Leasing Phone Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
 handle: contactDetails
 name: 'Contact Details'
 sortOrder: 19

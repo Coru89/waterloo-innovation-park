@@ -487,18 +487,18 @@
 					</div>
 					<div class="contact-details__column">
 						<div class="contact-details__address">
-							<div>609-619 Kumpf Drive,</div>
-							<div>Waterloo,</div>
-							<div>ON N2V 1K8</div>
+							<div>{{block.wipAddressLine1}}</div>
+							<div>{{block.wipAddressLine2}}</div>
+							<div>{{block.wipAddressLine3}}</div>
 						</div>
 					</div>
 					<div class="contact-details__column">
 						<ul class="contact-details__list">
-							<li class="contact-details__item"><span class="contact-details__label">Hours of Operation: </span>9:00 AM - 3:00 PM</li>
-							<li class="contact-details__item"><span class="contact-details__label">General Inquiries</span><a href="mailto:" class="contact-details__link">Send us an e-mail</a></li>
-							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone</span><a href="tel:+15194987429" class="contact-details__link">519-498-7429</a></li>
-							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone</span><a href="tel:+15194987429" class="contact-details__link">519-498-7429</a></li>
-							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone</span><a href="tel:+15194987429" class="contact-details__link">519-498-7429</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">Hours of Operation: </span>{{block.wipHoursOfOperation}}</li>
+							<li class="contact-details__item"><span class="contact-details__label">General Inquiries: </span><a href="{{block.wipInquiriesEmailLink}}" class="contact-details__link">Send us an e-mail</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone: </span><a href="{{block.wipInquiriesPhoneLink}}" class="contact-details__link">{{block.wipInquiriesPhoneDisplay}}</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">Leasing: </span><a href={{block.wipLeasingPhoneLink}} class="contact-details__link">{{block.wipLeasingPhoneDisplay}}</a></li>
+							<li class="contact-details__item"><span class="contact-details__label">Emergency Contact: </span><a href="{{block.wipEmergencyPhoneLink}}" class="contact-details__link">{{block.wipEmergencyPhoneDisplay}}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -511,15 +511,15 @@
 					</div>
 					<div class="contact-details__column">
 						<div class="contact-details__address">
-							<div>611 Kumpf Drive,</div>
-							<div>Waterloo,</div>
-							<div>ON  N2V 1K8</div>
+							<div>{{block.theLinkAddressLine1}}</div>
+							<div>{{block.theLinkAddressLine2}}</div>
+							<div>{{block.theLinkAddressLine3}}</div>
 						</div>
 					</div>
 					<div class="contact-details__column">
-						<h4 class="contact-details__inquiry">Contact Carly for any property management inquiries.</h4>
-						<div class="contact-details__tel">tel:<a href="tel:+14168641566" class="contact-details__tel-link">416.864.1566</a></div>
-						<div class="contact-details__email"><a href="mailto:email@website.ca" class="contact-details__email-link">email@website.ca</a></div> 
+						<h4 class="contact-details__inquiry">{{ block.theLinkContactMessage }}</h4>
+						<div class="contact-details__tel"><span class="contact-details__label">Tel: </span><a href={{block.theLinkPhoneLink}} class="contact-details__tel-link">{{block.theLinkPhoneDisplay}}</a></div>
+						<div class="contact-details__email"><a href={{block.theLinkEmailLink}} class="contact-details__email-link">{{block.theLinkEmailDisplay}}</a></div> 
 					</div>
 				</div>
 			</div>

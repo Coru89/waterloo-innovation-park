@@ -3411,6 +3411,12 @@ html.with-fancybox body.hide-scrollbar {
     padding-top: 7.75rem;
   }
 }
+.contact-details * {
+  font-weight: 500;
+}
+.contact-details__label {
+  font-weight: 700;
+}
 .contact-details__row {
   padding: 2rem 0;
 }
@@ -3438,6 +3444,18 @@ html.with-fancybox body.hide-scrollbar {
   .contact-details__column {
     width: 33.33%;
   }
+  .contact-details__column:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 .contact-details__list {
   padding: 0;
@@ -3447,4 +3465,7 @@ html.with-fancybox body.hide-scrollbar {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.contact-details__inquiry {
+  margin-bottom: 2rem;
 }
