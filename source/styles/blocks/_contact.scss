@@ -1,73 +1,96 @@
-@import '../reference/reference';
+@import "../reference/reference";
 
-$block: 'contact';
+$block: "contact";
 
 .#{$block} {
-    &__form {
-        background-color: $grey-lighter;
-        padding-bottom: 3.75rem;
-        padding-top: 2rem;
+  &__form {
+    background-color: $grey-lighter;
+    padding-bottom: 3.75rem;
+    padding-top: 2rem;
+
+    @include media-min(md) {
+      padding-bottom: 6rem;
+      padding-top: 7.75rem;
+    }
+  }
+
+  &-details {
+    * {
+      font-weight: 600;
+    }
+
+    &__heading {
+      margin-bottom: 1rem;
+
+      @include media-min(md) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__address {
+      margin-bottom: 1.5rem;
+    }
+
+    &__address div {
+      display: inline;
+
+      @include media-min(md) {
+        display: block;
+      }
+    }
+
+    &__row {
+      padding: 2rem 0;
+
+      @include media-min(md) {
+        padding: 4.5rem 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &:last-of-type {
+        border-top: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
 
         @include media-min(md) {
-            padding-bottom: 6rem;
-            padding-top: 7.75rem;
+          border-bottom: none;
         }
+      }
     }
 
-    &-details {
+    &__column {
+      @include media-min(md) {
+        width: 33.33%;
 
-        * {
-            font-weight: 500;
+        &:nth-of-type(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
-
-        &__label {
-            font-weight: 700;
-        }
-
-        &__row {
-            padding: 2rem 0;
-
-            @include media-min(md) {
-                padding: 4.5rem 0;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            &:last-of-type {
-                border-top: 1px solid $grey-light;
-                border-bottom: 1px solid $grey-light;
-
-                @include media-min(md) {
-                    border-bottom: none;
-                }
-            }
-        }
-
-        &__column {
-            @include media-min(md) {
-                width: 33.33%;
-
-                &:nth-of-type(2) {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-        }
-
-        &__list {
-            padding: 0;
-            margin: 0;
-        }
-
-        &__item {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        &__inquiry {
-            margin-bottom: 2rem;            
-        }
+      }
     }
+
+    &__list {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__item {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    &__inquiry {
+      margin-bottom: 2rem;
+    }
+
+    &__logo {
+      display: none;
+
+      @include media-min(md) {
+        display: block;
+      }
+    }
+  }
 }
