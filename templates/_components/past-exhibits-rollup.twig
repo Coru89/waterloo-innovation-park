@@ -1,7 +1,14 @@
 
 {% set offset = offset ?? 0 %}
 
-{% set entryQuery = craft.entries.section('exhibitions').offset(offset).limit(limit) %}
+{% set featuredEntryId = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one().id %}
+{% set excludeString =  'and, not ' ~ featuredEntryId %}
+
+{% set entryQuery = craft.entries({
+	section: 'exhibitions',
+	id: 'and, not ' ~ featuredEntryId ~ ','
+}).limit(limit) %}
+
 {% set entries = entryQuery.all() %}
 
 <section class="past-exhibits-rollup">
