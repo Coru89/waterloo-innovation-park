@@ -2919,16 +2919,24 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 
+.lease-managers {
+  background-color: #F3F5F7;
+}
 .lease-managers__inner {
-  margin: 3rem auto;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 @media (min-width: 768px) {
   .lease-managers__inner {
-    margin: 6rem auto;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
   }
 }
 .lease-managers__heading {
   margin-bottom: 3rem;
+}
+.lease-managers__heading--emphasis {
+  color: #0A78FF;
 }
 .lease-managers__list {
   display: grid;
@@ -2951,13 +2959,16 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 .lease-managers__contact {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 @media (min-width: 1052px) {
   .lease-managers__contact {
@@ -2980,11 +2991,15 @@ html.with-fancybox body.hide-scrollbar {
   font-weight: 700;
 }
 .lease-managers__phone, .lease-managers__email {
-  color: #000;
+  color: #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
+  text-decoration: none;
   line-height: 32px;
 }
-.lease-managers__phone:hover, .lease-managers__phone:focus, .lease-managers__email:hover, .lease-managers__email:focus {
-  color: #000;
+.lease-managers__phone:hover, .lease-managers__email:hover {
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
 }
 @media (min-width: 1200px) {
   .lease-managers__phone {
@@ -3213,6 +3228,16 @@ html.with-fancybox body.hide-scrollbar {
 .map__directions:hover {
   -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
   box-shadow: inset 0 -1px 0 #0A78FF;
+}
+.map__summary {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .map__summary {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
 }
 
 #map {

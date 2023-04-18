@@ -19,6 +19,14 @@ $block: 'map';
     display: inline-block;
     margin-bottom: 2rem;
   }
+
+  &__summary {
+    margin-bottom: 1.5rem;
+    
+    @include media-min(md) {
+      column-count: 2;
+    }
+  }
 }
 
 #map {

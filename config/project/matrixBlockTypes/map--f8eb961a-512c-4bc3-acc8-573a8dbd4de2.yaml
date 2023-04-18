@@ -31,30 +31,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9f7eb4c7-c99f-4370-9524-4cf17afa2bbf # Button Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cc87bc65-dc0b-4585-9a88-ef6f7a7856fd
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 07bbfe07-a50a-4e7a-a45d-28b6b1ad1f73 # Button Link
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6495f30a-8d37-4c35-b68c-ede9357e4e37
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 2f7e10c1-d4ec-4f06-a166-d8de4344f974 # Iframe Embed
             instructions: null
             label: null
@@ -98,46 +74,6 @@ fields:
       multiline: true
       placeholder: null
       uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  07bbfe07-a50a-4e7a-a45d-28b6b1ad1f73: # Button Link
-    columnSuffix: fkqfivat
-    contentColumnType: text
-    fieldGroup: null
-    handle: buttonLink
-    instructions: null
-    name: 'Button Link'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  9f7eb4c7-c99f-4370-9524-4cf17afa2bbf: # Button Text
-    columnSuffix: ihtzrpgd
-    contentColumnType: text
-    fieldGroup: null
-    handle: buttonText
-    instructions: null
-    name: 'Button Text'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

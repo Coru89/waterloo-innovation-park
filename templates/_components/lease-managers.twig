@@ -2,11 +2,11 @@
 
 <section class="lease-managers">
     <div class="lease-managers__inner u-container">
-        <h2 class="lease-managers__heading">{{entry.leaseManagersHeading}}</h2>
+        <h2 class="lease-managers__heading">Get in touch with the <span class="lease-managers__heading--emphasis">leasing managers</span></h2>
         <ul class="lease-managers__list">
             {% for item in items %}     
                 <li class="lease-managers__item">
-                    <div class="lease-managers__name">{{ item.fullName }}</div>
+                    <h4 class="lease-managers__name">{{ item.fullName }}</h4>
                     <div class="lease-managers__title">{{ item.jobTitle }}</div>
                     <div class="lease-managers__contact">
                         <a href={{ item.phoneLink }} class="lease-managers__phone">{{ item.phoneDisplay }}</a>

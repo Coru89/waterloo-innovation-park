@@ -435,13 +435,12 @@
 		<section class="map">
 			<div class="u-container map__inner">
 				<h2 class="map__heading">{{ block.heading }}</h2>
-				<a href={{block.directionsLink}} class="map__directions">Get directions ></a>
 				<div class="map__summary">
-					{{block.summary}}
+					{{ block.summary }}
 				</div>
-				<a href={{block.buttonHref}} class="map__directions-link">{{block.buttonText}}</a>
+				<a href="{{ block.directionsLink }}" class="map__directions">Get directions ></a>
 				<div id="map">
-					{{block.iframeEmbed | raw }}
+					{{ block.iframeEmbed | raw }}
 				</div>
 			</div>
 		</section>
