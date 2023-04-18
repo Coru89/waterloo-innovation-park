@@ -1,4 +1,4 @@
-dateModified: 1681724938
+dateModified: 1681796510
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -102,6 +102,7 @@ meta:
     24a64e3b-2ad3-479e-89dc-1c16e57368ac: Booking # Booking
     25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
     26baa828-2510-4546-ab8a-4866ca224fa2: 'Featured Exhibit' # Featured Exhibit
+    28e33f30-0531-4723-b2ac-1abf27a1bde7: 'Directions Link' # Directions Link
     31a9da1e-374b-4022-b98e-180349d41568: 'Social Links' # Social Links
     31aa51d3-2c41-4a98-8464-95f377cc4f07: 'Lease Managers Heading' # Lease Managers Heading
     34e247a1-8be7-4932-a481-cfa735abdba3: 'Exhibition Summary' # Exhibition Summary
@@ -146,6 +147,7 @@ meta:
     1057c048-812f-4e87-b8f7-208e91e4c8fc: 'Button Text' # Button Text
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
     4197b684-37e8-427d-9ed0-80a7712911bc: '2 Text Columns With 3 Images' # 2 Text Columns With 3 Images
+    4376fc28-a7c8-4264-ae89-8fd01d231075: 'Current Featured Exhibit' # Current Featured Exhibit
     7185e0e8-2762-4d5d-b963-5a2f92ca4f6e: 'Image - Card 2' # Image - Card 2
     8267e525-8100-4ca9-9949-0677504ad351: email # email
     9953bc18-4725-4380-adb8-e62a02c6f0d2: 'Waterloo Innovation Park Emergency Phone Display' # Waterloo Innovation Park Emergency Phone Display

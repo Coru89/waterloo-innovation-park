@@ -1,9 +1,8 @@
  {% if entryId is defined %}
 	{% set item = craft.entries.section('exhibitions').id(entryId).one().galleryItems.id(itemId).one() %}
 {% else %}
-	{% set item = craft.entries.section('exhibitions').one().galleryItems.id(itemId).one() %}
+	{% set item = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one().galleryItems.id(itemId).one() %}
 {% endif %}
-
 <li class="gallery-card__item">
 	<div class="gallery-card__picture-container">
 		{% set image = item.image.one() %}

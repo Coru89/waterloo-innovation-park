@@ -1,12 +1,9 @@
 {% set offset = offset ?? 0 %}
 
-{% set entryQuery = craft.entries.section('exhibitions').one().galleryItems.offset(offset).limit(limit) %}
+{% set entryQuery = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one().galleryItems.limit(limit) %}
 {% set galleryItems = entryQuery.ids() %}
 
-{% set entry = craft.entries.section('exhibitions').one() %}
-
-
-
+{% set entry = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one() %}
 <section class="gallery-rollup">
   <div class="u-container gallery-rollup__inner">
     <h2 class="gallery-rollup__heading">Featured work - "{{entry.title}}"</h2>

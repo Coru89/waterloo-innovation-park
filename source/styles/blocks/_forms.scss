@@ -56,6 +56,10 @@ $block: "forms";
 
   &__heading {
     margin-bottom: 1.5rem;
+
+    @include media-min(md) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   address {

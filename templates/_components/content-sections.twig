@@ -435,6 +435,7 @@
 		<section class="map">
 			<div class="u-container map__inner">
 				<h2 class="map__heading">{{ block.heading }}</h2>
+				<a href={{block.directionsLink}} class="map__directions">Get directions ></a>
 				<div class="map__summary">
 					{{block.summary}}
 				</div>
@@ -516,8 +517,8 @@
 					</div>
 					<div class="contact-details__column">
 						<h4 class="contact-details__inquiry">{{ block.theLinkContactMessage }}</h4>
-						<div class="contact-details__tel"><span class="contact-details__label">Tel: </span><a href={{block.theLinkPhoneLink}} class="contact-details__tel-link">{{block.theLinkPhoneDisplay}}</a></div>
-						<div class="contact-details__email"><a href={{block.theLinkEmailLink}} class="contact-details__email-link">{{block.theLinkEmailDisplay}}</a></div> 
+						<div class="contact-details__item"><span class="contact-details__label">Tel: </span><a class="contact-details__tel-link" href={{ block.theLinkPhoneLink }}>{{block.theLinkPhoneDisplay}}</a></div>
+						<div class="contact-details__item"><a class="contact-details__email-link" href={{block.theLinkEmailLink}}>{{block.theLinkEmailDisplay}}</a></div> 
 					</div>
 				</div>
 			</div>

@@ -2557,6 +2557,11 @@ html.with-fancybox body.hide-scrollbar {
 .forms__heading {
   margin-bottom: 1.5rem;
 }
+@media (min-width: 768px) {
+  .forms__heading {
+    margin-bottom: 2.5rem;
+  }
+}
 .forms address {
   margin-bottom: 2rem;
 }
@@ -3197,6 +3202,18 @@ html.with-fancybox body.hide-scrollbar {
     padding-bottom: 4.5rem;
   }
 }
+.map__directions {
+  color: #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.map__directions:hover {
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
+}
 
 #map {
   -webkit-box-align: center;
@@ -3481,6 +3498,16 @@ html.with-fancybox body.hide-scrollbar {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem 0;
+}
+.contact-details__item a {
+  color: #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
+  text-decoration: none;
+}
+.contact-details__item a:hover {
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
 }
 .contact-details__inquiry {
   margin-bottom: 2rem;

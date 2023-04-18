@@ -100,7 +100,7 @@ fieldLayouts:
         uid: d53a8d66-3a94-401c-bf2e-30a7a6fa63d6
         userCondition: null
 handle: default
-hasTitleField: false
+hasTitleField: true
 name: Default
 section: 506955ce-fa3f-407f-9b5c-f7d79b9b1e42 # Exhibits
 sortOrder: 1

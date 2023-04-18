@@ -11,7 +11,14 @@ $block: 'map';
       padding-top: 4.5rem;
       padding-bottom: 4.5rem;
     }
-  }  
+  }
+  
+  &__directions {
+    @include link;
+
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
 }
 
 #map {
