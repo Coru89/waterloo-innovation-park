@@ -3545,3 +3545,95 @@ html.with-fancybox body.hide-scrollbar {
     display: block;
   }
 }
+
+.annual-events__inner {
+  padding-top: 3rem;
+  position: relative;
+}
+@media (min-width: 1052px) {
+  .annual-events__inner {
+    padding-top: 6.5rem;
+  }
+}
+.annual-events__heading {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 20%;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.annual-events__list {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .annual-events__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0;
+  }
+}
+@media (min-width: 1052px) {
+  .annual-events__list {
+    grid-template-columns: auto auto 17%;
+  }
+}
+.annual-events__item {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.annual-events__item svg {
+  margin-right: 19px;
+}
+.annual-events__item h4 {
+  display: inline-block;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .annual-events__item {
+    padding-bottom: 30px;
+  }
+  .annual-events__item:nth-child(2n+1)::after {
+    background: #C0C0C0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 1356px;
+  }
+}
+@media (min-width: 1052px) {
+  .annual-events__item:nth-child(2n+1)::after {
+    contain: none;
+    display: none;
+  }
+  .annual-events__item:nth-child(3n+1)::after {
+    background: #C0C0C0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 1356px;
+  }
+}
+.annual-events__title {
+  padding-right: 12px;
+}
+.annual-events__details {
+  color: #9899A0;
+}

@@ -12518,7 +12518,7 @@ textarea.form-control-lg {
 }
 
 .views {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .dropdown-menu {
@@ -12554,6 +12554,17 @@ body {
   }
 }
 
+#month_calendar {
+  margin-bottom: 3.5rem;
+}
+#month_calendar table {
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  #month_calendar {
+    margin-bottom: 0;
+  }
+}
 #month_calendar .col-last {
   display: -webkit-box;
   display: -ms-flexbox;

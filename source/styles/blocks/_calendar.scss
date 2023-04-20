@@ -21,7 +21,7 @@ $block: "calendar";
 }
 
 .views {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .dropdown-menu {
@@ -66,6 +66,16 @@ body {
 }
 
 #month_calendar {
+  margin-bottom: 3.5rem;
+
+  table {
+    margin-bottom: 3.5rem;
+  }
+
+  @include media-min(md) {
+    margin-bottom: 0;
+  }
+
   .col-last {
     display: flex;
     justify-content: flex-end;
