@@ -4,6 +4,12 @@ $block: "calendar";
 
 .#{$block} {
   &__column {
+    padding: 0;
+
+    @include media-min(md) {
+      padding: initial;
+    }
+
     &:first-of-type {
       margin-bottom: .5rem;
       @include media-min(md) {
@@ -21,7 +27,7 @@ $block: "calendar";
 }
 
 .views {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .dropdown-menu {
@@ -40,17 +46,23 @@ body {
 
 .calendar-layout {
   .row {
-    .col-lg-9 {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    // .col-lg-9 {
+    //   padding-left: 0;
+    //   padding-right: 0;
+    // }
 
-    .col-lg-3 {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    // .col-lg-3 {
+    //   padding-left: 0;
+    //   padding-right: 0;
+    // }
 
     @include media-min(md) {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1356px;
+      padding-left: 1.125rem;
+      padding-right: 1.125rem;
+
       .col-lg-9 {
         padding-left: 0;
         padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -66,11 +78,7 @@ body {
 }
 
 #month_calendar {
-  margin-bottom: 3.5rem;
-
-  table {
-    margin-bottom: 3.5rem;
-  }
+  margin-bottom: 2.5rem;
 
   @include media-min(md) {
     margin-bottom: 0;
@@ -206,4 +214,12 @@ iframe#calendar {
 
 #month_calendar .last_day {
   border-radius: 0 6px 6px 0;
+}
+
+.filters {
+  width: calc(100% - 1.25rem);
+
+  @include media-min(md) {
+    width: initial;
+  }
 }

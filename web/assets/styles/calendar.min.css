@@ -12500,6 +12500,14 @@ textarea.form-control-lg {
   padding-right: 2px;
 }
 
+.calendar__column {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .calendar__column {
+    padding: initial;
+  }
+}
 .calendar__column:first-of-type {
   margin-bottom: 0.5rem;
 }
@@ -12518,7 +12526,7 @@ textarea.form-control-lg {
 }
 
 .views {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .dropdown-menu {
@@ -12535,15 +12543,15 @@ body {
   color: #0B0E26;
 }
 
-.calendar-layout .row .col-lg-9 {
-  padding-left: 0;
-  padding-right: 0;
-}
-.calendar-layout .row .col-lg-3 {
-  padding-left: 0;
-  padding-right: 0;
-}
 @media (min-width: 768px) {
+  .calendar-layout .row {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1356px;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
   .calendar-layout .row .col-lg-9 {
     padding-left: 0;
     padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -12555,10 +12563,7 @@ body {
 }
 
 #month_calendar {
-  margin-bottom: 3.5rem;
-}
-#month_calendar table {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
   #month_calendar {
@@ -12702,6 +12707,15 @@ iframe#calendar {
 
 #month_calendar .last_day {
   border-radius: 0 6px 6px 0;
+}
+
+.filters {
+  width: calc(100% - 1.25rem);
+}
+@media (min-width: 768px) {
+  .filters {
+    width: initial;
+  }
 }
 
 @font-face {

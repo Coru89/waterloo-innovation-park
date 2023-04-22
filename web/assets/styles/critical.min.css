@@ -991,6 +991,12 @@ p {
   letter-spacing: 2px;
   margin-top: 20px;
   text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .page-intro__open-message {
+    margin-bottom: 2rem;
+  }
 }
 .page-intro__open-message svg {
   margin-right: 1rem;

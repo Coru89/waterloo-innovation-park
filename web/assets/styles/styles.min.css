@@ -3590,7 +3590,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .annual-events__inner {
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   position: relative;
 }
 @media (min-width: 1052px) {
@@ -3604,6 +3604,15 @@ html.with-fancybox body.hide-scrollbar {
   letter-spacing: 20%;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+}
+.annual-events__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 .annual-events__list {
   list-style: none;
@@ -3624,16 +3633,18 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 .annual-events__item {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   list-style: none;
   padding-bottom: 1rem;
   position: relative;
@@ -3645,8 +3656,12 @@ html.with-fancybox body.hide-scrollbar {
   display: inline-block;
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .annual-events__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding-bottom: 30px;
   }
   .annual-events__item:nth-child(2n+1)::after {

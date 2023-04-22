@@ -4,7 +4,7 @@ $block: "annual-events";
 
 .#{$block} {
     &__inner {
-        padding-top: 3rem;
+        padding-top: 2.5rem;
         position: relative;
 
         @include media-min(lg) {
@@ -18,6 +18,11 @@ $block: "annual-events";
         letter-spacing: 20%;
         margin-bottom: 1.5rem;
         text-transform: uppercase;
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     &__list {
@@ -38,9 +43,10 @@ $block: "annual-events";
     }
 
     &__item {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: nowrap;
         list-style: none;
         padding-bottom: 1rem;
         position: relative;
@@ -54,7 +60,8 @@ $block: "annual-events";
             margin-bottom: 0;
         }
 
-        @include media-min(md) {
+        @include media-min(xxl) {
+            flex-direction: row;
             padding-bottom: 30px;
             
             &:nth-child(2n + 1) {
