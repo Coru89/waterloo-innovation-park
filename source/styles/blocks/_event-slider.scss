@@ -81,19 +81,25 @@ $block: "event-slider";
   &__slide {
     &-content {
       background-color: $grey-darker;
-      display: flex;
       justify-content: space-between;
-      padding: 2rem 3rem;
+      padding: 2rem 2rem;
 
       * {
         color: $white;
       }
 
-      &__column {
-        width: 50%;
+      @include media-min(md) {
+        display: flex;
+        padding: 2rem 3rem;
+      }
 
+      &-column {
         &:first-of-type {
-          margin-right: 2rem;
+          margin-bottom: .5rem;
+
+          @include media-min(md) {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -212,14 +218,20 @@ $block: "event-slider";
   }
 
   &__summary {
+    color: $grey-darker;
     margin-bottom: 0;
   }
 
   &__date,
   &__details {
-    font-size: 20px;
+    
     font-weight: 300;
     margin-bottom: 0;
+    color: $grey-light;
+
+    @include media-min(md) {
+      font-size: 20px;
+    }
   }
 
   &__image {

@@ -14,10 +14,15 @@ $block: "cta-cards";
     }
 
     &__item {
+        &:first-of-type {
+            margin-bottom: 2.5rem;
+        }
+
         @include media-min(md) {
             width: calc(50% - 2rem);
 
             &:first-of-type {
+                margin-bottom: 0;
                 margin-right: 1rem;
             }
 

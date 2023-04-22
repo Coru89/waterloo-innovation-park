@@ -32,5 +32,11 @@ $block: 'call-to-action';
 		}
 	}
 
+	.button {
+        display: block;
 
+        @include media-min(sm) {
+            display: inline-block;
+        }
+    }
 }
