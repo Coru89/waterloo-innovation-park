@@ -11,6 +11,14 @@ $block: 'call-to-action';
 		text-align: left;
 	}
 
+	&__inner {
+		margin-top: 1.75rem;
+
+		@include media-min(md) {
+			margin-top: 3rem;
+		}
+	}
+
 	&__content {
 		padding: 2.5rem 1rem;
 

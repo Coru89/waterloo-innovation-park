@@ -4,9 +4,12 @@ $block: "cta-cards";
 
 .#{$block} {
     &__inner {
+        padding-bottom: 1.75rem;
+        padding-top: 1.25rem;
+
         @include media-min(md) {
-            padding-bottom: 4.5rem;
-            padding-top: 4.5rem;
+            padding-bottom: 3.25rem;
+            padding-top: 2.75rem;
 
             display: flex;
             flex-direction: row;
@@ -30,6 +33,10 @@ $block: "cta-cards";
                 margin-left: 1rem;
             }
         }
+    }
+
+    &__cta {
+        color: $grey-darker;
     }
 
     &__image {

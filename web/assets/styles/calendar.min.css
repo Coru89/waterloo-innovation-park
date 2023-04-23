@@ -12524,6 +12524,25 @@ textarea.form-control-lg {
     text-align: right;
   }
 }
+.calendar__column-filters {
+  padding-top: 0;
+  width: calc(100% - 1.25rem);
+}
+@media (min-width: 1052px) {
+  .calendar__column-filters {
+    padding-right: 0;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-top: 3.75rem;
+    width: 25%;
+  }
+}
+@media (min-width: 1052px) {
+  .calendar__column-month {
+    padding-left: 0;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    width: 75%;
+  }
+}
 
 .views {
   margin-top: 2.5rem;
@@ -12551,14 +12570,6 @@ body {
     max-width: 1356px;
     padding-left: 1.125rem;
     padding-right: 1.125rem;
-  }
-  .calendar-layout .row .col-lg-9 {
-    padding-left: 0;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-  }
-  .calendar-layout .row .col-lg-3 {
-    padding-right: 0;
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 
@@ -12707,15 +12718,6 @@ iframe#calendar {
 
 #month_calendar .last_day {
   border-radius: 0 6px 6px 0;
-}
-
-.filters {
-  width: calc(100% - 1.25rem);
-}
-@media (min-width: 768px) {
-  .filters {
-    width: initial;
-  }
 }
 
 @font-face {
