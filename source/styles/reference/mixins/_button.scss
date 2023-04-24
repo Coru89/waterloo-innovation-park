@@ -107,17 +107,17 @@
 }
 
 @mixin button-small-full-width {
+  box-sizing: border-box;
   display: block;
-  padding-right: 2rem;
   text-align: center;
+  width: 100%;
 
   @include media-min(sm) {
     display: inline-block;
-    padding-right: 3.75rem;
+    width: unset;
   }
 
   .button__inner {
     position: relative;
-
   }
 }

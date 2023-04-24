@@ -136,7 +136,7 @@
 								</div>
 							</div>
 							<div class="forms__group forms__submit-group ">
-								<button id="submit" type="submit" class="button forms__submit">Submit</button>
+								<button id="submit" type="submit" class="button button--small-full forms__submit">Submit</button>
 								{% if craft.app.session.hasFlash('notice') %}
 									<p class="forms__alert forms__alert--success">{{ craft.app.session.getFlash('notice') }}</p>
 								{% elseif craft.app.session.hasFlash('error') %}

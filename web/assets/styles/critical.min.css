@@ -386,14 +386,16 @@ p {
 }
 
 .button--small-full {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
-  padding-right: 2rem;
   text-align: center;
+  width: 100%;
 }
 @media (min-width: 544px) {
   .button--small-full {
     display: inline-block;
-    padding-right: 3.75rem;
+    width: unset;
   }
 }
 .button--small-full .button__inner {

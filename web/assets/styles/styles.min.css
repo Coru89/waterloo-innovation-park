@@ -2630,7 +2630,11 @@ html.with-fancybox body.hide-scrollbar {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-right: 2rem;
+}
+@media (min-width: 544px) {
+  .forms__submit {
+    margin-right: 2rem;
+  }
 }
 .forms__submit-group {
   -webkit-box-align: center;
