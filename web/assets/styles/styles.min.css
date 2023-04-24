@@ -2715,8 +2715,16 @@ html.with-fancybox body.hide-scrollbar {
   padding-top: 1.5rem;
 }
 .gallery-card__name {
+  color: #0B0E26;
+  font-size: 22px;
+  font-weight: 500;
   line-height: 1.3;
   margin-bottom: 0.25rem;
+}
+@media (min-width: 768px) {
+  .gallery-card__name {
+    font-size: 24px;
+  }
 }
 
 .gallery-rollup__inner {

@@ -10,7 +10,7 @@
         <div class="gallery-rollup__summary">{{ entry.exhibitionSummary }}</div>
     <ul class="gallery-rollup__list">
       {% for itemId in galleryItems %}
-        {{ sprig('_components/gallery-card', {'itemId': itemId }) }}
+        {% include '_components/gallery-card' with {'itemId': itemId } %}
       {% endfor %}
     </ul>
 

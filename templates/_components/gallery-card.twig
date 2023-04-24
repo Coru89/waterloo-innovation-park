@@ -28,7 +28,7 @@
 		{% endif %}
 	</div>
 	<div class="gallery-card__text">
-		<h4 class="gallery-card__name">{{item.artName}}</h4>
+		<div class="gallery-card__name">{{item.artName}}</div>
 		<div class="gallery-card__price">{{item.price | money }}</div>
 		<div class="gallery-card__artist">{{item.artist}}{% if item.year %}, {{item.year}}{% endif %}</div>
 		<div class="gallery-card__info">{{item.info}}</div>
