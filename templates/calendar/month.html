@@ -32,12 +32,16 @@
 						<div class="col-sm-7 calendar__column">
 							{% if dateBoundsHelper > -365 %}
 								<a class="button button--outline button--arrow button--arrow-left" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
+									<span class="button__inner">
 									{{ month.previousDate.format('F') }}
+									</span>
 								</a>
 							{% endif %}
                             {% if dateBoundsHelper < 365 %}
 								<a class="button button--outline button--arrow float-right" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
+									<span class="button__inner">
 									{{ month.nextDate.format('F') }}
+									</span>
 								</a>
 							{% endif %}
 						</div>

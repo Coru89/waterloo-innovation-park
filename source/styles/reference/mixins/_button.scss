@@ -1,107 +1,123 @@
 @mixin button {
-	-webkit-appearance: none;
-	border-radius: 30px;
-	border: none;
-	display: inline-block;
-	font-size: 1rem;
-	font-weight: 700;
-	line-height: 1.5;
-	padding: .75rem 2rem;
-	text-decoration: none;
-	transition: background-color .15s ease-out;
-    -moz-appearance: none;
-    background-color:$blue;
-    border-color: $blue;
-    box-shadow: 0 0.125rem 0.25rem rgb(23 31 56 / 8%);
-    color: $white;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: $blue;
+  border-color: $blue;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgb(23 31 56 / 8%);
+  color: $white;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease-out;
 
-	&:focus,
-	&:hover {
-		background-color: $blue;
-		color: $white;
-	}
+  &:focus,
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
 }
 
 @mixin button--outline {
-	border-radius: 30px;
-	display: inline-block;
-	font-size: 1rem;
-	line-height: 1.5;
-	padding: .75rem 2rem;
-	text-decoration: none;
-	transition: background-color .15s ease-out;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid $grey-darker;
+  color: $grey-darker;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease-out;
+
+  &:focus,
+  &:hover {
     background-color: transparent;
-    border: 1px solid $grey-darker;
     color: $grey-darker;
+  }
 
-	&:focus,
-	&:hover {
-		background-color: transparent;
-		color: $grey-darker;
-	}
-
-	&::after {
-		background-image: url('/assets/images/icons/arrow-dark.svg') !important;
-	}
+  .button__inner {
+    &::after {
+      background-image: url("/assets/images/icons/arrow-dark.svg") !important;
+    }
+  }
 }
 
 @mixin button--outline-white {
-    border: 1px solid $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
     color: $white;
-	background-color: transparent;
+  }
 
-	&:focus,
-	&:hover {
-		background-color: transparent;
-		color: $white;
-	}
-
-	&::after {
-		background-image: url('/assets/images/icons/arrow.svg') !important;
-	}
+  .button__inner {
+    &::after {
+      background-image: url("/assets/images/icons/arrow.svg") !important;
+    }
+  }
 }
 
-// @mixin button--secondary {
-// 	background-color: $blue-light;
-
-// 	&:focus,
-// 	&:hover {
-// 		background-color: $blue;
-// 	}
-// }
-
 @mixin button--arrow {
-	padding-right: 3.75rem;
-	position: relative;
+  padding-right: 3.75rem;
 
-	&::after {
-		background-image: url('/assets/images/icons/arrow.svg');
-		background-repeat: no-repeat;
-		border-radius: 50%;
-		content: '';
-		display: block;
-		height: 12px;
-		position: absolute;
-		position: absolute;
-		right: 2.25rem;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 14px;
-	}
+  .button__inner {
+    position: relative;
 
-	&-left {
-		padding-left: 3.75rem;
-		padding-right: 2.5rem;
-		&::after{
-			transform: translateY(-50%) rotate(180deg);
-			left: 2.25rem;
-		}
-	}
+    &::after {
+      background-image: url("/assets/images/icons/arrow.svg");
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 12px;
+      position: absolute;
+      right: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+    }
+  }
+
+  &-left {
+    padding-left: 3.75rem;
+    padding-right: 2.5rem;
+
+    .button__inner {
+      &::after {
+		right: unset;
+        left: -1.5rem;
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
 }
 
 @mixin button--arrow-dark {
-	&::after {
-		background-image: url('/assets/images/icons/arrow.svg');
-	
-	}
+  &::after {
+    background-image: url("/assets/images/icons/arrow.svg");
+  }
+}
+
+@mixin button-small-full-width {
+  display: block;
+  padding-right: 2rem;
+  text-align: center;
+
+  @include media-min(sm) {
+    display: inline-block;
+    padding-right: 3.75rem;
+  }
+
+  .button__inner {
+    position: relative;
+
+  }
 }

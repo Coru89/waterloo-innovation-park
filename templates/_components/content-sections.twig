@@ -31,7 +31,9 @@
 							<div class="hero-panel__description panel__content">{{block.panelContent}}</div>
 							{% if block.buttonText %}
 								<a class="button button--outline-white button--arrow" href="{{block.buttonHref}}">
-									{{block.buttonText}}
+									<span class="button__inner">
+										{{block.buttonText}}
+									</span>	
 								</a>
 							{% endif %}
 						</div>
@@ -231,7 +233,7 @@
 				<div class="calendar__row u-container">
 					{% if block.heading %}
 						<div class="calendar__column">
-							<h2 class="calendar__heading">{{block.heading}}</h2>
+							<h2 class="calendar__heading">{{block.heading | raw }}</h2>
 						</div>
 					{% endif %}
 
@@ -283,7 +285,9 @@
 							{% if block.buttonText %}
 								<div class="event-slider__column">
 									<a class="button button--arrow" href="{{block.buttonHref}}">
+										<span class="button__inner">
 										{{block.buttonText}}
+										</span>
 									</a>
 								</div>	
 							{% endif %}							
@@ -364,7 +368,9 @@
 					{% if block.buttonText and block.contentLocation == "bottom" %}
 					<div class="event-slider__column">
 						<a class="button button--arrow" href="{{block.buttonHref}}">
+							<span class="button__inner">
 							{{block.buttonText}}
+							</span>
 						</a>
 					</div>	
 					{% endif %}
@@ -416,11 +422,18 @@
 			<div class="u-container double-text-with-3-images__inner">
 				<div class="double-text-with-3-images__heading-row">
 					<h2 class="double-text-with-3-images__heading">{{block.heading}}</h2>
-					<a href={{block.buttonHref}} class="button button--outline button--arrow button--arrow-dark">{{block.buttonText}}</a>
+					<a href={{block.buttonHref}} class="button button--outline button--arrow button--arrow-dark">
+						<span class="button__inner">
+							{{block.buttonText}}
+						</span>
+					</a>
 				</div>
 				<div class="double-text-with-3-images__text-row">
 					{{block.text}}
-					<a href={{block.buttonHref}} class="button button--outline button--arrow button--arrow-dark">{{block.buttonText}}</a>
+					<a href={{block.buttonHref}} class="button button--outline button--arrow button--arrow-dark">
+					<span class="button__inner">	
+						{{block.buttonText}}</a>
+					</span>
 				</div>
 				<div class="double-text-with-3-images__image-row">
 					{% for image in block.images %}

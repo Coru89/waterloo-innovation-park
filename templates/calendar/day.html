@@ -34,7 +34,9 @@
                     {% if dateBoundsHelper > -365 %}
                         <a class="button button--arrow button--arrow-left"
                            href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.previousDate.format('Y/m/d') }}">
+                           <span class="button__inner">
                             Previous
+                           </span> 
                         </a>
                     {% endif %}
                     </div>
@@ -52,7 +54,9 @@
                     {% if dateBoundsHelper < 365 %}
                         <a class="button button--arrow float-right"
                            href="{{ siteUrl }}calendar/day/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ day.nextDate.format('Y/m/d') }}">
+                           <span class="button__inner">
                             Next
+                           </span> 
                         </a>
                     {% endif %}
                     </div>

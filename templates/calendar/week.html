@@ -40,7 +40,9 @@
                     {% if dateBoundsHelper > -365 %}
                         <a class="button button--outline button--arrow button--arrow-left"
                            href="{{ siteUrl }}calendar/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.previousDate.format('Y/m/d') }}">
+                           <span class="button__inner">
                             Last Week
+                            </span>
                         </a>
                     {% endif %}
                     </div>
@@ -58,7 +60,9 @@
                     {% if dateBoundsHelper < 365 %}
                         <a class="button button button--outline button--arrow"
                            href="{{ siteUrl }}calendar/week/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ week.nextDate.format('Y/m/d') }}">
+                           <span class="button__inner">
                             Next Week
+                            </span>
                         </a>
                     {% endif %}
                     </div>

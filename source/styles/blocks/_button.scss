@@ -1,15 +1,19 @@
 .button {
-    @include button;    
+  @include button;
 }
 
 .button--outline {
-    @include button--outline;    
+  @include button--outline;
 }
 
 .button--outline-white {
-    @include button--outline-white;    
+  @include button--outline-white;
 }
 
 .button--arrow {
-    @include button--arrow;
+  @include button--arrow;
+}
+
+.button--small-full {
+  @include button-small-full-width;
 }

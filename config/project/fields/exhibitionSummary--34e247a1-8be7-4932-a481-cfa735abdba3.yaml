@@ -6,22 +6,14 @@ instructions: null
 name: 'Exhibition Summary'
 searchable: false
 settings:
-  availableTransforms: ''
-  availableVolumes: ''
-  columnType: text
-  configSelectionMode: choose
-  defaultTransform: ''
-  manualConfig: ''
-  purifierConfig: null
-  purifyHtml: true
-  redactorConfig: null
-  removeEmptyTags: false
-  removeInlineStyles: false
-  removeNbsp: false
-  showHtmlButtonForNonAdmins: false
-  showUnpermittedFiles: false
-  showUnpermittedVolumes: false
-  uiMode: enlarged
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 8
+  multiline: true
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\redactor\Field
+type: craft\fields\PlainText

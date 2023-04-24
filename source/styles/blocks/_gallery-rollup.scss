@@ -7,8 +7,8 @@ $block: 'gallery-rollup';
         margin: 3rem auto;
 
         @include media-min(md) {
-            padding-top: 4.2rem;
-            padding-bottom: 4.2rem;
+            margin-bottom: 5.5rem;
+            margin-top: 5.5rem;
         }
     }
 
@@ -18,10 +18,17 @@ $block: 'gallery-rollup';
     }
 
     &__summary {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 3rem;
 
         @include media-min(md) {
             margin-bottom: 5rem;
+        }
+
+        &--hidden {
+            display: none;
         }
     }
 
@@ -56,7 +63,14 @@ $block: 'gallery-rollup';
     &__button {
         cursor: pointer;
         display: block;
-        margin: 0 auto;
+        margin: 4.5rem auto 0;
+    }
+
+    &__read-more {
+        @include link;
+
+        display: inline-block;
+        margin-top: 2.25rem;
     }
 }
 

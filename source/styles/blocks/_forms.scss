@@ -133,4 +133,8 @@ $block: "forms";
       transform: translate(-50%, -50%) rotate(360deg);
     }
   }
+
+  label {
+    color: $grey-darker;
+  }
 }

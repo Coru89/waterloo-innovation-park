@@ -5,7 +5,9 @@ $block: 'gallery-card';
 .#{$block} {
     &__image {
         cursor: pointer;
-        height: auto;
+        height: 289px;
+        object-fit: cover;
+        object-position: center;
         width: 100%;
     }
 

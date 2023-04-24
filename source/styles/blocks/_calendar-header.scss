@@ -37,4 +37,10 @@ $block: 'calendar';
       }
     }
   }
+
+  &__header {
+    &--emphasis {
+      color: $blue;
+  }
+  }
 }
