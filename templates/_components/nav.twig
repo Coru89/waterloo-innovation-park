@@ -14,30 +14,30 @@
 		<a href="/" class="nav__logo-mobile" title="A logo">
 			<img alt="Waterloo Innovation Park + The Link Logo" src="/assets/images/logo.png">
 		</a>
-		<ul class="nav__list" role="menu">
+		<ul class="nav__list" role="menubar">
 			{% set pages = craft.entries.section('siteNavigation').all() %}
 			{% if pages is defined %}
 				{% for page in pages %}
 					{% if page.children | length %}
 						{# show top nav item treated with chevron etc  #}
 						<li class="nav__item nav__item--has-level-2" role="presentation">
-							<a class="nav__item-link" href="{{ page.path }}">
+							<a class="nav__item-link" href="{{ page.path }}" role="menuitem">
 								<span class="nav__item-link-text">{{ page.title }}</span>
 								<svg class="arrow" viewbox="0 0 24 24" aria-hidden="true">
 									<path d="M9.707 18.707l6-6a.999.999 0 0 0 0-1.414l-6-6a.999.999 0 1 0-1.414 1.414L13.586 12l-5.293 5.293a.999.999 0 1 0 1.414 1.414z"></path>
 								</svg>
 							</a>
-							<ul class="nav__sublist">
+							<ul class="nav__sublist" role="menu">
 								{% if page.path %}
-								<li class="nav__item nav__item-level-2 nav__item--mobile">
-									<a class="nav__item-link nav__item-link-level-2" href="{{ page.path }}">
+								<li class="nav__item nav__item-level-2 nav__item--mobile" role="presentation">
+									<a class="nav__item-link nav__item-link-level-2" href="{{ page.path }}" role="menuitem">
 										<span class="nav__item-link-text">{{ page.title }}</span>
 									</a>
 								</li>
 								{% endif %}
 								{% for child in page.children %}
 									<li class="nav__item nav__item-level-2">
-										<a class="nav__item-link nav__item-link-level-2" href="{{ child.path }}">
+										<a class="nav__item-link nav__item-link-level-2" href="{{ child.path }}" role="menuitem">
 											<span class="nav__item-link-text">{{ child.title }}</span>
 										</a>
 									</li>
