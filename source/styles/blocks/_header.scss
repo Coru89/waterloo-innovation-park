@@ -55,19 +55,21 @@ $block: 'header';
 
 	&__logo-anchor {
 		display: block;
-		width: 156px;
+		width: 123px;
+		height: auto;
 
-		@include media-min(lg) {
-			width: 210px;
+		@include media-min(md) {
+			width: 187px;
 		}
 
 		svg {
 			display: block;
-			width: 100%;
+			width: 123px;
+			height: auto;
 
-			@include media-min(lg) {
+			@include media-min(md) {
 				height: auto;
-				width: 210px;
+				width: 187px;
 			}
 		}
 	}

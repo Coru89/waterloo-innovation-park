@@ -1,14 +1,14 @@
 {
   "require": {
     "codemonauts/craft-instagram-feed": "^2.1",
-    "craftcms/cms": "4.4.7.1",
+    "craftcms/cms": "4.4.8",
     "craftcms/contact-form": "3.0.1",
     "craftcms/redactor": "3.0.4",
     "dispositiontools/craft-minical": "4.0.0",
-    "ether/seo": "4.1.0",
-    "fortrabbit/craft-copy": "2.3.2",
-    "putyourlightson/craft-sprig": "2.5.1",
-    "solspace/craft-calendar": "4.0.8",
+    "ether/seo": "4.1.1",
+    "fortrabbit/craft-copy": "2.4.1",
+    "putyourlightson/craft-sprig": "2.6.1",
+    "solspace/craft-calendar": "4.0.9",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

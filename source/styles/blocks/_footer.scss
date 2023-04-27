@@ -19,12 +19,16 @@ $block: "footer";
   }
 
   &__row {
-	text-align: center;
+    text-align: left;
+
+    @include media-min(sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     @include media-min(lg) {
       display: flex;
       justify-content: space-between;
-	  text-align: left;
     }
 
     &:first-child {
@@ -38,8 +42,16 @@ $block: "footer";
     border-bottom: 1px solid $grey;
     padding: 1.5rem 0;
 
+    @include media-min(sm) {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     @include media-min(lg) {
       border-bottom: 0 none;
+      display: block;
       padding: 0;
     }
 
@@ -57,14 +69,22 @@ $block: "footer";
     }
   }
 
-  &__logo img {
-	display: inline-block;
-	position: relative;
-    left: 38px;
+  &__logo {
+    &--desktop {
+      display: none;
 
-	@include media-min(lg) {
-		position: static;
-	}
+      @include media-min(lg) {
+        display: block;
+      }
+    }
+
+    &--mobile {
+      @include media-min(lg) {
+        display: none;
+        height: auto;
+        width: 187px;
+      }
+    }
   }
 
   &__heading {

@@ -23,25 +23,25 @@ export namespace slider {
             type: 'carousel',
             autoplay: 10000,
             gap: 30,
-            perView: 1,
-            peek: {
-                before: 321,
-                after: 321
-            },
-            breakpoints: {
-                768: {
-                    peek: {
-                        before: 0,
-                        after: 0
-                    }
-                },
-                1440: {
-                    peek: {
-                        before: 130,
-                        after: 130
-                    }
-                }
-            }
+            perView: 1
+            // peek: {
+            //     before: 321,
+            //     after: 321
+            // },
+            // breakpoints: {
+            //     768: {
+            //         peek: {
+            //             before: 0,
+            //             after: 0
+            //         }
+            //     },
+            //     1440: {
+            //         peek: {
+            //             before: 130,
+            //             after: 130
+            //         }
+            //     }
+            // }
             })      
     
             // fixes cumulative layout shift

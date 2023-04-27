@@ -8,7 +8,7 @@ $block: 'page-intro';
 
         @include media-min(md){
             display: flex;
-            margin: 3rem auto;
+            margin: 7.5rem auto 4rem;
         }
     }
 
@@ -28,6 +28,7 @@ $block: 'page-intro';
 
     &__summary {
         line-height: 32px;
+        margin-bottom: 2rem;
     }
 
     &__open-message {
