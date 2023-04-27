@@ -36,14 +36,14 @@ $block: "event-slider";
       flex-direction: row;
 
       .#{$block}__row {
-        &:first-of-type {
-          width: 50%;
-        }
+        // &:first-of-type {
+        //   width: 50%;
+        // }
 
         &:last-of-type {
           display: flex;
           flex-direction: column;
-          width: 50%;
+          // width: 50%;
 
           .button {
             margin-left: 0;
@@ -88,17 +88,27 @@ $block: "event-slider";
         color: $white;
       }
 
-      @include media-min(md) {
+      @include media-min(lg) {
         display: flex;
+        flex-direction: column;
         padding: 2rem 3rem;
       }
 
       &-column {
+        // width: 50%;
         &:first-of-type {
           margin-bottom: .5rem;
 
           @include media-min(md) {
             margin-bottom: 0;
+          }
+        }
+
+        &:last-of-type {
+          @include media-min(lg) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
           }
         }
       }
@@ -116,6 +126,7 @@ $block: "event-slider";
       margin-top: 2rem;
 
       @include media-min(md) {
+        align-items: flex-start;
         flex-direction: row;
       }
 
@@ -223,36 +234,47 @@ $block: "event-slider";
 
   &__date,
   &__details {
-    
     font-weight: 300;
     margin-bottom: 0;
     color: $grey-light;
+  }
+
+  &__details {
+    font-weight:  14px;
 
     @include media-min(md) {
-      font-size: 20px;
+      font-size: 18px;
+    }
+  }
+
+  &__date {
+    font-size: 13px;
+
+    @include media-min(md) {
+      font-size: 18px;
     }
   }
 
   &__image {
-    height: 350px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     width: 100%;
 
     @include media-min(md) {
-      height: 370px;
+      height: 330px;
     }
 
     @include media-min(lg) {
-      height: 450px;
+      height: 410px;
     }
 
     @include media-min(xl) {
-      height: 549px;
+      height: 509px;
     }
 
     @include media-min(xxl) {
-      height: 580px;
+      height: 540px;
     }
   }
 }
