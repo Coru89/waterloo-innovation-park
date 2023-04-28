@@ -1,4 +1,8 @@
-import Glide from'@glidejs/glide';
+//import Glide from'@glidejs/glide';
+
+/// <reference path="./vendor/glide/glide.d.ts" />
+
+import Glide from './vendor/glide/glide.js';
 
 export namespace slider {
     const glideEl = document.querySelector('.glide');
@@ -23,25 +27,12 @@ export namespace slider {
             type: 'carousel',
             autoplay: 10000,
             gap: 30,
-            perView: 1
-            // peek: {
-            //     before: 321,
-            //     after: 321
-            // },
-            // breakpoints: {
-            //     768: {
-            //         peek: {
-            //             before: 0,
-            //             after: 0
-            //         }
-            //     },
-            //     1440: {
-            //         peek: {
-            //             before: 130,
-            //             after: 130
-            //         }
-            //     }
-            // }
+            perView: 1,
+            focusAt: 'center',
+            peek: {
+                 before: 18,
+                 after: 18
+             }
             })      
     
             // fixes cumulative layout shift
@@ -51,7 +42,6 @@ export namespace slider {
                 }
               });
 
-    
               glide.mount()
     }
 
@@ -86,26 +76,12 @@ export namespace slider {
         var glide = new Glide('.glide-event', {
             type: 'carousel',
             gap: 30,
-            perView: 1,
+            focusAt: 'center',
             peek: {
-                before: 313,
-                after: 313
-            },
-            breakpoints: {
-                768: {
-                    peek: {
-                        before: 0,
-                        after: 0
-                    }
-                },
-                1440: {
-                    peek: {
-                        before: 130,
-                        after: 130
-                    }
-                }
-            }
-            })      
+                 before: 18,
+                 after: 18
+             }
+        })      
     
             // fixes cumulative layout shift
             glide.on(['build.before'], function() {
@@ -117,4 +93,5 @@ export namespace slider {
               glide.mount()
     }
 }
+
     

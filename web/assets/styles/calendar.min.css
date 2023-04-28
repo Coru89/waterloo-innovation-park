@@ -12517,7 +12517,7 @@ textarea.form-control-lg {
   }
 }
 .calendar__column:last-of-type {
-  text-align: left;
+  text-align: right;
 }
 @media (min-width: 768px) {
   .calendar__column:last-of-type {
@@ -12526,14 +12526,28 @@ textarea.form-control-lg {
 }
 .calendar__column-filters {
   padding-top: 0;
-  width: calc(100% - 1.25rem);
+  margin: 0 auto;
+  max-width: 1356px;
+  padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+  padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+}
+@media (min-width: 768px) {
+  .calendar__column-filters {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 @media (min-width: 1052px) {
   .calendar__column-filters {
-    padding-right: 0;
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
     padding-top: 3.75rem;
     width: 25%;
+    max-width: 1356px;
+  }
+}
+@media (min-width: 768px) {
+  .calendar__column-month {
+    padding: 0;
   }
 }
 @media (min-width: 1052px) {
@@ -12541,6 +12555,40 @@ textarea.form-control-lg {
     padding-left: 0;
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     width: 75%;
+  }
+}
+.calendar__column-week {
+  padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+  padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+}
+@media (min-width: 768px) {
+  .calendar__column-week {
+    padding: 0;
+  }
+}
+@media (min-width: 1052px) {
+  .calendar__column-week {
+    padding-left: 0;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    width: 75%;
+  }
+}
+.calendar__week-of {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .calendar__week-of {
+    display: block;
+  }
+}
+.calendar__week-of--mobile {
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .calendar__week-of--mobile {
+    display: none;
   }
 }
 
@@ -12591,6 +12639,11 @@ body {
 }
 #month_calendar .button--arrow--right {
   text-align: right;
+}
+
+#week_calendar .button--arrow-left,
+#week_calendar .button--arrow {
+  min-width: 182px;
 }
 
 .badge-warning {

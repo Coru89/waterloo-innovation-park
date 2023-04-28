@@ -9,8 +9,11 @@
     "esModuleInterop": true
   },
   "include": [
-    "source/**/*.ts"
-, "source/scripts/load.js"  ],
+    "source/**/*.ts",
+    "source/scripts/load.js",
+    "source/scripts/vendor/glide/glide.js",
+    "source/scripts/vendor/glide/types/glide.d.ts"
+],
   "exclude": [
     "node_modules"
   ]

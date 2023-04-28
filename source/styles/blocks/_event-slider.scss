@@ -79,6 +79,8 @@ $block: "event-slider";
   }
 
   &__slide {
+    // max-width: 1356px;
+
     &-content {
       background-color: $grey-darker;
       justify-content: space-between;
@@ -95,7 +97,6 @@ $block: "event-slider";
       }
 
       &-column {
-        // width: 50%;
         &:first-of-type {
           margin-bottom: .5rem;
 

@@ -1959,6 +1959,9 @@ html.with-fancybox body.hide-scrollbar {
     -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 2.5rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 .calendar__column {
