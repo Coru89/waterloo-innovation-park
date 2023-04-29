@@ -17,7 +17,7 @@
 
   &:focus,
   &:hover {
-    background-color: $blue;
+    background-color: $blue-dark;
     color: $white;
   }
 }
@@ -37,7 +37,14 @@
   &:focus,
   &:hover {
     background-color: transparent;
-    color: $grey-darker;
+    border-color: $blue;
+    color: $blue;
+
+    .button__inner {
+      &::after {
+        background-image: url("/assets/images/icons/arrow-blue.svg") !important;
+      }
+    }
   }
 
   .button__inner {

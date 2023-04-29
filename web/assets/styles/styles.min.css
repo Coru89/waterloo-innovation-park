@@ -1921,8 +1921,8 @@ html.with-fancybox body.hide-scrollbar {
   text-decoration: none;
 }
 .booking__email:hover, .booking__phone:hover {
-  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
-  box-shadow: inset 0 -1px 0 #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
 }
 .booking__email {
   display: inline-block;
@@ -2897,8 +2897,8 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 2rem;
 }
 .gallery-rollup__back:hover {
-  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
-  box-shadow: inset 0 -1px 0 #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
 }
 .gallery-rollup__button {
   cursor: pointer;
@@ -2914,8 +2914,8 @@ html.with-fancybox body.hide-scrollbar {
   margin-top: 2.25rem;
 }
 .gallery-rollup__read-more:hover {
-  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
-  box-shadow: inset 0 -1px 0 #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
 }
 
 @media (min-width: 1052px) {
@@ -3189,8 +3189,8 @@ html.with-fancybox body.hide-scrollbar {
   line-height: 32px;
 }
 .lease-managers__phone:hover, .lease-managers__email:hover {
-  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
-  box-shadow: inset 0 -1px 0 #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
 }
 @media (min-width: 1200px) {
   .lease-managers__phone {
@@ -3436,8 +3436,8 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 2rem;
 }
 .map__directions:hover {
-  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
-  box-shadow: inset 0 -1px 0 #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
 }
 .map__summary {
   margin-bottom: 1.5rem;
@@ -3740,8 +3740,8 @@ html.with-fancybox body.hide-scrollbar {
   text-decoration: none;
 }
 .contact-details__item a:hover {
-  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
-  box-shadow: inset 0 -1px 0 #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
 }
 .contact-details__inquiry {
   margin-bottom: 2rem;
