@@ -36,14 +36,9 @@ $block: "event-slider";
       flex-direction: row;
 
       .#{$block}__row {
-        // &:first-of-type {
-        //   width: 50%;
-        // }
-
         &:last-of-type {
           display: flex;
           flex-direction: column;
-          // width: 50%;
 
           .button {
             margin-left: 0;
@@ -79,15 +74,22 @@ $block: "event-slider";
   }
 
   &__slide {
-    // max-width: 1356px;
-
     &-content {
       background-color: $grey-darker;
       justify-content: space-between;
+      min-height: 116px;
       padding: 2rem 2rem;
 
       * {
         color: $white;
+      }
+
+      @include media-min(sm) {
+        min-height: 140px;
+      } 
+
+      @include media-min(md) {
+        min-height: unset;
       }
 
       @include media-min(lg) {
@@ -176,7 +178,6 @@ $block: "event-slider";
       }
 
       .image-slider__controls {
-        // margin-top: 0;
         margin: 0 auto;
       }
     }
@@ -235,13 +236,17 @@ $block: "event-slider";
 
   &__date,
   &__details {
+    font-size: 13px;
     font-weight: 300;
-    margin-bottom: 0;
     color: $grey-light;
+
+    @include media-min(sm) {
+      font-size: 14px;
+    }
   }
 
   &__details {
-    font-weight:  14px;
+    margin-bottom: 0;
 
     @include media-min(md) {
       font-size: 18px;
@@ -249,7 +254,7 @@ $block: "event-slider";
   }
 
   &__date {
-    font-size: 13px;
+    margin-bottom: .25rem;
 
     @include media-min(md) {
       font-size: 18px;
