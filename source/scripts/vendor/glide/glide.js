@@ -1765,8 +1765,6 @@
           //var width = '100px';
           var slides = Components.Html.slides;
 
-          console.log(slides);
-
           for (var i = 0; i < slides.length; i++) {
             slides[i].style.width = width;
           }
