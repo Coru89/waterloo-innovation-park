@@ -12527,7 +12527,7 @@ textarea.form-control-lg {
 .calendar__column-filters {
   padding-top: 0;
   margin: 0 auto;
-  max-width: 1356px;
+  max-width: 1280px;
   padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
   padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
 }
@@ -12542,7 +12542,7 @@ textarea.form-control-lg {
     padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
     padding-top: 3.75rem;
     width: 25%;
-    max-width: 1356px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 768px) {
@@ -12615,7 +12615,7 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1356px;
+    max-width: 1280px;
     padding-left: 1.125rem;
     padding-right: 1.125rem;
   }
@@ -12996,7 +12996,7 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1356px;
+  max-width: 1280px;
   padding-left: 1.125rem;
   padding-right: 1.125rem;
 }
