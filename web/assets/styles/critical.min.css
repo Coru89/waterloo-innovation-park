@@ -1159,5 +1159,6 @@ p {
   text-decoration: none;
   text-indent: 0;
   line-height: 0;
-  padding: 0.7rem 0.8rem;
+  min-width: 42px;
+  height: 40px;
 }

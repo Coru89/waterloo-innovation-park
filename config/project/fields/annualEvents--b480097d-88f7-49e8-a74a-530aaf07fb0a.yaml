@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 21bdf77a-7ef8-4373-91e0-b6f8b61e6459 # Events
+handle: annualEvents
+instructions: null
+name: 'Annual Events'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_annualevents}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

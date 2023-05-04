@@ -80,10 +80,13 @@ $block: "footer";
     }
 
     &--mobile {
-      @include media-min(lg) {
-        display: none;
+      & svg {
         height: auto;
         width: 187px;
+      }
+
+      @include media-min(lg) {
+        display: none;
       }
     }
   }

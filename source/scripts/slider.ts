@@ -52,12 +52,25 @@ export namespace slider {
             autoplay: 10000,
             gap: 30,
             perView: 4,
+            peek: {
+                before: 18,
+                after: 18
+            },
             breakpoints: {
                 768: {
-                    perView: 2
+                    perView: 2,
+                    gap: 15,
+                    peek: {
+                        before: 18,
+                        after: 24
+                    }
                 },
                 1200: {
-                    perView: 3
+                    perView: 3,
+                    peek: {
+                        before: 18,
+                        after: 18
+                    }
                 }
             }
         })      

@@ -1,0 +1,24 @@
+fieldLayouts:
+  5dac8dc2-5509-45db-b4f4-1d1e25d7285f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b480097d-88f7-49e8-a74a-530aaf07fb0a # Annual Events
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d72517f3-5a92-4e84-abca-e7626fb97f29
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c0a2e316-6eea-4d74-ab1b-d12274ae6f77
+        userCondition: null
+handle: annualEvents
+name: 'Annual Events'
+sortOrder: 8

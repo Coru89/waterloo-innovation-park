@@ -1,4 +1,4 @@
-dateModified: 1682592088
+dateModified: 1683186128
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -58,6 +58,7 @@ meta:
     3ccea268-3f4e-423c-9d53-fa8a781f9b58: item # item
     3e1d40f9-bcc2-45e5-a18f-9a845b7988db: 'Button Text' # Button Text
     4b4b1468-382a-43a9-a954-3816f65567a2: Heading # Heading
+    4b5a5788-43ee-4012-ba1a-ed2b73b8bbfb: ItemSVG # ItemSVG
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
     4df73862-66da-4140-8eac-6eeb31f2aa4c: 'Button Link' # Button Link
     04e5c194-9ae4-47b7-984b-0892ca576ec9: Images # Images
@@ -89,6 +90,7 @@ meta:
     8c6ac355-ba45-47f9-9d6c-13d9f0ecdc30: Limit # Limit
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
     8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
+    8e5e89b1-b02e-4d5b-a662-40eb0c914fea: 'Annual Events' # Annual Events
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
@@ -96,6 +98,7 @@ meta:
     9d42013b-11c6-42cf-b45b-fa037c8bcaba: Title # Title
     9f2bc7d7-ce7d-4a3e-8704-3b608e00d2d6: Properties # Properties
     9f7eb4c7-c99f-4370-9524-4cf17afa2bbf: 'Button Text' # Button Text
+    13ddc265-7d77-4ac9-b0d0-e35357fb61cb: 'Item Title' # Item Title
     15b5c3b8-1bf0-499c-84f7-3a6c39f656d1: 'Phone Link' # Phone Link
     16a6044c-5238-4f14-8aad-ce2d5bf16347: 'Page Summary' # Page Summary
     21bdf77a-7ef8-4373-91e0-b6f8b61e6459: Events # Events
@@ -122,6 +125,7 @@ meta:
     88c281ce-36ef-4427-abcf-672942cfa723: 'Waterloo Innovation Park Address Line 3' # Waterloo Innovation Park Address Line 3
     95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
     96f722d9-925b-4e49-9b34-1494ea93ec47: CTA # CTA
+    99a2cb7d-0c57-4555-83e3-e8cdc93c541b: 'Section Heading' # Section Heading
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
     120c9344-1c5c-4d8c-89d8-34c7e76a8b31: 'Button Link' # Button Link
     169eb7a3-ac32-4f0f-afd8-eb8b92803b1b: 'Event Image' # Event Image
@@ -150,6 +154,7 @@ meta:
     4376fc28-a7c8-4264-ae89-8fd01d231075: 'Current Featured Exhibit' # Current Featured Exhibit
     7185e0e8-2762-4d5d-b963-5a2f92ca4f6e: 'Image - Card 2' # Image - Card 2
     8267e525-8100-4ca9-9949-0677504ad351: email # email
+    9011aff5-8faf-4b49-82cf-6e34d4cdeb2a: Items # Items
     9953bc18-4725-4380-adb8-e62a02c6f0d2: 'Waterloo Innovation Park Emergency Phone Display' # Waterloo Innovation Park Emergency Phone Display
     37175b69-3644-4f1e-a348-e82fd2565057: 'Property Manager Image Caption' # Property Manager Image Caption
     91458f3d-5347-4b47-a507-b691e9a17943: 'Navigation Items' # Navigation Items
@@ -177,6 +182,7 @@ meta:
     ac896e2d-c524-475b-9740-71f975b24844: 'The Link Phone Display' # The Link Phone Display
     ad3311a0-c30e-4a01-9405-46dc2bb50f43: 'Page Heading' # Page Heading
     afb98157-06dd-4f20-a32d-7759850afba2: 'Stat Holidays' # Stat Holidays
+    b03ae735-63e6-44c4-9ab7-08c44d6089e4: 'Annual Events' # Annual Events
     b1c63a82-dac1-486f-a4f0-a01d8bd252d6: 'Image Vertical Position' # Image Vertical Position
     b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
@@ -185,6 +191,7 @@ meta:
     b41afa41-893f-4b11-970e-c75f2431f0be: 'Learn More Link' # Learn More Link
     b87bb998-aa92-42fc-aee9-1adb2c624a30: 'Waterloo Innovation Park Address Line 2' # Waterloo Innovation Park Address Line 2
     b19956e7-f23d-451e-93c0-712acc2c2b9a: 'Event Description' # Event Description
+    b480097d-88f7-49e8-a74a-530aaf07fb0a: 'Annual Events' # Annual Events
     baa2eb32-a191-474e-b7da-50764f46b1e5: Info # Info
     bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Details # Details
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
@@ -210,6 +217,7 @@ meta:
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e12bca54-c3b9-4ba0-9641-31e98bd18527: 'Remove padding top?' # Remove padding top?
     e38e9b53-b834-41a9-aa4c-ec123249d1b7: 'Button Text' # Button Text
+    e56aaa87-b266-49f6-888d-6cb43cda2344: Item # Item
     e58e1829-76c2-476c-bf92-2f56e2f3900e: 'Button Link' # Button Link
     e63c55f2-78e4-45cc-9bd8-445b5d5b071a: 'Waterloo Innovation Park Inquiries Phone Display' # Waterloo Innovation Park Inquiries Phone Display
     e696ca9b-87fe-4bc8-8350-a9a82cb85f30: 'The Link Stats Home' # The Link Stats Home
@@ -223,6 +231,7 @@ meta:
     ef382811-26e2-4369-910e-ffa10df24c8b: Account # Account
     f0e3ba41-38ec-4d36-a57e-c1e10c10a52a: 'Past Exhibits Rollup' # Past Exhibits Rollup
     f8eb961a-512c-4bc3-acc8-573a8dbd4de2: Map # Map
+    f243fa33-cb56-47f1-a1c2-a1a477cc6307: 'Item Details' # Item Details
     f76199d1-0bdf-4450-81d3-d2aefa255f91: 'Call-to-action - Card 2' # Call-to-action - Card 2
     faa07140-e5cb-4752-9790-0260ba2b62da: 'Waterloo Innovation Park Leasing Phone Display' # Waterloo Innovation Park Leasing Phone Display
     fbbb7b50-c55e-456d-9508-45a83c3219cb: Events # Events

@@ -4,12 +4,12 @@ $block: 'calendar';
 
 .#{$block} {
   &__inner {
-    padding-top: 3rem;
-    padding-bottom: 3.25rem;
+    margin-top: 3rem;
+    margin-bottom: 3.25rem;
 
     @include media-min(md) {
-      padding-bottom: 5.5rem;
-      padding-top: 3.25rem;
+      margin-bottom: 6.5rem;
+      margin-top: 6.25rem;
     }
   }
 

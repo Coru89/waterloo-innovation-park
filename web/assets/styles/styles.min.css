@@ -1937,13 +1937,13 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .calendar__inner {
-  padding-top: 3rem;
-  padding-bottom: 3.25rem;
+  margin-top: 3rem;
+  margin-bottom: 3.25rem;
 }
 @media (min-width: 768px) {
   .calendar__inner {
-    padding-bottom: 5.5rem;
-    padding-top: 3.25rem;
+    margin-bottom: 6.5rem;
+    margin-top: 6.25rem;
   }
 }
 .calendar__row {
@@ -2047,34 +2047,53 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 768px) {
   .cta-cards__inner {
-    padding-bottom: 3.25rem;
-    padding-top: 2.75rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 3.25rem;
+    padding-top: 2.75rem;
+    gap: 2rem;
   }
+}
+.cta-cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .cta-cards__item:first-of-type {
   margin-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
-  .cta-cards__item {
-    width: calc(50% - 2rem);
-  }
   .cta-cards__item:first-of-type {
     margin-bottom: 0;
-    margin-right: 1rem;
-  }
-  .cta-cards__item:last-of-type {
-    margin-left: 1rem;
   }
 }
 .cta-cards__cta {
   color: #0B0E26;
+}
+@media (min-width: 768px) {
+  .cta-cards__cta p {
+    min-height: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .cta-cards__cta p {
+    min-height: 0;
+  }
 }
 .cta-cards__image {
   height: auto;
@@ -2082,17 +2101,17 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .event-slider__inner {
-  padding-bottom: 1.5rem;
-  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 @media (min-width: 768px) {
   .event-slider__inner {
-    padding-bottom: 3rem;
-    padding-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3.5rem;
   }
 }
 .event-slider__inner--remove-padding {
-  padding-top: 0;
+  margin-top: 0;
 }
 @media (min-width: 1052px) {
   .event-slider__heading {
@@ -2481,11 +2500,13 @@ html.with-fancybox body.hide-scrollbar {
     display: block;
   }
 }
+.footer__logo--mobile svg {
+  height: auto;
+  width: 187px;
+}
 @media (min-width: 1052px) {
   .footer__logo--mobile {
     display: none;
-    height: auto;
-    width: 187px;
   }
 }
 .footer__heading {
@@ -3085,11 +3106,11 @@ html.with-fancybox body.hide-scrollbar {
   visibility: visible;
 }
 .instagram__inner {
-  padding: 2rem 1.125rem;
+  padding: 2rem 0;
 }
 @media (min-width: 768px) {
   .instagram__inner {
-    padding: 5rem 1.125rem;
+    padding: 5rem 0;
     text-align: center;
   }
 }
@@ -3097,12 +3118,22 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 2.5rem;
 }
 .instagram__image {
+  height: 147px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center center;
   object-position: center center;
-  height: 314px;
   width: 100%;
+}
+@media (min-width: 320px) {
+  .instagram__image {
+    height: 220px;
+  }
+}
+@media (min-width: 544px) {
+  .instagram__image {
+    height: 290px;
+  }
 }
 @media (min-width: 768px) {
   .instagram__image {
@@ -3756,12 +3787,13 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .annual-events__inner {
-  padding-top: 2.5rem;
+  margin-top: 2.5rem;
   position: relative;
 }
 @media (min-width: 1052px) {
   .annual-events__inner {
-    padding-top: 4rem;
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
   }
 }
 .annual-events__heading {
@@ -3794,7 +3826,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 768px) {
   .annual-events__list {
-    gap: 30px 0;
+    gap: 1.5rem 0;
   }
 }
 @media (min-width: 1052px) {
@@ -3829,11 +3861,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 1440px) {
   .annual-events__item {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-bottom: 30px;
+    padding-bottom: 1.5rem;
   }
   .annual-events__item:nth-child(2n+1)::after {
     background: #C0C0C0;
@@ -3862,7 +3890,9 @@ html.with-fancybox body.hide-scrollbar {
 }
 .annual-events__title {
   padding-right: 12px;
+  white-space: nowrap;
 }
 .annual-events__details {
   color: #9899A0;
+  padding-left: 3rem;
 }

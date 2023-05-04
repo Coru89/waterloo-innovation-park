@@ -9,12 +9,16 @@ $block: "instagram";
   }
 
   &__inner {
-    padding: 2rem 1.125rem;
+    padding: 2rem 0;
 
     @include media-min(md) {
-      padding: 5rem 1.125rem;
+      padding: 5rem 0;
       text-align: center;
     }
+
+    // @include media-min(xl) {
+    //   padding: 5rem 1.125rem;
+    // }
   }
 
   &__subheading {
@@ -22,10 +26,18 @@ $block: "instagram";
   }
 
   &__image {
+    height: 147px;
     object-fit: cover;
     object-position: center center;
-    height: 314px;
     width: 100%;
+
+    @include media-min(xs) {
+      height: 220px;
+    }
+
+    @include media-min(sm) {
+      height: 290px;
+    }
 
     @include media-min(md) {
       height: 314px;

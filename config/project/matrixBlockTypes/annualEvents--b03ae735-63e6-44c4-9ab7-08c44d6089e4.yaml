@@ -1,0 +1,117 @@
+field: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
+fieldLayouts:
+  23a83253-71e9-4215-a90d-4a621ea1da32:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9011aff5-8faf-4b49-82cf-6e34d4cdeb2a # Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d23aebd0-5e9c-4dda-827f-19d04cf40de2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 99a2cb7d-0c57-4555-83e3-e8cdc93c541b # Section Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 287e4276-142c-4e02-ac18-c55bd4297ea9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 36623737-480c-4adc-b9da-cd93506df3f4
+        userCondition: null
+fields:
+  99a2cb7d-0c57-4555-83e3-e8cdc93c541b: # Section Heading
+    columnSuffix: nzzaixla
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionHeading
+    instructions: null
+    name: 'Section Heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9011aff5-8faf-4b49-82cf-6e34d4cdeb2a: # Items
+    columnSuffix: qidirthq
+    contentColumnType: text
+    fieldGroup: null
+    handle: items
+    instructions: null
+    name: Items
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Title
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Event Details'
+                -
+                  - handle
+                  - eventDetails
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - multiline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: annualEvents
+name: 'Annual Events'
+sortOrder: 20
