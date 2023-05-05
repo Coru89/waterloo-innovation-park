@@ -1,12 +1,12 @@
 <section class="call-to-action">
     <div class="u-container call-to-action__inner">
-        <div class="call-to-action__content">
+        <div data-aos="fade" class="call-to-action__content">
             <h3 class="call-to-action__headline">
                 {{entry.headline}}
             </h3>
             {% if entry.buttonTextCta %}
                 <a class="button button--arrow button--small-full" href="{{ entry.buttonHrefCta }}">
-                    <span class="button__inner">{{entry.buttonTextCta}}</span> 
+                    <span class="button__inner">{{ entry.buttonTextCta }}</span> 
                 </a>
             {% endif %}
         </div>

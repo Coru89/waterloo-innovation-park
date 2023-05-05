@@ -15,12 +15,12 @@
 
 		{% set submission = submission ?? null %}
 
-		<form id="form" class="forms contact__form" method="post" action="" accept-charset="UTF-8">
+		<form data-aos="fade" id="form" class="forms contact__form" method="post" action="" accept-charset="UTF-8">
 			<div class="u-container-small">
 				{{ csrfInput() }}
 				{{ actionInput('contact-form/send') }}
 
-				<h2 class="forms__heading">Have a question? Feel free to reach out.</h2>
+				<h2 data-aos="fade-up" class="forms__heading">Have a question? Feel free to reach out.</h2>
 
 				{% if craft.app.session.hasFlash('success') %}
 					<div>Thank you for your message.</div>

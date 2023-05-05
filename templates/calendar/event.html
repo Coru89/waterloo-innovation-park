@@ -60,7 +60,7 @@
                     {% endif %}
                     
                     {% if image is defined %}
-                    <picture class="event__picture">
+                    <picture data-aos="fade" class="event__picture">
                         <source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '80vw'}) }}>
                         <source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '80vw'}) }}>
                         <img style="width: 100%; height: auto;" alt="image.alt" src={{image.url}} width={{image.width}} height={{image.height}}>

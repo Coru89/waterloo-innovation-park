@@ -8,7 +8,7 @@
 	{% if block.type == "heroPanelDark" %}
 		<section class="hero-panel hero-panel--dark">
 			<div class="u-container">
-				<h2 class="hero-panel__title panel__heading">{{block.panelTitle}}</h2>
+				<h2 data-aos="fade-up" class="hero-panel__title panel__heading">{{block.panelTitle}}</h2>
 			</div>
 			<div class="hero-panel__inner">
 				<div class="u-container">
@@ -17,14 +17,14 @@
 
 						{% set image = block.image.one() %}
 						<div class="hero-panel__picture-container">
-							<picture class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
+							<picture data-aos="fade" class="hero-panel__picture panel__picture panel__picture--position-middle-center u-hidden-on-no-js">
 								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 50vw, 100vw'}) }}>
 								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 50vw, 100vw'}) }}>
 								<img alt="{{image.alt}}" class="hero-panel__image panel__image object-fit" src={{image.url}} width={{image.width}} height={{image.height}}>
 							</picture>
 						</div>
 
-						<div class="hero-panel__content">
+						<div data-aos="fade" class="hero-panel__content">
 							{% if block.subject %}
 								<h4 class="hero-panel__subject">{{ block.subject }}</h4>
 							{% endif %}
@@ -46,9 +46,9 @@
 		{% include '_components/call-to-action' with {entry: block} %}
 	{% elseif block.type == "imagePanel" %}
 		<section class="image-panel">
-			<picture class="image-panel__picture" role="presentation">
+			<picture data-aos="fade" class="image-panel__picture" role="presentation">
 				{% set image = block.image.one() %}
-				<picture class="image-panel__picture">
+				<picture data-aos="fade" class="image-panel__picture">
 					<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '100vw'}) }}>
 					<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '100vw'}) }}>
 					<img style="object-position: center {{block.imageVerticalPosition}}%" alt="{{image.alt}}" class="image-panel__image" src={{image.url}} width={{image.width}} height={{image.height}}>
@@ -59,7 +59,7 @@
 		<section class="content-panel">
 			<div class="u-container">
 				<div class="content-panel__container">
-					<h1 class="panel__heading">{{ block.panelTitle }}</h1>
+					<h1 data-aos="fade-up" class="panel__heading">{{ block.panelTitle }}</h1>
 					<div class="panel__content">{{ block.panelSubheading }}</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@
 		<section class="instagram instagram-glide">
 			<div class="u-container instagram__inner">
 				<div class="u-container instagram__heading-container">
-					<h2 class="instagram__heading">{{block.heading}}</h2>
+					<h2 data-aos="fade-up" class="instagram__heading">{{block.heading}}</h2>
 					<div class="instagram__subheading">{{block.subheading}}</div>
 				</div>
 				<div class="glide__track" data-glide-el="track">
@@ -78,7 +78,7 @@
 							<li class="instagram__slide glide__slide">
 								<a href="https://www.instagram.com/p/{{ item.shortcode }}/" target="_blank" rel="noopener noreferrer">
 									{% set image = item.asset %}
-									<picture class="instagram__picture">
+									<picture data-aos="fade" class="instagram__picture">
 										<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024], { format: 'webp', } ), sizes: '(max-width: 768px) 50vw, (max-width: 1440px) 30vw, 18vw' }) }}>
 										<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024], { format: 'jpeg', } ), sizes: '(max-width: 768px) 50vw, (max-width: 1440px) 30vw, 18vw' }) }}>
 										<img alt="{{item.caption}}" class="instagram__image" src={{image.url}} width={{image.width}} height={{image.height}}>
@@ -88,7 +88,7 @@
 						{% endfor %}
 					</ul>
 				</div>
-				<div class="u-container image-slider__controls" data-glide-el="controls">
+				<div data-aos="fade" class="u-container image-slider__controls" data-glide-el="controls">
 					<button class="image-slider__arrow image-slider__arrow--left glide__arrow glide__arrow--left" title="previous slide" data-glide-dir="<">
 						<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M7.00047 11.2892C7.39047 10.8992 7.39047 10.2692 7.00047 9.87925L3.12047 5.99925L7.00047 2.11925C7.39047 1.72925 7.39047 1.09925 7.00047 0.709246C6.61047 0.319245 5.98047 0.319245 5.59047 0.709246L1.00047 5.29925C0.610469 5.68925 0.610469 6.31925 1.00047 6.70925L5.59047 11.2992C5.97047 11.6792 6.61047 11.6792 7.00047 11.2892Z" fill="#0B0E26"/>
@@ -112,9 +112,9 @@
 	{% elseif block.type == "theLinkStats" %}
 		<section class="link-stats">
 			<div class="link-stats__inner u-container">
-				<h2 class="link-stats__heading">What The Link has to offer</h2>
+				<h2 data-aos="fade-up" class="link-stats__heading">What The Link has to offer</h2>
 
-				<div class="link-stats__items">
+				<div data-aos="fade" class="link-stats__items">
 					<div class="link-stats__item">
 						<div class="link-stats__icon">
 							<svg width="39" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.476 17.224c.697.698.87 1.935.872 2.849-.914-.003-2.15-.176-2.848-.873-.697-.697-.869-1.935-.873-2.848.914.003 2.152.175 2.849.872ZM21.008 14.806c-.417.221-.787.488-1.1.801a4.323 4.323 0 0 0-.408.476 4.363 4.363 0 0 0-1.508-1.277c-.027-1.276.85-2.485 1.506-3.204.651.714 1.512 1.898 1.512 3.157a.9.9 0 0 1-.002.047ZM21.524 17.224c.697-.697 1.936-.869 2.848-.872-.003.914-.175 2.151-.872 2.848-.697.697-1.936.87-2.848.873.003-.915.175-2.152.872-2.849Z" fill="#0A78FF"/><path d="M26.462 10.353V4.33A14.895 14.895 0 0 0 19.5 2.608a14.9 14.9 0 0 0-7.904 2.263c.26 1.12.392 2.296.392 3.52a7.087 7.087 0 0 1-2.1 5.055 7.128 7.128 0 0 1-1.609 1.207v12.723c2.738 3.12 6.754 5.092 11.22 5.092 4.321 0 8.22-1.845 10.947-4.788V15.403a5.2 5.2 0 0 1-3.984-5.05Zm.16 6.778c-.13 1.555-.65 2.829-1.506 3.685-.856.856-2.13 1.377-3.685 1.506a9.35 9.35 0 0 1-.787.033h-.002v3.398a1.143 1.143 0 1 1-2.285 0v-3.398h-.001c-.242 0-.508-.009-.787-.033-1.555-.13-2.829-.65-3.685-1.506-.856-.856-1.377-2.13-1.507-3.685a9.396 9.396 0 0 1 .049-2.027c.076-.492.461-.878.954-.954a9.389 9.389 0 0 1 2.365-.013c.141-1.137.66-2.311 1.525-3.43a10.153 10.153 0 0 1 1.515-1.583 1.143 1.143 0 0 1 1.43 0c.03.025.777.627 1.515 1.583.865 1.119 1.383 2.293 1.524 3.43.856-.143 2.426-.006 2.366.013.492.076.878.462.954.954.006.037.14.924.049 2.027ZM5.994 15.436V33.61a1.143 1.143 0 0 1-2.285 0V15.435c.363.059.736.09 1.116.092h.026c.387 0 .769-.03 1.143-.09ZM35.016 15.545V33.61a1.143 1.143 0 0 1-2.285 0V15.545h2.285ZM4.855.323h-.002A3.731 3.731 0 0 0 1.61 2.178C.551 3.978.008 6.052 0 8.34c-.009 2.693 2.159 4.892 4.833 4.902h.018a4.819 4.819 0 0 0 3.425-1.414A4.82 4.82 0 0 0 9.703 8.39c0-2.313-.545-4.408-1.619-6.225A3.716 3.716 0 0 0 4.855.323Z" fill="#0A78FF"/><path d="M38.924 1.349c0-.566-.46-1.102-1.026-1.102-.565 0-1.1.536-1.1 1.102v5.76h-1.823v-5.76c0-.566-.535-1.102-1.102-1.102-.565 0-1.1.536-1.1 1.102v5.76H30.95v-5.76c0-.566-.535-1.102-1.101-1.102s-1.102.536-1.102 1.102v9.004a2.91 2.91 0 0 0 2.908 2.908h4.437A2.91 2.91 0 0 0 39 10.353l-.076-9.004Z" fill="#0A78FF"/></svg>
@@ -189,13 +189,13 @@
 		<section class="link-stats-home">
 			<div class="link-stats-home__inner u-container">
 				<div class="link-stats-home__column">
-					<h2 class="link-stats-home__heading">We're thrilled to let you know that <span style="color:#0A78FF;">the Link is open</span> every workday.</h2>
-					<div class="link-stats-home__open-message">
+					<h2 data-aos="fade-up" class="link-stats-home__heading">We're thrilled to let you know that <span style="color:#0A78FF;">the Link is open</span> every workday.</h2>
+					<div data-aos="fade" class="link-stats-home__open-message">
 						<svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.666 6.285a.976.976 0 0 0-1.38 0h-.001a.976.976 0 0 0 0 1.38v.002a.976.976 0 0 0 1.38 0l.002-.001a.976.976 0 0 0 0-1.38l-.001-.001Zm0 11.048a.976.976 0 0 0-1.38 0l-.001.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.002a.976.976 0 0 0 0-1.38l-.001-.002Zm-2.978-5.81h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm12.695 0h-3.906V7.62h-1.954v5.858h5.86v-1.954Zm-4.884-5.859h.002a.976.976 0 0 0 0-1.951h-.002a.976.976 0 0 0 0 1.951Zm6.215.62a.976.976 0 0 0-1.38 0v.002a.976.976 0 0 0 1.381 1.381v-.001a.976.976 0 0 0 0-1.38v-.001ZM12.5 0C5.49 0 0 5.49 0 12.5S5.49 25 12.5 25 25 19.51 25 12.5 19.51 0 12.5 0Zm0 23.047c-5.914 0-10.547-4.633-10.547-10.547 0-5.914 4.633-10.547 10.547-10.547 5.914 0 10.547 4.633 10.547 10.547 0 5.914-4.633 10.547-10.547 10.547Zm7.813-11.524h-.001a.976.976 0 0 0-.976.976v.002c0 .539.437.976.976.976h.001a.976.976 0 0 0 .976-.976v-.002a.976.976 0 0 0-.976-.976Zm-1.599 5.81a.976.976 0 0 0-1.38 0v.001a.976.976 0 0 0 0 1.38v.001a.976.976 0 0 0 1.38 0h.001a.976.976 0 0 0 0-1.38v-.002Zm-6.213 2.005h-.002a.976.976 0 0 0 0 1.951h.002a.976.976 0 0 0 0-1.951Z" fill="#9899A0"/></svg>
 						<span>Monday to Friday, from 9am to 3pm.</span>
 					</div>
 				</div>
-				<div class="link-stats-home__column">
+				<div data-aos="fade" class="link-stats-home__column">
 					<div class="link-stats__item link-stats-home__item">
 						<div class="link-stats__icon link-stats-home__icon">
 							<svg width="39" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.476 17.224c.697.698.87 1.935.872 2.849-.914-.003-2.15-.176-2.848-.873-.697-.697-.869-1.935-.873-2.848.914.003 2.152.175 2.849.872ZM21.008 14.806c-.417.221-.787.488-1.1.801a4.323 4.323 0 0 0-.408.476 4.363 4.363 0 0 0-1.508-1.277c-.027-1.276.85-2.485 1.506-3.204.651.714 1.512 1.898 1.512 3.157a.9.9 0 0 1-.002.047ZM21.524 17.224c.697-.697 1.936-.869 2.848-.872-.003.914-.175 2.151-.872 2.848-.697.697-1.936.87-2.848.873.003-.915.175-2.152.872-2.849Z" fill="#0A78FF"/><path d="M26.462 10.353V4.33A14.895 14.895 0 0 0 19.5 2.608a14.9 14.9 0 0 0-7.904 2.263c.26 1.12.392 2.296.392 3.52a7.087 7.087 0 0 1-2.1 5.055 7.128 7.128 0 0 1-1.609 1.207v12.723c2.738 3.12 6.754 5.092 11.22 5.092 4.321 0 8.22-1.845 10.947-4.788V15.403a5.2 5.2 0 0 1-3.984-5.05Zm.16 6.778c-.13 1.555-.65 2.829-1.506 3.685-.856.856-2.13 1.377-3.685 1.506a9.35 9.35 0 0 1-.787.033h-.002v3.398a1.143 1.143 0 1 1-2.285 0v-3.398h-.001c-.242 0-.508-.009-.787-.033-1.555-.13-2.829-.65-3.685-1.506-.856-.856-1.377-2.13-1.507-3.685a9.396 9.396 0 0 1 .049-2.027c.076-.492.461-.878.954-.954a9.389 9.389 0 0 1 2.365-.013c.141-1.137.66-2.311 1.525-3.43a10.153 10.153 0 0 1 1.515-1.583 1.143 1.143 0 0 1 1.43 0c.03.025.777.627 1.515 1.583.865 1.119 1.383 2.293 1.524 3.43.856-.143 2.426-.006 2.366.013.492.076.878.462.954.954.006.037.14.924.049 2.027ZM5.994 15.436V33.61a1.143 1.143 0 0 1-2.285 0V15.435c.363.059.736.09 1.116.092h.026c.387 0 .769-.03 1.143-.09ZM35.016 15.545V33.61a1.143 1.143 0 0 1-2.285 0V15.545h2.285ZM4.855.323h-.002A3.731 3.731 0 0 0 1.61 2.178C.551 3.978.008 6.052 0 8.34c-.009 2.693 2.159 4.892 4.833 4.902h.018a4.819 4.819 0 0 0 3.425-1.414A4.82 4.82 0 0 0 9.703 8.39c0-2.313-.545-4.408-1.619-6.225A3.716 3.716 0 0 0 4.855.323Z" fill="#0A78FF"/><path d="M38.924 1.349c0-.566-.46-1.102-1.026-1.102-.565 0-1.1.536-1.1 1.102v5.76h-1.823v-5.76c0-.566-.535-1.102-1.102-1.102-.565 0-1.1.536-1.1 1.102v5.76H30.95v-5.76c0-.566-.535-1.102-1.101-1.102s-1.102.536-1.102 1.102v9.004a2.91 2.91 0 0 0 2.908 2.908h4.437A2.91 2.91 0 0 0 39 10.353l-.076-9.004Z" fill="#0A78FF"/></svg>
@@ -246,23 +246,20 @@
 				<div class="calendar__row u-container">
 					{% if block.heading %}
 						<div class="calendar__column">
-							<h2 class="calendar__heading">{{block.heading | raw }}</h2>
+							<h2 data-aos="fade-up" class="calendar__heading">{{block.heading | raw }}</h2>
 						</div>
 					{% endif %}
 
 
 					{% if block.summary %}
-						<div class="calendar__column">
+						<div data-aos="fade" class="calendar__column">
 							<p class="calendar__summary">{{block.summary}}</p>
 						</div>	
 					{% endif %}
 				</div>
-				<div class="calendar__wrapper">
+				<div data-aos="fade" class="calendar__wrapper">
 					<iframe title="Event Calendar for The Link" id="calendar" style="width: 100%; height: 100vh; border: none;" src="{{siteUrl}}/calendar/month" frameborder="0" scrolling="no"></iframe>
 				</div>
-				{# <div class="u-container">
-					{% include "_components/annual-events.twig" %}
-				</div> #}
 			</div>
 		</section>
 	{% elseif block.type == "annualEvents" %}
@@ -285,12 +282,12 @@
 					<div class="event-slider__row event-slider__row-top">
 						{% if block.heading and block.contentLocation != "none"%}
 							<div class="event-slider__column">
-								<h2 class="event-slider__heading">{{block.heading}}</h2>
+								<h2 data-aos="fade-up" class="event-slider__heading">{{block.heading}}</h2>
 							</div>
 						{% endif %}
 					</div>
 					{% if block.contentLocation == "top" %}
-						<div class="event-slider__row event-slider__row-top">
+						<div data-aos="fade" class="event-slider__row event-slider__row-top">
 							{% if block.summary %}
 								<div class="event-slider__column">
 									<p class="event-slider__summary">{{block.summary}}</p>
@@ -301,7 +298,7 @@
 								<div class="event-slider__column">
 									<a class="button button--arrow" href="{{block.buttonHref}}">
 										<span class="button__inner">
-										{{block.buttonText}}
+											{{block.buttonText}}
 										</span>
 									</a>
 								</div>	
@@ -319,7 +316,7 @@
 							{% endif %}
 							{% if image is defined %}
 							<li class="event-slider__slide glide__slide">
-								<picture class="event-slider__picture">
+								<picture data-aos="fade" class="event-slider__picture">
 									<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
 									<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
 									<img alt="{{image.alt}}" class="event-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
@@ -359,7 +356,7 @@
 					{% endif %}
 
 					{% if events | length > 1 %}
-					<div class="image-slider__controls event-slider__column" data-glide-el="controls">
+					<div data-aos="fade" class="image-slider__controls event-slider__column" data-glide-el="controls">
 						<button class="image-slider__arrow image-slider__arrow--left glide__arrow glide__arrow--left" title="previous slide" data-glide-dir="<">
 							<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M7.00047 11.2892C7.39047 10.8992 7.39047 10.2692 7.00047 9.87925L3.12047 5.99925L7.00047 2.11925C7.39047 1.72925 7.39047 1.09925 7.00047 0.709246C6.61047 0.319245 5.98047 0.319245 5.59047 0.709246L1.00047 5.29925C0.610469 5.68925 0.610469 6.31925 1.00047 6.70925L5.59047 11.2992C5.97047 11.6792 6.61047 11.6792 7.00047 11.2892Z" fill="#0B0E26"/>
@@ -402,7 +399,7 @@
 					<ul class="glide__slides">
 						{% for image in block.images %}
 						<li class="image-slider__slide glide__slide">
-							<picture class="image-slider__picture">
+							<picture data-aos="fade" class="image-slider__picture">
 								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 65vw'}) }}>
 								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 65vw'}) }}>
 								<img alt="{{image.alt}}" class="image-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
@@ -412,7 +409,7 @@
 					</ul>
 				</div>
 
-				<div class="image-slider__controls" data-glide-el="controls">
+				<div data-aos="fade" class="image-slider__controls" data-glide-el="controls">
 					<button class="image-slider__arrow image-slider__arrow--left glide__arrow glide__arrow--left" title="previous slide" data-glide-dir="<">
 						<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M7.00047 11.2892C7.39047 10.8992 7.39047 10.2692 7.00047 9.87925L3.12047 5.99925L7.00047 2.11925C7.39047 1.72925 7.39047 1.09925 7.00047 0.709246C6.61047 0.319245 5.98047 0.319245 5.59047 0.709246L1.00047 5.29925C0.610469 5.68925 0.610469 6.31925 1.00047 6.70925L5.59047 11.2992C5.97047 11.6792 6.61047 11.6792 7.00047 11.2892Z" fill="#0B0E26"/>
@@ -435,15 +432,15 @@
 	{% elseif block.type == "textColumnsWith3Images" %}
 		<section class="double-text-with-3-images">
 			<div class="u-container double-text-with-3-images__inner">
-				<div class="double-text-with-3-images__heading-row">
-					<h2 class="double-text-with-3-images__heading">{{block.heading}}</h2>
+				<div data-aos="fade" class="double-text-with-3-images__heading-row">
+					<h2 data-aos="fade-up" class="double-text-with-3-images__heading">{{block.heading}}</h2>
 					<a href={{block.buttonHref}} class="button button--outline button--arrow button--arrow-dark">
 						<span class="button__inner">
 							{{block.buttonText}}
 						</span>
 					</a>
 				</div>
-				<div class="double-text-with-3-images__text-row">
+				<div data-aos="fade" class="double-text-with-3-images__text-row">
 					{{block.text}}
 					<a href={{block.buttonHref}} class="button button--outline button--arrow button--arrow-dark">
 					<span class="button__inner">	
@@ -452,7 +449,7 @@
 				</div>
 				<div class="double-text-with-3-images__image-row">
 					{% for image in block.images %}
-						<picture class="double-text-with-3-images__picture">
+						<picture data-aos="fade" class="double-text-with-3-images__picture">
 							<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
 							<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
 							<img alt="{{image.alt}}" class="double-text-with-3-images__image" src={{image.url}} width={{image.width}} height={{image.height}}>
@@ -465,11 +462,11 @@
 	{% elseif block.type == "map" %}
 		<section class="map">
 			<div class="u-container map__inner">
-				<h2 class="map__heading">{{ block.heading }}</h2>
-				<div class="map__summary">
+				<h2 data-aos="fade-up" class="map__heading">{{ block.heading }}</h2>
+				<div data-aos="fade" class="map__summary">
 					{{ block.summary }}
 				</div>
-				<a href="{{ block.directionsLink }}" class="map__directions">Get directions ></a>
+				<a data-aos="fade" href="{{ block.directionsLink }}" class="map__directions">Get directions ></a>
 				<div id="map">
 					{{ block.iframeEmbed | raw }}
 				</div>
@@ -480,20 +477,20 @@
 		<section class="cta-cards">
 			<div class=" u-container cta-cards__inner">
 				<div class="cta-cards__item">
-					<h2 class="cta-cards__heading">{{block.cardHeading}}</h2>
-					<div class="cta-cards__cta">{{block.cardCta}}</div>
+					<h2 data-aos="fade-up" class="cta-cards__heading">{{block.cardHeading}}</h2>
+					<div data-aos="fade" class="cta-cards__cta">{{block.cardCta}}</div>
 					{% set image = block.cardImage.one() %}
-					<picture class="cta-cards__picture">
+					<picture data-aos="fade" class="cta-cards__picture">
 						<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
 						<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
 						<img alt="{{image.alt}}" class="cta-cards__image" src={{image.url}} width={{image.width}} height={{image.height}}>
 					</picture>
 				</div>
 				<div class="cta-cards__item">
-					<h2 class="cta-cards__heading">{{block.cardHeading2}}</h2>
-					<div class="cta-cards__cta">{{block.cardCta2}}</div>
+					<h2 data-aos="fade-up" class="cta-cards__heading">{{block.cardHeading2}}</h2>
+					<div data-aos="fade" class="cta-cards__cta">{{block.cardCta2}}</div>
 					{% set image = block.cardImage2.one() %}
-					<picture class="cta-cards">
+					<picture data-aos="fade" class="cta-cards">
 						<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
 						<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
 						<img alt="{{image.alt}}" class="cta-cards__image" src={{image.url}} width={{image.width}} height={{image.height}}>
@@ -509,7 +506,7 @@
 		{{ sprig('_components/featured-exhibit-rollup', {'limit': block.limit, 'title': block.title, 'exhibitionSummary': block.exhibitionSummary }) }}
 
 	{% elseif block.type == "contactDetails" %}
-		<section class="contact-details">
+		<section data-aos="fade" class="contact-details">
 			<div class="contact-details__inner u-container">
 				<div class="contact-details__row">
 					<div class="contact-details__column">

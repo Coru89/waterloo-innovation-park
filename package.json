@@ -6,6 +6,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/bootstrap": "^5.2.6",
     "@types/glidejs": "^1.0.31",
     "@types/glidejs__glide": "^3.6.1",
@@ -36,6 +37,7 @@
     "@glidejs/glide": "^3.6.0",
     "@popperjs/core": "^2.11.6",
     "@types/fancybox": "^3.5.3",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.2.3",
     "node-sass": "^8.0.0"
   }

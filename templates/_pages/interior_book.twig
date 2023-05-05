@@ -8,10 +8,10 @@
 			<div class="booking__row">
 				<div class="booking__column">
 					<div class="booking__picture-wrapper">
-						<h2 class="booking__heading">Book with us</h2>
+						<h2 data-aos="fade-up" class="booking__heading">Book with us</h2>
 						{% set image = entry.bookingPropertyManagerImage.one() %}
 						{% if image %}
-							<picture class="booking__picture">
+							<picture data-aos="fade" class="booking__picture">
 								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
 								<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [304, 320, 360, 412, 600, 768, 1024, 1280, 1440], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, 304px' , }) }}>
 								<img alt="{{image.alt}}" class="booking__image" src={{image.url}} width={{image.width}} height={{image.height}} loading="lazy">
@@ -19,7 +19,7 @@
 						{% endif %}
 					</div>
 
-					<div class="booking__content-wrapper">
+					<div data-aos="fade" class="booking__content-wrapper">
 						{% if entry.bookingPropertyManagerImageCaption %}		
 							<h4 class="booking__caption">{{entry.bookingPropertyManagerImageCaption}}</h4>
 						{% endif %}
@@ -37,8 +37,8 @@
 						{% endif %}
 					</div>
 				</div>
-				<div class="booking__column">
-					<h2 class="booking__heading-mobile">Book with us</h2>
+				<div data-aos="fade" class="booking__column">
+					<h2 data-aos="fade-up" class="booking__heading-mobile">Book with us</h2>
 					<div class="booking__intro">Plan your next private event or book the boardroom at The Link today!</div>
 					{% macro errorList(errors) %}
 						{% if errors %}

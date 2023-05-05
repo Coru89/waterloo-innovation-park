@@ -9,7 +9,7 @@
 
 		{% if image %}
 			<div>
-			<picture
+			<picture data-aos="fade"
 				class="gallery-card__picture"
 				{# setting image to use for fancybox image preview #}
 				data-fancybox data-caption="{{item.artName}}"
@@ -27,7 +27,7 @@
 
 		{% endif %}
 	</div>
-	<div class="gallery-card__text">
+	<div data-aos="fade" class="gallery-card__text">
 		<div class="gallery-card__name">{{item.artName}}</div>
 		<div class="gallery-card__price">{{item.price | money }}</div>
 		<div class="gallery-card__artist">{{item.artist}}{% if item.year %}, {{item.year}}{% endif %}</div>
