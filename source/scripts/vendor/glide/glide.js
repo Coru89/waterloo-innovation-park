@@ -1761,8 +1761,7 @@
          * @return {Void}
          */
         setupSlides: function setupSlides() {
-          var width = "".concat(this.slideWidth, "px");
-          //var width = '100px';
+          var width = this.slideWidth + 'px'
           var slides = Components.Html.slides;
 
           for (var i = 0; i < slides.length; i++) {
