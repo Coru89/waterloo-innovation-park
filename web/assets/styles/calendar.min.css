@@ -12524,55 +12524,6 @@ textarea.form-control-lg {
     text-align: right;
   }
 }
-.calendar__column-filters {
-  padding-top: 0;
-  margin: 0 auto;
-  max-width: 1280px;
-  padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-  padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-}
-@media (min-width: 768px) {
-  .calendar__column-filters {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-@media (min-width: 1052px) {
-  .calendar__column-filters {
-    padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-    padding-top: 3.75rem;
-    width: 25%;
-    max-width: 1280px;
-  }
-}
-@media (min-width: 768px) {
-  .calendar__column-month {
-    padding: 0;
-  }
-}
-@media (min-width: 1052px) {
-  .calendar__column-month {
-    padding-left: 0;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    width: 75%;
-  }
-}
-.calendar__column-week {
-  padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-  padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-}
-@media (min-width: 768px) {
-  .calendar__column-week {
-    padding: 0;
-  }
-}
-@media (min-width: 1052px) {
-  .calendar__column-week {
-    padding-left: 0;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    width: 75%;
-  }
-}
 .calendar__week-of {
   display: none;
 }
@@ -12618,6 +12569,55 @@ body {
     max-width: 1280px;
     padding-left: 1.125rem;
     padding-right: 1.125rem;
+  }
+}
+.calendar-layout__column {
+  padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+  padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+}
+@media (min-width: 768px) {
+  .calendar-layout__column {
+    padding: 0;
+  }
+}
+@media (min-width: 1052px) {
+  .calendar-layout__column {
+    padding-left: 0;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .calendar-layout__column-month {
+    padding: 0;
+  }
+}
+@media (min-width: 1052px) {
+  .calendar-layout__column-month {
+    padding-left: 0;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    width: 75%;
+  }
+}
+.calendar-layout__column-filters {
+  padding-top: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+  padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+}
+@media (min-width: 768px) {
+  .calendar-layout__column-filters {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1052px) {
+  .calendar-layout__column-filters {
+    padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+    padding-top: 3.75rem;
+    width: 25%;
+    max-width: 1280px;
   }
 }
 

@@ -12,185 +12,186 @@
         </div>
 		<br />
     {% endif %}
+    <div class="calendar-layout">
+        <div class="row">
+            <div class="calendar-layout__column">
+                <div id="events_calendar">
 
-	<div class="row">
-		<div class="col-md-9">
-			<div id="events_calendar">
-
-                {% set occurrenceDate = null %}
-                {% if segment4 and segment5 and segment6 %}
-                    {% set occurrenceDate = segment4~"-"~segment5~"-"~segment6 %}
-                {% endif %}
-
-                {% if event is not defined %}
-                    {% set event = craft.calendar.event(segment3, {targetDate: occurrenceDate}) %}
-
-                    {% if event and event.repeating %}
-                        {% set event = craft.calendar.addFirstOccurrenceDate(event) %}
+                    {% set occurrenceDate = null %}
+                    {% if segment4 and segment5 and segment6 %}
+                        {% set occurrenceDate = segment4~"-"~segment5~"-"~segment6 %}
                     {% endif %}
 
-                {% endif %}
+                    {% if event is not defined %}
+                        {% set event = craft.calendar.event(segment3, {targetDate: occurrenceDate}) %}
 
-                {% if event %}
-
-                    <div class="btn-group float-right" role="group" aria-label="actions">
-                        {% if craft.calendar.exportEnabled %}
-                            <a href="{{ siteUrl }}calendar/export/event/{{ segment3 }}"
-                               class="button btn-primary btn-sm"
-                               role="button">
-                                <span class="fas fa-file-export" aria-hidden="true"></span>
-                                &nbsp;Export Event
-                            </a>
+                        {% if event and event.repeating %}
+                            {% set event = craft.calendar.addFirstOccurrenceDate(event) %}
                         {% endif %}
 
-                        <!-- {% if craft.calendar.canEditEvent(event) %}
-                            <a href="{{ siteUrl }}calendar/edit/event/{{ segment3 }}"
-                               class="button btn-warning btn-sm"
-                               role="button">
-                                <span class="fas fa-edit"></span>
-                                &nbsp;Edit
-                            </a>
-                        {% endif %} -->
-                    </div>
-
-                    <h3>{{ event.title }}</h3>
-
-                    {% if (event.eventImage | length) == 1 %}
-                        {% set image = event.eventImage.one() %}
-                    {% endif %}
-                    
-                    {% if image is defined %}
-                    <picture data-aos="fade" class="event__picture">
-                        <source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '80vw'}) }}>
-                        <source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '80vw'}) }}>
-                        <img style="width: 100%; height: auto;" alt="image.alt" src={{image.url}} width={{image.width}} height={{image.height}}>
-                    </picture>
                     {% endif %}
 
-                    <table class="table table-striped mt-3">
-                        <tr>
-                            <th style="width: 20%;">Calendar</th>
-                            <td>
-                                <span class="fas fa-calendar-alt" style="color: {{ event.calendar.color }};"></span>&nbsp;
-                                <a href="{{ siteUrl }}calendar/calendars/{{ event.calendar.handle }}" style="color: {{ event.calendar.color }};">
-                                    {{ event.calendar.name }}
+                    {% if event %}
+
+                        <div class="btn-group float-right" role="group" aria-label="actions">
+                            {% if craft.calendar.exportEnabled %}
+                                <a href="{{ siteUrl }}calendar/export/event/{{ segment3 }}"
+                                class="button btn-primary btn-sm"
+                                role="button">
+                                    <span class="fas fa-file-export" aria-hidden="true"></span>
+                                    &nbsp;Export Event
                                 </a>
-                            </td>
-                        </tr>
-                        {% if event['location'] is defined and event.location is not empty %}
+                            {% endif %}
+
+                            <!-- {% if craft.calendar.canEditEvent(event) %}
+                                <a href="{{ siteUrl }}calendar/edit/event/{{ segment3 }}"
+                                class="button btn-warning btn-sm"
+                                role="button">
+                                    <span class="fas fa-edit"></span>
+                                    &nbsp;Edit
+                                </a>
+                            {% endif %} -->
+                        </div>
+
+                        <h3>{{ event.title }}</h3>
+
+                        {% if (event.eventImage | length) == 1 %}
+                            {% set image = event.eventImage.one() %}
+                        {% endif %}
+                        
+                        {% if image is defined %}
+                        <picture data-aos="fade" class="event__picture">
+                            <source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '80vw'}) }}>
+                            <source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '80vw'}) }}>
+                            <img style="width: 100%; height: auto;" alt="image.alt" src={{image.url}} width={{image.width}} height={{image.height}}>
+                        </picture>
+                        {% endif %}
+
+                        <table class="table table-striped mt-3">
                             <tr>
-                                <th>Location</th>
+                                <th style="width: 20%;">Calendar</th>
                                 <td>
-                                    {{ event.location }}
+                                    <span class="fas fa-calendar-alt" style="color: {{ event.calendar.color }};"></span>&nbsp;
+                                    <a href="{{ siteUrl }}calendar/calendars/{{ event.calendar.handle }}" style="color: {{ event.calendar.color }};">
+                                        {{ event.calendar.name }}
+                                    </a>
                                 </td>
                             </tr>
-                        {% endif %}
-                        <tr>
-                            <th>Date</th>
-                            <td>
-                                {{ event.startDate.format('l, F j, Y') }}
-
-                                {% if event.allDay %}
-                                    (all day)
-                                {% else %}
-                                    at {{ event.startDate.format("g:ia") }} -
-                                    {% if event.multiDay %}
-                                        <br />{{ event.endDate.format("l, F j, Y \\a\\t g:ia") }}
-                                    {% else %}
-                                        {{ event.endDate.format("g:ia") }}
-                                    {% endif %}
-                                {% endif %}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Duration</th>
-                            <td>
-                                <span class="far fa-clock"></span>&nbsp;
-                                {{ event.duration.humanReadable }}
-                            </td>
-                        </tr>
-                        {% if event['description'] is defined and event.description is not empty %}
+                            {% if event['location'] is defined and event.location is not empty %}
+                                <tr>
+                                    <th>Location</th>
+                                    <td>
+                                        {{ event.location }}
+                                    </td>
+                                </tr>
+                            {% endif %}
                             <tr>
-                                <th>Details</th>
-                                <td>{{ event.description }}</td>
+                                <th>Date</th>
+                                <td>
+                                    {{ event.startDate.format('l, F j, Y') }}
+
+                                    {% if event.allDay %}
+                                        (all day)
+                                    {% else %}
+                                        at {{ event.startDate.format("g:ia") }} -
+                                        {% if event.multiDay %}
+                                            <br />{{ event.endDate.format("l, F j, Y \\a\\t g:ia") }}
+                                        {% else %}
+                                            {{ event.endDate.format("g:ia") }}
+                                        {% endif %}
+                                    {% endif %}
+                                </td>
                             </tr>
-                        {% endif %}
-                        <!-- <tr>
-                            <th>Repeats?</th>
-                            <td>
-                                {% if event.repeating %}
-                                    <span class="fas fa-redo"></span>&nbsp;
-                                    Repeats {{ event.readableRepeatRule }}
-                                {% else %}
-                                    No
-                                {% endif %}
-                            </td>
-                        </tr> -->
+                            <tr>
+                                <th>Duration</th>
+                                <td>
+                                    <span class="far fa-clock"></span>&nbsp;
+                                    {{ event.duration.humanReadable }}
+                                </td>
+                            </tr>
+                            {% if event['description'] is defined and event.description is not empty %}
+                                <tr>
+                                    <th>Details</th>
+                                    <td>{{ event.description }}</td>
+                                </tr>
+                            {% endif %}
+                            <!-- <tr>
+                                <th>Repeats?</th>
+                                <td>
+                                    {% if event.repeating %}
+                                        <span class="fas fa-redo"></span>&nbsp;
+                                        Repeats {{ event.readableRepeatRule }}
+                                    {% else %}
+                                        No
+                                    {% endif %}
+                                </td>
+                            </tr> -->
 
-                        {% if event.repeating %}
-                        <tr>
-                            <th>Upcoming Recurrences</th>
-                            <td>
-                                {% set occurrences = event.occurrences({
-                                    rangeStart: 'today',
-                                    rangeEnd: '+6 months',
-                                    limit: 10,
-                                }) %}
+                            {% if event.repeating %}
+                            <tr>
+                                <th>Upcoming Recurrences</th>
+                                <td>
+                                    {% set occurrences = event.occurrences({
+                                        rangeStart: 'today',
+                                        rangeEnd: '+6 months',
+                                        limit: 10,
+                                    }) %}
 
-                                {% if occurrences %}
-                                    <ul class="list-group">
-                                        {% for occurrence in occurrences %}
-                                            <li class="list-group-item d-flex align-items-center" style="border-left: 5px solid {{ occurrence.calendar.color }};">
-                                                <small class="mr-auto">
-                                                    <span class="far fa-clock"></span>&nbsp;
-                                                    {{ occurrence.startDate.format("l, F j, Y") }}
+                                    {% if occurrences %}
+                                        <ul class="list-group">
+                                            {% for occurrence in occurrences %}
+                                                <li class="list-group-item d-flex align-items-center" style="border-left: 5px solid {{ occurrence.calendar.color }};">
+                                                    <small class="mr-auto">
+                                                        <span class="far fa-clock"></span>&nbsp;
+                                                        {{ occurrence.startDate.format("l, F j, Y") }}
 
-                                                    {% if occurrence.allDay %}
-                                                        (all day)
-                                                    {% else %}
-                                                        at {{ occurrence.startDate.format("g:ia") }}
-                                                        {% if occurrence.multiDay %}
-                                                            <br />{{ occurrence.endDate.format("l, F j, Y \\a\\t g:ia") }}
+                                                        {% if occurrence.allDay %}
+                                                            (all day)
                                                         {% else %}
-                                                            {{ occurrence.endDate.format("g:ia") }}
+                                                            at {{ occurrence.startDate.format("g:ia") }}
+                                                            {% if occurrence.multiDay %}
+                                                                <br />{{ occurrence.endDate.format("l, F j, Y \\a\\t g:ia") }}
+                                                            {% else %}
+                                                                {{ occurrence.endDate.format("g:ia") }}
+                                                            {% endif %}
                                                         {% endif %}
-                                                    {% endif %}
-                                                </small>
+                                                    </small>
 
-                                                <a href="{{ siteUrl }}calendar/event/{{ occurrence.id }}/{{ occurrence.startDate.format("Y/m/d") }}" class="badge mr-2"
-                                                   style="background-color: {{ occurrence.calendar.color }}; color: {{ occurrence.calendar.contrastColor }} !important;">
-                                                    View Recurrence
-                                                </a>
-                                                <a class="badge badge-primary"
-                                                   href="{{ siteUrl }}calendar/day/{{ occurrence.startDate.format("Y/m/d") }}">
-                                                    View Day in Calendar
-                                                </a>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                {% else %}
-                                    <p>No occurrences found for this timeframe (next 6 months from today).</p>
-                                {% endif %}
-                            </td>
-                        </tr>
-                        {% endif %}
-                    </table>
+                                                    <a href="{{ siteUrl }}calendar/event/{{ occurrence.id }}/{{ occurrence.startDate.format("Y/m/d") }}" class="badge mr-2"
+                                                    style="background-color: {{ occurrence.calendar.color }}; color: {{ occurrence.calendar.contrastColor }} !important;">
+                                                        View Recurrence
+                                                    </a>
+                                                    <a class="badge badge-primary"
+                                                    href="{{ siteUrl }}calendar/day/{{ occurrence.startDate.format("Y/m/d") }}">
+                                                        View Day in Calendar
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% else %}
+                                        <p>No occurrences found for this timeframe (next 6 months from today).</p>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endif %}
+                        </table>
 
-                {% else %}
-                    <div class="alert alert-danger" role="alert">
-                        <p class="lead">
-                            Sorry, no event was found.
-                        </p>
-                    </div>
-                {% endif %}
-			</div>
+                    {% else %}
+                        <div class="alert alert-danger" role="alert">
+                            <p class="lead">
+                                Sorry, no event was found.
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
 
-		</div>
+            </div>
 
-		<div class="col-md-3">
-            {% include "calendar/layouts/_sidebar.html" %}
-		</div>
+            <div class="calendar-layout__column-filters">
+                {% include "calendar/layouts/_sidebar.html" %}
+            </div>
 
+        </div>
     </div>
 
 {% endblock %}

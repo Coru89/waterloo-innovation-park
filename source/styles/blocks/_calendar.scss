@@ -25,54 +25,24 @@ $block: "calendar";
       }
     }
 
-    &-filters {
-      padding-top: 0;
-      margin: 0 auto;
-      max-width: 1280px;
-      // padding-left: 1.125rem;
-      // padding-right: 1.125rem;
-      padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-      padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
 
-      @include media-min(md) {
-        padding-right: 0;
-        padding-left: 0;
-      }
-      
-      @include media-min(lg) {
-        padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-        padding-top: 3.75rem;
-        width: 25%;
-        max-width: 1280px;
-      }
-    }
 
-    &-month {
-      @include media-min(md) {
-        padding: 0;
-      }
 
-      @include media-min(lg) {
-        padding-left: 0;
-        padding-right: calc(var(--bs-gutter-x) * 0.5);
-        width: 75%;
-      }
-    }
 
-    &-week {
-      padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-      padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+    // &-week {
+    //   padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+    //   padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
 
-      @include media-min(md) {
-         padding: 0;
-      }
+    //   @include media-min(md) {
+    //      padding: 0;
+    //   }
 
-      @include media-min(lg) {
-        padding-left: 0;
-        padding-right: calc(var(--bs-gutter-x) * 0.5);
-        width: 75%;
-      }
-    }
+    //   @include media-min(lg) {
+    //     padding-left: 0;
+    //     padding-right: calc(var(--bs-gutter-x) * 0.5);
+    //     width: 75%;
+    //   }
+    // }
   }
 
   &__week-of {
@@ -122,6 +92,55 @@ body {
       padding-right: 1.125rem;
     }
 
+  }
+
+  &__column {
+    padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+    padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+
+    @include media-min(md) {
+       padding: 0;
+    }
+
+    @include media-min(lg) {
+      padding-left: 0;
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      width: 75%;
+    }
+
+    &-month {
+      @include media-min(md) {
+        padding: 0;
+      }
+
+      @include media-min(lg) {
+        padding-left: 0;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        width: 75%;
+      }
+    }
+
+    &-filters {
+      padding-top: 0;
+      margin: 0 auto;
+      max-width: 1280px;
+      // padding-left: 1.125rem;
+      // padding-right: 1.125rem;
+      padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+      padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+
+      @include media-min(md) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      
+      @include media-min(lg) {
+        padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
+        padding-top: 3.75rem;
+        width: 25%;
+        max-width: 1280px;
+      }
+    }
   }
 }
 
