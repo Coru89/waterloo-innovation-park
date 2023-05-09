@@ -8,4 +8,4 @@ import { animate } from './animate'
 
 
 
-export { readmore, Nav, Calendar, fancybox, slider, form, animate };
+export { animate, readmore, Nav, Calendar, fancybox, form, slider };
