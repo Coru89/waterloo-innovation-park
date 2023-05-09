@@ -90,11 +90,11 @@ export namespace slider {
         var glide = new Glide('.glide-event', {
             type: 'carousel',
             gap: 30,
-            focusAt: 'center',
-            peek: {
-                 before: 18,
-                 after: 18
-             }
+            focusAt: 'center'
+            // peek: {
+            //      before: 18,
+            //      after: 18
+            //  }
         })      
     
             // fixes cumulative layout shift

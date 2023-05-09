@@ -2435,8 +2435,8 @@
          */
         modify: function modify(translate) {
           var gap = Components.Gaps.value;
-          //var width = Components.Sizes.width;
-          var width = this.slideWidth + 'px'
+          var width = Components.Sizes.width;
+          //var width = '1280px';
           var focusAt = Glide.settings.focusAt;
           var slideWidth = Components.Sizes.slideWidth;
 
