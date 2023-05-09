@@ -1832,7 +1832,7 @@
         get: function get() {
           /**** CUSTOMIZATION TO FORCE SIZE ****/
           
-          const widthContainer = document.querySelector('.u-container').offsetWidth;
+          const widthContainer = document.querySelector('.event-slider__row-bottom').offsetWidth;
           console.log(document.querySelector('.u-container'));
           console.log('widthContainer', widthContainer);
 

@@ -8,7 +8,7 @@ export namespace slider {
     const glideEl = document.querySelector('.glide');
     const glideEventEl = document.querySelector('.glide-event');
     const glideInstaEl = document.querySelector('.instagram-glide');
-    const containerEl = document.querySelector('.u-container');
+    const containerEl = document.querySelector('.event-slider__row-bottom');
 
     if (glideEl) {
         initImageGlide();
