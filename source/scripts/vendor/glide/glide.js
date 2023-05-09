@@ -1833,7 +1833,6 @@
           /**** CUSTOMIZATION TO FORCE SIZE ****/
           
           const widthContainer = document.querySelector('.event-slider__row-bottom').offsetWidth;
-          console.log(document.querySelector('.u-container'));
           console.log('widthContainer', widthContainer);
 
           return widthContainer / Glide.settings.perView - Components.Peek.reductor - Components.Gaps.reductor;
@@ -2359,8 +2358,11 @@
          * @return {Number}
          */
         modify: function modify(translate) {
+          const widthContainer = document.querySelector('.event-slider__row-bottom').offsetWidth;
           var multiplier = Math.floor(translate / Components.Sizes.slideWidth);
+          //var multiplier = Math.floor(translate / Components.Sizes.slideWidth);
           return translate + Components.Gaps.value * multiplier;
+          //return translate + Components.Gaps.value;
         }
       };
     }
@@ -2436,6 +2438,7 @@
         modify: function modify(translate) {
           var gap = Components.Gaps.value;
           var width = Components.Sizes.width;
+          console.log('width', width);
           //var width = '1280px';
           var focusAt = Glide.settings.focusAt;
           var slideWidth = Components.Sizes.slideWidth;
