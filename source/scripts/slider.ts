@@ -89,7 +89,7 @@ export namespace slider {
     function initEventGlide() {
         var glide = new Glide('.glide-event', {
             type: 'carousel',
-            gap: 30,
+            //gap: 30,
             focusAt: 'center'
             // peek: {
             //      before: 18,
@@ -98,11 +98,11 @@ export namespace slider {
         })      
     
             // fixes cumulative layout shift
-            glide.on(['build.before'], function() {
-                if (glideEl) {
-                    glideEl.classList.add('image-slider--visible');
-                }
-              });
+            // glide.on(['build.before'], function() {
+            //     if (glideEl) {
+            //         glideEl.classList.add('image-slider--visible');
+            //     }
+            //   });
     
               glide.mount()
     }
