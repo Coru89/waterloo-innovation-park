@@ -43,13 +43,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd # Waterloo Innovation Park Hours of Operation
+            fieldUid: 6d96ccd6-4f9c-4b84-b531-cdf34d487529 # Waterloo Innovation Park Contact Message
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 08aed9a8-1529-403d-82d6-59a3f9eae224
+            uid: 6c99bce9-6257-44d6-8b4e-fc72b7f07d8a
             userCondition: null
             warning: null
             width: 100
@@ -187,6 +187,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd # The Link Hours of Operation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08aed9a8-1529-403d-82d6-59a3f9eae224
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 6f3a3a27-541a-4c9a-a2ed-48831a335e49 # The Link Phone Link
             instructions: null
             label: null
@@ -221,42 +233,10 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 0a351d7f-aa37-4d4b-8cbc-822719d3e521 # The Link Email Display
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 50e8c107-873d-497a-aacd-a2d1d82dd231
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: e052d9ee-ca0a-4e1b-b451-41a37658bdc8
         userCondition: null
 fields:
-  0a351d7f-aa37-4d4b-8cbc-822719d3e521: # The Link Email Display
-    columnSuffix: yrrbjohg
-    contentColumnType: text
-    fieldGroup: null
-    handle: theLinkEmailDisplay
-    instructions: null
-    name: 'The Link Email Display'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   2fd8d280-fb8e-43d9-b018-a532fa8ca8d0: # The Link Address Line 2
     columnSuffix: fhelkrxu
     contentColumnType: text
@@ -324,6 +304,26 @@ fields:
     handle: wipEmergencyPhoneLink
     instructions: null
     name: 'Waterloo Innovation Park Emergency Phone Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6d96ccd6-4f9c-4b84-b531-cdf34d487529: # Waterloo Innovation Park Contact Message
+    columnSuffix: wnriqndi
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipContactMessage
+    instructions: null
+    name: 'Waterloo Innovation Park Contact Message'
     searchable: false
     settings:
       byteLimit: null
@@ -417,13 +417,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd: # Waterloo Innovation Park Hours of Operation
+  1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd: # The Link Hours of Operation
     columnSuffix: oxghlrrq
     contentColumnType: text
     fieldGroup: null
-    handle: wipHoursOfOperation
+    handle: theLinkHoursOfOperation
     instructions: null
-    name: 'Waterloo Innovation Park Hours of Operation'
+    name: 'The Link Hours of Operation'
     searchable: false
     settings:
       byteLimit: null

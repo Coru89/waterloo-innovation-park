@@ -522,7 +522,7 @@
 					</div>
 					<div class="contact-details__column">
 						<ul class="contact-details__list">
-							<li class="contact-details__item"><span class="contact-details__label">Hours of Operation: </span>{{block.wipHoursOfOperation}}</li>
+							<h4 class="contact-details__inquiry">{{ block.wipContactMessage }}</h4>
 							<li class="contact-details__item"><span class="contact-details__label">General Inquiries: </span><a href="{{block.wipInquiriesEmailLink}}" class="contact-details__link">Send us an e-mail</a></li>
 							<li class="contact-details__item"><span class="contact-details__label">General Inquiries Phone: </span><a href="{{block.wipInquiriesPhoneLink}}" class="contact-details__link">{{block.wipInquiriesPhoneDisplay}}</a></li>
 							<li class="contact-details__item"><span class="contact-details__label">Leasing: </span><a href={{block.wipLeasingPhoneLink}} class="contact-details__link">{{block.wipLeasingPhoneDisplay}}</a></li>
@@ -544,8 +544,10 @@
 					</div>
 					<div class="contact-details__column">
 						<h4 class="contact-details__inquiry">{{ block.theLinkContactMessage }}</h4>
+						<div class="contact-details__item"><span class="contact-details__label">Hours of Operation: </span>{{block.theLinkHoursOfOperation}}</div>
 						<div class="contact-details__item"><span class="contact-details__label">Tel: </span><a class="contact-details__tel-link" href={{ block.theLinkPhoneLink }}>{{block.theLinkPhoneDisplay}}</a></div>
-						<div class="contact-details__item"><a class="contact-details__email-link" href={{block.theLinkEmailLink}}>{{block.theLinkEmailDisplay}}</a></div> 
+						<div class="contact-details__item"><span class="contact-details__label">General Inquiries: </span><a href="{{block.theLinkEmailLink}}" class="contact-details__link">Send us an e-mail</a></div>
+						{# <div class="contact-details__item"><a class="contact-details__email-link" href={{block.theLinkEmailLink}}>{{block.theLinkEmailDisplay}}</a></div>  #}
 					</div>
 				</div>
 			</div>

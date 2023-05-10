@@ -1,4 +1,4 @@
-dateModified: 1683186128
+dateModified: 1683690148
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -72,6 +72,7 @@ meta:
     6a083dd0-c3a0-40c7-a437-2c5c4610fa50: Heading # Heading
     6aa515b4-55f0-4be2-811d-a261d6ff4532: 'Main Content' # Main Content
     6c5990ae-a749-4e23-b10b-0c65891d8383: 'Waterloo Innovation Park Emergency Phone Link' # Waterloo Innovation Park Emergency Phone Link
+    6d96ccd6-4f9c-4b84-b531-cdf34d487529: 'Waterloo Innovation Park Contact Message' # Waterloo Innovation Park Contact Message
     6dc1ef68-7606-4254-8f3e-ab00a4a0b146: 'Button Link' # Button Link
     6f01e9c8-9af2-4589-8d81-a9ed56130cc9: 'Job Title' # Job Title
     6f3a3a27-541a-4c9a-a2ed-48831a335e49: 'The Link Phone Link' # The Link Phone Link
@@ -147,7 +148,7 @@ meta:
     775aefd3-8b22-4769-bea7-4c07cef58476: 'Page Summary' # Page Summary
     809ce6db-5c77-4e75-9eb9-1d42abe1485b: 'Event Slider Details' # Event Slider Details
     903cf4e1-deba-4181-804b-66520fe03fdc: Image # Image
-    1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd: 'Waterloo Innovation Park Hours of Operation' # Waterloo Innovation Park Hours of Operation
+    1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd: 'The Link Hours of Operation' # The Link Hours of Operation
     1057c048-812f-4e87-b8f7-208e91e4c8fc: 'Button Text' # Button Text
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
     4197b684-37e8-427d-9ed0-80a7712911bc: '2 Text Columns With 3 Images' # 2 Text Columns With 3 Images
