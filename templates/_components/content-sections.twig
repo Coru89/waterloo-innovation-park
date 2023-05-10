@@ -66,6 +66,9 @@
 		</section>
 	{% elseif block.type == "instagram" %}
 		{% set items = craft.instagram.getFeed(block.account) %}
+
+		<script>console.log('items', {{ items | json_encode | raw }});</script>
+		<script>console.log('block.account', {{ block.account | json_encode | raw }});</script>
 		<section class="instagram instagram-glide">
 			<div class="u-container instagram__inner">
 				<div class="u-container instagram__heading-container">
