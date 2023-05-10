@@ -1,4 +1,4 @@
-dateModified: 1683700419
+dateModified: 1683700575
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -282,7 +282,7 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       dump: false
-      instagramUser: thelink_innovationpark
+      instagramUser: lostleblanc
       proxyKey: GPdOk5ibUUjHwnOn8fnY
       subpath: ''
       timeout: 10
