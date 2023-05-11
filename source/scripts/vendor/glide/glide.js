@@ -1832,7 +1832,7 @@
         get: function get() {
           /**** CUSTOMIZATION TO FORCE SIZE ****/
           
-          const widthContainer = document.querySelector('.event-slider__row-bottom').offsetWidth;
+          const widthContainer = document.querySelector('.u-container').offsetWidth;
           // console.log('widthContainer', widthContainer);
 
           return widthContainer / Glide.settings.perView - Components.Peek.reductor - Components.Gaps.reductor;
@@ -2358,7 +2358,7 @@
          * @return {Number}
          */
         modify: function modify(translate) {
-          const widthContainer = document.querySelector('.event-slider__row-bottom').offsetWidth;
+          const widthContainer = document.querySelector('.u-container').offsetWidth;
           var multiplier = Math.floor(translate / Components.Sizes.slideWidth);
           //var multiplier = Math.floor(translate / Components.Sizes.slideWidth);
           return translate + Components.Gaps.value * multiplier;

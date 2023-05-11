@@ -1,8 +1,6 @@
-//import Glide from'@glidejs/glide';
-
 /// <reference path="./vendor/glide/glide.d.ts" />
 
-import Glide from './vendor/glide/glide.js';
+import Glide from './vendor/glide/glide.js'; // using a customized version of glide
 
 export namespace slider {
     const glideEl = document.querySelector('.glide');
@@ -97,14 +95,14 @@ export namespace slider {
               }
         })      
     
-            // fixes cumulative layout shift
-            // glide.on(['build.before'], function() {
-            //     if (glideEl) {
-            //         glideEl.classList.add('image-slider--visible');
-            //     }
-            //   });
+        // fixes cumulative layout shift
+        glide.on(['build.before'], function() {
+            if (glideEl) {
+                glideEl.classList.add('image-slider--visible');
+            }
+        });
     
-              glide.mount()
+        glide.mount()
     }
 }
 
