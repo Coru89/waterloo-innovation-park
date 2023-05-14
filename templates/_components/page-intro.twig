@@ -1,7 +1,7 @@
-<div class="page-intro">
+<div data-aos="fade-up" class="page-intro">
 	<div class="page-intro__inner u-container">
 		<div class="page-intro__row">
-			<h1 data-aos="fade-up" class="page-intro__heading">{{entry.pageHeading}}</h1>
+			<h1 class="page-intro__heading">{{entry.pageHeading}}</h1>
 			{% set url = craft.app.request.url %}
 			{% if url == "/the-link" %}
 				<div data-aos="fade" class="page-intro__open-message">

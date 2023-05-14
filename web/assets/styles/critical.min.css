@@ -2239,11 +2239,6 @@ p {
   }
 }
 @media (min-width: 1052px) {
-  .nav__item--mobile {
-    display: none;
-  }
-}
-@media (min-width: 1052px) {
   .nav__item--has-level-2 {
     padding-right: 19px;
     pointer-events: all;
