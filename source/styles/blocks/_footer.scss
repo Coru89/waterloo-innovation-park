@@ -79,11 +79,11 @@ $block: "footer";
       }
     }
 
-    &--mobile {
-      & svg {
-        height: auto;
-        width: 187px;
-      }
+    &--mobile,
+    &--mobile svg {
+      display: block;
+      height: auto;
+      width: 187px;
 
       @include media-min(lg) {
         display: none;
