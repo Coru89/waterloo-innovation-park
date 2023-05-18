@@ -25,17 +25,20 @@
 		<!--Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link
-		rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
 		<!--Humans -->
-		<link
-		rel="author" href="/humans.txt"/>
+		<link rel="author" href="/humans.txt"/>
 
 		<!--Inline the critical CSS. -->
 		<style>
-			.event-slider__row-bottom {
+			.u-container {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				margin: 0 auto;
 				max-width: 1280px;
+				padding-left: 1.125rem;
+				padding-right: 1.125rem;
 			}
 		</style>
 		<link
@@ -62,6 +65,7 @@
 	{% set segment7 = craft.app.request.segment(7) %}
 
 	<body class="body {{ body_class }}">
+		<script>0</script>
 		<div class="body__wrapper">
 			<header class="header">
 				<div class="u-container">
@@ -91,7 +95,6 @@
 			{% include '_components/footer' %}
 
 		</div>
-
 		<script type="module" src="/assets/scripts/bundle.min.js" async defer></script>
 	</body>
 
