@@ -1833,7 +1833,6 @@
           /**** CUSTOMIZATION TO FORCE SIZE ****/
           
           const widthContainer = document.querySelector('.u-container').offsetWidth;
-          // console.log('widthContainer', widthContainer);
 
           return widthContainer / Glide.settings.perView - Components.Peek.reductor - Components.Gaps.reductor;
           //return Sizes.width / Glide.settings.perView - Components.Peek.reductor - Components.Gaps.reductor;
@@ -2438,8 +2437,6 @@
         modify: function modify(translate) {
           var gap = Components.Gaps.value;
           var width = Components.Sizes.width;
-          // console.log('width', width);
-          //var width = '1280px';
           var focusAt = Glide.settings.focusAt;
           var slideWidth = Components.Sizes.slideWidth;
 
