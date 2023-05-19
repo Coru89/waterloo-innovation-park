@@ -1,0 +1,27 @@
+columnSuffix: wyywgxox
+contentColumnType: text
+fieldGroup: 24a64e3b-2ad3-479e-89dc-1c16e57368ac # Booking
+handle: bookingContactInfo
+instructions: null
+name: 'Booking Contact Info'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

@@ -1,4 +1,4 @@
-dateModified: 1684392817
+dateModified: 1684477283
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -172,6 +172,7 @@ meta:
     38134199-860e-4c8f-9bc6-d1e314e1884a: Leasing # Leasing
     87976032-e2ff-41bd-a53c-f0e4719793b4: Lease # Lease
     89833881-16ce-4ec4-abfd-1f352dc99fd8: Common # Common
+    a03da100-4469-4fa1-925f-20e983f46792: 'Waterloo Innovation Park Inquiries Phone Link 2' # Waterloo Innovation Park Inquiries Phone Link 2
     a2e73538-875e-457d-89e7-33b9ac275d91: 'Contact Details' # Contact Details
     a4bee935-0cad-484e-8012-3896bc1f8544: 'Exhibit Rollup' # Exhibit Rollup
     a4f9aa02-65e9-4d0c-8726-9a5782e118c8: 'Waterloo Innovation Park Inquiries Email Link' # Waterloo Innovation Park Inquiries Email Link
@@ -186,6 +187,7 @@ meta:
     b03ae735-63e6-44c4-9ab7-08c44d6089e4: 'Annual Events' # Annual Events
     b1c63a82-dac1-486f-a4f0-a01d8bd252d6: 'Image Vertical Position' # Image Vertical Position
     b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
+    b4a72afd-9824-4711-8c7c-654a73ab4125: 'Waterloo Innovation Park Inquiries Phone Display 2' # Waterloo Innovation Park Inquiries Phone Display 2
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
     b7cc4e3f-4830-4d21-8c33-0fd45bf0efdf: Facebook # Facebook
     b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
@@ -214,6 +216,7 @@ meta:
     d71f2b99-711c-44b6-ade1-1f5ed6237842: 'Featured Exhibit' # Featured Exhibit
     d970ca81-be2c-4ab3-a6d4-156dafe345fe: 'Waterloo Innovation Park Inquiries Phone Link' # Waterloo Innovation Park Inquiries Phone Link
     d4461882-7624-4f6f-ac6c-c06ea4a4689d: 'The Link Email Link' # The Link Email Link
+    dd3a546e-11a2-4fd7-a835-04974a2d24ff: 'Booking Contact Info' # Booking Contact Info
     dd6f9a8d-814f-456d-8fc3-d60933f1ed0a: 'Heading - Card 2' # Heading - Card 2
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
     e12bca54-c3b9-4ba0-9641-31e98bd18527: 'Remove padding top?' # Remove padding top?

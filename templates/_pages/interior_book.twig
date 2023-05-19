@@ -24,7 +24,13 @@
 							<h4 class="booking__caption">{{entry.bookingPropertyManagerImageCaption}}</h4>
 						{% endif %}
 
-						{% if entry.bookingPropertyManagerEmail %}
+						{% if entry.bookingContactInfo %}
+							<div class="booking__email-container">
+								{{ entry.bookingContactInfo }}
+							</div>
+						{% endif %}
+
+						{# {% if entry.bookingPropertyManagerEmail %}
 							<div class="booking__email-container">
 								<a href="mailto:{{entry.bookingPropertyManagerEmail}}" class="booking__email">{{entry.bookingPropertyManagerEmail}}</a>
 							</div>
@@ -33,7 +39,7 @@
 						{% if entry.bookingPropertyManagerPhoneDisplay and entry.bookingPropertyManagerPhoneLink %}
 							<div class="booking__phone-container">
 								<span>Tel: <a href={{entry.bookingPropertyManagerPhoneLink}} class="booking__phone">{{entry.bookingPropertyManagerPhoneDisplay}}</a></span>
-							</div>
+							</div> #}
 						{% endif %}
 					</div>
 				</div>

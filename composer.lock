@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a716abb5672e83380ba72fe83881939",
+    "content-hash": "fa0a2437100f7b1f67a48f3318751ae4",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -533,11 +533,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.10",
+            "version": "4.4.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/0fab7ae5c678f9f10c61d1442d3371efb32c809c",
-                "reference": "0fab7ae5c678f9f10c61d1442d3371efb32c809c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/0fd0229217c6afdb0ca581c19e271600538ecb07",
+                "reference": "0fd0229217c6afdb0ca581c19e271600538ecb07",
                 "shasum": ""
             },
             "require": {
@@ -628,7 +628,7 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2023-05-09T21:59:21+00:00"
+            "time": "2023-05-15T16:46:33+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1256,11 +1256,11 @@
         },
         {
             "name": "ether/seo",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethercreative/seo/zipball/e377939307f6ed2e74f78b6c7ca7bc037b652cb7",
-                "reference": "e377939307f6ed2e74f78b6c7ca7bc037b652cb7",
+                "url": "https://api.github.com/repos/ethercreative/seo/zipball/a9a6c9c1fee943f44ed09277f1c0e21ca279067d",
+                "reference": "a9a6c9c1fee943f44ed09277f1c0e21ca279067d",
                 "shasum": ""
             },
             "require": {
@@ -1288,7 +1288,7 @@
                 "issues": "https://github.com/ethercreative/seo",
                 "docs": "https://github.com/ethercreative/seo/blob/v3/README.md"
             },
-            "time": "2023-04-19T14:29:24+00:00"
+            "time": "2023-05-15T15:40:31+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1531,11 +1531,11 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.5.1",
+            "version": "7.6.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b964ca597e86b752cd994f27293e9fa6b6a95ed9",
-                "reference": "b964ca597e86b752cd994f27293e9fa6b6a95ed9",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8444a2bacf1960bc6a2b62ed86b8e72e11eebe51",
+                "reference": "8444a2bacf1960bc6a2b62ed86b8e72e11eebe51",
                 "shasum": ""
             },
             "require": {
@@ -1559,9 +1559,6 @@
                 "bamarni-bin": {
                     "bin-links": true,
                     "forward-command": false
-                },
-                "branch-alias": {
-                    "dev-master": "7.5-dev"
                 }
             },
             "autoload": {
@@ -1624,7 +1621,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2023-04-17T16:30:08+00:00"
+            "time": "2023-05-15T20:43:01+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2550,11 +2547,11 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.20.4",
+            "version": "1.21.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/7d568c87a9df9c5f7e8b5f075fc469aa8cb0a4cd",
-                "reference": "7d568c87a9df9c5f7e8b5f075fc469aa8cb0a4cd",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6df62b08faef4f899772bc7c3bbabb93d2b7a21c",
+                "reference": "6df62b08faef4f899772bc7c3bbabb93d2b7a21c",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2569,7 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2023-05-02T09:19:37+00:00"
+            "time": "2023-05-17T13:13:44+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -3194,11 +3191,11 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/4211420d25eba80712bff236a98960ef68b866b7",
-                "reference": "4211420d25eba80712bff236a98960ef68b866b7",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/594fd6462aad8ecee0b45ca5045acea4776667f1",
+                "reference": "594fd6462aad8ecee0b45ca5045acea4776667f1",
                 "shasum": ""
             },
             "require": {
@@ -3230,7 +3227,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2022-04-01T13:37:23+00:00"
+            "time": "2023-05-11T13:16:46+00:00"
         },
         {
             "name": "seld/phar-utils",

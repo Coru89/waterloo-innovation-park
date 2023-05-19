@@ -32,61 +32,37 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 2e724cd6-994a-493e-945a-c6dadbff9837 # Property Manager Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b7dbea73-fa14-4f98-bac0-4246bb9834b2
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 37175b69-3644-4f1e-a348-e82fd2565057 # Property Manager Image Caption
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6c1b620b-5063-4837-8a7e-369fe30d7fe2
+            uid: 82e97c98-986a-48ad-9f61-afcb29a930ef
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 5f8cb9f8-3c0c-4264-8031-dbfe5b65434a # Property Manager Email
+            fieldUid: dd3a546e-11a2-4fd7-a835-04974a2d24ff # Booking Contact Info
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0a87027f-cdc8-490b-83be-f31ad9409faf
+            uid: 1ee1f930-bdda-4beb-bc8b-c455efb53629
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 8cef2e04-1901-44a9-bf0c-0f320e8760ba # Property Manager Phone Display
+            fieldUid: 2e724cd6-994a-493e-945a-c6dadbff9837 # Property Manager Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5e08e8dd-1d10-4341-8806-13447be8666d
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: b29d046d-03e7-4eb8-9248-7c870d157e78 # Property Manager Phone Link
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 0ce43164-77bb-4b1e-aa7d-89a829190d3c
+            uid: 2bc60c87-c2d0-41cb-8d8f-c2faa1ea455b
             userCondition: null
             warning: null
             width: 100

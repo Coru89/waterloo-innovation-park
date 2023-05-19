@@ -91,6 +91,30 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: a03da100-4469-4fa1-925f-20e983f46792 # Waterloo Innovation Park Inquiries Phone Link 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4594fe58-7ac3-498a-9fc1-c99f9ddaff47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b4a72afd-9824-4711-8c7c-654a73ab4125 # Waterloo Innovation Park Inquiries Phone Display 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d4aed8a-f10a-40a9-b2dd-d19e2d095e6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 3a25069d-8aa9-47ef-89a1-edb4d04fd404 # Waterloo Innovation Park Leasing Phone Link
             instructions: null
             label: null
@@ -457,6 +481,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  a03da100-4469-4fa1-925f-20e983f46792: # Waterloo Innovation Park Inquiries Phone Link 2
+    columnSuffix: eyhqxlll
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipInquiriesPhoneLink2
+    instructions: null
+    name: 'Waterloo Innovation Park Inquiries Phone Link 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   a4f9aa02-65e9-4d0c-8726-9a5782e118c8: # Waterloo Innovation Park Inquiries Email Link
     columnSuffix: sgsdfnqy
     contentColumnType: text
@@ -484,6 +528,26 @@ fields:
     handle: theLinkPhoneDisplay
     instructions: null
     name: 'The Link Phone Display'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b4a72afd-9824-4711-8c7c-654a73ab4125: # Waterloo Innovation Park Inquiries Phone Display 2
+    columnSuffix: ieyczdcf
+    contentColumnType: text
+    fieldGroup: null
+    handle: wipInquiriesPhoneDisplay2
+    instructions: null
+    name: 'Waterloo Innovation Park Inquiries Phone Display 2'
     searchable: false
     settings:
       byteLimit: null
