@@ -15,7 +15,7 @@ settings:
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 1
   minRelations: null
   previewMode: full
   restrictFiles: false
@@ -38,7 +38,8 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:9cfc771b-b401-4434-bbd3-e0e94c877314' # Uploads
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 21bdf77a-7ef8-4373-91e0-b6f8b61e6459 # Events
 handle: eventImage
-instructions: null
+instructions: 'Specify an image to be used on the event details page. This image will also be used as a thumbnail for the monthly calendar view'
 name: 'Event Image'
 searchable: true
 settings:

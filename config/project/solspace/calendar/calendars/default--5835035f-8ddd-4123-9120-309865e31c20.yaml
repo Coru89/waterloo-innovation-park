@@ -33,6 +33,12 @@ fieldLayout:
           width: 100
         -
           elementCondition: null
+          heading: 'Event Slider'
+          type: craft\fieldlayoutelements\Heading
+          uid: 7ed4f8dd-00c2-4038-87cf-0865b6eb60ba
+          userCondition: null
+        -
+          elementCondition: null
           fieldUid: 9d0ece9f-df15-4593-94b1-66eb90467427 # Event Slider Poster Image
           instructions: null
           label: null
