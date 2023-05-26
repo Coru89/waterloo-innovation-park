@@ -1,4 +1,4 @@
-dateModified: 1684477283
+dateModified: 1685067424
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -91,7 +91,6 @@ meta:
     8c6ac355-ba45-47f9-9d6c-13d9f0ecdc30: Limit # Limit
     8c1501f8-32b3-4150-91bc-23f988eb98e5: About # About
     8cef2e04-1901-44a9-bf0c-0f320e8760ba: 'Property Manager Phone Display' # Property Manager Phone Display
-    8e5e89b1-b02e-4d5b-a662-40eb0c914fea: 'Annual Events' # Annual Events
     9c87d94e-3edf-4ac7-8d8b-be65d21b54e5: 'Site Navigation' # Site Navigation
     09cde05d-5606-478a-8ab0-d9a6a607d414: Contact # Contact
     9cfc771b-b401-4434-bbd3-e0e94c877314: Uploads # Uploads
@@ -107,7 +106,7 @@ meta:
     25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
     26baa828-2510-4546-ab8a-4866ca224fa2: 'Featured Exhibit' # Featured Exhibit
     28e33f30-0531-4723-b2ac-1abf27a1bde7: 'Directions Link' # Directions Link
-    31a9da1e-374b-4022-b98e-180349d41568: 'Social Links' # Social Links
+    31a9da1e-374b-4022-b98e-180349d41568: 'Social Links (Footer Links)' # Social Links (Footer Links)
     31aa51d3-2c41-4a98-8464-95f377cc4f07: 'Lease Managers Heading' # Lease Managers Heading
     34e247a1-8be7-4932-a481-cfa735abdba3: 'Exhibition Summary' # Exhibition Summary
     36e3ae0f-08a5-4193-af58-4ed32c350d94: Image # Image

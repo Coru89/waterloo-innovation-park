@@ -48,11 +48,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 7441fee9-192d-4788-8983-da10b98575d9
-            userCondition: null
-          -
-            elementCondition: null
             heading: 'Page Intro'
             type: craft\fieldlayoutelements\Heading
             uid: d7ef0c60-bd9e-46cb-af6d-2fdd46afe3ed
