@@ -17,7 +17,16 @@ $block: "image-slider";
 
   &__slide {
     position: relative;
-    height: 250px !important;
+    height: auto !important;
+    max-height: 250px;
+    min-height: 140px;
+    // height: 250px !important;
+
+    @include media-min(sm) {
+      height: 250px !important;
+      max-height: unset;
+      min-height: unset;
+    }
 
     @include media-min(md) {
       height: 300px !important;
@@ -41,8 +50,16 @@ $block: "image-slider";
   }
 
   &__image {
-    height: 250px;
-    
+    height: auto;
+    max-height: 250px;
+    min-height: 140px;
+
+    @include media-min(sm) {
+      height: 250px !important;
+      max-height: unset;
+      min-height: unset;
+    }
+
     @include media-min(md) {
       height: 300px !important;
     }
