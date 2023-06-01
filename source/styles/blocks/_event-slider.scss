@@ -77,7 +77,6 @@ $block: "event-slider";
     &-content {
       background-color: $grey-darker;
       justify-content: space-between;
-      min-height: 116px;
       padding: 2rem 2rem;
 
       * {
@@ -262,10 +261,18 @@ $block: "event-slider";
   }
 
   &__image {
-    height: 300px;
+    height: auto;
+    max-height: 250px;
+    min-height: 140px;
     object-fit: cover;
     object-position: center;
     width: 100%;
+
+    @include media-min(sm) {
+      height: 250px;
+      max-height: unset;
+      min-height: unset;
+    }
 
     @include media-min(md) {
       height: 330px;

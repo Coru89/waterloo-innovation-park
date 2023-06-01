@@ -2180,7 +2180,6 @@ html.with-fancybox body.hide-scrollbar {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 116px;
   padding: 2rem 2rem;
 }
 .event-slider__slide-content * {
@@ -2385,12 +2384,21 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 .event-slider__image {
-  height: 300px;
+  height: auto;
+  max-height: 250px;
+  min-height: 140px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
   width: 100%;
+}
+@media (min-width: 544px) {
+  .event-slider__image {
+    height: 250px;
+    max-height: unset;
+    min-height: unset;
+  }
 }
 @media (min-width: 768px) {
   .event-slider__image {

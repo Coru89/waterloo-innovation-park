@@ -41,7 +41,19 @@ $block: "image-slider";
   }
 
   &__image {
-    height: 500px;
+    height: 250px;
+    
+    @include media-min(md) {
+      height: 300px !important;
+    }
+
+    @include media-min(lg) {
+      height: 400px !important;
+    }
+
+    @include media-min(xl) {
+      height: 500px !important;
+    }
     object-fit: cover;
     object-position: center center;
     width: 100%;
@@ -116,7 +128,6 @@ $block: "image-slider";
     text-decoration: none;
     text-indent: 0;
     line-height: 0;
-    // padding: 0.7rem 0.8rem;
     min-width: 42px;
     height: 40px;
   }

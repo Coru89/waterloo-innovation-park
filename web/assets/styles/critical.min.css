@@ -2477,13 +2477,28 @@ p {
   right: 0;
 }
 .image-slider__image {
-  height: 500px;
+  height: 250px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center center;
   object-position: center center;
   width: 100%;
   z-index: -1;
+}
+@media (min-width: 768px) {
+  .image-slider__image {
+    height: 300px !important;
+  }
+}
+@media (min-width: 1052px) {
+  .image-slider__image {
+    height: 400px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .image-slider__image {
+    height: 500px !important;
+  }
 }
 .image-slider__content {
   color: #fff;
