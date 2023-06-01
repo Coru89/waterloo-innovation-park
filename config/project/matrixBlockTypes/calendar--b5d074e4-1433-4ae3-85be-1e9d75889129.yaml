@@ -75,4 +75,4 @@ fields:
     type: craft\fields\PlainText
 handle: calendar
 name: Calendar
-sortOrder: 6
+sortOrder: 5

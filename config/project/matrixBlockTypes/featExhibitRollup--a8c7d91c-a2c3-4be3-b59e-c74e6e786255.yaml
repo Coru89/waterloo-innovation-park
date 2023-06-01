@@ -44,4 +44,4 @@ fields:
     type: craft\fields\Number
 handle: featExhibitRollup
 name: 'Featured Exhibit Rollup'
-sortOrder: 16
+sortOrder: 15

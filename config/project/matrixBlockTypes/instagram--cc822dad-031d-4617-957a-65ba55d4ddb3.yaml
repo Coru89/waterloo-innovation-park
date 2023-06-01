@@ -107,4 +107,4 @@ fields:
     type: craft\fields\PlainText
 handle: instagram
 name: Instagram
-sortOrder: 9
+sortOrder: 8

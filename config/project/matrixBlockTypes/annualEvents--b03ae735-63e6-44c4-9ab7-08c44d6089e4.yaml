@@ -114,4 +114,4 @@ fields:
     type: craft\fields\Table
 handle: annualEvents
 name: 'Annual Events'
-sortOrder: 20
+sortOrder: 19

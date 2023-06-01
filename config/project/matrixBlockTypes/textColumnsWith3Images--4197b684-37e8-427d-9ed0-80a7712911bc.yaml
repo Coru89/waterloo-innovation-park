@@ -202,4 +202,4 @@ fields:
     type: craft\fields\Assets
 handle: textColumnsWith3Images
 name: '2 Text Columns With 3 Images'
-sortOrder: 15
+sortOrder: 14

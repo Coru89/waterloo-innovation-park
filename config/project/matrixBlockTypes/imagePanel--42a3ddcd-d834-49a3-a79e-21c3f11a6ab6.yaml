@@ -104,4 +104,4 @@ fields:
     type: craft\fields\Number
 handle: imagePanel
 name: 'Image panel'
-sortOrder: 4
+sortOrder: 3

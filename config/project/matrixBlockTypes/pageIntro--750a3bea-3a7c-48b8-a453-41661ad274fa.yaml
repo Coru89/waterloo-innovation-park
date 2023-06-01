@@ -134,4 +134,4 @@ fields:
     type: craft\fields\PlainText
 handle: pageIntro
 name: 'Page Intro'
-sortOrder: 8
+sortOrder: 7

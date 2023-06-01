@@ -683,4 +683,4 @@ fields:
     type: craft\fields\PlainText
 handle: contactDetails
 name: 'Contact Details'
-sortOrder: 19
+sortOrder: 18

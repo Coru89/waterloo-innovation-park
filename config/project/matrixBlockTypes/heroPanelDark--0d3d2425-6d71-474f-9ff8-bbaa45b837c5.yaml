@@ -238,5 +238,5 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
 handle: heroPanelDark
-name: 'Hero Panel (Dark)'
-sortOrder: 2
+name: 'Hero Panel'
+sortOrder: 1

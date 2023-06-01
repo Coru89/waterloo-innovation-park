@@ -252,4 +252,4 @@ fields:
     type: craft\fields\Lightswitch
 handle: eventSlider
 name: 'Event Slider'
-sortOrder: 10
+sortOrder: 9

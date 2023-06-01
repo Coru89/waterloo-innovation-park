@@ -275,4 +275,4 @@ fields:
     type: craft\redactor\Field
 handle: ctaCards
 name: 'Call To Action Cards'
-sortOrder: 14
+sortOrder: 13

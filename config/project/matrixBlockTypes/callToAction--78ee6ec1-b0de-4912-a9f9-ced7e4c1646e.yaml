@@ -102,4 +102,4 @@ fields:
     type: craft\fields\Url
 handle: callToAction
 name: 'Call To Action Panel'
-sortOrder: 5
+sortOrder: 4

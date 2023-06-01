@@ -1,4 +1,4 @@
-dateModified: 1685598037
+dateModified: 1685603461
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -43,7 +43,7 @@ meta:
     0b9c054a-9bbd-4547-b554-70bfd7142228: 'Waterloo Innovation Park' # Waterloo Innovation Park
     0d01ac2a-6f7f-4925-8c97-10d917e18c84: Title # Title
     0d0605aa-2db0-476d-a8cd-009b9efc4eeb: 'Button Link' # Button Link
-    0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel (Dark)' # Hero Panel (Dark)
+    0d3d2425-6d71-474f-9ff8-bbaa45b837c5: 'Hero Panel' # Hero Panel
     0f2f856e-d16b-4407-9c3b-d0b013f21282: Twitter # Twitter
     1da30993-295b-40b9-aab0-24e5a9812929: 'Panel Subheading' # Panel Subheading
     1f0b8178-c969-454d-94a7-ae7d3f373f86: Subheading # Subheading
@@ -196,7 +196,6 @@ meta:
     bc928e65-aad4-49d8-bfd2-4bc0a487d1ec: Details # Details
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
     c27feab1-3cbb-4d0e-9bf7-ddcf2ac7a63e: 'Footer Nav Items' # Footer Nav Items
-    c84251ed-c157-4470-8a0b-fa532933274f: 'Hero Panel' # Hero Panel
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price
     cb6d8f3b-a601-41e8-8045-6ab67f0d37b8: 'Waterloo Innovation Park Address Line 1' # Waterloo Innovation Park Address Line 1
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name

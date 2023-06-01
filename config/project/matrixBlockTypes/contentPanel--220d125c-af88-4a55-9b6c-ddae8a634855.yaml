@@ -75,4 +75,4 @@ fields:
     type: craft\fields\PlainText
 handle: contentPanel
 name: 'Content Panel'
-sortOrder: 3
+sortOrder: 2

@@ -139,4 +139,4 @@ fields:
     type: craft\fields\PlainText
 handle: map
 name: Map
-sortOrder: 13
+sortOrder: 12
