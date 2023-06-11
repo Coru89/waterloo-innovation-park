@@ -28,7 +28,7 @@
 
 					{% set dateBoundsHelper = now.diff(month.nextDate)|date('%r%a') %}
 
-					<div class="u-container row justify-content-between mb-3">
+					<div class="u-container row align-items-center justify-content-between mb-3">
 						<div class="col-sm-7 calendar__column">
 							{% if dateBoundsHelper > -365 %}
 								<a class="button button--outline button--arrow button--arrow-left" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">

@@ -33,26 +33,6 @@
 
                     {% if event %}
 
-                        <div class="btn-group float-right" role="group" aria-label="actions">
-                            {% if craft.calendar.exportEnabled %}
-                                <a href="{{ siteUrl }}calendar/export/event/{{ segment3 }}"
-                                class="button btn-primary btn-sm"
-                                role="button">
-                                    <span class="fas fa-file-export" aria-hidden="true"></span>
-                                    &nbsp;Export Event
-                                </a>
-                            {% endif %}
-
-                            <!-- {% if craft.calendar.canEditEvent(event) %}
-                                <a href="{{ siteUrl }}calendar/edit/event/{{ segment3 }}"
-                                class="button btn-warning btn-sm"
-                                role="button">
-                                    <span class="fas fa-edit"></span>
-                                    &nbsp;Edit
-                                </a>
-                            {% endif %} -->
-                        </div>
-
                         <h3>{{ event.title }}</h3>
 
                         {% if (event.eventImage | length) == 1 %}
@@ -66,6 +46,32 @@
                             <img style="width: 100%; height: auto;" alt="image.alt" src={{image.url}} width={{image.width}} height={{image.height}}>
                         </picture>
                         {% endif %}
+
+                        <div class="btn-group float-right" role="group" aria-label="actions">
+                            {% if craft.calendar.exportEnabled %}
+                                <a href="{{ siteUrl }}calendar/export/event/{{ segment3 }}"
+                                class="button btn-primary btn-sm"
+                                role="button">
+                                    <span class="fas fa-file-export" aria-hidden="true"></span>
+                                    &nbsp;Export Event
+                                </a>
+                            {% endif %}
+
+                            <a class="button button--arrow button--arrow-left mt-3 mb-3" href="javascript:history.back()">
+                                <span class="button__inner">
+                                    Go Back
+                                </span>
+                            </a>
+                            
+                            <!-- {% if craft.calendar.canEditEvent(event) %}
+                                <a href="{{ siteUrl }}calendar/edit/event/{{ segment3 }}"
+                                class="button btn-warning btn-sm"
+                                role="button">
+                                    <span class="fas fa-edit"></span>
+                                    &nbsp;Edit
+                                </a>
+                            {% endif %} -->
+                        </div>
 
                         <table class="table table-striped mt-3">
                             <tr>

@@ -48,8 +48,17 @@ $block: "calendar";
   &__week-of {
     display: none;
 
+    h3 {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
     @include media-min(xxl) {
       display: block;
+
+      h3 {
+        margin-bottom: 0;
+      }
     }
 
     &--mobile {
@@ -59,6 +68,7 @@ $block: "calendar";
 
       @include media-min(xxl) {
         display: none;
+
       }
     }
   }
