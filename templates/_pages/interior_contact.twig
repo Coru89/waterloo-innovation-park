@@ -25,6 +25,8 @@
 				{% if craft.app.session.hasFlash('success') %}
 					<div>Thank you for your message.</div>
 				{% else  %}
+					{# set the to email #}
+					{# <input type="hidden" name="toEmail" value="{{ 'me@example.com'|hash }}"> #}
 					{# set the email subject #}
 					<input type="hidden" name="subject" value="Waterloo Innovation Park - Question" data-original-value="Waterloo Innovation Park - Question">
 					<input type="hidden" name="message[Start Time]" value="n/a">
