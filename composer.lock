@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0921d42d1ed0c8744c403e86878d8af9",
+    "content-hash": "d0855675695cd6bc41bcd1c31f5ac519",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -197,11 +197,11 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/74780ccf8c19d6acb8d65c5f39cd72110e132bbd",
-                "reference": "74780ccf8c19d6acb8d65c5f39cd72110e132bbd",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/90d087e988ff194065333d16bc5cf649872d9cdb",
+                "reference": "90d087e988ff194065333d16bc5cf649872d9cdb",
                 "shasum": ""
             },
             "require": {
@@ -238,7 +238,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2023-01-11T08:27:00+00:00"
+            "time": "2023-06-06T12:02:59+00:00"
         },
         {
             "name": "composer/composer",
@@ -807,11 +807,11 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/c262ebd39572902bdf4fe3ea570e11cd6725b381",
-                "reference": "c262ebd39572902bdf4fe3ea570e11cd6725b381",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/a099ba05adf6424298aa5177ca17084e616a5690",
+                "reference": "a099ba05adf6424298aa5177ca17084e616a5690",
                 "shasum": ""
             },
             "type": "library",
@@ -831,7 +831,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2022-04-17T02:14:46+00:00"
+            "time": "2023-05-26T20:43:59+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1029,15 +1029,15 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "v1.0.0",
+            "version": "v1.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de",
-                "reference": "0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
+                "reference": "612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1|^8.0"
+                "php": "^7.1 || ^8.0"
             },
             "suggest": {
                 "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
@@ -1053,7 +1053,7 @@
             ],
             "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
             "homepage": "https://www.doctrine-project.org/",
-            "time": "2022-05-02T15:47:09+00:00"
+            "time": "2023-06-03T09:27:29+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1104,11 +1104,11 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.2.5",
+            "version": "3.2.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b531a2311709443320c786feb4519cfaf94af796",
-                "reference": "b531a2311709443320c786feb4519cfaf94af796",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7",
+                "reference": "e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7",
                 "shasum": ""
             },
             "require": {
@@ -1147,7 +1147,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2023-01-02T17:26:14+00:00"
+            "time": "2023-06-01T07:04:22+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -1724,7 +1724,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.52.7",
+            "version": "v9.52.9",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/collections/zipball/0168d0e44ea0c4fe5451fe08cde7049b9e9f9741",
@@ -1769,7 +1769,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.52.7",
+            "version": "v9.52.9",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/conditionable/zipball/bea24daa0fa84b7e7b0d5b84f62c71b7e2dc3364",
@@ -1805,7 +1805,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.52.7",
+            "version": "v9.52.9",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/contracts/zipball/44f65d723b13823baa02ff69751a5948bde60c22",
@@ -1843,7 +1843,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.52.7",
+            "version": "v9.52.9",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/macroable/zipball/e3bfaf6401742a9c6abca61b9b10e998e5b6449a",
@@ -2359,11 +2359,11 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/dfc078e8af9c99210337325ff5aa152872c98714",
-                "reference": "dfc078e8af9c99210337325ff5aa152872c98714",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/b2fe4d22a5426f38e014855322200b97b5362c0d",
+                "reference": "b2fe4d22a5426f38e014855322200b97b5362c0d",
                 "shasum": ""
             },
             "require": {
@@ -2393,7 +2393,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2023-03-27T19:02:04+00:00"
+            "time": "2023-05-30T18:13:47+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -2448,11 +2448,11 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.21.0",
+            "version": "1.22.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6df62b08faef4f899772bc7c3bbabb93d2b7a21c",
-                "reference": "6df62b08faef4f899772bc7c3bbabb93d2b7a21c",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/ec58baf7b3c7f1c81b3b00617c953249fb8cf30c",
+                "reference": "ec58baf7b3c7f1c81b3b00617c953249fb8cf30c",
                 "shasum": ""
             },
             "require": {
@@ -2470,7 +2470,7 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2023-05-17T13:13:44+00:00"
+            "time": "2023-06-01T12:35:21+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -2821,6 +2821,51 @@
             "time": "2021-10-29T13:26:27+00:00"
         },
         {
+            "name": "putyourlightson/craft-sendgrid",
+            "version": "2.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sendgrid/zipball/9fb4c34a3c75885afdf7fd2f424634678cd8dce7",
+                "reference": "9fb4c34a3c75885afdf7fd2f424634678cd8dce7",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "symfony/sendgrid-mailer": "^6.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SendGrid",
+                "handle": "sendgrid",
+                "developer": "PutYourLightsOn",
+                "developerUrl": "https://putyourlightson.com/",
+                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-sendgrid/v2/CHANGELOG.md",
+                "class": "putyourlightson\\sendgrid\\Sendgrid"
+            },
+            "autoload": {
+                "psr-4": {
+                    "putyourlightson\\sendgrid\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "SendGrid mailer adapter for Craft CMS.",
+            "homepage": "https://github.com/putyourlightson/craft-sendgrid",
+            "keywords": [
+                "cms",
+                "craft",
+                "craftcms",
+                "email"
+            ],
+            "support": {
+                "docs": "https://putyourlightson.com/plugins/sendgrid",
+                "source": "https://github.com/putyourlightson/craft-sendgrid",
+                "issues": "https://github.com/putyourlightson/craft-sendgrid/issues"
+            },
+            "time": "2022-05-06T15:54:29+00:00"
+        },
+        {
             "name": "putyourlightson/craft-sprig",
             "version": "2.6.2",
             "dist": {
@@ -3008,6 +3053,57 @@
                 "rrule"
             ],
             "time": "2019-01-13T09:49:03+00:00"
+        },
+        {
+            "name": "robuust/craft-mailjet",
+            "version": "1.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robuust/craft-mailjet/zipball/7a822f2ea002775101cc44539be57794cd5354f4",
+                "reference": "7a822f2ea002775101cc44539be57794cd5354f4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-alpha.1",
+                "php": "^8.0.2",
+                "symfony/mailjet-mailer": "^6.0.3"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Mailjet Adapter",
+                "handle": "mailjet-adapter",
+                "documentationUrl": "https://github.com/robuust/craft-mailjet/blob/v1/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "robuust\\mailjet\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robuust",
+                    "homepage": "https://robuust.digital/"
+                }
+            ],
+            "description": "Mailjet integration for Craft CMS",
+            "keywords": [
+                "cms",
+                "craftcms",
+                "mailer",
+                "mailjet",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@robuust.digital",
+                "issues": "https://github.com/robuust/craft-mailjet/issues?state=open",
+                "source": "https://github.com/robuust/craft-mailjet",
+                "docs": "https://github.com/robuust/craft-mailjet/blob/v1/README.md",
+                "rss": "https://github.com/robuust/craft-mailjet/commits/master.atom"
+            },
+            "time": "2022-08-23T13:37:27+00:00"
         },
         {
             "name": "samdark/yii2-psr-log-target",
@@ -3252,11 +3348,11 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.4.23",
+            "version": "v5.4.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/90f21e27d0d88ce38720556dd164d4a1e4c3934c",
-                "reference": "90f21e27d0d88ce38720556dd164d4a1e4c3934c",
+                "url": "https://api.github.com/repos/symfony/console/zipball/560fc3ed7a43e6d30ea94a07d77f9a60b8ed0fb8",
+                "reference": "560fc3ed7a43e6d30ea94a07d77f9a60b8ed0fb8",
                 "shasum": ""
             },
             "require": {
@@ -3315,7 +3411,7 @@
                 "console",
                 "terminal"
             ],
-            "time": "2023-04-24T18:47:29+00:00"
+            "time": "2023-05-26T05:13:16+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -3693,6 +3789,45 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "time": "2023-01-11T11:50:03+00:00"
+        },
+        {
+            "name": "symfony/mailjet-mailer",
+            "version": "v6.0.19",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mailjet-mailer/zipball/b29a37fee085583221a62dcbd4f136f07d4c5bc8",
+                "reference": "b29a37fee085583221a62dcbd4f136f07d4c5bc8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/mailer": "^5.4|^6.0"
+            },
+            "type": "symfony-mailer-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\Bridge\\Mailjet\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Mailjet Mailer Bridge",
+            "homepage": "https://symfony.com",
+            "time": "2023-01-01T08:36:10+00:00"
         },
         {
             "name": "symfony/mime",
@@ -4278,11 +4413,11 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.23",
+            "version": "v5.4.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/4b842fc4b61609e0a155a114082bd94e31e98287",
-                "reference": "4b842fc4b61609e0a155a114082bd94e31e98287",
+                "url": "https://api.github.com/repos/symfony/process/zipball/e3c46cc5689c8782944274bb30702106ecbe3b64",
+                "reference": "e3c46cc5689c8782944274bb30702106ecbe3b64",
                 "shasum": ""
             },
             "require": {
@@ -4313,7 +4448,7 @@
             ],
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
-            "time": "2023-04-18T13:50:24+00:00"
+            "time": "2023-05-17T11:26:05+00:00"
         },
         {
             "name": "symfony/property-access",
@@ -4425,6 +4560,45 @@
                 "validator"
             ],
             "time": "2023-01-15T17:21:41+00:00"
+        },
+        {
+            "name": "symfony/sendgrid-mailer",
+            "version": "v6.0.19",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/sendgrid-mailer/zipball/a44efff73e993e9a6f6f5fe1e587883f26fbdc78",
+                "reference": "a44efff73e993e9a6f6f5fe1e587883f26fbdc78",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/mailer": "^5.4|^6.0"
+            },
+            "type": "symfony-mailer-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\Bridge\\Sendgrid\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Sendgrid Mailer Bridge",
+            "homepage": "https://symfony.com",
+            "time": "2023-01-01T08:36:10+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -4657,11 +4831,11 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.4.23",
+            "version": "v5.4.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/9a8a5b6d6508928174ded2109e29328a55342a42",
-                "reference": "9a8a5b6d6508928174ded2109e29328a55342a42",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/8e12706bf9c68a2da633f23bfdc15b4dce5970b3",
+                "reference": "8e12706bf9c68a2da633f23bfdc15b4dce5970b3",
                 "shasum": ""
             },
             "require": {
@@ -4670,7 +4844,6 @@
                 "symfony/polyfill-php80": "^1.16"
             },
             "conflict": {
-                "phpunit/phpunit": "<5.4.3",
                 "symfony/console": "<4.4"
             },
             "suggest": {
@@ -4712,7 +4885,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2023-04-18T09:26:27+00:00"
+            "time": "2023-05-25T13:05:00+00:00"
         },
         {
             "name": "symfony/yaml",

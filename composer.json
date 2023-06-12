@@ -7,7 +7,9 @@
     "dispositiontools/craft-minical": "4.0.0",
     "ether/seo": "4.1.2",
     "fortrabbit/craft-copy": "2.4.1",
+    "putyourlightson/craft-sendgrid": "2.0.1",
     "putyourlightson/craft-sprig": "2.6.2",
+    "robuust/craft-mailjet": "1.0.2",
     "solspace/craft-calendar": "4.0.9",
     "vlucas/phpdotenv": "^5.4.0"
   },

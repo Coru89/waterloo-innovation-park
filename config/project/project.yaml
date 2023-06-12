@@ -1,12 +1,13 @@
-dateModified: 1685603461
+dateModified: 1686585092
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
   replyToEmail: null
   template: null
   transportSettings:
-    command: '/usr/sbin/sendmail -bs'
-  transportType: craft\mail\transportadapters\Sendmail
+    apiKey: 01972b0752569ae74e84a14b1c3727e0
+    apiSecret: 4ee0f2b6cfa15d4909619d12e37e8a66
+  transportType: robuust\mailjet\MailjetAdapter
 fs:
   exhibitionPhotos:
     hasUrls: true
@@ -288,15 +289,18 @@ plugins:
       useProxy: true
       useVolume: true
       volume: instagram
-  minical:
+  mailjet-adapter:
     edition: standard
     enabled: true
-    licenseKey: 6J9WCW6A0HQH66SVHHDH4JDI
-    schemaVersion: 1.0.1
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  sendgrid:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seo:
     edition: standard
     enabled: true
