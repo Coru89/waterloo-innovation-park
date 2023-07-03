@@ -275,121 +275,123 @@
 		} %}
 		{% paginate craft.calendar.events(eventOptions) as pageInfo, events %}
 
-		<section class="{% if events | length > 1 %}glide-event {% endif %}event-slider">
-			<div class="event-slider__inner{% if events | length <= 1 %} u-container{% endif %}{% if block.topPadding == 'true' %} event-slider__inner--remove-padding{% endif %}">
-				
-				<div class="event-slider__section-header u-container">
-					<div class="event-slider__row event-slider__row-top">
-						{% if block.heading and block.contentLocation != "none"%}
-							<div class="event-slider__column">
-								<h2 data-aos="fade-up" class="event-slider__heading">{{block.heading}}</h2>
+		{% if events | length > 0 %}
+			<section class="{% if events | length > 1 %}glide-event {% endif %}event-slider">
+				<div class="event-slider__inner{% if events | length <= 1 %} u-container{% endif %}{% if block.topPadding == 'true' %} event-slider__inner--remove-padding{% endif %}">
+					
+					<div class="event-slider__section-header u-container">
+						<div class="event-slider__row event-slider__row-top">
+							{% if block.heading and block.contentLocation != "none"%}
+								<div class="event-slider__column">
+									<h2 data-aos="fade-up" class="event-slider__heading">{{block.heading}}</h2>
+								</div>
+							{% endif %}
+						</div>
+						{% if block.contentLocation == "top" %}
+							<div data-aos="fade" class="event-slider__row event-slider__row-top">
+								{% if block.summary %}
+									<div class="event-slider__column">
+										<p class="event-slider__summary">{{block.summary}}</p>
+									</div>	
+								{% endif %}
+
+								{% if block.buttonText %}
+									<div class="event-slider__column">
+										<a class="button button--arrow" href="{{block.buttonHref}}">
+											<span class="button__inner">
+												{{block.buttonText}}
+											</span>
+										</a>
+									</div>	
+								{% endif %}							
 							</div>
 						{% endif %}
 					</div>
-					{% if block.contentLocation == "top" %}
-						<div data-aos="fade" class="event-slider__row event-slider__row-top">
-							{% if block.summary %}
-								<div class="event-slider__column">
-									<p class="event-slider__summary">{{block.summary}}</p>
-								</div>	
-							{% endif %}
-
-							{% if block.buttonText %}
-								<div class="event-slider__column">
-									<a class="button button--arrow" href="{{block.buttonHref}}">
-										<span class="button__inner">
-											{{block.buttonText}}
-										</span>
-									</a>
-								</div>	
-							{% endif %}							
-						</div>
-					{% endif %}
-				</div>
-				
-				<div class="glide__track" data-glide-el="track">
-					<ul class="glide__slides">
-					{% paginate craft.calendar.events(eventOptions) as pageInfo, events %}
-						{% for event in events %}
-							{% if (event.eventSliderPosterImage | length) == 1 %}
-								{% set image = event.eventSliderPosterImage.one() %}
-							{% endif %}
-							{% if image is defined %}
-							<li class="event-slider__slide glide__slide">
-								<picture data-aos="fade" class="event-slider__picture">
-									<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
-									<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
-									<img alt="{{image.alt}}" class="event-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
-								</picture>
-								<div class="event-slider__slide-content">
-									<div class="event-slider__slide-content-column">
-										<h3 class="event-slider__title">{{event.title}}</h3>
-									</div>
-									<div class="event-slider__slide-content-column">
-										<h4 class="event-slider__date">
-											{{ event.startDate.format('l, F j, Y') }}
-											{% if event.allDay %}
-												(all day)
-											{% else %}
-												at {{ event.startDate.format("g:ia") }} -
-												{% if event.multiDay %}
-													{{ event.endDate.format("l, F j, Y \\a\\t g:ia") }}
-												{% else %}
-													{{ event.endDate.format("g:ia") }}
-												{% endif %}
-											{% endif %}
-										</h4>
-										<h4 class="event-slider__details">{{event.eventSliderDetails}}</h4>
-									</div>
-								</div>
-							</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</div>
-				
-				<div class="event-slider__row event-slider__row-bottom u-container">
-					{% if block.summary and block.contentLocation == "bottom" %}
-						<div class="event-slider__column">
-							<p class="event-slider__summary">{{block.summary}}</p>
-						</div>	
-					{% endif %}
-
-					{% if events | length > 1 %}
-					<div class="image-slider__controls event-slider__column" data-glide-el="controls">
-						<button class="image-slider__arrow image-slider__arrow--left glide__arrow glide__arrow--left" title="previous slide" data-glide-dir="<">
-							<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M7.00047 11.2892C7.39047 10.8992 7.39047 10.2692 7.00047 9.87925L3.12047 5.99925L7.00047 2.11925C7.39047 1.72925 7.39047 1.09925 7.00047 0.709246C6.61047 0.319245 5.98047 0.319245 5.59047 0.709246L1.00047 5.29925C0.610469 5.68925 0.610469 6.31925 1.00047 6.70925L5.59047 11.2992C5.97047 11.6792 6.61047 11.6792 7.00047 11.2892Z" fill="#0B0E26"/>
-							</svg>
-						</button>
-
-						<div class="image-slider__bullets glide__bullets" data-glide-el="controls[nav]">
-							{% for event in events %}
-								<button class="image-slider__bullet glide__bullet" title="slide number {{loop.index0}}" data-glide-dir="={{loop.index0}}"></button>
-							{% endfor %}
-						</div>
-						<button class="image-slider__arrow image-slider__arrow--right glide__arrow glide__arrow--right" title="next slide" data-glide-dir=">">
-							<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.999531 0.710754C0.609531 1.10075 0.609531 1.73075 0.999531 2.12075L4.87953 6.00075L0.999531 9.88075C0.609531 10.2708 0.609531 10.9008 0.999531 11.2908C1.38953 11.6808 2.01953 11.6808 2.40953 11.2908L6.99953 6.70075C7.38953 6.31075 7.38953 5.68075 6.99953 5.29075L2.40953 0.700754C2.02953 0.320754 1.38953 0.320754 0.999531 0.710754Z" fill="#0B0E26"/>
-							</svg>
-						</button>
-					</div>
-
-					{% endif %}
-
-					{% if block.buttonText and block.contentLocation == "bottom" %}
-					<div class="event-slider__column">
-						<a class="button button--arrow" href="{{block.buttonHref}}">
-							<span class="button__inner">
-							{{block.buttonText}}
-							</span>
-						</a>
-					</div>	
-					{% endif %}
-				</div>
-			</div>
 					
-		</section>
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+						{% paginate craft.calendar.events(eventOptions) as pageInfo, events %}
+							{% for event in events %}
+								{% if (event.eventSliderPosterImage | length) == 1 %}
+									{% set image = event.eventSliderPosterImage.one() %}
+								{% endif %}
+								{% if image is defined %}
+								<li class="event-slider__slide glide__slide">
+									<picture data-aos="fade" class="event-slider__picture">
+										<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
+										<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '(max-width: 768px) 100vw, (max-width: 1440px) 80vw, 60vw'}) }}>
+										<img alt="{{image.alt}}" class="event-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
+									</picture>
+									<div class="event-slider__slide-content">
+										<div class="event-slider__slide-content-column">
+											<h3 class="event-slider__title">{{event.title}}</h3>
+										</div>
+										<div class="event-slider__slide-content-column">
+											<h4 class="event-slider__date">
+												{{ event.startDate.format('l, F j, Y') }}
+												{% if event.allDay %}
+													(all day)
+												{% else %}
+													at {{ event.startDate.format("g:ia") }} -
+													{% if event.multiDay %}
+														{{ event.endDate.format("l, F j, Y \\a\\t g:ia") }}
+													{% else %}
+														{{ event.endDate.format("g:ia") }}
+													{% endif %}
+												{% endif %}
+											</h4>
+											<h4 class="event-slider__details">{{event.eventSliderDetails}}</h4>
+										</div>
+									</div>
+								</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+					
+					<div class="event-slider__row event-slider__row-bottom u-container">
+						{% if block.summary and block.contentLocation == "bottom" %}
+							<div class="event-slider__column">
+								<p class="event-slider__summary">{{block.summary}}</p>
+							</div>	
+						{% endif %}
+
+						{% if events | length > 1 %}
+						<div class="image-slider__controls event-slider__column" data-glide-el="controls">
+							<button class="image-slider__arrow image-slider__arrow--left glide__arrow glide__arrow--left" title="previous slide" data-glide-dir="<">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.00047 11.2892C7.39047 10.8992 7.39047 10.2692 7.00047 9.87925L3.12047 5.99925L7.00047 2.11925C7.39047 1.72925 7.39047 1.09925 7.00047 0.709246C6.61047 0.319245 5.98047 0.319245 5.59047 0.709246L1.00047 5.29925C0.610469 5.68925 0.610469 6.31925 1.00047 6.70925L5.59047 11.2992C5.97047 11.6792 6.61047 11.6792 7.00047 11.2892Z" fill="#0B0E26"/>
+								</svg>
+							</button>
+
+							<div class="image-slider__bullets glide__bullets" data-glide-el="controls[nav]">
+								{% for event in events %}
+									<button class="image-slider__bullet glide__bullet" title="slide number {{loop.index0}}" data-glide-dir="={{loop.index0}}"></button>
+								{% endfor %}
+							</div>
+							<button class="image-slider__arrow image-slider__arrow--right glide__arrow glide__arrow--right" title="next slide" data-glide-dir=">">
+								<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.999531 0.710754C0.609531 1.10075 0.609531 1.73075 0.999531 2.12075L4.87953 6.00075L0.999531 9.88075C0.609531 10.2708 0.609531 10.9008 0.999531 11.2908C1.38953 11.6808 2.01953 11.6808 2.40953 11.2908L6.99953 6.70075C7.38953 6.31075 7.38953 5.68075 6.99953 5.29075L2.40953 0.700754C2.02953 0.320754 1.38953 0.320754 0.999531 0.710754Z" fill="#0B0E26"/>
+								</svg>
+							</button>
+						</div>
+
+						{% endif %}
+
+						{% if block.buttonText and block.contentLocation == "bottom" %}
+						<div class="event-slider__column">
+							<a class="button button--arrow" href="{{block.buttonHref}}">
+								<span class="button__inner">
+								{{block.buttonText}}
+								</span>
+							</a>
+						</div>	
+						{% endif %}
+					</div>
+				</div>
+						
+			</section>
+		{% endif %}
 
 
 	{% elseif block.type == "imageSlider" %}
