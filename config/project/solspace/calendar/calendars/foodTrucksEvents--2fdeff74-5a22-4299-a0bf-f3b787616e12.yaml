@@ -1,5 +1,5 @@
 allowRepeatingEvents: true
-color: '#ccb15a'
+color: '#aa3939'
 description: ''
 descriptionFieldHandle: '0'
 fieldLayout:
@@ -15,7 +15,7 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 9001f54d-2391-435d-93fa-453f5725e002
+          uid: c874b8d0-b3d1-4c1e-ae14-4271e11a4e0a
           userCondition: null
           warning: null
           width: 100
@@ -27,7 +27,7 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 8c27f8f8-8136-4532-a1ed-8868c1b718b0
+          uid: 51175e11-3074-4cb9-a218-b456085cf678
           userCondition: null
           warning: null
           width: 100
@@ -35,7 +35,7 @@ fieldLayout:
           elementCondition: null
           heading: 'Event Slider'
           type: craft\fieldlayoutelements\Heading
-          uid: 2035926c-d99d-4f63-a080-a709a6da0db0
+          uid: 5857a083-ac3c-4122-98bd-6572ff12aa28
           userCondition: null
         -
           elementCondition: null
@@ -45,7 +45,7 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 07899259-ab9d-4895-bf05-20ca813a8fe6
+          uid: 6dbe43d8-61e6-433e-beaf-057290d2ecad
           userCondition: null
           warning: null
           width: 100
@@ -57,22 +57,22 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 84d90ab7-2caa-449f-bfdb-6036d3b1fe60
+          uid: a6eb35f2-cdfa-43f7-a4a8-3bfcc59ed9f6
           userCondition: null
           warning: null
           width: 100
       name: 'Event Metadata'
-      uid: 36ef5429-0007-4caa-b6fe-3b19d0640c83
+      uid: 79072771-8f3d-4b48-a932-14a8b7a276a3
       userCondition: null
-  uid: f7b061b3-3949-479f-b1de-ea19457eb182
-handle: holidays
+  uid: b9d8a30b-f860-4ba7-bc87-b6eb1e22af41
+handle: foodTrucksEvents
 hasTitleField: true
 icsHash: null
 icsTimezone: floating
 locationFieldHandle: '0'
-name: 'Stat Holidays'
+name: 'Food Trucks Events'
 siteSettings:
-  30c79483-840b-4c06-bcd7-fe958f77f2c0:
+  59ce16d0-7fce-471d-89a9-be82de4551da:
     enabledByDefault: true
     hasUrls: false
     siteId: 402b359e-759c-4938-b279-b9a22b2c6d6a # Waterloo Innovation Park

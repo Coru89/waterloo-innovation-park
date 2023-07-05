@@ -1,5 +1,5 @@
 allowRepeatingEvents: true
-color: '#ccb15a'
+color: '#72a34d'
 description: ''
 descriptionFieldHandle: '0'
 fieldLayout:
@@ -15,7 +15,7 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 9001f54d-2391-435d-93fa-453f5725e002
+          uid: 17afd8fd-4616-438a-8fa0-99aff8cf7ead
           userCondition: null
           warning: null
           width: 100
@@ -27,7 +27,7 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 8c27f8f8-8136-4532-a1ed-8868c1b718b0
+          uid: dd42bd63-ef6e-45da-b4e0-e7f3bece35cc
           userCondition: null
           warning: null
           width: 100
@@ -35,7 +35,7 @@ fieldLayout:
           elementCondition: null
           heading: 'Event Slider'
           type: craft\fieldlayoutelements\Heading
-          uid: 2035926c-d99d-4f63-a080-a709a6da0db0
+          uid: 68fc1dca-1b5d-43e9-a5b3-1e05a5718129
           userCondition: null
         -
           elementCondition: null
@@ -45,7 +45,7 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 07899259-ab9d-4895-bf05-20ca813a8fe6
+          uid: dae4753c-f57b-4b22-81a0-619107db152c
           userCondition: null
           warning: null
           width: 100
@@ -57,22 +57,22 @@ fieldLayout:
           required: false
           tip: null
           type: craft\fieldlayoutelements\CustomField
-          uid: 84d90ab7-2caa-449f-bfdb-6036d3b1fe60
+          uid: 5a791946-29e0-4bcf-9db4-4ddce9bdcfb7
           userCondition: null
           warning: null
           width: 100
       name: 'Event Metadata'
-      uid: 36ef5429-0007-4caa-b6fe-3b19d0640c83
+      uid: b0b4d63e-d838-41ed-bced-385120df95cd
       userCondition: null
-  uid: f7b061b3-3949-479f-b1de-ea19457eb182
-handle: holidays
+  uid: 94607e83-2a5b-41ee-96df-fd534447cc9f
+handle: artEvents
 hasTitleField: true
 icsHash: null
 icsTimezone: floating
 locationFieldHandle: '0'
-name: 'Stat Holidays'
+name: 'Art Events'
 siteSettings:
-  30c79483-840b-4c06-bcd7-fe958f77f2c0:
+  195500d8-db97-4f04-bda0-671df20451a9:
     enabledByDefault: true
     hasUrls: false
     siteId: 402b359e-759c-4938-b279-b9a22b2c6d6a # Waterloo Innovation Park
