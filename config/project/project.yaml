@@ -1,4 +1,4 @@
-dateModified: 1688594921
+dateModified: 1688597141
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -141,6 +141,7 @@ meta:
     703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
     705fc584-6fc1-4033-8c33-d552f9684177: 'Call To Action Cards' # Call To Action Cards
     710f40a4-9595-439f-ba53-b0995864d7ca: Heading # Heading
+    745a1ded-59d8-4b2d-935c-2ed9da87fb59: 'Map Embed - Card 1' # Map Embed - Card 1
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
     750a3bea-3a7c-48b8-a453-41661ad274fa: 'Page Intro' # Page Intro
     771b1ebb-9bc3-4a71-9969-b7e5f1020bb7: 'Property Item' # Property Item

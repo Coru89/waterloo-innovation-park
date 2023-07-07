@@ -52,8 +52,45 @@ $block: "cta-cards";
         }
     }
 
+    picture {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 59.25%;
+    }
+
     &__image {
         height: auto;
         width: 100%;
+        position: absolute;
+        top: 0;
     }
+
+    #map {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 59.25%;
+    
+        @include media-min(md) {
+          max-width: 100%;
+        }
+    
+        iframe {
+          border: none;
+          bottom: 0;
+          height: 200%;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translatey(-50%);
+          width: 100%;
+          
+          @include media-min(xl) {
+            margin-bottom: 0;
+            margin-right: 1rem;
+          }
+        }
+      }
 }

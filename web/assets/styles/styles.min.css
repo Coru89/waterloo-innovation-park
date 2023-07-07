@@ -2096,9 +2096,46 @@ html.with-fancybox body.hide-scrollbar {
     min-height: 0;
   }
 }
+.cta-cards picture {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 59.25%;
+}
 .cta-cards__image {
   height: auto;
   width: 100%;
+  position: absolute;
+  top: 0;
+}
+.cta-cards #map {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 59.25%;
+}
+@media (min-width: 768px) {
+  .cta-cards #map {
+    max-width: 100%;
+  }
+}
+.cta-cards #map iframe {
+  border: none;
+  bottom: 0;
+  height: 200%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+  transform: translatey(-50%);
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .cta-cards #map iframe {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
 }
 
 .event-slider__inner {

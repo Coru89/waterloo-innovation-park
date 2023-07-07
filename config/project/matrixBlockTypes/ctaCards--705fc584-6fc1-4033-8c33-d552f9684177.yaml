@@ -43,6 +43,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 745a1ded-59d8-4b2d-935c-2ed9da87fb59 # Map Embed - Card 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ffbfc054-0298-47f9-b4cc-97654780c117
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: dd6f9a8d-814f-456d-8fc3-d60933f1ed0a # Heading - Card 2
             instructions: null
             label: null
@@ -109,6 +121,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  745a1ded-59d8-4b2d-935c-2ed9da87fb59: # Map Embed - Card 1
+    columnSuffix: vdverwyt
+    contentColumnType: text
+    fieldGroup: null
+    handle: mapEmbedCard1
+    instructions: 'If populated, this will take precedence over the image for card 1'
+    name: 'Map Embed - Card 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   7185e0e8-2762-4d5d-b963-5a2f92ca4f6e: # Image - Card 2
     columnSuffix: null
     contentColumnType: string
