@@ -1,4 +1,4 @@
-dateModified: 1688759620
+dateModified: 1688764702
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -156,6 +156,7 @@ meta:
     4197b684-37e8-427d-9ed0-80a7712911bc: '2 Text Columns With 3 Images' # 2 Text Columns With 3 Images
     4376fc28-a7c8-4264-ae89-8fd01d231075: 'Current Featured Exhibit' # Current Featured Exhibit
     7185e0e8-2762-4d5d-b963-5a2f92ca4f6e: 'Image - Card 2' # Image - Card 2
+    08243d9a-7eec-43e3-96fb-51d741633226: 'Image Link Behavior - Card 1' # Image Link Behavior - Card 1
     8267e525-8100-4ca9-9949-0677504ad351: email # email
     9011aff5-8faf-4b49-82cf-6e34d4cdeb2a: Items # Items
     9953bc18-4725-4380-adb8-e62a02c6f0d2: 'Waterloo Innovation Park Emergency Phone Display' # Waterloo Innovation Park Emergency Phone Display
@@ -167,6 +168,7 @@ meta:
     433605c5-e0d4-4a9c-a940-6614863fff4a: Heading # Heading
     465854cd-ce73-4e46-905e-7b925a0307e2: 'Exhibition Name' # Exhibition Name
     506955ce-fa3f-407f-9b5c-f7d79b9b1e42: Exhibits # Exhibits
+    653749a4-9f6b-4279-9dde-217307ef1f20: 'Image Link Behavior - Card 2' # Image Link Behavior - Card 2
     865120ee-347d-4344-95ec-61b32b775de0: Image # Image
     3653102e-75a7-411d-bfbf-ea9d4de077f4: 'Rollup Image' # Rollup Image
     5835035f-8ddd-4123-9120-309865e31c20: Default # Default

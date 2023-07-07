@@ -55,6 +55,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 08243d9a-7eec-43e3-96fb-51d741633226 # Image Link Behavior - Card 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 185bf221-30ab-40d8-a830-2c12e90ed828
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 096ee1d5-cd62-4bd3-9e8f-e8e353b7b6fb # Map Embed - Card 1
             instructions: null
             label: null
@@ -110,6 +122,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 9ded39d7-81a9-4200-8439-1f6927d5757b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 653749a4-9f6b-4279-9dde-217307ef1f20 # Image Link Behavior - Card 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e549e1b4-f368-4576-bfe1-63466b3aaac2
             userCondition: null
             warning: null
             width: 100
@@ -247,6 +271,30 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  08243d9a-7eec-43e3-96fb-51d741633226: # Image Link Behavior - Card 1
+    columnSuffix: tnldeezh
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageLinkBehavior
+    instructions: null
+    name: 'Image Link Behavior - Card 1'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Open link in new tab?'
+            -
+              - value
+              - openLinkInNewTab
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Checkboxes
   300367d4-d29d-4580-a797-6140fdfba101: # Image - Card 1
     columnSuffix: null
     contentColumnType: string
@@ -295,6 +343,30 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  653749a4-9f6b-4279-9dde-217307ef1f20: # Image Link Behavior - Card 2
+    columnSuffix: tmepvqua
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageLinkBehavior2
+    instructions: null
+    name: 'Image Link Behavior - Card 2'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Open link in new tab?'
+            -
+              - value
+              - openLinkInNewTab
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Checkboxes
   a8d83305-ed06-4c80-971d-0a649f1c0cff: # Heading - Card 1
     columnSuffix: xivskmhs
     contentColumnType: text

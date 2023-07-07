@@ -485,7 +485,7 @@
 						{% else %}
 						{% set image = block.cardImage.one() %}
 						{% if block.imageLinkUrl %}
-						<a href={{ block.imageLinkUrl }}>
+						<a {% if block.imageLinkBehavior[0].selected %}target="__blank"{% endif %}href={{ block.imageLinkUrl }}>
 						{% endif %}
 							<picture data-aos="fade" class="cta-cards__picture">
 								<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
@@ -498,11 +498,11 @@
 					{% endif %}
 				</div>
 				<div class="cta-cards__item">
-					<h2 data-aos="fade-up" class="cta-cards__heading">{{block.cardHeading2}}</h2>
-					<div data-aos="fade" class="cta-cards__cta">{{block.cardCta2}}</div>
+					<h2 data-aos="fade-up" class="cta-cards__heading">{{ block.cardHeading2 }}</h2>
+					<div data-aos="fade" class="cta-cards__cta">{{ block.cardCta2 }}</div>
 					{% set image = block.cardImage2.one() %}
 					{% if block.imageLinkUrl2 %}
-						<a href={{block.imageLinkUrl2}}>
+						<a {% if block.imageLinkBehavior2[0].selected %}target="__blank"{% endif %}href={{ block.imageLinkUrl2 }}>
 					{% endif %}
 						<picture data-aos="fade" class="cta-cards">
 							<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '(max-width: 768px) 100vw, 50vw'}) }}>
