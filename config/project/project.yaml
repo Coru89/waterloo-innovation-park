@@ -1,4 +1,4 @@
-dateModified: 1688597141
+dateModified: 1688759620
 email:
   fromEmail: mr.coru@gmail.com
   fromName: 'Waterloo Innovation Park'
@@ -112,6 +112,7 @@ meta:
     34e247a1-8be7-4932-a481-cfa735abdba3: 'Exhibition Summary' # Exhibition Summary
     36e3ae0f-08a5-4193-af58-4ed32c350d94: Image # Image
     42a3ddcd-d834-49a3-a79e-21c3f11a6ab6: 'Image panel' # Image panel
+    45e9336f-66f8-48d6-8204-ef56340e3519: 'Image Link URL - Card 1' # Image Link URL - Card 1
     45e37949-8c8b-424e-8d3e-8d4b606ed084: Item # Item
     47b5e67e-c01b-4de1-94dd-e0501368e229: Artist # Artist
     51f09ffd-ffd8-4abf-9a71-5bbb77aac42b: 'Event Slider' # Event Slider
@@ -124,7 +125,9 @@ meta:
     87f60dce-cac6-4d30-90ef-a6a2040f4d0d: 'Post Limit' # Post Limit
     88c281ce-36ef-4427-abcf-672942cfa723: 'Waterloo Innovation Park Address Line 3' # Waterloo Innovation Park Address Line 3
     95ecac41-0668-4b7c-a8ac-8ec14d07b5af: Subject # Subject
+    096ee1d5-cd62-4bd3-9e8f-e8e353b7b6fb: 'Map Embed - Card 1' # Map Embed - Card 1
     96f722d9-925b-4e49-9b34-1494ea93ec47: CTA # CTA
+    98ee634c-24f2-4b7c-8d85-b03e13d7c9b4: 'Image Link URL - Card 2' # Image Link URL - Card 2
     99a2cb7d-0c57-4555-83e3-e8cdc93c541b: 'Section Heading' # Section Heading
     114dbb25-d74a-43df-9136-bbc8e4bdeaec: Content # Content
     120c9344-1c5c-4d8c-89d8-34c7e76a8b31: 'Button Link' # Button Link
@@ -141,7 +144,6 @@ meta:
     703da12e-6c3e-477c-847b-e1a6b6953e8e: 'Property Name' # Property Name
     705fc584-6fc1-4033-8c33-d552f9684177: 'Call To Action Cards' # Call To Action Cards
     710f40a4-9595-439f-ba53-b0995864d7ca: Heading # Heading
-    745a1ded-59d8-4b2d-935c-2ed9da87fb59: 'Map Embed - Card 1' # Map Embed - Card 1
     745cf2fc-6457-41df-a21e-131f47a52823: Content # Content
     750a3bea-3a7c-48b8-a453-41661ad274fa: 'Page Intro' # Page Intro
     771b1ebb-9bc3-4a71-9969-b7e5f1020bb7: 'Property Item' # Property Item
