@@ -60,6 +60,24 @@ $block: "calendar";
   }
 }
 
+.card__columns {
+  display: flex;
+  flex-direction: column;
+
+  @include media-min(sm) {
+    flex-direction: row;
+  }
+}
+
+.card__column-image {
+  padding: 1rem;
+  
+  @include media-min(sm) {
+    align-self: center;
+    width: 50%;
+  }
+}
+
 .views {
   margin-top: 2.5rem;
 }

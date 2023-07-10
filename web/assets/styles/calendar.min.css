@@ -12557,6 +12557,35 @@ textarea.form-control-lg {
   }
 }
 
+.card__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 544px) {
+  .card__columns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.card__column-image {
+  padding: 1rem;
+}
+@media (min-width: 544px) {
+  .card__column-image {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 50%;
+  }
+}
+
 .views {
   margin-top: 2.5rem;
 }

@@ -61,49 +61,68 @@
                 {% paginate craft.calendar.events(eventOptions) as pageInfo, events %}
 
                 {% for event in events %}
-
                     <div class="card" style="border-color: {{ event.calendar.color }}; margin-bottom: 20px;">
                         <h4 class="card-header d-flex justify-content-between align-items-center" style="color: {{ event.calendar.contrastColor }}; background-color: {{ event.calendar.lighterColor }};">
                             {{ event.title }}&nbsp;&nbsp;
                             <a href="{{ siteUrl }}calendar/event/{{ event.id }}/{{ event.repeating ? event.startDate.format('Y/m/d') }}" class="btn btn-light btn-sm border-light border border-dark">View Event</a>
                         </h4>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <strong>
-                                {{ event.startDate.format('l, F j, Y') }}
-                                {% if event.allDay %}
-                                    (all day)
-                                {% else %}
-                                    at {{ event.startDate.format("g:ia") }} -
-                                    {% if event.multiDay %}
-                                        <br />{{ event.endDate.format("l, F j, Y \\a\\t g:ia") }}
-                                    {% else %}
-                                        {{ event.endDate.format("g:ia") }}
-                                    {% endif %}
-                                {% endif %}
-                            </strong>
-                            </li>
-                            <li class="list-group-item">
-                                Calendar:&nbsp;
-                                <strong style="color: {{ event.calendar.color }};"><span class="fas fa-calendar-alt" aria-hidden="true"></span>&nbsp;{{ event.calendar.name }}</strong>
-                            </li>
-                            <li class="list-group-item">
-                                Location:&nbsp;
-                                {% if event['location'] is defined and event.location is not empty %}
-                                    {{ event.location|striptags }}
-                                {% else %}
-                                    N/A
-                                {% endif %}
-                            </li>
-                            <li class="list-group-item">
-                                Description:&nbsp;
-                                {% if event['description'] is defined and event.description is not empty %}
-                                    {{ event.description|striptags }}
-                                {% else %}
-                                    N/A
-                                {% endif %}
-                            </li>
-                        </ul>
+                        <div class="card__columns">
+                            <div class="card__column-image">
+                                {% if (event.eventImage | length) == 1 %}
+                                {% set image = event.eventImage.one() %}
+                            {% endif %}
+                            
+                            {% if image is defined %}
+                            <picture data-aos="fade" class="event__picture">
+                                <source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '80vw'}) }}>
+                                <source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '80vw'}) }}>
+                                <img style="width: 100%; height: auto;" alt="image.alt" src={{image.url}} width={{image.width}} height={{image.height}}>
+                            </picture>
+                            {% endif %}
+                            </div>
+                            <div class="card__column-text">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <strong>
+                                        {{ event.startDate.format('l, F j, Y') }}
+                                        {% if event.allDay %}
+                                            (all day)
+                                        {% else %}
+                                            at {{ event.startDate.format("g:ia") }} -
+                                            {% if event.multiDay %}
+                                                <br />{{ event.endDate.format("l, F j, Y \\a\\t g:ia") }}
+                                            {% else %}
+                                                {{ event.endDate.format("g:ia") }}
+                                            {% endif %}
+                                        {% endif %}
+                                    </strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Calendar:&nbsp;
+                                        <strong style="color: {{ event.calendar.color }};"><span class="fas fa-calendar-alt" aria-hidden="true"></span>&nbsp;{{ event.calendar.name }}</strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Location:&nbsp;
+                                        {% if event['location'] is defined and event.location is not empty %}
+                                            {{ event.location|striptags }}
+                                        {% else %}
+                                            N/A
+                                        {% endif %}
+                                    </li>
+                                    <li class="list-group-item">
+                                        Description:&nbsp;
+                                        {% if event['description'] is defined and event.description is not empty %}
+                                            {{ event.description|striptags }}
+                                        {% else %}
+                                            N/A
+                                        {% endif %}
+                                    </li>
+                                </ul>
+    
+                            </div>
+
+                        </div>
+
                     </div>
 
                 {% else %}
