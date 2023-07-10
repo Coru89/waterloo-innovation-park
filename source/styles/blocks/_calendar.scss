@@ -24,25 +24,11 @@ $block: "calendar";
         text-align: right;
       }
     }
+  }
 
-
-
-
-
-    // &-week {
-    //   padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-    //   padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
-
-    //   @include media-min(md) {
-    //      padding: 0;
-    //   }
-
-    //   @include media-min(lg) {
-    //     padding-left: 0;
-    //     padding-right: calc(var(--bs-gutter-x) * 0.5);
-    //     width: 75%;
-    //   }
-    // }
+  &__button-row {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__week-of {
@@ -118,12 +104,15 @@ body {
       width: 75%;
     }
 
-    &-month {
+    &-main {
+      order: 2;
+
       @include media-min(md) {
         padding: 0;
       }
 
       @include media-min(lg) {
+        order: 1;
         padding-left: 0;
         padding-right: calc(var(--bs-gutter-x) * 0.5);
         width: 75%;
@@ -131,11 +120,10 @@ body {
     }
 
     &-filters {
+      order: 1;
       padding-top: 0;
-      margin: 0 auto;
+      margin: 0 auto 2rem auto;
       max-width: 1280px;
-      // padding-left: 1.125rem;
-      // padding-right: 1.125rem;
       padding-right: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
       padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
 
@@ -145,6 +133,7 @@ body {
       }
       
       @include media-min(lg) {
+        order: 2;
         padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.125rem);
         padding-top: 3.75rem;
         width: 25%;
@@ -155,12 +144,6 @@ body {
 }
 
 #month_calendar {
-  margin-bottom: 2.5rem;
-
-  @include media-min(md) {
-    margin-bottom: 0;
-  }
-
   .col-last {
     display: flex;
     justify-content: flex-end;

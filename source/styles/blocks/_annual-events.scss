@@ -4,11 +4,11 @@ $block: "annual-events";
 
 .#{$block} {
     &__inner {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         position: relative;
 
         @include media-min(lg) {
-            margin-top: 6.5rem;
+            margin-top: 3.5rem;
             margin-bottom: 6.5rem;
         }
     }

@@ -17,7 +17,7 @@
 
 	<div class="calendar-layout">
 		<div class="row">
-			<div class="calendar-layout__column-month">
+			<div class="calendar-layout__column-main">
 				{% include "calendar/layouts/_calendar_banner.html" %}
 
 				<div id="month_calendar">
@@ -28,8 +28,8 @@
 
 					{% set dateBoundsHelper = now.diff(month.nextDate)|date('%r%a') %}
 
-					<div class="u-container row align-items-center justify-content-between mb-3">
-						<div class="col-sm-7 calendar__column">
+					<div class="u-container calendar__button-row align-items-center justify-content-between mb-3">
+						<div class="calendar__column">
 							{% if dateBoundsHelper > -365 %}
 								<a class="button button--outline button--arrow button--arrow-left" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.previousDate.format('Y/m') }}">
 									<span class="button__inner">
@@ -38,7 +38,7 @@
 								</a>
 							{% endif %}
                             {% if dateBoundsHelper < 365 %}
-								<a class="button button--outline button--arrow float-right" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
+								<a class="button button--outline button--arrow" href="{{ siteUrl }}calendar/month/{{ segment3 == "calendar" ? "calendar/"~segment4~"/" }}{{ month.nextDate.format('Y/m') }}">
 									<span class="button__inner">
 									{{ month.nextDate.format('F') }}
 									</span>
@@ -46,7 +46,7 @@
 							{% endif %}
 						</div>
 
-						<div class="col-sm-5 calendar__column">
+						<div class="calendar__column">
 							{% include "calendar/layouts/_month_heading.html" with {month: month} only %}
 							&nbsp;
 							<span class="badge {{ month.eventCount ? " badge-warning" : " badge-secondary" }}">
@@ -99,7 +99,6 @@
 				</div>
 
 			</div>
-
 			<div class="calendar-layout__column-filters">
 				{% include "calendar/layouts/_sidebar.html" %}
 			</div>
