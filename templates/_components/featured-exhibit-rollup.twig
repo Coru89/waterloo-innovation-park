@@ -1,21 +1,21 @@
 {% set offset = offset ?? 0 %}
 
-{% set entryQuery = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one().galleryItems.limit(limit) %}
-{% set galleryItems = entryQuery.ids() %}
+{% set entryQuery = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one().galleryItems.offset(offset).limit(limit) %}
+{% set entries = entryQuery.all() %}
 
-{% set entry = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one() %}
+{% set exhibit = craft.entries.section('featuredExhibit').one().currentFeaturedExhibit.one() %}
 <section class="gallery-rollup">
   <div class="u-container gallery-rollup__inner">
-    <h2 data-aos="fade-up" class="gallery-rollup__heading">Featured work - "{{entry.title}}"</h2>
-    <div data-aos="fade" class="gallery-rollup__summary">{{ entry.exhibitionSummary }}</div>
+    <h2 data-aos="fade-up" class="gallery-rollup__heading">Featured work - "{{exhibit.title}}"</h2>
+    <div data-aos="fade" class="gallery-rollup__summary">{{ exhibit.exhibitionSummary }}</div>
     <ul class="gallery-rollup__list">
-      {% for itemId in galleryItems %}
-        {% include '_components/gallery-card' with {'itemId': itemId } %}
+      {% for entry in entries %}
+        {% include '_components/gallery-card' %}        
       {% endfor %}
     </ul>
 
     {# If the total entry count is greater than the number that has been displayed #}
-    {% if entryQuery.count() > offset + galleryItems|length %}
+    {% if entryQuery.count() > offset + entries|length %}
       {# Increments `offset` by the value of `limit` #}
       <button data-aos="fade" class="gallery-rollup__button button button--outline" id="featured-exhibit-load-more" sprig s-val:offset="{{ offset + limit }}"
         {# Appends entries #}
@@ -29,6 +29,5 @@
       {# Swaps the button out-of-band with a dummy button that is hidden #}
         <button class="gallery-rollup__button" id="featured-exhibit-load-more" s-swap-oob="true" style="display: none"></button>
     {% endif %}
-    
   </div>
 </section>
