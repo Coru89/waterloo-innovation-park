@@ -51,11 +51,16 @@
 			{# If this button was clicked then swap it out-of-band #}
 			{{ sprig.trigger == 'past-exhibits-load-more' ? 's-swap-oob="true"' }}
 		>
-			Show More
+			<div class="past-exhibits-rollup__button-text">Show More</div>
+			<div class="past-exhibits-rollup__button-loader">
+			<svg stroke="#0A78FF" class="past-exhibits-rollup__button-circular-loader" viewBox="25 25 50 50" >
+				<circle class="past-exhibits-rollup__button-loader-path" cx="50" cy="50" r="20" fill="none" stroke="#0A78FF" stroke-width="2" />
+			</svg>
+			</div>
 		</button>
 		{% else %}
 		{# Swaps the button out-of-band with a dummy button that is hidden #}
-			<button class="gallery-rollup__button" id="past-exhibits-load-more" s-swap-oob="true" style="display: none"></button>
+			<button class="past-exhibits-rollup__button" id="past-exhibits-load-more" s-swap-oob="true" style="display: none"></button>
 		{% endif %}
 	</div>
 </section>

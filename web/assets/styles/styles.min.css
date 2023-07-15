@@ -2973,6 +2973,52 @@ html.with-fancybox body.hide-scrollbar {
   cursor: pointer;
   display: block;
   margin: 4.5rem auto 0;
+  position: relative;
+}
+.gallery-rollup__button-loader {
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  margin: 0px auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+.gallery-rollup__button-loader::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.gallery-rollup__button-circular-loader {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+}
+.gallery-rollup__button-loader-path {
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  stroke-linecap: round;
+}
+.gallery-rollup .htmx-request {
+  cursor: default;
+}
+.gallery-rollup .htmx-request .gallery-rollup__button-text {
+  visibility: hidden;
+  opacity: 0;
+}
+.gallery-rollup .htmx-request .gallery-rollup__button-loader {
+  display: block;
 }
 .gallery-rollup__read-more {
   color: #0A78FF;
@@ -2988,6 +3034,74 @@ html.with-fancybox body.hide-scrollbar {
   box-shadow: inset 0 -1px 0 #003EB8;
 }
 
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    stroke: #0a78ff;
+  }
+  40% {
+    stroke: #0a78ff;
+  }
+  66% {
+    stroke: #0a78ff;
+  }
+  80%, 90% {
+    stroke: #0a78ff;
+  }
+}
+@keyframes color {
+  0% {
+    stroke: #0a78ff;
+  }
+  40% {
+    stroke: #0a78ff;
+  }
+  66% {
+    stroke: #0a78ff;
+  }
+  80%, 90% {
+    stroke: #0a78ff;
+  }
+}
 @media (min-width: 1052px) {
   .hero-panel {
     margin-top: 3rem;
@@ -3631,11 +3745,57 @@ html.with-fancybox body.hide-scrollbar {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 @media (min-width: 768px) {
   .past-exhibits-rollup__button {
     margin-top: 4.5rem;
   }
+}
+.past-exhibits-rollup__button-loader {
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  margin: 0px auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+.past-exhibits-rollup__button-loader::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.past-exhibits-rollup__button-circular-loader {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+}
+.past-exhibits-rollup__button-loader-path {
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  stroke-linecap: round;
+}
+.past-exhibits-rollup .htmx-request {
+  cursor: default;
+}
+.past-exhibits-rollup .htmx-request .past-exhibits-rollup__button-text {
+  visibility: hidden;
+  opacity: 0;
+}
+.past-exhibits-rollup .htmx-request .past-exhibits-rollup__button-loader {
+  display: block;
 }
 
 .double-text-with-3-images {

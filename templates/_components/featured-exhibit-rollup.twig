@@ -17,13 +17,18 @@
     {# If the total entry count is greater than the number that has been displayed #}
     {% if entryQuery.count() > offset + entries|length %}
       {# Increments `offset` by the value of `limit` #}
-      <button data-aos="fade" class="gallery-rollup__button button button--outline" id="featured-exhibit-load-more" sprig s-val:offset="{{ offset + limit }}"
+      <button class="gallery-rollup__button button button--outline" id="featured-exhibit-load-more" sprig s-val:offset="{{ offset + limit }}"
         {# Appends entries #}
         s-select=".gallery-rollup__list .gallery-card__item" s-target=".gallery-rollup__list" s-swap="beforeend"
         {# If this button was clicked then swap it out-of-band #}
         {{ sprig.trigger == 'featured-exhibit-load-more' ? 's-swap-oob="true"' }}
       >
-        Show More
+        <div class="gallery-rollup__button-text">Show More</div>
+            <div class="gallery-rollup__button-loader">
+              <svg stroke="#0A78FF" class="gallery-rollup__button-circular-loader" viewBox="25 25 50 50" >
+                <circle class="gallery-rollup__button-loader-path" cx="50" cy="50" r="20" fill="none" stroke="#0A78FF" stroke-width="2" />
+              </svg>
+            </div>
       </button>
     {% else %}
       {# Swaps the button out-of-band with a dummy button that is hidden #}
