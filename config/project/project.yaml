@@ -1,6 +1,6 @@
-dateModified: 1688764702
+dateModified: 1690366643
 email:
-  fromEmail: mr.coru@gmail.com
+  fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
   replyToEmail: null
   template: null
@@ -289,7 +289,7 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       dump: false
-      instagramUser: lostleblanc
+      instagramUser: 
       proxyKey: GPdOk5ibUUjHwnOn8fnY
       subpath: ''
       timeout: 10
