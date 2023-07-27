@@ -3726,6 +3726,17 @@ html.with-fancybox body.hide-scrollbar {
   object-position: center;
   width: 73px;
 }
+.past-exhibits-rollup__info {
+  color: #0A78FF;
+  -webkit-box-shadow: inset 0 -1px 0 #0A78FF;
+  box-shadow: inset 0 -1px 0 #0A78FF;
+  text-decoration: none;
+}
+.past-exhibits-rollup__info:hover {
+  color: #003EB8;
+  -webkit-box-shadow: inset 0 -1px 0 #003EB8;
+  box-shadow: inset 0 -1px 0 #003EB8;
+}
 .past-exhibits-rollup__info-title {
   font-weight: 700;
 }

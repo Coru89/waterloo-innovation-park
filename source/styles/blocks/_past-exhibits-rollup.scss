@@ -63,6 +63,8 @@ $block: 'past-exhibits-rollup';
     }
 
     &__info {
+        @include link;
+        
         &-title {
             font-weight: 700;
         }
