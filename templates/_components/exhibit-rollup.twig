@@ -2,7 +2,7 @@
     <div class="u-container gallery-rollup__inner">
         <h2 data-aos="fade-up" class="gallery-rollup__heading">Past exhibit - "{{entry.title}}"</h2>
         <a data-aos="fade" href="/the-link/featured-exhibit" class="gallery-rollup__back">< Go back to current featured exhibit</a>
-        <div data-aos="fade" class="gallery-rollup__summary">{{ entry.exhibitionSummary | nl2br }}</div>
+        <div data-aos="fade" class="gallery-rollup__summary">{{ entry.exhibitionSummary | nl2br | raw }}</div>
         <ul class="gallery-rollup__list">
             {% for itemId in entry.galleryItems.ids() %}
                 {% include '_components/gallery-card' with {'itemId': itemId, 'entryId': entry.Id} %}
