@@ -3633,13 +3633,6 @@ html.with-fancybox body.hide-scrollbar {
 .map__summary {
   margin-bottom: 1.5rem;
 }
-@media (min-width: 768px) {
-  .map__summary {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
 
 #map {
   -webkit-box-align: center;

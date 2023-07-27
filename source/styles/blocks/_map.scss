@@ -22,10 +22,6 @@ $block: 'map';
 
   &__summary {
     margin-bottom: 1.5rem;
-    
-    @include media-min(md) {
-      column-count: 2;
-    }
   }
 }
 
