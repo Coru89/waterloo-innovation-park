@@ -1,4 +1,4 @@
-dateModified: 1690452774
+dateModified: 1690454532
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -88,6 +88,7 @@ meta:
     7c65acbe-cf3a-4d9d-8c29-198033c701a3: Instagram # Instagram
     7d4ea53b-345f-4ffd-aeb1-c3be93482fcb: 'Lease now' # Lease now
     8a9c949f-a4f8-46c9-b908-e0fba1e95286: Summary # Summary
+    8ab1fc90-55da-4dd5-87ff-80cf0364b381: 'The Link Contact Message' # The Link Contact Message
     8adcdb41-46b1-4b0d-9ffd-58c644b0e161: Headline # Headline
     8af21ea5-8ed7-451b-9561-65de6890a24a: Events # Events
     8c6ac355-ba45-47f9-9d6c-13d9f0ecdc30: Limit # Limit
@@ -135,6 +136,7 @@ meta:
     169eb7a3-ac32-4f0f-afd8-eb8b92803b1b: 'Event Image' # Event Image
     220d125c-af88-4a55-9b6c-ddae8a634855: 'Content Panel' # Content Panel
     284d17e3-f78c-42b0-a5d0-6cba8be9f1d0: 'Button Text' # Button Text
+    317e3c62-d5d8-4d92-8c0f-f2b98ab1bb3f: 'Waterloo Innovation Park Address Line 3' # Waterloo Innovation Park Address Line 3
     335c9bcd-5565-445e-a5cf-ed5a78aac5e7: 'Phone Display' # Phone Display
     354ce86f-294c-4c2e-a75a-be2deb8cb9d0: 'Page Heading' # Page Heading
     402b359e-759c-4938-b279-b9a22b2c6d6a: 'Waterloo Innovation Park' # Waterloo Innovation Park
@@ -185,19 +187,21 @@ meta:
     a8c7d91c-a2c3-4be3-b59e-c74e6e786255: 'Featured Exhibit Rollup' # Featured Exhibit Rollup
     a8d83305-ed06-4c80-971d-0a649f1c0cff: 'Heading - Card 1' # Heading - Card 1
     a51d302d-a33f-4abc-8ffe-bbaf14e67455: Summary # Summary
+    a551636e-985a-439e-b78e-c173d8fcc171: 'The Link Phone Link' # The Link Phone Link
     a702171c-dc55-496a-8140-10a53900a54a: 'Button Link' # Button Link
     ac896e2d-c524-475b-9740-71f975b24844: 'The Link Phone Display' # The Link Phone Display
     ad3311a0-c30e-4a01-9405-46dc2bb50f43: 'Page Heading' # Page Heading
     afb98157-06dd-4f20-a32d-7759850afba2: 'Stat Holidays' # Stat Holidays
     b03ae735-63e6-44c4-9ab7-08c44d6089e4: 'Annual Events' # Annual Events
     b1c63a82-dac1-486f-a4f0-a01d8bd252d6: 'Image Vertical Position' # Image Vertical Position
+    b3b86eba-c5cd-4b35-99db-9cfe005af4a3: 'Waterloo Innovation Park Emergency Phone Link' # Waterloo Innovation Park Emergency Phone Link
     b3e466e4-7126-4d1b-ae44-65f099f3487e: Year # Year
     b4a72afd-9824-4711-8c7c-654a73ab4125: 'Waterloo Innovation Park Inquiries Phone Display 2' # Waterloo Innovation Park Inquiries Phone Display 2
     b5d074e4-1433-4ae3-85be-1e9d75889129: Calendar # Calendar
     b7cc4e3f-4830-4d21-8c33-0fd45bf0efdf: Facebook # Facebook
     b29d046d-03e7-4eb8-9248-7c870d157e78: 'Property Manager Phone Link' # Property Manager Phone Link
     b41afa41-893f-4b11-970e-c75f2431f0be: 'Learn More Link' # Learn More Link
-    b87bb998-aa92-42fc-aee9-1adb2c624a30: 'Waterloo Innovation Park Address Line 2' # Waterloo Innovation Park Address Line 2
+    b87bb998-aa92-42fc-aee9-1adb2c624a30: 'The Link Address' # The Link Address
     b19956e7-f23d-451e-93c0-712acc2c2b9a: 'Event Description' # Event Description
     b480097d-88f7-49e8-a74a-530aaf07fb0a: 'Annual Events' # Annual Events
     baa2eb32-a191-474e-b7da-50764f46b1e5: Info # Info
@@ -205,7 +209,7 @@ meta:
     c21e6094-c48b-4da7-b900-dd593e0d4125: Contact # Contact
     c27feab1-3cbb-4d0e-9bf7-ddcf2ac7a63e: 'Footer Nav Items' # Footer Nav Items
     cb1ecf4b-0473-4929-80c1-830b574c0c48: Price # Price
-    cb6d8f3b-a601-41e8-8045-6ab67f0d37b8: 'Waterloo Innovation Park Address Line 1' # Waterloo Innovation Park Address Line 1
+    cb6d8f3b-a601-41e8-8045-6ab67f0d37b8: 'Waterloo Innovation Park Address' # Waterloo Innovation Park Address
     cb191950-443f-46b3-8914-5a71580972f5: 'Full Name' # Full Name
     cc67c156-422d-4f9e-be71-f3d094eb08e5: 'Art Gallery' # Art Gallery
     cc822dad-031d-4617-957a-65ba55d4ddb3: Instagram # Instagram
@@ -224,6 +228,7 @@ meta:
     dd3a546e-11a2-4fd7-a835-04974a2d24ff: 'Booking Contact Info' # Booking Contact Info
     dd6f9a8d-814f-456d-8fc3-d60933f1ed0a: 'Heading - Card 2' # Heading - Card 2
     de802f05-8a3d-4fbd-99ee-3188ab50874c: Content # Content
+    e7c7e219-044d-4f4e-813d-a85552002327: 'Waterloo Innovation Park Contact Message' # Waterloo Innovation Park Contact Message
     e12bca54-c3b9-4ba0-9641-31e98bd18527: 'Remove padding top?' # Remove padding top?
     e38e9b53-b834-41a9-aa4c-ec123249d1b7: 'Button Text' # Button Text
     e56aaa87-b266-49f6-888d-6cb43cda2344: Item # Item
@@ -244,6 +249,7 @@ meta:
     f76199d1-0bdf-4450-81d3-d2aefa255f91: 'Call-to-action - Card 2' # Call-to-action - Card 2
     faa07140-e5cb-4752-9790-0260ba2b62da: 'Waterloo Innovation Park Leasing Phone Display' # Waterloo Innovation Park Leasing Phone Display
     fbbb7b50-c55e-456d-9508-45a83c3219cb: Events # Events
+    fbccfcff-4fb4-431b-99a0-3bf93c927097: 'Waterloo Innovation Park Leasing Phone Link' # Waterloo Innovation Park Leasing Phone Link
     fd107921-d306-448f-ad1a-e7c2ef60913c: Home # Home
     fe4b113d-bf1c-4f36-806f-80cb15f3cac8: Title # Title
 plugins:
