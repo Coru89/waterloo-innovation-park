@@ -536,7 +536,9 @@
 					</div>
 					<div class="contact-details__column">
 						<ul class="contact-details__list">
+							{% if block.wipContactMessage %}
 							<h4 class="contact-details__inquiry">{{ block.wipContactMessage }}</h4>
+							{% endif %}
 							<li class="contact-details__item">
 								<span class="contact-details__label">Building Operations: </span>
 								<a href="{{block.wipInquiriesPhoneLink}}" class="contact-details__link">{{block.wipInquiriesPhoneDisplay}}</a>
@@ -561,7 +563,9 @@
 						</div>
 					</div>
 					<div class="contact-details__column">
-						<h4 class="contact-details__inquiry">{{ block.theLinkContactMessage }}</h4>
+					    {% if block.theLinkContactMessage %}
+							<h4 class="contact-details__inquiry">{{ block.theLinkContactMessage }}</h4>
+						{% endif %}
 						<div class="contact-details__item"><span class="contact-details__label">Hours of Operation: </span>{{block.theLinkHoursOfOperation}}</div>
 						<div class="contact-details__item"><span class="contact-details__label">Tel: </span><a class="contact-details__tel-link" href={{ block.theLinkPhoneLink }}>{{block.theLinkPhoneDisplay}}</a></div>
 						<div class="contact-details__item"><span class="contact-details__label">General Inquiries: </span><a href="{{block.theLinkEmailLink}}" class="contact-details__link">Send us an e-mail</a></div>
