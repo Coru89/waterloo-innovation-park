@@ -19,25 +19,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b87bb998-aa92-42fc-aee9-1adb2c624a30 # The Link Address
+            fieldUid: e7c7e219-044d-4f4e-813d-a85552002327 # Waterloo Innovation Park Contact Message
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7680b32e-84b4-4423-9c99-4b6443f82880
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 317e3c62-d5d8-4d92-8c0f-f2b98ab1bb3f # Waterloo Innovation Park Address Line 3
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c3b8c9e4-ad66-48ed-97ee-67643ea7f979
+            uid: eb2e301b-a953-4a53-af36-8824af979a95
             userCondition: null
             warning: null
             width: 100
@@ -151,6 +139,30 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: b87bb998-aa92-42fc-aee9-1adb2c624a30 # The Link Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7680b32e-84b4-4423-9c99-4b6443f82880
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8ab1fc90-55da-4dd5-87ff-80cf0364b381 # The Link Contact Message
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3ab989a-190b-4e2a-b414-b30c9848514d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 1019bad3-fa23-4cdb-bb2b-711a0f1e7bdd # The Link Hours of Operation
             instructions: null
             label: null
@@ -197,30 +209,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: e7c7e219-044d-4f4e-813d-a85552002327 # Waterloo Innovation Park Contact Message
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: eb2e301b-a953-4a53-af36-8824af979a95
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 8ab1fc90-55da-4dd5-87ff-80cf0364b381 # The Link Contact Message
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d3ab989a-190b-4e2a-b414-b30c9848514d
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: e052d9ee-ca0a-4e1b-b451-41a37658bdc8
         userCondition: null
@@ -232,26 +220,6 @@ fields:
     handle: theLinkContactMessage
     instructions: null
     name: 'The Link Contact Message'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  317e3c62-d5d8-4d92-8c0f-f2b98ab1bb3f: # Waterloo Innovation Park Address Line 3
-    columnSuffix: nqxzbgmk
-    contentColumnType: text
-    fieldGroup: null
-    handle: wipAddressLine3
-    instructions: null
-    name: 'Waterloo Innovation Park Address Line 3'
     searchable: false
     settings:
       byteLimit: null
@@ -436,10 +404,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: true
+      code: false
       columnType: null
       initialRows: 4
-      multiline: false
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
