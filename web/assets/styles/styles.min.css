@@ -3841,14 +3841,6 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
-  .double-text-with-3-images__text-row p {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
   .double-text-with-3-images__text-row .button {
     display: none;
   }

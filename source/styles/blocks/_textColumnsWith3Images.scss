@@ -42,11 +42,6 @@ $block: 'double-text-with-3-images';
         margin-bottom: 4rem;
 
         @include media-min(md) {
-            p {
-                column-count: 2;
-                column-gap: 2rem;
-            }
-
             .button {
                 display: none;
             } 
