@@ -1,4 +1,4 @@
-dateModified: 1690366643
+dateModified: 1690452774
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -106,6 +106,7 @@ meta:
     24a64e3b-2ad3-479e-89dc-1c16e57368ac: Booking # Booking
     25c1ea66-8095-4f2a-971e-611b21bba3aa: Item # Item
     26baa828-2510-4546-ab8a-4866ca224fa2: 'Featured Exhibit' # Featured Exhibit
+    26fbc999-074f-40e6-b624-8b8fdeb3f442: 'Waterloo Innovation Park Address Line 3' # Waterloo Innovation Park Address Line 3
     28e33f30-0531-4723-b2ac-1abf27a1bde7: 'Directions Link' # Directions Link
     31a9da1e-374b-4022-b98e-180349d41568: 'Social Links (Footer Links)' # Social Links (Footer Links)
     31aa51d3-2c41-4a98-8464-95f377cc4f07: 'Lease Managers Heading' # Lease Managers Heading
@@ -289,7 +290,7 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       dump: false
-      instagramUser: 
+      instagramUser: null
       proxyKey: GPdOk5ibUUjHwnOn8fnY
       subpath: ''
       timeout: 10

@@ -146,7 +146,7 @@ fields:
       code: false
       columnType: null
       initialRows: 4
-      multiline: false
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -170,7 +170,7 @@ fields:
       defaultUploadLocationSubpath: null
       localizeRelations: false
       maintainHierarchy: false
-      maxRelations: 3
+      maxRelations: null
       minRelations: null
       previewMode: full
       restrictFiles: false
