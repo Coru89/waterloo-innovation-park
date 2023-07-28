@@ -16,6 +16,7 @@
 		{% set submission = submission ?? null %}
 
 		<form data-aos="fade" id="form" class="forms contact__form" method="post" action="" accept-charset="UTF-8">
+			<input type="hidden" name="toEmail" value="{{ 'mr.coru@gmail.com'|hash }}">
 			<div class="u-container-small">
 				{{ csrfInput() }}
 				{{ actionInput('contact-form/send') }}
@@ -28,7 +29,6 @@
 					{# set the to email #}
 					{# carlyd@ctl-group.com #}
 					{# info@waterloopark.ca #}
-					<input type="hidden" name="toEmail" value="{{ 'corey.james.keller@gmail.com'}}">
 					{# <input type="hidden" name="toEmail" value="{{ 'me@example.com'|hash }}"> #}
 					{# set the email subject #}
 					<input type="hidden" name="subject" value="Waterloo Innovation Park - Question" data-original-value="Waterloo Innovation Park - Question">

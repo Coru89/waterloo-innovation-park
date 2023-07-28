@@ -3,10 +3,11 @@
 $config = [];
 $request = Craft::$app->request;
 
-$toEmail = $request->getValidatedBodyParam('toEmail');
-
-if ($toEmail !== null && !$request->getIsConsoleRequest()) {
-   $config['toEmail'] = $toEmail;
+if (
+    !$request->getIsConsoleRequest() &&
+    ($toEmail = $request->getValidatedBodyParam('toEmail')) !== null
+) {
+    $config['toEmail'] = $toEmail;
 }
 
 return $config;
