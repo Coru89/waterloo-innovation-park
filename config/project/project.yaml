@@ -1,4 +1,4 @@
-dateModified: 1690542248
+dateModified: 1690542776
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -6,7 +6,7 @@ email:
   template: null
   transportSettings:
     apiKey: 01972b0752569ae74e84a14b1c3727e0
-    apiSecret: 4ee0f2b6cfa15d4909619d12e37e8a66
+    apiSecret: bce9e3c16193edd555dbbdfb0eeb8010
   transportType: robuust\mailjet\MailjetAdapter
 fs:
   exhibitionPhotos:
