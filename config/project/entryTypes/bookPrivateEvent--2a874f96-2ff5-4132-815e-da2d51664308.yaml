@@ -66,6 +66,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 79a345ab-2e14-443b-b9f2-e4caeb12f9a2 # Booking Form Recipient Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f851603a-6508-408a-844d-c157e05a6892
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 5da9591a-e127-4c34-b031-551d3c121c64
         userCondition: null
