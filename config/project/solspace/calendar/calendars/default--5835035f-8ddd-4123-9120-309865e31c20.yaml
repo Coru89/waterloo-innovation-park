@@ -1,6 +1,6 @@
 allowRepeatingEvents: true
 color: '#0a78ff'
-description: 'The default calendar'
+description: ''
 descriptionFieldHandle: '0'
 fieldLayout:
   tabs:
