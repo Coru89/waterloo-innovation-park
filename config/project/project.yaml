@@ -1,4 +1,4 @@
-dateModified: 1690533548
+dateModified: 1690540050
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -276,17 +276,6 @@ plugins:
       showMiniCal: '1'
       timeFormat: auto
       timeInterval: 30
-  contact-form:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      allowAttachments: ''
-      allowedMessageFields: null
-      prependSender: 'On behalf of'
-      prependSubject: ''
-      successFlashMessage: 'Your message has been sent.'
-      toEmail: corey.james.keller@gmail.com
   copy:
     edition: standard
     enabled: true
