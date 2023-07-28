@@ -2,6 +2,7 @@
   "require": {
     "codemonauts/craft-instagram-feed": "^2.1",
     "craftcms/cms": "4.4.13",
+    "craftcms/contact-form": "^3.0",
     "craftcms/redactor": "3.0.4",
     "dispositiontools/craft-minical": "4.0.0",
     "ether/seo": "4.1.2",

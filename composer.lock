@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2fc23770eeaec71c22c1a5a9e413e5c",
+    "content-hash": "9c35b23524b47793f92c93badd67e2ff",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -626,6 +626,70 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
             "time": "2023-05-24T17:58:00+00:00"
+        },
+        {
+            "name": "craftcms/contact-form",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/contact-form.git",
+                "reference": "f8d09c727cd3d4cba7d046bb49cbe1ce422affd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/f8d09c727cd3d4cba7d046bb49cbe1ce422affd0",
+                "reference": "f8d09c727cd3d4cba7d046bb49cbe1ce422affd0",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-beta.1",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Contact Form",
+                "handle": "contact-form",
+                "documentationUrl": "https://github.com/craftcms/contact-form/blob/v2/README.md",
+                "components": {
+                    "mailer": "craft\\contactform\\Mailer"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\contactform\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Add a simple contact form to your Craft CMS site",
+            "keywords": [
+                "cms",
+                "contact",
+                "craftcms",
+                "form",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/craftcms/contact-form/blob/v2/README.md",
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/contact-form/issues?state=open",
+                "rss": "https://github.com/craftcms/contact-form/commits/v2.atom",
+                "source": "https://github.com/craftcms/contact-form"
+            },
+            "time": "2023-03-16T21:54:21+00:00"
         },
         {
             "name": "craftcms/html-field",
