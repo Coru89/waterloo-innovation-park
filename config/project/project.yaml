@@ -1,4 +1,4 @@
-dateModified: 1690529930
+dateModified: 1690533177
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -122,6 +122,7 @@ meta:
     56c3c12e-76ff-4b2e-8e3c-382ad3315b5b: 'Section Content Location' # Section Content Location
     075e886a-d174-424c-938b-98d8a9b420ae: 'Image Slider' # Image Slider
     78ee6ec1-b0de-4912-a9f9-ced7e4c1646e: 'Call To Action Panel' # Call To Action Panel
+    79a345ab-2e14-443b-b9f2-e4caeb12f9a2: 'Booking Form Recipient Email' # Booking Form Recipient Email
     79e72fa5-51bb-408b-b0b7-ebd8acbbe7b2: 'Panel Title' # Panel Title
     86bf8d52-4937-4435-86ec-d080ca4fd0d7: 'Book Private Event' # Book Private Event
     87f60dce-cac6-4d30-90ef-a6a2040f4d0d: 'Post Limit' # Post Limit

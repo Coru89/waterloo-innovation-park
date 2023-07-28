@@ -1,0 +1,12 @@
+columnSuffix: rjrzmjvd
+contentColumnType: string
+fieldGroup: 24a64e3b-2ad3-479e-89dc-1c16e57368ac # Booking
+handle: bookingFormRecipientEmail
+instructions: 'Specify the email address that will receive booking requests from the booking form.'
+name: 'Booking Form Recipient Email'
+searchable: false
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email
