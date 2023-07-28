@@ -26,18 +26,13 @@
 				{% if craft.app.session.hasFlash('success') %}
 					<div>Thank you for your message.</div>
 				{% else  %}
-					{# set the to email #}
-					{# carlyd@ctl-group.com #}
-					{# info@waterloopark.ca #}
 					<input type="hidden" name="subject" value="Waterloo Innovation Park - Question" data-original-value="Waterloo Innovation Park - Question">
 					<input type="hidden" name="message[Start Time]" value="n/a">
 					<input type="hidden" name="message[End Time]" value="n/a">
 					<input type="hidden" name="message[Date Requested]" value="n/a">
-					<input type="hidden" name="toEmail" value="{{ 'mr.coru@gmail.com'|hash }}">
-					{# <input type="hidden" name="toEmail" value="{{ 'mr.coru@gmail.com'|hash }}"> #}
+					<input type="hidden" name="toEmail" value="{{ contactFormRecipientEmail|hash }}">
 
 					<div class="forms__group">
-
 						<div class="forms__input">
 							{{ input('email', 'fromEmail', submission.fromEmail ?? '', {
                             id: 'from-email',

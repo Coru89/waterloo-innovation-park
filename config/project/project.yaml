@@ -1,4 +1,4 @@
-dateModified: 1690542776
+dateModified: 1690543576
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -61,6 +61,7 @@ meta:
     3e1d40f9-bcc2-45e5-a18f-9a845b7988db: 'Button Text' # Button Text
     4b4b1468-382a-43a9-a954-3816f65567a2: Heading # Heading
     4b5a5788-43ee-4012-ba1a-ed2b73b8bbfb: ItemSVG # ItemSVG
+    4bad311c-fb7a-4bc0-ac5a-449551510126: 'Contact Form Recipient Email' # Contact Form Recipient Email
     4bf1c6a2-b8b6-48fb-bdac-d9e5804d9ab6: 'Button Text' # Button Text
     4df73862-66da-4140-8eac-6eeb31f2aa4c: 'Button Link' # Button Link
     04e5c194-9ae4-47b7-984b-0892ca576ec9: Images # Images
@@ -159,6 +160,7 @@ meta:
     3906dce9-9071-435f-96fc-05a701d81f46: 'Exhibition Photos' # Exhibition Photos
     4197b684-37e8-427d-9ed0-80a7712911bc: '2 Text Columns With 3 Images' # 2 Text Columns With 3 Images
     4376fc28-a7c8-4264-ae89-8fd01d231075: 'Current Featured Exhibit' # Current Featured Exhibit
+    5222f243-fdcb-4e65-bb34-a0bbcaa498d9: Contact # Contact
     7185e0e8-2762-4d5d-b963-5a2f92ca4f6e: 'Image - Card 2' # Image - Card 2
     08243d9a-7eec-43e3-96fb-51d741633226: 'Image Link Behavior - Card 1' # Image Link Behavior - Card 1
     8267e525-8100-4ca9-9949-0677504ad351: email # email

@@ -67,9 +67,8 @@
 								class="forms__group">
 								{# set the email subject #}
 								<input type="hidden" name="subject" value="Waterloo Innovation Park - Booking Request" data-original-value="Waterloo Innovation Park - Booking Request">
-								<input type="hidden" name="toEmail" value="{{ 'mr.coru@gmail.com'|hash }}">
 								{# set the to email #}
-								{# <input type="hidden" name="toEmail" value="{{ entry.bookingFormRecipientEmail }}"> #}
+								<input type="hidden" name="toEmail" value="{{ entry.bookingFormRecipientEmail }}|hash">
 								<div class="forms__input">
 									{{ input('email', 'fromEmail', submission.fromEmail ?? '', {
                                     id: 'from-email',

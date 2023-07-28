@@ -32,6 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 4bad311c-fb7a-4bc0-ac5a-449551510126 # Contact Form Recipient Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c27dff6b-71ca-4911-b84e-e1d9760e5977
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 745cf2fc-6457-41df-a21e-131f47a52823 # Content
             instructions: null
             label: null

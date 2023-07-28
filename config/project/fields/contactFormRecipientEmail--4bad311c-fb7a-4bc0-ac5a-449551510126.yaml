@@ -1,0 +1,19 @@
+columnSuffix: auzhadys
+contentColumnType: text
+fieldGroup: 5222f243-fdcb-4e65-bb34-a0bbcaa498d9 # Contact
+handle: contactFormRecipientEmail
+instructions: 'The email address that will receive inquiries from the contact form.'
+name: 'Contact Form Recipient Email'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
