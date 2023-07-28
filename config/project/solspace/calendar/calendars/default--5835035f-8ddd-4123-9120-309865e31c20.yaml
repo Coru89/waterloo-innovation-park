@@ -70,7 +70,7 @@ hasTitleField: true
 icsHash: null
 icsTimezone: floating
 locationFieldHandle: '0'
-name: Default
+name: Events
 siteSettings:
   2a966d53-04f0-40e2-9939-9dbb97b315e5:
     enabledByDefault: true
