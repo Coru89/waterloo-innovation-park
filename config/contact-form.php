@@ -1,6 +1,8 @@
 <?php
 
-$config = [];
+$config = [
+    'toEmail'             => 'corey.james.keller@gmail.com',
+];
 $request = Craft::$app->request;
 
 // Get the 'toEmail' field from POST
