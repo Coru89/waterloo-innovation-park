@@ -88,18 +88,28 @@ export namespace Calendar {
 
   const menuButtonEl: HTMLElement | null = document.querySelector('#calendar-month-menu');
   const dropDownEl: Element | null = document.querySelector('.dropdown-menu');
+  const body: HTMLElement | null = document.querySelector('.body');
 
   if (menuButtonEl && dropDownEl) {
     menuButtonEl.addEventListener("click", function () {
-    dropDownEl.classList.add('show');
+    dropDownEl.classList.toggle('show');
     });
   }
 
-   if (menuButtonEl && dropDownEl) {
-     menuButtonEl.addEventListener("blur", function () {
-     dropDownEl.classList.remove('show');
-     });
-   }
+
+  window.parent.document.addEventListener('click', function handleClick(event) {
+    if ((dropDownEl && dropDownEl.classList.contains('show'))) {
+      dropDownEl.classList.remove('show');
+    }
+  });
+
+  document.addEventListener('click', function handleClick(event) {
+    const target = event.target as HTMLInputElement;
+
+    if ((dropDownEl && !target.classList.contains('dropdown-menu') && !target.classList.contains('dropdown-toggle')) ){
+         dropDownEl.classList.remove('show');
+     }
+  });
 
   let myIframe: HTMLIFrameElement | null = document.querySelector("#calendar");
 
