@@ -12595,6 +12595,11 @@ textarea.form-control-lg {
   top: 48px;
 }
 
+.dropdown-item--active {
+  color: #0A78FF;
+  font-weight: 700;
+}
+
 .calendar-color {
   z-index: -1;
 }
