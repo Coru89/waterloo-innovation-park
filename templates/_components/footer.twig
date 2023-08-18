@@ -84,7 +84,7 @@
 								{% if item.label %}
 									<label>{{item.label}}</label>
 								{% endif %}
-								<a class="footer__link" href={{item.buttonHref}} role="menuitem">
+								<a class="footer__link" href={{item.buttonHref}}{% if item.buttonHref | slice(0,4) == 'http' %} target="_blank"{% endif %} role="menuitem">
 									{{item.buttonText}}
 								</a>
 							</li>
@@ -101,7 +101,7 @@
 								{% if item.label %}
 									<label>{{item.label}}</label>
 								{% endif %}
-								<a class="footer__link" href={{item.buttonHref}} role="menuitem">
+								<a class="footer__link" href={{item.buttonHref}}{% if item.buttonHref | slice(0,4) == 'http' %} target="_blank"{% endif %} role="menuitem">
 									{{item.buttonText}}
 								</a>
 							</li>
@@ -118,7 +118,7 @@
 								{% if item.label %}
 									<label>{{item.label}}</label>
 								{% endif %}
-								<a class="footer__link" href={{item.buttonHref}} role="menuitem">
+								<a class="footer__link" href={{item.buttonHref}}{% if item.buttonHref | slice(0,4) == 'http' %} target="_blank"{% endif %} role="menuitem">
 									{{item.buttonText}}
 								</a>
 							</li>
