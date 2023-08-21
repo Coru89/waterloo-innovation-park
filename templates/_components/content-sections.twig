@@ -473,13 +473,11 @@
 
 				{% set image = block.mapImage.one() %}
 				{% if image %}
-					<li class="image-slider__slide glide__slide">
-						<picture data-aos="fade" class="image-slider__picture">
-							<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '100vw'}) }}>
-							<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '100vw'}) }}>
-							<img alt="{{image.alt}}" class="image-slider__image" src={{image.url}} width={{image.width}} height={{image.height}}>
-						</picture>
-					</li>
+					<picture data-aos="fade" class="map__picture">
+						<source {{ attr({ type: 'image/webp', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'webp', } ), sizes: '100vw'}) }}>
+						<source {{ attr({ type: 'image/jpeg', srcset: image.getSrcset( [320, 360, 412, 600, 768, 1024, 1440, 1600, 1920, 2560], { format: 'jpeg', } ), sizes: '100vw'}) }}>
+						<img alt="{{image.alt}}" class="map__image" src={{image.url}} width={{image.width}} height={{image.height}}>
+					</picture>
 				{% endif %}
 			</div>
 		</section>
