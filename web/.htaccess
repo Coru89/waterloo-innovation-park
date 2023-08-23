@@ -122,8 +122,8 @@ FileETag None
     </FilesMatch>
     # CSS expires after 1 day
     <FilesMatch ".(css)$">
-        # Header set Cache-Control "max-age=15552000"
-        Header set Cache-Control "max-age=0"
+        Header set Cache-Control "max-age=15552000"
+        # Header set Cache-Control "max-age=0"
     </FilesMatch>
     <FilesMatch ".(woff2)$">
         Header set Cache-Control "max-age=15552000"
