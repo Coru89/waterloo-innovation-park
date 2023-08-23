@@ -1,4 +1,4 @@
-dateModified: 1691037907
+dateModified: 1692800109
 email:
   fromEmail: donotreply@coloniatreuhand.com
   fromName: 'Waterloo Innovation Park'
@@ -332,7 +332,7 @@ system:
   live: true
   name: 'Waterloo Innovation Park'
   retryDuration: null
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.0.3
   timeZone: America/Toronto
 users:
   allowPublicRegistration: false

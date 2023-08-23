@@ -1,11 +1,11 @@
 {
   "require": {
     "codemonauts/craft-instagram-feed": "^2.1",
-    "craftcms/cms": "4.4.16.1",
+    "craftcms/cms": "4.5.0",
     "craftcms/contact-form": "^3.0",
     "craftcms/redactor": "3.0.4",
     "dispositiontools/craft-minical": "4.0.0",
-    "ether/seo": "4.1.2",
+    "ether/seo": "4.2.1",
     "fortrabbit/craft-copy": "2.4.2",
     "putyourlightson/craft-sendgrid": "2.0.1",
     "putyourlightson/craft-sprig": "2.6.2",
