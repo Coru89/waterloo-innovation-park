@@ -1,13 +1,16 @@
-dateModified: 1692800109
+dateModified: 1698682057
 email:
-  fromEmail: donotreply@coloniatreuhand.com
+  fromEmail: donotreply@waterlooinnovationpark.com
   fromName: 'Waterloo Innovation Park'
   replyToEmail: null
   template: null
   transportSettings:
-    apiKey: 01972b0752569ae74e84a14b1c3727e0
-    apiSecret: bce9e3c16193edd555dbbdfb0eeb8010
-  transportType: robuust\mailjet\MailjetAdapter
+    host: smtp.jmbg.net
+    password: 9Tdhe43002zQpE
+    port: '587'
+    useAuthentication: '1'
+    username: wipsite
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   exhibitionPhotos:
     hasUrls: true
