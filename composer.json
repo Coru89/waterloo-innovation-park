@@ -1,6 +1,6 @@
 {
   "require": {
-    "codemonauts/craft-instagram-feed": "^2.1",
+    "codemonauts/craft-instagram-feed": "2.2.1",
     "craftcms/cms": "4.5.0",
     "craftcms/contact-form": "^3.0",
     "craftcms/redactor": "3.0.4",
@@ -39,5 +39,12 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }
