@@ -48,7 +48,7 @@ export namespace slider {
     function initInstaGlide() {
         var glide = new Glide('.instagram-glide', {
             type: 'carousel',
-            autoplay: 10000,
+            // autoplay: 10000,
             gap: 30,
             perView: 4,
             peek: {
@@ -76,12 +76,12 @@ export namespace slider {
     
         // fixes cumulative layout shift
         glide.on(['build.before'], function() {
-            if (glideInstaEl) {
-                glideInstaEl.classList.add('instagram--visible');
-            }
-            });
+             if (glideInstaEl) {
+                 glideInstaEl.classList.add('instagram--visible');
+             }
+        });
 
-            glide.mount()
+             glide.mount();
     }
 
     function initEventGlide() {
