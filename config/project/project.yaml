@@ -1,4 +1,4 @@
-dateModified: 1698682057
+dateModified: 1745735727
 email:
   fromEmail: donotreply@waterlooinnovationpark.com
   fromName: 'Waterloo Innovation Park'
@@ -335,7 +335,7 @@ system:
   live: true
   name: 'Waterloo Innovation Park'
   retryDuration: null
-  schemaVersion: 4.5.0.3
+  schemaVersion: 4.15.0.0
   timeZone: America/Toronto
 users:
   allowPublicRegistration: false
